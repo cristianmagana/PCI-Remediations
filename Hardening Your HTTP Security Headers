@@ -1,1 +1,96 @@
 https://www.keycdn.com/blog/http-security-headers/
+
+Hardening Your HTTP Security Headers
+BRIAN JACKSON  |  UPDATED: JUNE 8, 2016
+
+http security headers
+There are a lot of things to consider to when securing your website or web application, but a good place to start is to explore your HTTP security headers and ensure you are keeping up with best practices. In many cases they are very easy to implement and only require a slight web server configuration change. HTTP security headers provide yet another layer of security by helping to mitigate attacks and security vulnerabilities. In this post we will explore some of them to help you better understand their purpose and how to implement them.
+
+
+What Are HTTP Security Headers?
+Whenever a browser requests a page from a web server, the server responds with the content along with HTTP Response Headers. Some of these headers contain content meta data such as the content-encoding, cache-control, status error codes, etc.
+
+
+http response headers
+Along with these are also HTTP security headers that tell your browser how to behave when handling your site’s content. For example, by using the strict-transport-security you can force the browser to communicate solely over HTTPS. There are six different HTTP security headers that we will explore below (in no particular order) that you should be aware of and we recommend implementing if possible.
+
+1. Content Security Policy
+The content-security-policy HTTP header provides an additional layer of security. This policy helps prevent attacks such as Cross Site Scripting (XSS) and other code injection attacks by defining content sources which are approved and thus allowing the browser to load them. 
+
+content security policy
+All major browsers currently offer full or partial support for content security policy. And it won’t break delivery of the content if it does happen to be delivered to an older browser, it will simply not be executed.
+
+
+content security policy browser support
+There are many directives which you can use with content security policy. This example below allows scripts from both the current domain (defined by ‘self’) as well as google-analytics.com.
+
+content-security-policy: script-src 'self' https://www.google-analytics.com
+To explore all of the directives, and to see implementation on Nginx and Apache, make sure to check out our in-depth post on Content Security Policy.
+
+2. X-XSS-Protection
+The x-xss-protection header is designed to enable the cross-site scripting (XSS) filter built into modern web browsers. This is usually enabled by default, but using it will enforce it. It is supported by Internet Explorer 8+, Chrome, and Safari. Here is an example of what the header looks like.
+
+x-xss-protection: 1; mode=block
+Enable in Nginx
+add_header x-xss-protection "1; mode=block" always;
+Enable in Apache
+header always set x-xss-protection "1; mode=block"
+3. HTTP Strict Transport Security (HSTS)
+The strict-transport-security header is a security enhancement that restricts web browsers to access web servers solely over HTTPS. This ensures the connection cannot be establish through an insecure HTTP connection which could be susceptible to attacks.
+
+
+http strict transport security
+All major modern browsers currently support HTTP strict transport security except for Opera Mini and versions previous of Internet Explorer.
+
+
+http strict transport security browser support
+Here is an example of what the header looks like. You can include the max age, subdomains, and preload.
+
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+To read more about this header and see implementation on Nginx and Apache, make sure to check out our in-depth post on HTTP Strict Transport Security.
+
+4. X-Frame-Options
+The x-frame-options header provides clickjacking protection by not allowing iframes to load on your site.  It is supported by IE 8+, Chrome 4.1+, Firefox 3.6.9+, Opera 10.5+, Safari 4+. Here is an example of what the header looks like.
+
+x-frame-options: SAMEORIGIN
+Enable in Nginx
+add_header x-frame-options "SAMEORIGIN" always;
+Enable in Apache
+header always set x-frame-options "SAMEORIGIN"
+5. Public-Key-Pins
+The public-key-pins header tells the web browser to associate a public key with a certain web server to prevent MITM attacks using rogue and forged X.509 certificates. This protects users in case a certificate authority is compromised.  Here is an example of what the header looks like.
+
+public-key-pins: pin-sha256="t/OMbKSZLWdYUDmhOyUzS+ptUbrdVgb6Tv2R+EMLxJM="; pin-sha256="PvQGL6PvKOp6Nk3Y9B7npcpeL40twdPwZ4kA2IiixqA="; pin-sha256="ZyZ2XrPkTuoiLk/BR5FseiIV/diN3eWnSewbAIUMcn8="; pin-sha256="0kDINA/6eVxlkns5z2zWv2/vHhxGne/W0Sau/ypt3HY="; pin-sha256="ktYQT9vxVN4834AQmuFcGlSysT1ZJAxg+8N1NkNG/N8="; pin-sha256="rwsQi0+82AErp+MzGE7UliKxbmJ54lR/oPheQFZURy8="; max-age=600; report-uri="https://www.keycdn.com"
+Scott Helme has an excellent tutorial on how to setup public key pinning.
+
+6. X-Content-Type-Options
+The x-content-type header prevents Internet Explorer and Google Chrome from sniffing a response away from the declared content-type. This helps reduce the danger of drive-by downloads and helps treat the content the right way. Here is an example of what the header looks like.
+
+x-content-type: nosniff
+Enable in Nginx
+add_header X-Content-Type-Options "nosniff" always;
+Enable in Apache
+Header always set X-Content-Type-Options "nosniff"
+How to Check Your HTTP Security Headers
+Below are three quick and easy ways to check your HTTP security headers, as part of your HTTP response headers.
+
+1. KeyCDN’s HTTP Header Check Tool
+KeyCDN has an online HTTP header check tool which you can easily use to retrieve which HTTP security headers are currently running on your website. Simply input the URL you want to check and click on “Request.”
+
+
+http header check tool
+It will then return with your HTTP response headers.
+
+
+keycdn http response header
+2. Chrome DevTools – Response Headers
+Another quick and easy way to access your HTTP security headers, as part of your response headers, is to fire up Chrome DevTools. To run this click into the “Network” panel press Ctrl + R (Cmd + R) to refresh the page. Click into your domain’s request and you will see a section for your response headers.
+
+
+chrome devtools http response headers
+3. Scan Your Site With securityheaders.io
+A third way to to check your HTTP security headers is to scan your site on securityheaders.io. This is a handy little little tool that was developed by Scott Helme, an information security consultant. It gives your site a score, based on present HTTP security headers, from an A+ grade down to an F grade. Make sure to bookmark it. Here is an example of an A+ grade on his own site.
+
+
+http security headers score
+Here is an example of an F grade without any of the HTTP security headers present on Citi’s corporate site.
