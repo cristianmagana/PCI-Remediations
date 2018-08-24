@@ -99,18 +99,19 @@ function Disable-RC4(){
     ([Microsoft.Win32.RegistryKey]::OpenRemoteBaseKey([Microsoft.Win32.RegistryHive]::LocalMachine,$env:COMPUTERNAME)).CreateSubKey('SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 56/128') 
     New-ItemProperty -path 'HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 56/128' -name 'Enabled' -value '0' -PropertyType 'DWord' -Force | Out-Null
 
+    Write-Host 'RC4 has been disabled.'
 
 }
 
 Disable-SSL2.0
-
+Write-Host " " 
 Disable-SSL3.0
-
+Write-Host " " 
 Disable-TLS1.0
-
+Write-Host " " 
 Disable-RC4
-
+Write-Host " " 
 Enable-TLS1.1
-
+Write-Host " " 
 Enable-TLS1.2
-
+Write-Host " " 
