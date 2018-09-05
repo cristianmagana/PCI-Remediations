@@ -1,0 +1,250 @@
+$Ciphers = 0
+
+# Checks Protocols and Ciphers
+$cMPUHclient1 = Get-ItemProperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\Multi-Protocol Unified Hello\Client" -name DisabledByDefault | select-object -ExpandProperty DisabledByDefault
+If ($cMPUHclient1 -eq 1) {
+    $Ciphers =  1
+}
+
+$cMPUHclient2 = Get-ItemProperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\Multi-Protocol Unified Hello\Client" -name Enabled | select-object -ExpandProperty Enabled
+If ($cMPUHclient2 -eq 0) {
+    $Ciphers = ($Ciphers + 1 ) 
+}
+
+$cMPUHserver1 = Get-ItemProperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\Multi-Protocol Unified Hello\Server" -Name DisabledByDefault | Select-object -ExpandProperty DisabledByDefault
+If ($cMPUHserver1 -eq 1) {
+     $Ciphers = ($Ciphers + 1 ) 
+}
+
+$cMPUHserver2 = Get-ItemProperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\Multi-Protocol Unified Hello\Server" -name Enabled | select-object -ExpandProperty Enabled
+If ($cMPUHserver1 -eq 1) {
+    $Ciphers = ($Ciphers + 1 ) 
+}
+
+$cPCTclient1 = Get-ItemProperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\PCT 1.0\Client" -name DisabledByDefault | select-object -ExpandProperty DisabledByDefault
+If ($cPCTclient1 -eq 1) {
+     $Ciphers = ($Ciphers + 1 ) 
+}
+
+$cPCTclient2 = Get-ItemProperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\PCT 1.0\Client"  -name Enabled | select-object -ExpandProperty Enabled
+If ($cPCTclient2 -eq 0) {
+     $Ciphers = ($Ciphers + 1 ) 
+}
+
+$cPCTserver1 = Get-ItemProperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\PCT 1.0\Server" -name DisabledByDefault | select-object -ExpandProperty DisabledByDefault
+If ($cPCTserver1 -eq 1) {
+     $Ciphers = ($Ciphers + 1 ) 
+}
+
+$cPCTserver2 = Get-ItemProperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\PCT 1.0\Server"  -name Enabled | select-object -ExpandProperty Enabled
+If ($cPCTserver2 -eq 0) {
+     $Ciphers = ($Ciphers + 1 ) 
+}
+
+$cSSL2client1 = Get-ItemProperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 2.0\Client" -name DisabledByDefault | select-object -ExpandProperty DisabledByDefault
+If ($cSSL2client1 -eq 1) {
+     $Ciphers = ($Ciphers + 1 ) 
+}
+
+$cSSL2client2 = Get-ItemProperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 2.0\Client"  -name Enabled | select-object -ExpandProperty Enabled
+If ($cSSL2client2 -eq 0) {
+     $Ciphers = ($Ciphers + 1 ) 
+}
+
+$cSSL2server1 = Get-ItemProperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 2.0\Server" -name DisabledByDefault | select-object -ExpandProperty DisabledByDefault
+If ($cSSL2server1 -eq 1) {
+     $Ciphers = ($Ciphers + 1 ) 
+}
+
+$cSSL2server2 = Get-ItemProperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 2.0\Server"  -name Enabled | select-object -ExpandProperty Enabled
+If ($cSSL2server2 -eq 0) {
+     $Ciphers = ($Ciphers + 1 ) 
+}
+
+$cSSL3client1 = Get-ItemProperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 3.0\Client" -name DisabledByDefault | select-object -ExpandProperty DisabledByDefault
+If ($cSSL3client1 -eq 1) {
+     $Ciphers = ($Ciphers + 1 ) 
+}
+
+$cSSL3client2 = Get-ItemProperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 3.0\Client"  -name Enabled | select-object -ExpandProperty Enabled
+If ($cSSL3client2 -eq 0) {
+     $Ciphers = ($Ciphers + 1 ) 
+}
+
+$cSSL3server1 = Get-ItemProperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 3.0\Server" -name DisabledByDefault | select-object -ExpandProperty DisabledByDefault
+If ($cSSL3server1 -eq 1) {
+     $Ciphers = ($Ciphers + 1 ) 
+}
+
+$cSSL3server2 = Get-ItemProperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 3.0\Server"  -name Enabled | select-object -ExpandProperty Enabled
+If ($cSSL3server2 -eq 0) {
+     $Ciphers = ($Ciphers + 1 ) 
+}
+
+$cTLS10client1 = Get-ItemProperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Client" -name DisabledByDefault | select-object -ExpandProperty DisabledByDefault
+If ($cTLS10client1 -eq 0) {
+     $Ciphers = ($Ciphers + 1 ) 
+}
+
+$cTLS10client2 = Get-ItemProperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Client"  -name Enabled | select-object -ExpandProperty Enabled
+If ($cTLS10client2 -eq 4294967295) {
+     $Ciphers = ($Ciphers + 1 ) 
+}
+
+$cTLS10server1 = Get-ItemProperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Server" -name DisabledByDefault | select-object -ExpandProperty DisabledByDefault
+If ($cTLS10server1 -eq 1) {
+     $Ciphers = ($Ciphers + 1 ) 
+}
+
+$cTLS10server2 = Get-ItemProperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Server"  -name Enabled | select-object -ExpandProperty Enabled
+If ($cTLS10server2 -eq 0) {
+     $Ciphers = ($Ciphers + 1 ) 
+}
+
+$cTLS11client1 = Get-ItemProperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Client" -name DisabledByDefault | select-object -ExpandProperty DisabledByDefault
+If ($cTLS11client1 -eq 0) {
+     $Ciphers = ($Ciphers + 1 ) 
+}
+
+$cTLS11client2 = Get-ItemProperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Client"  -name Enabled | select-object -ExpandProperty Enabled
+If ($cTLS11client2 -eq 4294967295) {
+     $Ciphers = ($Ciphers + 1 ) 
+}
+
+$cTLS11server1 = Get-ItemProperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Server" -name DisabledByDefault | select-object -ExpandProperty DisabledByDefault
+If ($cTLS11server1 -eq 1) {
+     $Ciphers = ($Ciphers + 1 ) 
+}
+
+$cTLS11server2 = Get-ItemProperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Server"  -name Enabled | select-object -ExpandProperty Enabled
+If ($cTLS11server2 -eq 0) {
+     $Ciphers = ($Ciphers + 1 ) 
+}
+
+$cTLS11client1 = Get-ItemProperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Client" -name DisabledByDefault | select-object -ExpandProperty DisabledByDefault
+If ($cTLS11client1 -eq 0) {
+     $Ciphers = ($Ciphers + 1 ) 
+}
+
+$cTLS11client2 = Get-ItemProperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Client"  -name Enabled | select-object -ExpandProperty Enabled
+If ($cTLS11client2 -eq 4294967295) {
+     $Ciphers = ($Ciphers + 1 ) 
+}
+
+$cTLS11server1 = Get-ItemProperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Server" -name DisabledByDefault | select-object -ExpandProperty DisabledByDefault
+If ($cTLS11server1 -eq 0) {
+     $Ciphers = ($Ciphers + 1 ) 
+}
+
+$cTLS11server2 = Get-ItemProperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Server"  -name Enabled | select-object -ExpandProperty Enabled
+If ($cTLS11server2 -eq 4294967295) {
+     $Ciphers = ($Ciphers + 1 ) 
+}
+
+
+$Ciphers
+$cSChannelLog = Get-ItemProperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL"  -name EventLogging | select-object -ExpandProperty EventLogging
+If ($cSChannelLog -eq 1) {
+     $Ciphers = ($Ciphers + 1 ) 
+}
+$Ciphers
+$cAES128_128 = Get-ItemProperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\AES 128/128"  -name Enabled | select-object -ExpandProperty Enabled
+If ($cAES128_128 -eq 4294967295) {
+     $Ciphers = ($Ciphers + 1 ) 
+}
+$Ciphers
+$cAES256_256 = Get-ItemProperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\AES 256/256"  -name Enabled | select-object -ExpandProperty Enabled
+If ($cAES256_256 -eq 4294967295) {
+     $Ciphers = ($Ciphers + 1 ) 
+}
+$Ciphers
+$cDES56_56 = Get-ItemProperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\DES 56/56"  -name Enabled | select-object -ExpandProperty Enabled
+If ($cDES56_56 -eq 0) {
+     $Ciphers = ($Ciphers + 1 ) 
+}
+
+$cNULL = Get-ItemProperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\NULL"  -name Enabled | select-object -ExpandProperty Enabled
+If ($cNULL -eq 0) {
+     $Ciphers = ($Ciphers + 1 ) 
+}
+
+$cRC2_128_128 = Get-ItemProperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC2 128/128"  -name Enabled | select-object -ExpandProperty Enabled
+If ($cRC2_128_128 -eq 0) {
+     $Ciphers = ($Ciphers + 1 ) 
+}
+
+$cRC2_40_128 = Get-ItemProperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC2 40/128"  -name Enabled | select-object -ExpandProperty Enabled
+If ($cRC2_40_128 -eq 0) {
+     $Ciphers = ($Ciphers + 1 ) 
+}
+
+$cRC2_56_128 = Get-ItemProperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC2 56/128"  -name Enabled | select-object -ExpandProperty Enabled
+If ($cRC56_128 -eq 0) {
+     $Ciphers = ($Ciphers + 1 ) 
+}
+
+$cRC4_128_128 = Get-ItemProperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 128/128"  -name Enabled | select-object -ExpandProperty Enabled
+If ($cRC4_128_128 -eq 0) {
+     $Ciphers = ($Ciphers + 1 ) 
+}
+
+$cRC4_64_128 = Get-ItemProperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 64/128"  -name Enabled | select-object -ExpandProperty Enabled
+If ($cRC4_64_128 -eq 0) {
+     $Ciphers = ($Ciphers + 1 ) 
+}
+
+$cTripleDES168 = Get-ItemProperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\Triple DES 168"  -name Enabled | select-object -ExpandProperty Enabled
+If ($cTripleDES168 -eq 0) {
+     $Ciphers = ($Ciphers + 1 ) 
+}
+
+$cMD5 = Get-ItemProperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Hashes\MD5"  -name Enabled | select-object -ExpandProperty Enabled
+If ($cMD5 -eq 0) {
+     $Ciphers = ($Ciphers + 1 ) 
+}
+
+$cSHA = Get-ItemProperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Hashes\SHA"  -name Enabled | select-object -ExpandProperty Enabled
+If ($cSHA -eq 4294967295) {
+     $Ciphers = ($Ciphers + 1 ) 
+}
+
+$cSHA256 = Get-ItemProperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Hashes\SHA256"  -name Enabled | select-object -ExpandProperty Enabled
+If ($cSHA256 -eq 4294967295) {
+     $Ciphers = ($Ciphers + 1 ) 
+}
+
+$cSHA384 = Get-ItemProperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Hashes\SHA384"  -name Enabled | select-object -ExpandProperty Enabled
+If ($cSHA384 -eq 4294967295) {
+     $Ciphers = ($Ciphers + 1 ) 
+}
+
+$cSHA512 = Get-ItemProperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Hashes\SHA512"  -name Enabled | select-object -ExpandProperty Enabled
+If ($cSHA512 -eq 4294967295) {
+     $Ciphers = ($Ciphers + 1 ) 
+}
+
+$cDiffieHellman = Get-ItemProperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\KeyExchangeAlgorithms\Diffie-Hellman"  -name Enabled | select-object -ExpandProperty Enabled
+If ($cDiffieHellman -eq 4294967295) {
+     $Ciphers = ($Ciphers + 1 ) 
+}
+
+
+$cECDH = Get-ItemProperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\KeyExchangeAlgorithms\ECDH"  -name Enabled | select-object -ExpandProperty Enabled
+If ($cECDH  -eq 4294967295) {
+     $Ciphers = ($Ciphers + 1 ) 
+}
+
+$cPKCS = Get-ItemProperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\KeyExchangeAlgorithms\PKCS"  -name Enabled | select-object -ExpandProperty Enabled
+If ($cPKCS -eq 4294967295) {
+     $Ciphers = ($Ciphers + 1 ) 
+}
+
+$cSSLFunct = Get-ItemProperty -path "HKLM:\SOFTWARE\Policies\Microsoft\Cryptography\Configuration\SSL\00010002"  -name Functions | select-object -ExpandProperty Functions
+If ($cSSLFunct -eq "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P521,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P384,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P256,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P521,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P384,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_P521,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_P384,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_P256,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA_P521,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA_P384,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA_P256,TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384_P521,TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384_P384,TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256_P521,TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256_P384,TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256_P256,TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384_P521,TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384_P384,TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256_P521,TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256_P384,TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256_P256,TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA_P521,TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA_P384,TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA_P256,TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA_P521,TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA_P384,TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA_P256") {
+     $Ciphers = ($Ciphers + 1 ) 
+}
+
+
+
+If ($Ciphers -eq 48) {Write-Host "OK"}
+ELSE {Write-Host "NOK"}
