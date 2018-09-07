@@ -1,19 +1,20 @@
-Des Moines	10.10.10.106	amcprodfsv1.tmg.net	Windows Server 2008 Standard 64 bit Edition Service Pack 2	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft Internet Explorer 8 Detected
-Des Moines	10.10.16.13	cuetsdevvault1.tmg.net	Windows 2008 Enterprise Server 64 bit Edition Service Pack 2	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft Internet Explorer 7 Detected
-Des Moines	10.0.3.113	cuetsprodvault1.tmg.net	Windows 2008 Enterprise Server 64 bit Edition Service Pack 2	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft Internet Explorer 7 Detected
+Des Moines	10.10.53.89	tmgprodtfs1.tmg.net	Windows 2008 Enterprise Server 64 bit Edition Service Pack 2	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft Internet Explorer 7 Detected
 Des Moines	10.10.32.43	scbwebmci1.tmg.net	Windows 2008 Enterprise Server 64 bit Edition Service Pack 2	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft Internet Explorer 7 Detected
 Des Moines	10.10.32.21	tmgbetarsvext1.tmg.net	Windows 2008 Enterprise Server 64 bit Edition Service Pack 2	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft Internet Explorer 7 Detected
 Des Moines	10.10.32.20	tmgbetarsvint1.tmg.net	Windows 2008 Enterprise Server 64 bit Edition Service Pack 2	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft Internet Explorer 7 Detected
-Des Moines	10.10.32.11	tmgbetavault1.tmg.net	Windows 2008 Enterprise Server 64 bit Edition Service Pack 2	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft Internet Explorer 7 Detected
 Des Moines	10.10.32.12	tmgbetawebint1.tmg.net	Windows 2008 Enterprise Server 64 bit Edition Service Pack 2	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft Internet Explorer 7 Detected
+Des Moines	10.10.32.11	tmgbetavault1.tmg.net	Windows 2008 Enterprise Server 64 bit Edition Service Pack 2	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft Internet Explorer 7 Detected
 Des Moines	10.10.16.21	tmgdevrsvext1.tmg.net	Windows 2008 Enterprise Server 64 bit Edition Service Pack 2	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft Internet Explorer 7 Detected
 Des Moines	10.10.16.20	tmgdevrsvint1.tmg.net	Windows 2008 Enterprise Server 64 bit Edition Service Pack 2	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft Internet Explorer 7 Detected
-Des Moines	10.10.16.11	tmgdevvault1.tmg.net	Windows 2008 Enterprise Server 64 bit Edition Service Pack 2	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft Internet Explorer 7 Detected
+Des Moines	10.10.16.13	cuetsdevvault1.tmg.net	Windows 2008 Enterprise Server 64 bit Edition Service Pack 2	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft Internet Explorer 7 Detected
 Des Moines	10.10.16.12	tmgdevwebint1.tmg.net	Windows 2008 Enterprise Server 64 bit Edition Service Pack 2	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft Internet Explorer 7 Detected
-Des Moines	10.10.1.21	tmgprodfsv3.tmg.net	Windows Server 2008 Standard Service Pack 2	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft Internet Explorer 8 Detected
+Des Moines	10.10.16.11	tmgdevvault1.tmg.net	Windows 2008 Enterprise Server 64 bit Edition Service Pack 2	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft Internet Explorer 7 Detected
 Des Moines	10.0.3.121	tmgprodrsvext1.tmg.net	Windows 2008 Enterprise Server 64 bit Edition Service Pack 2	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft Internet Explorer 7 Detected
 Des Moines	10.0.3.120	tmgprodrsvint1.tmg.net	Windows 2008 Enterprise Server 64 bit Edition Service Pack 2	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft Internet Explorer 7 Detected
-Des Moines	10.10.53.4	tmgprodsw1.tmg.net	Windows Server 2008 Standard Service Pack 2	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft Internet Explorer 8 Detected
-Des Moines	10.10.53.89	tmgprodtfs1.tmg.net	Windows 2008 Enterprise Server 64 bit Edition Service Pack 2	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft Internet Explorer 7 Detected
 Des Moines	10.0.3.115	tmgprodwebext1.tmg.net	Windows 2008 Enterprise Server 64 bit Edition Service Pack 2	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft Internet Explorer 7 Detected
+Des Moines	10.0.3.113	cuetsprodvault1.tmg.net	Windows 2008 Enterprise Server 64 bit Edition Service Pack 2	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft Internet Explorer 7 Detected
 Des Moines	10.0.3.112	tmgprodwebint1.tmg.net	Windows 2008 Enterprise Server 64 bit Edition Service Pack 2	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft Internet Explorer 7 Detected
+Des Moines	10.10.53.4	tmgprodsw1.tmg.net	Windows Server 2008 Standard Service Pack 2	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft Internet Explorer 8 Detected
+Des Moines	10.10.10.106	amcprodfsv1.tmg.net	Windows Server 2008 Standard 64 bit Edition Service Pack 2	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft Internet Explorer 8 Detected
+Des Moines	10.10.1.21	tmgprodfsv3.tmg.net	Windows Server 2008 Standard Service Pack 2	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft Internet Explorer 8 Detected
+
