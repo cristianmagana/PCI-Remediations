@@ -1,7 +1,7 @@
 # Backup HKLM to C:\
 
 md C:\RegistryBackupTLS
-reg export HKEY_LOCAL_MACHINE C:\RegistryBackupTLS\HKLM.reg
+REGEDIT /E C:\RegistryBackupTLS\output.reg
 
 
 # Ensure SChannel logging
