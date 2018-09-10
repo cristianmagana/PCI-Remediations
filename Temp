@@ -1,46 +1,93 @@
-Des Moines	10.50.8.10	scpwebftp2.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft .NET Framework 4 - 4.5.1 Detected
-Des Moines	10.20.73.98	sapmgtutil1.tmg.net	Windows Server 2012 Standard 64 bit Edition	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft .NET Framework 4 - 4.5.1 Detected
-Des Moines	10.20.73.53	sapsqlint1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft .NET Framework 4 - 4.5.1 Detected
-Des Moines	10.20.70.36	sapphnuance1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft .NET Framework 4 - 4.5.1 Detected
-Des Moines	10.20.2.13	sapdc1.tmg.net	Windows Server 2012 Standard 64 bit Edition AD	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft .NET Framework 4 - 4.5.1 Detected
-Des Moines	10.10.75.59	s1vipdcnm01.tmg.net	Windows Server 2008 R2 Standard 64 bit Edition Service Pack 1	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft .NET Framework 4 - 4.5.1 Detected
-Des Moines	10.10.73.102	scpsqlint1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft .NET Framework 4 - 4.5.1 Detected
-Des Moines	10.10.73.100	scpapptfs1.tmg.net	Windows Server 2012 Standard 64 bit Edition	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft .NET Framework 4 - 4.5.1 Detected
-Des Moines	10.10.73.99	scpappnetflow1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft .NET Framework 4 - 4.5.1 Detected
-Des Moines	10.10.70.39	scpphcubac1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft .NET Framework 4 - 4.5.1 Detected
-Des Moines	10.10.70.38	scpphcuqm1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft .NET Framework 4 - 4.5.1 Detected
-Des Moines	10.10.70.37	scpphcuwo1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft .NET Framework 4 - 4.5.1 Detected
-Des Moines	10.10.70.36	scpphnuance1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft .NET Framework 4 - 4.5.1 Detected
-Des Moines	10.10.53.4	tmgprodsw1.tmg.net	Windows Server 2008 Standard Service Pack 2	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft .NET Framework 4 - 4.5.1 Detected
-Des Moines	10.10.32.43	scbwebmci1.tmg.net	Windows 2008 Enterprise Server 64 bit Edition Service Pack 2	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft .NET Framework 4 - 4.5.1 Detected
-Des Moines	10.10.32.21	tmgbetarsvext1.tmg.net	Windows 2008 Enterprise Server 64 bit Edition Service Pack 2	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft .NET Framework 4 - 4.5.1 Detected
-Des Moines	10.10.32.20	tmgbetarsvint1.tmg.net	Windows 2008 Enterprise Server 64 bit Edition Service Pack 2	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft .NET Framework 4 - 4.5.1 Detected
-Des Moines	10.10.32.15	tmgbetawebext1.tmg.net	Windows Server 2008 R2 Enterprise 64 bit Edition Service Pack 1	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft .NET Framework 4 - 4.5.1 Detected
-Des Moines	10.10.16.21	tmgdevrsvext1.tmg.net	Windows 2008 Enterprise Server 64 bit Edition Service Pack 2	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft .NET Framework 4 - 4.5.1 Detected
-Des Moines	10.10.16.20	tmgdevrsvint1.tmg.net	Windows 2008 Enterprise Server 64 bit Edition Service Pack 2	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft .NET Framework 4 - 4.5.1 Detected
-Des Moines	10.10.16.15	tmgdevwebext1.tmg.net	Windows Server 2008 R2 Enterprise 64 bit Edition Service Pack 1	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft .NET Framework 4 - 4.5.1 Detected
-Des Moines	10.10.10.153	scpappgp1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft .NET Framework 4 - 4.5.1 Detected
-Des Moines	10.10.9.1	scpsqlfs1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft .NET Framework 4 - 4.5.1 Detected
-Des Moines	10.10.2.171	scpmgthpdm1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft .NET Framework 4 - 4.5.1 Detected
-Des Moines	10.10.2.17	scpdc3.tmg.net	Windows Server 2012 Standard 64 bit Edition AD	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft .NET Framework 4 - 4.5.1 Detected
-Des Moines	10.10.2.16	scpdc2.tmg.net	Windows Server 2012 Standard 64 bit Edition AD	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft .NET Framework 4 - 4.5.1 Detected
-Des Moines	10.10.2.3	scpmgtepo1.tmg.net	Windows Server 2008 R2 Standard 64 bit Edition Service Pack 1	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft .NET Framework 4 - 4.5.1 Detected
-Des Moines	10.10.1.85	scpca1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft .NET Framework 4 - 4.5.1 Detected
-Des Moines	10.10.1.82	scpdc5.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition AD	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft .NET Framework 4 - 4.5.1 Detected
-Des Moines	10.10.1.81	scpdc4.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition AD	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft .NET Framework 4 - 4.5.1 Detected
-Des Moines	10.10.1.32	scpfsftp2.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft .NET Framework 4 - 4.5.1 Detected
-Des Moines	10.10.1.31	scpfsftp1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft .NET Framework 4 - 4.5.1 Detected
-Des Moines	10.10.1.29	scpappftp1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft .NET Framework 4 - 4.5.1 Detected
-Des Moines	10.10.1.12	tmgfsv1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft .NET Framework 4 - 4.5.1 Detected
-Des Moines	10.10.1.11	scpappmdm2.tmg.net	Windows Server 2008 R2 Standard 64 bit Edition Service Pack 1	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft .NET Framework 4 - 4.5.1 Detected
-Des Moines	10.10.1.10	scpappmdm1.tmg.net	Windows Server 2012 Standard 64 bit Edition	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft .NET Framework 4 - 4.5.1 Detected
-Des Moines	10.10.0.29	scpsqlssasq1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft .NET Framework 4 - 4.5.1 Detected
-Des Moines	10.10.0.27	scpsqletl1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft .NET Framework 4 - 4.5.1 Detected
-Des Moines	10.10.0.26	scpsqlssas1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft .NET Framework 4 - 4.5.1 Detected
-Des Moines	10.10.0.25	scpsqlbirpts1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft .NET Framework 4 - 4.5.1 Detected
-Des Moines	10.0.3.121	tmgprodrsvext1.tmg.net	Windows 2008 Enterprise Server 64 bit Edition Service Pack 2	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft .NET Framework 4 - 4.5.1 Detected
-Des Moines	10.0.3.120	tmgprodrsvint1.tmg.net	Windows 2008 Enterprise Server 64 bit Edition Service Pack 2	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft .NET Framework 4 - 4.5.1 Detected
-Des Moines	10.0.3.115	tmgprodwebext1.tmg.net	Windows 2008 Enterprise Server 64 bit Edition Service Pack 2	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft .NET Framework 4 - 4.5.1 Detected
-Des Moines	10.0.3.77	scpmgtcme1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft .NET Framework 4 - 4.5.1 Detected
-Des Moines	10.0.3.32	scpwebct1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft .NET Framework 4 - 4.5.1 Detected
-Des Moines	10.0.3.14	scpwebrsa1.tmg.net	Windows Server 2012 Standard 64 bit Edition	yes	9.3 (AV:N/AC:M/Au:N/C:C/I:C/A:C)	EOL/Obsolete Software: Microsoft .NET Framework 4 - 4.5.1 Detected
+Sprint week	Finding #	DNS	IP Address	Internal Nat	Port	Vulnerability	Pentest Finding 	PenTest Severity	Internal Risk Ranking	CVSS Base Score	Responsible Team	Resource Owner	Status on Open Findings	Remediation Type	PenTest Recommend Fix
+9/10/2018	112	(TMGDEVWEBEXT1	10.10.16.15	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	143	A2PMDD4	10.20.73.122	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	144	A2PVIVC01	10.20.73.181	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	142	AAPMGTDD1	10.20.73.110	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	120	CUETSBETAVAULT1	10.10.32.13	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	111	CUETSDEVVAULT1	10.10.16.13	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	73	CUETSPRODVAULT1	10.0.3.113	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	110	MGDEVWEBINT1	10.10.16.12	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	136	NACIFS-C	10.10.73.1	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	130	SABWEBINT1	10.10.32.48	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	128	SABWEBSB1	10.10.32.46	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	129	SABWEBSB2	10.10.32.47	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	108	SADWEBOS1	10.10.16.5	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	141	SAPMGTUTIL1	10.20.73.98	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	140	SAPSQLINT1	10.20.73.53	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	132	SCBARCHIVER1	10.10.33.16	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	127	SCBWEBMCI1	10.10.32.43	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	95	SCPAPPFTP1	10.10.1.29	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	96	SCPAPPFTP2	10.10.1.30	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	91	SCPAPPMDM1	10.10.1.10	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	92	SCPAPPMDM2	10.10.1.11	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	100	scpappptaudit1.tmg.net	10.10.1.50	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	117	SCPAPPSCAN1	10.10.32.5	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	138	SCPAPPTFS1	10.10.73.100	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	107	scpappvcm1.tmg.net	10.10.2.109	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	101	scpca1.tmg.net	10.10.1.85	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	137	SCPCDD1	10.10.73.12	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	90	SCPFS1	10.10.1.3	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	97	SCPFSFTP1	10.10.1.31	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	98	SCPFSFTP2	10.10.1.32	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	102	SCPMGTAADC1	10.10.1.106	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	58	scpmgtcme1.tmg.net	10.0.3.77	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	104	scpmgtcmi1.tmg.net	10.10.2.4	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	103	scpmgtepo1-old.tmg.net	10.10.2.3	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	135	scpphcuqm1.tmg.net	10.10.70.38	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	84	SCPSQLBIRPTS1	10.10.0.25	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	86	SCPSQLETL1	10.10.0.27	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	89	SCPSQLMONITOR	10.10.0.45	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	88	SCPSQLSHR1	10.10.0.37	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	85	SCPSQLSSAS1	10.10.0.26	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	87	SCPSQLSSASQ1	10.10.0.29	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	77	SCPWEBADFS1	10.0.3.134	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	78	SCPWEBADFS2	10.0.3.135	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	52	SCPWEBBZ1	10.0.3.8	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	55	scpwebct1.tmg.net	10.0.3.32	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	64	SCPWEBCUETSVT1	10.0.3.94	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	59	SCPWEBEXT1	10.0.3.78	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	145	scpwebftp2.tmg.net	10.50.8.10	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	70	SCPWEBINT1	10.0.3.106	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	61	SCPWEBMCI1	10.0.3.85	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	62	SCPWEBMCI2	10.0.3.86	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	79	SCPWEBMCI3	10.0.3.160	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	56	SCPWEBMEXP1	10.0.3.35	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	66	SCPWEBOS1	10.0.3.102	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	71	SCPWEBOS1)	10.0.3.111	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	67	SCPWEBOS2	10.0.3.103	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	53	SCPWEBRSA1	10.0.3.14	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	65	SCPWEBRSVEXT1	10.0.3.95	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	68	SCPWEBSB1	10.0.3.104	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	69	SCPWEBSB2	10.0.3.105	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	60	SCPWEBUNFCUMCI1	10.0.3.84	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	63	SCPWEBVAULT1	10.0.3.92	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	83	SPSQLENT01	10.10.0.24	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	57	SPWEBUNIFI01	10.0.3.37	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	123	TMGBETARSVEXT1	10.10.32.21	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	122	TMGBETARSVINT1	10.10.32.20	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	124	TMGBETASCRAPER1	10.10.32.37	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	118	TMGBETAVAULT1	10.10.32.11	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	131	TMGBETAWAREHOUS	10.10.33.3	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	121	TMGBETAWEBEXT1	10.10.32.15	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	119	TMGBETAWEBINT1	10.10.32.12	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	116	TMGDEVIVRSQL1	10.10.17.18	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	114	TMGDEVRSVEXT1	10.10.16.21	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	113	TMGDEVRSVINT1)	10.10.16.20	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	115	TMGDEVSCRAPER1	10.10.16.37	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	109	TMGDEVVAULT1	10.10.16.11	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	139	TMGDRXMEDIUS1	10.20.70.15	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	93	TMGFSV1	10.10.1.12	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	106	TMGNETMONITOR	10.10.2.99	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	105	TMGPRODBE1	10.10.2.87	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	94	TMGPRODFTP1	10.10.1.16	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	54	tmgprodftpgw1.tmg.net	10.0.3.19	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	82	TMGPRODIVRSQL1	10.10.0.18	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	76	tmgprodrsvext1.tmg.net	10.0.3.121	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	75	TMGPRODRSVINT1	10.0.3.120	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	99	TMGPRODSCRAPER1	10.10.1.37	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	81	TMGPRODSQLINT1	10.10.0.14	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	133	TMGPRODTFS1	10.10.53.89	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	80	TMGPRODWAREHOUS	10.10.0.2	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	74	TMGPRODWEBEXT1	10.0.3.115	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	72	TMGPRODWEBINT1	10.0.3.112	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
+9/10/2018	134	TMGPRODXMEDIUS1	10.10.70.15	N/A	445 tcp microsoft-ds	Weak Configuration - Group Policy - SMB Packet Signing	yes	Medium		8	Platform 	Cristian	Open	Configuration	5.4.12
