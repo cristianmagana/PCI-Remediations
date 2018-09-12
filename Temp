@@ -1,57 +1,56 @@
-Finding #	IP	DNS	Department	OS	 	CVSS Base	Title	QID	Type	Port	First Detected	Last Detected	Vuln Title	IP Filter
-6281	10.10.16.65	s1dasm01.tmg.net	Application Development	Windows 2012 R2/8.1	no	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)	38657	Vuln	3389	3/13/2018 19:11	7/22/2018 23:11	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)	10.10.16.65
-6282	10.10.16.65	s1dasm01.tmg.net	Application Development	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0	38628	Vuln	3389	3/13/2018 19:11	7/22/2018 23:11	SSL/TLS Server supports TLSv1.0	10.10.16.65
-6282	10.10.16.65	s1dasm01.tmg.net	Application Development	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0	38628	Vuln	3389	3/13/2018 19:11	7/22/2018 23:11	SSL/TLS Server supports TLSv1.0	10.10.16.65
-6624	10.10.16.6	s1datab1.tmg.net	DBAs	Windows 2012 R2/8.1	no	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)	38657	Vuln	3389	3/13/2018 19:43	6/11/2018 0:18	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)	10.10.16.6
-6625	10.10.16.6	s1datab1.tmg.net	DBAs	Windows 2012 R2/8.1	no	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)	38657	Vuln	443	3/13/2018 19:43	6/11/2018 0:18	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)	10.10.16.6
-6626	10.10.16.6	s1datab1.tmg.net	DBAs	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0	38628	Vuln	3389	3/13/2018 19:43	6/11/2018 0:18	SSL/TLS Server supports TLSv1.0	10.10.16.6
-6627	10.10.16.6	s1datab1.tmg.net	DBAs	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0	38628	Vuln	443	3/13/2018 19:43	6/11/2018 0:18	SSL/TLS Server supports TLSv1.0	10.10.16.6
-6626	10.10.16.6	s1datab1.tmg.net	DBAs	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0	38628	Vuln	3389	3/13/2018 19:43	6/11/2018 0:18	SSL/TLS Server supports TLSv1.0	10.10.16.6
-6627	10.10.16.6	s1datab1.tmg.net	DBAs	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0	38628	Vuln	443	3/13/2018 19:43	6/11/2018 0:18	SSL/TLS Server supports TLSv1.0	10.10.16.6
-6268	10.10.17.1	s1ddaa1.tmg.net	DBAs	Windows 2012 R2/8.1	no	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)	38657	Vuln	3389	3/13/2018 21:11	7/23/2018 1:15	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)	10.10.17.1
-6269	10.10.17.1	s1ddaa1.tmg.net	DBAs	Windows 2012 R2/8.1	no	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)	38657	Vuln	1433	7/16/2018 1:28	7/23/2018 1:15	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)	10.10.17.1
-6270	10.10.17.1	s1ddaa1.tmg.net	DBAs	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0	38628	Vuln	3389	3/13/2018 21:11	7/23/2018 1:15	SSL/TLS Server supports TLSv1.0	10.10.17.1
-6271	10.10.17.1	s1ddaa1.tmg.net	DBAs	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0	38628	Vuln	1433	7/16/2018 1:28	7/23/2018 1:15	SSL/TLS Server supports TLSv1.0	10.10.17.1
-6270	10.10.17.1	s1ddaa1.tmg.net	DBAs	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0	38628	Vuln	3389	3/13/2018 21:11	7/23/2018 1:15	SSL/TLS Server supports TLSv1.0	10.10.17.1
-6271	10.10.17.1	s1ddaa1.tmg.net	DBAs	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0	38628	Vuln	1433	7/16/2018 1:28	7/23/2018 1:15	SSL/TLS Server supports TLSv1.0	10.10.17.1
-6265	10.10.17.4	s1ddetl1.tmg.net	DBAs	Windows 2012 R2/8.1	no	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)	38657	Vuln	3389	3/13/2018 20:04	7/22/2018 23:12	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)	10.10.17.4
-6266	10.10.17.4	s1ddetl1.tmg.net	DBAs	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0	38628	Vuln	3389	3/13/2018 20:04	7/22/2018 23:12	SSL/TLS Server supports TLSv1.0	10.10.17.4
-6266	10.10.17.4	s1ddetl1.tmg.net	DBAs	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0	38628	Vuln	3389	3/13/2018 20:04	7/22/2018 23:12	SSL/TLS Server supports TLSv1.0	10.10.17.4
-6166	10.10.17.44	s1ddol2.tmg.net	DBAs	Windows 2012 R2/8.1	no	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)	38657	Vuln	3389	3/13/2018 19:54	7/23/2018 0:33	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)	10.10.17.44
-6167	10.10.17.44	s1ddol2.tmg.net	DBAs	Windows 2012 R2/8.1	no	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)	38657	Vuln	1433	7/16/2018 0:46	7/23/2018 0:33	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)	10.10.17.44
-6168	10.10.17.44	s1ddol2.tmg.net	DBAs	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0	38628	Vuln	3389	3/13/2018 19:54	7/23/2018 0:33	SSL/TLS Server supports TLSv1.0	10.10.17.44
-6169	10.10.17.44	s1ddol2.tmg.net	DBAs	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0	38628	Vuln	1433	7/16/2018 0:46	7/23/2018 0:33	SSL/TLS Server supports TLSv1.0	10.10.17.44
-6168	10.10.17.44	s1ddol2.tmg.net	DBAs	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0	38628	Vuln	3389	3/13/2018 19:54	7/23/2018 0:33	SSL/TLS Server supports TLSv1.0	10.10.17.44
-6169	10.10.17.44	s1ddol2.tmg.net	DBAs	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0	38628	Vuln	1433	7/16/2018 0:46	7/23/2018 0:33	SSL/TLS Server supports TLSv1.0	10.10.17.44
-6159	10.10.17.45	s1ddol3.tmg.net	DBAs	Windows 2012 R2/8.1	no	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)	38657	Vuln	3389	3/13/2018 20:49	7/22/2018 23:48	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)	10.10.17.45
-6160	10.10.17.45	s1ddol3.tmg.net	DBAs	Windows 2012 R2/8.1	no	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)	38657	Vuln	1433	7/16/2018 0:00	7/22/2018 23:48	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)	10.10.17.45
-6161	10.10.17.45	s1ddol3.tmg.net	DBAs	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0	38628	Vuln	3389	3/13/2018 20:49	7/22/2018 23:48	SSL/TLS Server supports TLSv1.0	10.10.17.45
-6162	10.10.17.45	s1ddol3.tmg.net	DBAs	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0	38628	Vuln	1433	7/16/2018 0:00	7/22/2018 23:48	SSL/TLS Server supports TLSv1.0	10.10.17.45
-6161	10.10.17.45	s1ddol3.tmg.net	DBAs	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0	38628	Vuln	3389	3/13/2018 20:49	7/22/2018 23:48	SSL/TLS Server supports TLSv1.0	10.10.17.45
-6162	10.10.17.45	s1ddol3.tmg.net	DBAs	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0	38628	Vuln	1433	7/16/2018 0:00	7/22/2018 23:48	SSL/TLS Server supports TLSv1.0	10.10.17.45
-4572	10.10.70.45	s1dphqm1.tmg.net	IVR/network operatins	Windows 2012 R2/8.1	no	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)	38657	Vuln	3389	3/13/2018 19:13	7/23/2018 1:12	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)	10.10.70.45
-4573	10.10.70.45	s1dphqm1.tmg.net	IVR/network operatins	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0	38628	Vuln	3389	3/13/2018 19:13	7/23/2018 1:12	SSL/TLS Server supports TLSv1.0	10.10.70.45
-4574	10.10.70.45	s1dphqm1.tmg.net	IVR/network operatins	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0	38628	Vuln	443	3/13/2018 19:13	7/23/2018 1:12	SSL/TLS Server supports TLSv1.0	10.10.70.45
-4573	10.10.70.45	s1dphqm1.tmg.net	IVR/network operatins	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0	38628	Vuln	3389	3/13/2018 19:13	7/23/2018 1:12	SSL/TLS Server supports TLSv1.0	10.10.70.45
-4574	10.10.70.45	s1dphqm1.tmg.net	IVR/network operatins	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0	38628	Vuln	443	3/13/2018 19:13	7/23/2018 1:12	SSL/TLS Server supports TLSv1.0	10.10.70.45
-6277	10.10.16.72	s1dwpss1.tmg.net	Network Operations	Windows 2012 R2/8.1	no	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)	38657	Vuln	3389	3/13/2018 21:18	7/23/2018 1:23	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)	10.10.16.72
-6278	10.10.16.72	s1dwpss1.tmg.net	Network Operations	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0	38628	Vuln	3389	3/13/2018 21:18	7/23/2018 1:23	SSL/TLS Server supports TLSv1.0	10.10.16.72
-6278	10.10.16.72	s1dwpss1.tmg.net	Network Operations	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0	38628	Vuln	3389	3/13/2018 21:18	7/23/2018 1:23	SSL/TLS Server supports TLSv1.0	10.10.16.72
-6247	10.10.17.8	s1dddr1.tmg.net	DBAs	Windows Server 2012 R2 Standard 64 bit Edition	no	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)	38657	Vuln	3389	3/13/2018 20:01	7/22/2018 23:25	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)	10.10.17.8
-6248	10.10.17.8	s1dddr1.tmg.net	DBAs	Windows Server 2012 R2 Standard 64 bit Edition	no	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)	38657	Vuln	1433	7/15/2018 23:40	7/22/2018 23:25	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)	10.10.17.8
-6249	10.10.17.8	s1dddr1.tmg.net	DBAs	Windows Server 2012 R2 Standard 64 bit Edition	no	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)	38657	Vuln	443	3/13/2018 20:01	7/22/2018 23:25	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)	10.10.17.8
-6250	10.10.17.8	s1dddr1.tmg.net	DBAs	Windows Server 2012 R2 Standard 64 bit Edition	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0	38628	Vuln	3389	3/13/2018 20:01	7/22/2018 23:25	SSL/TLS Server supports TLSv1.0	10.10.17.8
-6251	10.10.17.8	s1dddr1.tmg.net	DBAs	Windows Server 2012 R2 Standard 64 bit Edition	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0	38628	Vuln	1433	7/15/2018 23:40	7/22/2018 23:25	SSL/TLS Server supports TLSv1.0	10.10.17.8
-6252	10.10.17.8	s1dddr1.tmg.net	DBAs	Windows Server 2012 R2 Standard 64 bit Edition	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0	38628	Vuln	443	3/13/2018 20:01	7/22/2018 23:25	SSL/TLS Server supports TLSv1.0	10.10.17.8
-6250	10.10.17.8	s1dddr1.tmg.net	DBAs	Windows Server 2012 R2 Standard 64 bit Edition	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0	38628	Vuln	3389	3/13/2018 20:01	7/22/2018 23:25	SSL/TLS Server supports TLSv1.0	10.10.17.8
-6251	10.10.17.8	s1dddr1.tmg.net	DBAs	Windows Server 2012 R2 Standard 64 bit Edition	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0	38628	Vuln	1433	7/15/2018 23:40	7/22/2018 23:25	SSL/TLS Server supports TLSv1.0	10.10.17.8
-6252	10.10.17.8	s1dddr1.tmg.net	DBAs	Windows Server 2012 R2 Standard 64 bit Edition	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0	38628	Vuln	443	3/13/2018 20:01	7/22/2018 23:25	SSL/TLS Server supports TLSv1.0	10.10.17.8
-6184	10.10.17.43	s1ddol1.tmg.net	DBAs	Windows Server 2012 R2 Standard 64 bit Edition	no	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)	38657	Vuln	3389	3/13/2018 20:45	7/22/2018 23:58	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)	10.10.17.43
-6185	10.10.17.43	s1ddol1.tmg.net	DBAs	Windows Server 2012 R2 Standard 64 bit Edition	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0	38628	Vuln	3389	3/13/2018 20:45	7/22/2018 23:58	SSL/TLS Server supports TLSv1.0	10.10.17.43
-6185	10.10.17.43	s1ddol1.tmg.net	DBAs	Windows Server 2012 R2 Standard 64 bit Edition	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0	38628	Vuln	3389	3/13/2018 20:45	7/22/2018 23:58	SSL/TLS Server supports TLSv1.0	10.10.17.43
-6668	10.10.16.5	sadwebos1.tmg.net	DBAs	Windows Server 2012 R2 Standard 64 bit Edition	no	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)	38657	Vuln	3389	3/13/2018 19:14	7/23/2018 1:08	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)	10.10.16.5
-6669	10.10.16.5	sadwebos1.tmg.net	DBAs	Windows Server 2012 R2 Standard 64 bit Edition	no	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)	38657	Vuln	443	3/13/2018 19:14	7/23/2018 1:08	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)	10.10.16.5
-6670	10.10.16.5	sadwebos1.tmg.net	DBAs	Windows Server 2012 R2 Standard 64 bit Edition	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0	38628	Vuln	3389	3/13/2018 19:14	7/23/2018 1:08	SSL/TLS Server supports TLSv1.0	10.10.16.5
-6671	10.10.16.5	sadwebos1.tmg.net	DBAs	Windows Server 2012 R2 Standard 64 bit Edition	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0	38628	Vuln	443	3/13/2018 19:14	7/23/2018 1:08	SSL/TLS Server supports TLSv1.0	10.10.16.5
-6670	10.10.16.5	sadwebos1.tmg.net	DBAs	Windows Server 2012 R2 Standard 64 bit Edition	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0	38628	Vuln	3389	3/13/2018 19:14	7/23/2018 1:08	SSL/TLS Server supports TLSv1.0	10.10.16.5
-6671	10.10.16.5	sadwebos1.tmg.net	DBAs	Windows Server 2012 R2 Standard 64 bit Edition	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0	38628	Vuln	443	3/13/2018 19:14	7/23/2018 1:08	SSL/TLS Server supports TLSv1.0	10.10.16.5
+s1dasm01.tmg.net	Application Development	Windows 2012 R2/8.1	no	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)
+s1dasm01.tmg.net	Application Development	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
+s1dasm01.tmg.net	Application Development	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
+s1datab1.tmg.net	DBAs	Windows 2012 R2/8.1	no	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)
+s1datab1.tmg.net	DBAs	Windows 2012 R2/8.1	no	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)
+s1datab1.tmg.net	DBAs	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
+s1datab1.tmg.net	DBAs	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
+s1datab1.tmg.net	DBAs	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
+s1datab1.tmg.net	DBAs	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
+s1ddaa1.tmg.net	DBAs	Windows 2012 R2/8.1	no	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)
+s1ddaa1.tmg.net	DBAs	Windows 2012 R2/8.1	no	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)
+s1ddaa1.tmg.net	DBAs	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
+s1ddaa1.tmg.net	DBAs	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
+s1ddaa1.tmg.net	DBAs	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
+s1ddaa1.tmg.net	DBAs	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
+s1ddetl1.tmg.net	DBAs	Windows 2012 R2/8.1	no	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)
+s1ddetl1.tmg.net	DBAs	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
+s1ddetl1.tmg.net	DBAs	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
+s1ddol2.tmg.net	DBAs	Windows 2012 R2/8.1	no	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)
+s1ddol2.tmg.net	DBAs	Windows 2012 R2/8.1	no	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)
+s1ddol2.tmg.net	DBAs	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
+s1ddol2.tmg.net	DBAs	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
+s1ddol2.tmg.net	DBAs	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
+s1ddol2.tmg.net	DBAs	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
+s1ddol3.tmg.net	DBAs	Windows 2012 R2/8.1	no	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)
+s1ddol3.tmg.net	DBAs	Windows 2012 R2/8.1	no	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)
+s1ddol3.tmg.net	DBAs	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
+s1ddol3.tmg.net	DBAs	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
+s1ddol3.tmg.net	DBAs	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
+s1ddol3.tmg.net	DBAs	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
+s1dphqm1.tmg.net	IVR/network operatins	Windows 2012 R2/8.1	no	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)
+s1dphqm1.tmg.net	IVR/network operatins	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
+s1dphqm1.tmg.net	IVR/network operatins	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
+s1dphqm1.tmg.net	IVR/network operatins	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
+s1dphqm1.tmg.net	IVR/network operatins	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
+s1dwpss1.tmg.net	Network Operations	Windows 2012 R2/8.1	no	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)
+s1dwpss1.tmg.net	Network Operations	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
+s1dwpss1.tmg.net	Network Operations	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
+s1dddr1.tmg.net	DBAs	Windows Server 2012 R2 Standard 64 bit Edition	no	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)
+s1dddr1.tmg.net	DBAs	Windows Server 2012 R2 Standard 64 bit Edition	no	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)
+s1dddr1.tmg.net	DBAs	Windows Server 2012 R2 Standard 64 bit Edition	no	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)
+s1dddr1.tmg.net	DBAs	Windows Server 2012 R2 Standard 64 bit Edition	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
+s1dddr1.tmg.net	DBAs	Windows Server 2012 R2 Standard 64 bit Edition	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
+s1dddr1.tmg.net	DBAs	Windows Server 2012 R2 Standard 64 bit Edition	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
+s1dddr1.tmg.net	DBAs	Windows Server 2012 R2 Standard 64 bit Edition	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
+s1dddr1.tmg.net	DBAs	Windows Server 2012 R2 Standard 64 bit Edition	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
+s1dddr1.tmg.net	DBAs	Windows Server 2012 R2 Standard 64 bit Edition	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
+s1ddol1.tmg.net	DBAs	Windows Server 2012 R2 Standard 64 bit Edition	no	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)
+s1ddol1.tmg.net	DBAs	Windows Server 2012 R2 Standard 64 bit Edition	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
+s1ddol1.tmg.net	DBAs	Windows Server 2012 R2 Standard 64 bit Edition	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
+sadwebos1.tmg.net	DBAs	Windows Server 2012 R2 Standard 64 bit Edition	no	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)
+sadwebos1.tmg.net	DBAs	Windows Server 2012 R2 Standard 64 bit Edition	no	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)
+sadwebos1.tmg.net	DBAs	Windows Server 2012 R2 Standard 64 bit Edition	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
+sadwebos1.tmg.net	DBAs	Windows Server 2012 R2 Standard 64 bit Edition	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
+sadwebos1.tmg.net	DBAs	Windows Server 2012 R2 Standard 64 bit Edition	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
+sadwebos1.tmg.net	DBAs	Windows Server 2012 R2 Standard 64 bit Edition	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
