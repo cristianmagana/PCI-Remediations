@@ -1,7 +1,8 @@
 # Backup HKLM to C:\
 
 md C:\RegistryBackupTLS
-REGEDIT /E C:\RegistryBackupTLS\output.reg
+reg export HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL C:\RegistryBackupTLS\SChannel.reg
+reg export HKLM:\SOFTWARE\Policies\Microsoft\Cryptography\Configuration\SSL\00010002 C:\RegistryBackupTLS\Crypto.reg
 
 
 # Ensure SChannel logging
