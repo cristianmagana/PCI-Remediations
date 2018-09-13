@@ -1,56 +1,364 @@
-s1dasm01.tmg.net	Application Development	Windows 2012 R2/8.1	no	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)
-s1dasm01.tmg.net	Application Development	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
-s1dasm01.tmg.net	Application Development	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
-s1datab1.tmg.net	DBAs	Windows 2012 R2/8.1	no	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)
-s1datab1.tmg.net	DBAs	Windows 2012 R2/8.1	no	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)
-s1datab1.tmg.net	DBAs	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
-s1datab1.tmg.net	DBAs	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
-s1datab1.tmg.net	DBAs	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
-s1datab1.tmg.net	DBAs	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
-s1ddaa1.tmg.net	DBAs	Windows 2012 R2/8.1	no	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)
-s1ddaa1.tmg.net	DBAs	Windows 2012 R2/8.1	no	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)
-s1ddaa1.tmg.net	DBAs	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
-s1ddaa1.tmg.net	DBAs	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
-s1ddaa1.tmg.net	DBAs	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
-s1ddaa1.tmg.net	DBAs	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
-s1ddetl1.tmg.net	DBAs	Windows 2012 R2/8.1	no	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)
-s1ddetl1.tmg.net	DBAs	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
-s1ddetl1.tmg.net	DBAs	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
-s1ddol2.tmg.net	DBAs	Windows 2012 R2/8.1	no	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)
-s1ddol2.tmg.net	DBAs	Windows 2012 R2/8.1	no	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)
-s1ddol2.tmg.net	DBAs	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
-s1ddol2.tmg.net	DBAs	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
-s1ddol2.tmg.net	DBAs	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
-s1ddol2.tmg.net	DBAs	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
-s1ddol3.tmg.net	DBAs	Windows 2012 R2/8.1	no	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)
-s1ddol3.tmg.net	DBAs	Windows 2012 R2/8.1	no	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)
-s1ddol3.tmg.net	DBAs	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
-s1ddol3.tmg.net	DBAs	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
-s1ddol3.tmg.net	DBAs	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
-s1ddol3.tmg.net	DBAs	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
-s1dphqm1.tmg.net	IVR/network operatins	Windows 2012 R2/8.1	no	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)
-s1dphqm1.tmg.net	IVR/network operatins	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
-s1dphqm1.tmg.net	IVR/network operatins	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
-s1dphqm1.tmg.net	IVR/network operatins	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
-s1dphqm1.tmg.net	IVR/network operatins	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
-s1dwpss1.tmg.net	Network Operations	Windows 2012 R2/8.1	no	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)
-s1dwpss1.tmg.net	Network Operations	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
-s1dwpss1.tmg.net	Network Operations	Windows 2012 R2/8.1	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
-s1dddr1.tmg.net	DBAs	Windows Server 2012 R2 Standard 64 bit Edition	no	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)
-s1dddr1.tmg.net	DBAs	Windows Server 2012 R2 Standard 64 bit Edition	no	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)
-s1dddr1.tmg.net	DBAs	Windows Server 2012 R2 Standard 64 bit Edition	no	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)
-s1dddr1.tmg.net	DBAs	Windows Server 2012 R2 Standard 64 bit Edition	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
-s1dddr1.tmg.net	DBAs	Windows Server 2012 R2 Standard 64 bit Edition	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
-s1dddr1.tmg.net	DBAs	Windows Server 2012 R2 Standard 64 bit Edition	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
-s1dddr1.tmg.net	DBAs	Windows Server 2012 R2 Standard 64 bit Edition	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
-s1dddr1.tmg.net	DBAs	Windows Server 2012 R2 Standard 64 bit Edition	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
-s1dddr1.tmg.net	DBAs	Windows Server 2012 R2 Standard 64 bit Edition	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
-s1ddol1.tmg.net	DBAs	Windows Server 2012 R2 Standard 64 bit Edition	no	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)
-s1ddol1.tmg.net	DBAs	Windows Server 2012 R2 Standard 64 bit Edition	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
-s1ddol1.tmg.net	DBAs	Windows Server 2012 R2 Standard 64 bit Edition	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
-sadwebos1.tmg.net	DBAs	Windows Server 2012 R2 Standard 64 bit Edition	no	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)
-sadwebos1.tmg.net	DBAs	Windows Server 2012 R2 Standard 64 bit Edition	no	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Birthday attacks against TLS ciphers with 64bit block size vulnerability (Sweet32)
-sadwebos1.tmg.net	DBAs	Windows Server 2012 R2 Standard 64 bit Edition	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
-sadwebos1.tmg.net	DBAs	Windows Server 2012 R2 Standard 64 bit Edition	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
-sadwebos1.tmg.net	DBAs	Windows Server 2012 R2 Standard 64 bit Edition	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
-sadwebos1.tmg.net	DBAs	Windows Server 2012 R2 Standard 64 bit Edition	yes	4.3 (AV:N/AC:M/Au:N/C:P/I:N/A:N)	SSL/TLS Server supports TLSv1.0
+Des Moines	10.50.8.10	scpwebftp2.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.20.73.98	sapmgtutil1.tmg.net	Windows Server 2012 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.20.73.53	sapsqlint1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.20.70.36	sapphnuance1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.20.70.15	tmgdrxmedius1.tmg.net	Windows Server 2008 R2 Standard 64 bit Edition Service Pack 1	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.20.3.135	sapwebadfs2.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.20.3.134	sapwebadfs1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.20.3.98	sapwebrsa1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.20.3.9	sapwebext1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.20.2.13	sapdc1.tmg.net	Windows Server 2012 Standard 64 bit Edition AD	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.20.1.106	sapmgtaadc1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.75.59	s1vipdcnm01.tmg.net	Windows Server 2008 R2 Standard 64 bit Edition Service Pack 1	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.73.216	s1pvivum01.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.73.215	s1pvivc01.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.73.194	scpmgtscor1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.73.193	spmgtsma1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.73.192	scpmgtscom1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.73.157	scpcdot1.tmg.net	Windows Server 2008 R2 Standard 64 bit Edition Service Pack 1	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.73.123	scpmgtpm1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.73.113	scpappdpa1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.73.112	scpwebdpa1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.73.102	scpsqlint1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.73.100	scpapptfs1.tmg.net	Windows Server 2012 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.73.99	scpappnetflow1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.73.80	scpvivc1.tmg.net	Windows Server 2008 R2 Standard 64 bit Edition Service Pack 1	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.73.45	s1pvdicmpsr01.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.73.20	s1pmkms1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.73.19	scpmgtutil1.tmg.net	Windows Server 2008 R2 Standard 64 bit Edition Service Pack 1	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.73.17	scpnetopstest1.tmg.net	Windows Server 2008 R2 Standard 64 bit Edition Service Pack 1	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.73.12	scpcdd1.tmg.net	Windows Server 2008 R2 Standard 64 bit Edition Service Pack 1	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.73.8	scpapptr1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.73.7	scpmgtdlp1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.70.39	scpphcubac1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.70.38	scpphcuqm1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.70.37	scpphcuwo1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.70.36	scpphnuance1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.70.15	tmgprodxmedius1.tmg.net	Windows Server 2008 R2 Standard 64 bit Edition Service Pack 1	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.70.2	scpphn2ring2.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.70.1	scpphn2ring1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.53.89	tmgprodtfs1.tmg.net	Windows 2008 Enterprise Server 64 bit Edition Service Pack 2	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.53.4	tmgprodsw1.tmg.net	Windows Server 2008 Standard Service Pack 2	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.33.43	s1bdol1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.33.9	sbsqlent01.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.33.5	s1bddr1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.33.3	tmgbetawarehous.tmg.net	Windows Server 2008 R2 Enterprise 64 bit Edition Service Pack 1	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.32.53	sabappsb1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.32.48	sabwebint1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.32.47	sabwebsb2.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.32.46	sabwebsb1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.32.43	scbwebmci1.tmg.net	Windows 2008 Enterprise Server 64 bit Edition Service Pack 2	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.32.37	tmgbetascraper1.tmg.net	Windows Server 2008 R2 Standard 64 bit Edition Service Pack 1	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.32.21	tmgbetarsvext1.tmg.net	Windows 2008 Enterprise Server 64 bit Edition Service Pack 2	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.32.20	tmgbetarsvint1.tmg.net	Windows 2008 Enterprise Server 64 bit Edition Service Pack 2	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.32.15	tmgbetawebext1.tmg.net	Windows Server 2008 R2 Enterprise 64 bit Edition Service Pack 1	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.32.13	cuetsbetavault1.tmg.net	Windows 2008 Enterprise Server 64 bit Edition Service Pack 2	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.32.12	tmgbetawebint1.tmg.net	Windows 2008 Enterprise Server 64 bit Edition Service Pack 2	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.32.11	tmgbetavault1.tmg.net	Windows 2008 Enterprise Server 64 bit Edition Service Pack 2	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.32.5	scpappscan1.tmg.net	Windows Server 2008 R2 Standard 64 bit Edition Service Pack 1	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.17.43	s1ddol1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.17.18	tmgdevivrsql1.tmg.net	Windows Server 2008 R2 Standard 64 bit Edition Service Pack 1	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.17.8	s1dddr1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.16.37	tmgdevscraper1.tmg.net	Windows Server 2008 R2 Standard 64 bit Edition Service Pack 1	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.16.21	tmgdevrsvext1.tmg.net	Windows 2008 Enterprise Server 64 bit Edition Service Pack 2	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.16.20	tmgdevrsvint1.tmg.net	Windows 2008 Enterprise Server 64 bit Edition Service Pack 2	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.16.15	tmgdevwebext1.tmg.net	Windows Server 2008 R2 Enterprise 64 bit Edition Service Pack 1	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.16.13	cuetsdevvault1.tmg.net	Windows 2008 Enterprise Server 64 bit Edition Service Pack 2	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.16.12	tmgdevwebint1.tmg.net	Windows 2008 Enterprise Server 64 bit Edition Service Pack 2	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.16.11	tmgdevvault1.tmg.net	Windows 2008 Enterprise Server 64 bit Edition Service Pack 2	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.10.153	scpappgp1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.10.106	amcprodfsv1.tmg.net	Windows Server 2008 Standard 64 bit Edition Service Pack 2	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.10.3	s1paalt1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.9.1	scpsqlfs1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.2.171	scpmgthpdm1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.2.109	scpappvcm1.tmg.net	Windows Server 2008 R2 Standard 64 bit Edition Service Pack 1	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.2.87	tmgprodbe1.tmg.net	Windows Server 2008 R2 Standard 64 bit Edition Service Pack 1	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.2.17	scpdc3.tmg.net	Windows Server 2012 Standard 64 bit Edition AD	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.2.16	scpdc2.tmg.net	Windows Server 2012 Standard 64 bit Edition AD	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.2.13	scpdc1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition AD	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.2.3	scpmgtepo1.tmg.net	Windows Server 2008 R2 Standard 64 bit Edition Service Pack 1	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.1.136	s1pex02.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.1.131	s1pex01.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.1.106	scpmgtaadc1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.1.85	scpca1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.1.84	s1pdc02.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition AD	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.1.83	s1pdc01.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition AD	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.1.82	scpdc5.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition AD	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.1.81	scpdc4.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition AD	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.1.50	scpappptaudit1.tmg.net	Windows Server 2008 R2 Standard 64 bit Edition Service Pack 1	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.1.37	tmgprodscraper1.tmg.net	Windows Server 2008 R2 Standard 64 bit Edition Service Pack 1	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.1.32	scpfsftp2.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.1.31	scpfsftp1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.1.30	scpappftp2.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.1.29	scpappftp1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.1.21	tmgprodfsv3.tmg.net	Windows Server 2008 Standard Service Pack 2	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.1.18	scpfswebdata2.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.1.17	scpfswebdata1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.1.16	tmgprodftp1.tmg.net	Windows Server 2008 R2 Standard 64 bit Edition Service Pack 1	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.1.14	s1pvdics02.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.1.13	s1pvdics01.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.1.12	tmgfsv1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.1.11	scpappmdm2.tmg.net	Windows Server 2008 R2 Standard 64 bit Edition Service Pack 1	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.1.10	scpappmdm1.tmg.net	Windows Server 2012 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.1.4	s1pamex1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.1.3	scpfs1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.0.151	s1pdfztd2.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.0.45	scpsqlmonitor.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.0.43	s1pddr1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.0.37	scpsqlshr1.tmg.net	Windows Server 2008 R2 Standard 64 bit Edition Service Pack 1	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.0.30	s1pdol1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.0.29	scpsqlssasq1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.0.27	scpsqletl1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.0.26	scpsqlssas1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.0.25	scpsqlbirpts1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.0.24	spsqlent01.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.0.20	s1pdetl1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.0.19	spsql2ring1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.0.18	tmgprodivrsql1.tmg.net	Windows Server 2008 R2 Standard 64 bit Edition Service Pack 1	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.0.14	tmgprodsqlint1.tmg.net	Windows Server 2008 R2 Standard 64 bit Edition Service Pack 1	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.0.8	scpsqlmonitor1.tmg.net	Windows Server 2008 R2 Standard 64 bit Edition Service Pack 1	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.0.6	s1pdaa1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.10.0.2	tmgprodwarehous.tmg.net	Windows Server 2008 R2 Enterprise 64 bit Edition Service Pack 1	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.0.3.135	scpwebadfs2.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.0.3.134	scpwebadfs1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.0.3.121	tmgprodrsvext1.tmg.net	Windows 2008 Enterprise Server 64 bit Edition Service Pack 2	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.0.3.120	tmgprodrsvint1.tmg.net	Windows 2008 Enterprise Server 64 bit Edition Service Pack 2	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.0.3.115	tmgprodwebext1.tmg.net	Windows 2008 Enterprise Server 64 bit Edition Service Pack 2	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.0.3.113	cuetsprodvault1.tmg.net	Windows 2008 Enterprise Server 64 bit Edition Service Pack 2	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.0.3.112	tmgprodwebint1.tmg.net	Windows 2008 Enterprise Server 64 bit Edition Service Pack 2	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.0.3.106	scpwebint1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.0.3.105	scpwebsb2.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.0.3.104	scpwebsb1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.0.3.103	scpwebos2.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.0.3.102	scpwebos1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.0.3.95	scpwebrsvext1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.0.3.94	scpwebcuetsvt1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.0.3.92	scpwebvault1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.0.3.86	scpwebmci2.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.0.3.85	scpwebmci1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.0.3.84	scpwebunfcumci1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.0.3.78	scpwebext1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.0.3.77	scpmgtcme1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.0.3.37	spwebunifi01.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.0.3.35	scpwebmexp1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.0.3.32	scpwebct1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.0.3.19	tmgprodftpgw1.tmg.net	Windows Server 2008 R2 Standard 64 bit Edition Service Pack 1	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.0.3.14	scpwebrsa1.tmg.net	Windows Server 2012 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.0.3.8	scpwebbz1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Enabled Cached Logon Credential	90007	Vuln
+Des Moines	10.50.8.10	scpwebftp2.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.20.73.98	sapmgtutil1.tmg.net	Windows Server 2012 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.20.73.53	sapsqlint1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.20.70.36	sapphnuance1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.20.70.15	tmgdrxmedius1.tmg.net	Windows Server 2008 R2 Standard 64 bit Edition Service Pack 1	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.20.3.135	sapwebadfs2.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.20.3.134	sapwebadfs1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.20.3.98	sapwebrsa1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.20.3.9	sapwebext1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.20.2.13	sapdc1.tmg.net	Windows Server 2012 Standard 64 bit Edition AD	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.20.1.106	sapmgtaadc1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.75.61	a1vipesrs02.tmg.net	Ubuntu / Tiny Core Linux / Linux 2.6.x	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.75.60	a1vipesrs01.tmg.net	Ubuntu / Tiny Core Linux / Linux 2.6.x	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.75.59	s1vipdcnm01.tmg.net	Windows Server 2008 R2 Standard 64 bit Edition Service Pack 1	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.73.216	s1pvivum01.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.73.215	s1pvivc01.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.73.194	scpmgtscor1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.73.193	spmgtsma1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.73.192	scpmgtscom1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.73.157	scpcdot1.tmg.net	Windows Server 2008 R2 Standard 64 bit Edition Service Pack 1	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.73.123	scpmgtpm1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.73.113	scpappdpa1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.73.112	scpwebdpa1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.73.107	acpmgtesrs1.tmg.net	Ubuntu / Tiny Core Linux / Linux 2.6.x	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.73.102	scpsqlint1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.73.100	scpapptfs1.tmg.net	Windows Server 2012 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.73.99	scpappnetflow1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.73.80	scpvivc1.tmg.net	Windows Server 2008 R2 Standard 64 bit Edition Service Pack 1	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.73.45	s1pvdicmpsr01.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.73.20	s1pmkms1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.73.19	scpmgtutil1.tmg.net	Windows Server 2008 R2 Standard 64 bit Edition Service Pack 1	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.73.17	scpnetopstest1.tmg.net	Windows Server 2008 R2 Standard 64 bit Edition Service Pack 1	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.73.12	scpcdd1.tmg.net	Windows Server 2008 R2 Standard 64 bit Edition Service Pack 1	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.73.8	scpapptr1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.73.7	scpmgtdlp1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.70.39	scpphcubac1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.70.38	scpphcuqm1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.70.37	scpphcuwo1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.70.36	scpphnuance1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.70.15	tmgprodxmedius1.tmg.net	Windows Server 2008 R2 Standard 64 bit Edition Service Pack 1	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.70.2	scpphn2ring2.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.70.1	scpphn2ring1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.53.89	tmgprodtfs1.tmg.net	Windows 2008 Enterprise Server 64 bit Edition Service Pack 2	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.53.4	tmgprodsw1.tmg.net	Windows Server 2008 Standard Service Pack 2	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.33.152	s1qdfztd2.tmg.net	Windows Server 2012 R2 Core	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.33.151	s1qdfztd1.tmg.net	Windows Server 2012 R2 Core	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.33.43	s1bdol1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.33.9	sbsqlent01.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.33.5	s1bddr1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.33.3	tmgbetawarehous.tmg.net	Windows Server 2008 R2 Enterprise 64 bit Edition Service Pack 1	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.32.53	sabappsb1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.32.48	sabwebint1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.32.47	sabwebsb2.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.32.46	sabwebsb1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.32.43	scbwebmci1.tmg.net	Windows 2008 Enterprise Server 64 bit Edition Service Pack 2	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.32.37	tmgbetascraper1.tmg.net	Windows Server 2008 R2 Standard 64 bit Edition Service Pack 1	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.32.21	tmgbetarsvext1.tmg.net	Windows 2008 Enterprise Server 64 bit Edition Service Pack 2	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.32.20	tmgbetarsvint1.tmg.net	Windows 2008 Enterprise Server 64 bit Edition Service Pack 2	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.32.15	tmgbetawebext1.tmg.net	Windows Server 2008 R2 Enterprise 64 bit Edition Service Pack 1	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.32.13	cuetsbetavault1.tmg.net	Windows 2008 Enterprise Server 64 bit Edition Service Pack 2	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.32.12	tmgbetawebint1.tmg.net	Windows 2008 Enterprise Server 64 bit Edition Service Pack 2	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.32.11	tmgbetavault1.tmg.net	Windows 2008 Enterprise Server 64 bit Edition Service Pack 2	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.32.5	scpappscan1.tmg.net	Windows Server 2008 R2 Standard 64 bit Edition Service Pack 1	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.17.43	s1ddol1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.17.18	tmgdevivrsql1.tmg.net	Windows Server 2008 R2 Standard 64 bit Edition Service Pack 1	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.17.8	s1dddr1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.16.37	tmgdevscraper1.tmg.net	Windows Server 2008 R2 Standard 64 bit Edition Service Pack 1	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.16.21	tmgdevrsvext1.tmg.net	Windows 2008 Enterprise Server 64 bit Edition Service Pack 2	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.16.20	tmgdevrsvint1.tmg.net	Windows 2008 Enterprise Server 64 bit Edition Service Pack 2	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.16.15	tmgdevwebext1.tmg.net	Windows Server 2008 R2 Enterprise 64 bit Edition Service Pack 1	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.16.13	cuetsdevvault1.tmg.net	Windows 2008 Enterprise Server 64 bit Edition Service Pack 2	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.16.12	tmgdevwebint1.tmg.net	Windows 2008 Enterprise Server 64 bit Edition Service Pack 2	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.16.11	tmgdevvault1.tmg.net	Windows 2008 Enterprise Server 64 bit Edition Service Pack 2	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.10.153	scpappgp1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.10.106	amcprodfsv1.tmg.net	Windows Server 2008 Standard 64 bit Edition Service Pack 2	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.10.3	s1paalt1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.9.1	scpsqlfs1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.2.171	scpmgthpdm1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.2.109	scpappvcm1.tmg.net	Windows Server 2008 R2 Standard 64 bit Edition Service Pack 1	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.2.87	tmgprodbe1.tmg.net	Windows Server 2008 R2 Standard 64 bit Edition Service Pack 1	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.2.17	scpdc3.tmg.net	Windows Server 2012 Standard 64 bit Edition AD	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.2.16	scpdc2.tmg.net	Windows Server 2012 Standard 64 bit Edition AD	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.2.13	scpdc1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition AD	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.2.3	scpmgtepo1.tmg.net	Windows Server 2008 R2 Standard 64 bit Edition Service Pack 1	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.1.136	s1pex02.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.1.131	s1pex01.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.1.106	scpmgtaadc1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.1.85	scpca1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.1.84	s1pdc02.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition AD	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.1.83	s1pdc01.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition AD	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.1.82	scpdc5.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition AD	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.1.81	scpdc4.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition AD	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.1.50	scpappptaudit1.tmg.net	Windows Server 2008 R2 Standard 64 bit Edition Service Pack 1	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.1.37	tmgprodscraper1.tmg.net	Windows Server 2008 R2 Standard 64 bit Edition Service Pack 1	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.1.32	scpfsftp2.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.1.31	scpfsftp1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.1.30	scpappftp2.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.1.29	scpappftp1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.1.21	tmgprodfsv3.tmg.net	Windows Server 2008 Standard Service Pack 2	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.1.18	scpfswebdata2.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.1.17	scpfswebdata1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.1.16	tmgprodftp1.tmg.net	Windows Server 2008 R2 Standard 64 bit Edition Service Pack 1	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.1.14	s1pvdics02.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.1.13	s1pvdics01.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.1.12	tmgfsv1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.1.11	scpappmdm2.tmg.net	Windows Server 2008 R2 Standard 64 bit Edition Service Pack 1	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.1.10	scpappmdm1.tmg.net	Windows Server 2012 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.1.4	s1pamex1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.1.3	scpfs1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.0.151	s1pdfztd2.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.0.45	scpsqlmonitor.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.0.43	s1pddr1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.0.37	scpsqlshr1.tmg.net	Windows Server 2008 R2 Standard 64 bit Edition Service Pack 1	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.0.30	s1pdol1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.0.29	scpsqlssasq1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.0.27	scpsqletl1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.0.26	scpsqlssas1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.0.25	scpsqlbirpts1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.0.24	spsqlent01.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.0.20	s1pdetl1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.0.19	spsql2ring1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.0.18	tmgprodivrsql1.tmg.net	Windows Server 2008 R2 Standard 64 bit Edition Service Pack 1	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.0.14	tmgprodsqlint1.tmg.net	Windows Server 2008 R2 Standard 64 bit Edition Service Pack 1	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.0.8	scpsqlmonitor1.tmg.net	Windows Server 2008 R2 Standard 64 bit Edition Service Pack 1	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.0.6	s1pdaa1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.10.0.2	tmgprodwarehous.tmg.net	Windows Server 2008 R2 Enterprise 64 bit Edition Service Pack 1	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.0.3.135	scpwebadfs2.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.0.3.134	scpwebadfs1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.0.3.121	tmgprodrsvext1.tmg.net	Windows 2008 Enterprise Server 64 bit Edition Service Pack 2	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.0.3.120	tmgprodrsvint1.tmg.net	Windows 2008 Enterprise Server 64 bit Edition Service Pack 2	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.0.3.115	tmgprodwebext1.tmg.net	Windows 2008 Enterprise Server 64 bit Edition Service Pack 2	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.0.3.113	cuetsprodvault1.tmg.net	Windows 2008 Enterprise Server 64 bit Edition Service Pack 2	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.0.3.112	tmgprodwebint1.tmg.net	Windows 2008 Enterprise Server 64 bit Edition Service Pack 2	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.0.3.106	scpwebint1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.0.3.105	scpwebsb2.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.0.3.104	scpwebsb1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.0.3.103	scpwebos2.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.0.3.102	scpwebos1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.0.3.95	scpwebrsvext1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.0.3.94	scpwebcuetsvt1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.0.3.92	scpwebvault1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.0.3.86	scpwebmci2.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.0.3.85	scpwebmci1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.0.3.84	scpwebunfcumci1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.0.3.78	scpwebext1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.0.3.77	scpmgtcme1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.0.3.37	spwebunifi01.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.0.3.35	scpwebmexp1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.0.3.32	scpwebct1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.0.3.19	tmgprodftpgw1.tmg.net	Windows Server 2008 R2 Standard 64 bit Edition Service Pack 1	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.0.3.14	scpwebrsa1.tmg.net	Windows Server 2012 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.0.3.8	scpwebbz1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Global User List	45002	Practice
+Des Moines	10.20.73.135	a2pmpx3.tmg.net	Ubuntu / Tiny Core Linux / Linux 2.6.x	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.20.73.134	a2pmpx2.tmg.net	Ubuntu / Tiny Core Linux / Linux 2.6.x	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.20.73.133	a2pmpx1.tmg.net	Ubuntu / Tiny Core Linux / Linux 2.6.x	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.20.73.130	aapmgtbrm1.tmg.net	Ubuntu / Tiny Core Linux / Linux 2.6.x	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.20.73.122		Ubuntu / Tiny Core Linux / Linux 2.6.x	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.20.73.110	aapmgtdd1.tmg.net	Ubuntu / Tiny Core Linux / Linux 2.6.x	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.20.34.156	l2qafzcs3.tmg.net	Red Hat Enterprise Linux Server 7.5	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.20.34.155	l2qafzcs2.tmg.net	Red Hat Enterprise Linux Server 7.5	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.20.34.154	l2qafzcs1.tmg.net	Red Hat Enterprise Linux Server 7.5	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.20.34.153	l2qafzfd2.tmg.net	Red Hat Enterprise Linux Server 7.5	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.20.34.152	l2qafzfd1.tmg.net	Red Hat Enterprise Linux Server 7.5	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.20.34.151	l2qafzrm2.tmg.net	Red Hat Enterprise Linux Server 7.5	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.20.34.150	l2qafzrm1.tmg.net	Red Hat Enterprise Linux Server 7.5	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.20.32.151	l2qwfzcm2.tmg.net	Red Hat Enterprise Linux Server 7.5	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.20.32.150	l2qwfzcm1.tmg.net	Red Hat Enterprise Linux Server 7.5	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.20.3.176		Red Hat Enterprise Linux Server 7.5	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.20.3.175	l1qwfzcm1.tmg.net	Red Hat Enterprise Linux Server 7.5	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.20.1.156	l2pafzcs3.tmg.net	Red Hat Enterprise Linux Server 7.5	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.20.1.155	l2pafzcs2.tmg.net	Red Hat Enterprise Linux Server 7.5	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.20.1.154	l2pafzcs1.tmg.net	Red Hat Enterprise Linux Server 7.5	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.20.1.153		Red Hat Enterprise Linux Server 7.5	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.20.1.152		Red Hat Enterprise Linux Server 7.5	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.20.1.151		Red Hat Enterprise Linux Server 7.5	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.20.1.150		Red Hat Enterprise Linux Server 7.5	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.20.0.157	l2pdfzdss5.tmg.net	Red Hat Enterprise Linux Server 7.5	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.20.0.156	l2pdfzdss4.tmg.net	Red Hat Enterprise Linux Server 7.5	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.20.0.155	l2pdfzdss3.tmg.net	Red Hat Enterprise Linux Server 7.5	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.20.0.154	l2pdfzdss2.tmg.net	Red Hat Enterprise Linux Server 7.5	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.20.0.152	l2pdfzdsm.tmg.net	Red Hat Enterprise Linux Server 7.5	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.10.73.135	a1pmpx3.tmg.net	Ubuntu / Tiny Core Linux / Linux 2.6.x	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.10.73.134	a1pmpx2.tmg.net	Ubuntu / Tiny Core Linux / Linux 2.6.x	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.10.73.133	a1pmpx1.tmg.net	Ubuntu / Tiny Core Linux / Linux 2.6.x	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.10.73.132	acpmgtproxy2.tmg.net	Ubuntu / Tiny Core Linux / Linux 2.6.x	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.10.73.131	acpmgtproxy1.tmg.net	Ubuntu / Tiny Core Linux / Linux 2.6.x	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.10.73.122	a1pmdd4.tmg.net	Ubuntu / Tiny Core Linux / Linux 2.6.x	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.10.73.110	acpmgtdd1.tmg.net	Ubuntu / Tiny Core Linux / Linux 2.6.x	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.10.34.159	l1qafzcs3.tmg.net	Red Hat Enterprise Linux Server 7.5	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.10.34.158	l1qafzcs2.tmg.net	Red Hat Enterprise Linux Server 7.5	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.10.34.157	l1qafzcs1.tmg.net	Red Hat Enterprise Linux Server 7.5	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.10.34.156	l1qafzfd2.tmg.net	Red Hat Enterprise Linux Server 7.5	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.10.34.155	l1qafzfd1.tmg.net	Red Hat Enterprise Linux Server 7.5	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.10.34.154	l1qafzrm2.tmg.net	Red Hat Enterprise Linux Server 7.5	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.10.34.153	l1qafzrm1.tmg.net	Red Hat Enterprise Linux Server 7.5	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.10.34.152	l1uafzcs.tmg.net	Red Hat Enterprise Linux Server 7.5	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.10.34.151	l1uafzfd.tmg.net	Red Hat Enterprise Linux Server 7.5	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.10.34.150	l1uafzrm.tmg.net	Red Hat Enterprise Linux Server 7.5	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.10.32.152	l1qwfzcm2.tmg.net	Red Hat Enterprise Linux Server 7.5	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.10.32.151	l1qwfzcm1.tmg.net	Red Hat Enterprise Linux Server 7.5	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.10.32.150	l1uwfzcm.tmg.net	Red Hat Enterprise Linux Server 7.5	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.10.1.156	l1pafzcs3.tmg.net	Red Hat Enterprise Linux Server 7.5	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.10.1.155	l1pafzcs2.tmg.net	Red Hat Enterprise Linux Server 7.5	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.10.1.154	l1pafzcs1.tmg.net	Red Hat Enterprise Linux Server 7.5	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.10.1.153	l1pafzfd2.tmg.net	Red Hat Enterprise Linux Server 7.5	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.10.1.152	l1pafzfd1.tmg.net	Red Hat Enterprise Linux Server 7.5	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.10.1.151	l1pafzrm2.tmg.net	Red Hat Enterprise Linux Server 7.5	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.10.1.150	l1pafzrm1.tmg.net	Red Hat Enterprise Linux Server 7.5	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.10.0.157	l1pdfzdss5.tmg.net	Red Hat Enterprise Linux Server 7.5	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.10.0.156	l1pdfzdss4.tmg.net	Red Hat Enterprise Linux Server 7.5	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.10.0.155	l1pdfzdss3.tmg.net	Red Hat Enterprise Linux Server 7.5	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.10.0.154	l1pdfzdss2.tmg.net	Red Hat Enterprise Linux Server 7.5	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.10.0.153	l1pdfzdss1.tmg.net	Red Hat Enterprise Linux Server 7.5	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.10.0.152	l1pdfzdsm.tmg.net	Red Hat Enterprise Linux Server 7.5	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.0.3.196	l1pwpdg1.tmg.net	Red Hat Enterprise Linux Server 7.5	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.0.3.176	l1pwfzcm2.tmg.net	Red Hat Enterprise Linux Server 7.5	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
+Des Moines	10.0.3.175	l1pwfzcm1.tmg.net	Red Hat Enterprise Linux Server 7.5	yes	5 (AV:N/AC:L/Au:N/C:P/I:N/A:N)	Hidden RPC Services	11	Vuln
