@@ -1,4 +1,4 @@
-<# Date 9-8-18
+<# Date 9-14-18
 About Script: Windows Server 2012-2012R2, 2016, and Windows 7 and newer registry modifications to disable SSL2.0,SSL3.0,TLS1.0,TLS1.1 and 
 enable TLS1.2. This also disables weak cryptpography ciphers. 
      
@@ -10,165 +10,1208 @@ The registry backup will not overwrite sub keys in these if the value exists as 
 # Backup HKLM to C:\
 
 md C:\RegistryBackupTLS
-reg export 'HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL' C:\RegistryBackupTLS\SChannel.reg
-reg export 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Cryptography\Configuration\SSL\00010002' C:\RegistryBackupTLS\Crypto.reg
+reg export 'HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL' C:\RegistryBackupTLS\SChannel.txt
+reg export 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Cryptography\Configuration\SSL\00010002' C:\RegistryBackupTLS\Crypto.txt
 
 
-# Ensure SChannel logging
+function NULLKey {
 
-new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL" -name "EventLogging" -value 1 -PropertyType "DWord"
+    #CHECKS IF REGISTRY KEY EXIST, IF NOT IT CREATES THE NULL KEY
+    $checkNULL = Test-Path -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\Null"
 
-#Disable Weak Cyphers
+    If ($checkNULL -ne 1 ) {
+    md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\Null"
+    Write-host "Creating NULL key"
+    } else { Write-host "NULL Key exist, moving forward with checking values"}
+}
 
-md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\Null"
-new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\Null" -name "Enabled" -value 0 -PropertyType "Dword"
+function NULLValue {
+    
 
-#md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\DES 56$([char]0x2215)56"
-([Microsoft.Win32.RegistryKey]::OpenRemoteBaseKey([Microsoft.Win32.RegistryHive]::LocalMachine, $env:COMPUTERNAME)).CreateSubKey('SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\DES 56/56')
-new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\DES 56/56" -name "Enabled" -value 0 -PropertyType "Dword"
+    If (Test-Path -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\Null" -ErrorAction SilentlyContinue) {
 
-#md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC2 40$([char]0x2215)128"
-([Microsoft.Win32.RegistryKey]::OpenRemoteBaseKey([Microsoft.Win32.RegistryHive]::LocalMachine, $env:COMPUTERNAME)).CreateSubKey('SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC2 40/128')
-new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC2 40/128" -name "Enabled" -value 0 -PropertyType "Dword"
+        $checkNULLValue = Get-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\Null" -Name "Enabled" -ErrorAction SilentlyContinue
+        if($checkNULLValue.Enabled -ne 0)
+            {
+                 set-itemproperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\Null" -Name "Enabled" -value 0
+            }
+    
+        Write-Output 'Key exist and updated'
 
-#md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC2 56$([char]0x2215)128"
-([Microsoft.Win32.RegistryKey]::OpenRemoteBaseKey([Microsoft.Win32.RegistryHive]::LocalMachine, $env:COMPUTERNAME)).CreateSubKey('SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC2 56/128')
-new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC2 56/128" -name "Enabled" -value 0 -PropertyType "Dword"
+    } Else {
+        new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\Null" -name "Enabled" -value 0 -PropertyType "Dword"
 
-#md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC2 128$([char]0x2215)128" 
-([Microsoft.Win32.RegistryKey]::OpenRemoteBaseKey([Microsoft.Win32.RegistryHive]::LocalMachine, $env:COMPUTERNAME)).CreateSubKey('SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC2 128/128')
-new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC2 128/128" -name "Enabled" -value 0 -PropertyType "Dword"
+        Write-Output 'Key DID NOT exist BUT WAS updated'
+    }
+}
 
-#md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 40$([char]0x2215)128"
-([Microsoft.Win32.RegistryKey]::OpenRemoteBaseKey([Microsoft.Win32.RegistryHive]::LocalMachine, $env:COMPUTERNAME)).CreateSubKey('SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 40/128')
-new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 40/128" -name "Enabled" -value 0 -PropertyType "Dword"
+function DES5656Key {
 
-#md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 56$([char]0x2215)128"
-([Microsoft.Win32.RegistryKey]::OpenRemoteBaseKey([Microsoft.Win32.RegistryHive]::LocalMachine, $env:COMPUTERNAME)).CreateSubKey('SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 56/128')
-new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 56/128" -name "Enabled" -value 0 -PropertyType "Dword"
+    #CHECKS IF REGISTRY KEY EXIST, IF NOT IT CREATES THE NULL KEY
+    $checkDES5656 = Test-Path -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\DES 56/56"
 
-#md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 64$([char]0x2215)128"
-([Microsoft.Win32.RegistryKey]::OpenRemoteBaseKey([Microsoft.Win32.RegistryHive]::LocalMachine, $env:COMPUTERNAME)).CreateSubKey('SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 64/128')
-new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 64/128" -name "Enabled" -value 0 -PropertyType "Dword"
+    If ($checkDES5656 -ne 1 ) {
+    ([Microsoft.Win32.RegistryKey]::OpenRemoteBaseKey([Microsoft.Win32.RegistryHive]::LocalMachine, $env:COMPUTERNAME)).CreateSubKey('SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\DES 56/56')
 
-#md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 128$([char]0x2215)128"
-([Microsoft.Win32.RegistryKey]::OpenRemoteBaseKey([Microsoft.Win32.RegistryHive]::LocalMachine, $env:COMPUTERNAME)).CreateSubKey('SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 128/128')
-new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 128/128" -name "Enabled" -value 0 -PropertyType "Dword"
+    Write-host "Creating DES 56/56 key"
+    } else { Write-host "DES 56/56 Key exist, moving forward with checking values"}
+}
 
-#md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\Triple DES 168$([char]0x2215)168"
-([Microsoft.Win32.RegistryKey]::OpenRemoteBaseKey([Microsoft.Win32.RegistryHive]::LocalMachine, $env:COMPUTERNAME)).CreateSubKey('SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\Triple DES 168')
-new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\Triple DES 168" -name "Enabled" -value 0 -PropertyType "Dword"
+function DES5656Value {
+    
 
-#Enable Strong Ciphers
+    If (Test-Path -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\DES 56/56" -ErrorAction SilentlyContinue) {
 
-#md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\AES 128$([char]0x2215)128"
-([Microsoft.Win32.RegistryKey]::OpenRemoteBaseKey([Microsoft.Win32.RegistryHive]::LocalMachine, $env:COMPUTERNAME)).CreateSubKey('SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\AES 128/128')
-new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\AES 128/128" -name "Enabled" -value 4294967295 -PropertyType "Dword"
+        $checkDES5656Value = Get-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\DES 56/56" -Name "Enabled" -ErrorAction SilentlyContinue
+        if($checkDES5656Value.Enabled -ne 0)
+            {
+                 set-itemproperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\DES 56/56" -Name "Enabled" -value 0
+            }
+    
+        Write-Output 'Key exist and updated'
 
-#md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\AES 256$([char]0x2215)256"
-([Microsoft.Win32.RegistryKey]::OpenRemoteBaseKey([Microsoft.Win32.RegistryHive]::LocalMachine, $env:COMPUTERNAME)).CreateSubKey('SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\AES 256/256')
-new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\AES 256/256" -name "Enabled" -value 4294967295 -PropertyType "Dword"
+    } Else {
+        new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\DES 56/56" -name "Enabled" -value 0 -PropertyType "Dword"
 
-# Disable Cipher Suites
+        Write-Output 'Key DID NOT exist BUT WAS updated'
+    }
+}
 
-md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Hashes\MD5"
-New-ItemProperty "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Hashes\MD5" -Name "Enabled" -Value 0 -PropertyType "Dword"
+function RC240128Key {
 
-# Enable Ciphers Suites
+    #CHECKS IF REGISTRY KEY EXIST, IF NOT IT CREATES THE RC2 40/128 KEY
+    $checkRC240128 = Test-Path -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC2 40/128"
 
-md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Hashes\SHA"
-New-ItemProperty "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Hashes\SHA" -Name "Enabled" -Value 4294967295 -PropertyType "Dword"
+    If ($checkRC240128 -ne 1 ) {
+    ([Microsoft.Win32.RegistryKey]::OpenRemoteBaseKey([Microsoft.Win32.RegistryHive]::LocalMachine, $env:COMPUTERNAME)).CreateSubKey('SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC2 40/128')
 
-md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Hashes\SHA256"
-New-ItemProperty "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Hashes\SHA256" -Name "Enabled" -Value 4294967295 -PropertyType "Dword"
+    Write-host "Creating RC2 40/128 key"
+    } else { Write-host "RC2 40/128 Key exist, moving forward with checking values"}
+}
 
-md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Hashes\SHA384" 
-New-ItemProperty "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Hashes\SHA384" -Name "Enabled" -Value 4294967295 -PropertyType "Dword"
+function RC240128Value {
+    
 
-md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Hashes\SHA512"
-New-ItemProperty "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Hashes\SHA512" -Name "Enabled" -Value 4294967295 -PropertyType "Dword"
+    If (Test-Path -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC2 40/128" -ErrorAction SilentlyContinue) {
 
-# Enable KeyExchangeAlgoithms
+        $checkRC240128Value = Get-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC2 40/128" -Name "Enabled" -ErrorAction SilentlyContinue
+        if($checkRC240128Value.Enabled -ne 0)
+            {
+                 set-itemproperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC2 40/128" -Name "Enabled" -value 0
+            }
+    
+        Write-Output 'Key exist and updated'
 
-md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\KeyExchangeAlgorithms\Diffie-Hellman"
-New-ItemProperty "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\KeyExchangeAlgorithms\Diffie-Hellman" -Name "Enabled" -Value 4294967295 -PropertyType "Dword"
+    } Else {
+        new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC2 40/128" -name "Enabled" -value 0 -PropertyType "Dword"
 
-md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\KeyExchangeAlgorithms\ECDH"
-New-ItemProperty "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\KeyExchangeAlgorithms\ECDH" -Name "Enabled" -Value 4294967295 -PropertyType "Dword"
+        Write-Output 'Key DID NOT exist BUT WAS updated'
+    }
+}
 
-md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\KeyExchangeAlgorithms\PKCS"
-New-ItemProperty "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\KeyExchangeAlgorithms\PKCS" -Name "Enabled" -Value 4294967295 -PropertyType "Dword"
+function RC256128Key {
 
-# Disable Multi-Protocol Unified Hello
+    #CHECKS IF REGISTRY KEY EXIST, IF NOT IT CREATES THE RC2 56/128 KEY
+    $checkRC256128 = Test-Path -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC2 56/128"
 
-md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\Multi-Protocol Unified Hello"
-md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\Multi-Protocol Unified Hello\Client"
-md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\Multi-Protocol Unified Hello\Server"
-New-ItemProperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\Multi-Protocol Unified Hello\Client" -Name "Enabled" -value 0 -PropertyType "Dword"
-New-ItemProperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\Multi-Protocol Unified Hello\Client" -Name "DisabledByDefault" -value 1 -PropertyType "Dword"
-New-ItemProperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\Multi-Protocol Unified Hello\Server" -Name "Enabled" -value 0 -PropertyType "Dword"
-New-ItemProperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\Multi-Protocol Unified Hello\Server" -Name "DisabledByDefault" -value 1 -PropertyType "Dword"
+    If ($checkRC256128 -ne 1 ) {
+    ([Microsoft.Win32.RegistryKey]::OpenRemoteBaseKey([Microsoft.Win32.RegistryHive]::LocalMachine, $env:COMPUTERNAME)).CreateSubKey('SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC2 56/128')
 
-# Disable PCT 1.0
+    Write-host "Creating RC2 56/128 key"
+    } else { Write-host "RC2 56/128 Key exist, moving forward with checking values"}
+}
 
-md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\PCT 1.0"
-md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\PCT 1.0\Client"
-md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\PCT 1.0\Server"
-New-ItemProperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\PCT 1.0\Client" -Name "Enabled" -value 0 -PropertyType "Dword"
-New-ItemProperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\PCT 1.0\Client" -Name "DisabledByDefault" -value 1 -PropertyType "Dword"
-New-ItemProperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\PCT 1.0\Server" -Name "Enabled" -value 0 -PropertyType "Dword"
-New-ItemProperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\PCT 1.0\Server" -Name "DisabledByDefault" -value 1 -PropertyType "Dword"
+function RC256128Value {
+    
 
-# Disable SSL 2.0
+    If (Test-Path -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC2 56/128" -ErrorAction SilentlyContinue) {
 
-md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 2.0"
-md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 2.0\Server"
-md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 2.0\Client"
-new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 2.0\Server" -name "DisabledByDefault" -value 1 -PropertyType "DWord"
-new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 2.0\Server" -name "Enabled" -value 0 -PropertyType "DWord"
-new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 2.0\Client" -name "DisabledByDefault" -value 1 -PropertyType "DWord"
-new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 2.0\Client" -name "Enabled" -value 0 -PropertyType "DWord"
+        $checkRC256128Value = Get-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC2 56/128" -Name "Enabled" -ErrorAction SilentlyContinue
+        if($checkRC256128Value.Enabled -ne 0)
+            {
+                 set-itemproperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC2 56/128" -Name "Enabled" -value 0
+            }
+    
+        Write-Output 'Key exist and updated'
 
-# Enable SSL 3.0
+    } Else {
+        new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC2 56/128" -name "Enabled" -value 0 -PropertyType "Dword"
 
-md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 3.0"
-md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 3.0\Client"
-md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 3.0\Server"
-new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 3.0\Server" -name "Enabled" -value 0 -PropertyType "DWord"
-new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 3.0\Server" -name "DisabledByDefault" -value 1 -PropertyType "DWord"
-new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 3.0\Client" -name "Enabled" -value 0 -PropertyType "DWord"
-new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 3.0\Client" -name "DisabledByDefault" -value 1 -PropertyType "DWord"
+        Write-Output 'Key DID NOT exist BUT WAS updated'
+    }
+}
 
-# Make and Enable TLS 1.0 for client and server SCHANNEL communications
+function RC2128128Key {
 
-md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0"
-md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Server"
-md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Client" 
-new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Server" -name "Enabled" -value 0 -PropertyType "DWord"
-new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Server" -name "DisabledByDefault" -value 1 -PropertyType "DWord"
-new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Client" -name "Enabled" -value 4294967295 -PropertyType "DWord"
-new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Client" -name "DisabledByDefault" -value 0 -PropertyType "DWord"
+    #CHECKS IF REGISTRY KEY EXIST, IF NOT IT CREATES THE RC2 128/128 KEY
+    $checkRC2128128 = Test-Path -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC2 128/128"
 
-# Make and Enable TLS 1.1 for client and server SCHANNEL communications
+    If ($checkRC2128128 -ne 1 ) {
+    ([Microsoft.Win32.RegistryKey]::OpenRemoteBaseKey([Microsoft.Win32.RegistryHive]::LocalMachine, $env:COMPUTERNAME)).CreateSubKey('SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC2 128/128')
 
-md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1"
-md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Server"
-md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Client" 
-new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Server" -name "Enabled" -value 0 -PropertyType "DWord"
-new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Server" -name "DisabledByDefault" -value 1 -PropertyType "DWord"
-new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Client" -name "Enabled" -value 4294967295 -PropertyType "DWord"
-new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Client" -name "DisabledByDefault" -value 0 -PropertyType "DWord"
+    Write-host "Creating RC2 128/128 key"
+    } else { Write-host "RC2 128/128 Key exist, moving forward with checking values"}
+}
 
-# Make and Enable TLS 1.2 for client and server SCHANNEL communications
+function RC2128128Value {
+    
 
-md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2"
-md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Server"
-md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Client"
-new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Server" -name "Enabled" -value 4294967295 -PropertyType "DWord"
-new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Server" -name "DisabledByDefault" -value 0 -PropertyType "DWord"
-new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Client" -name "Enabled" -value 4294967295 -PropertyType "DWord"
-new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Client" -name "DisabledByDefault" -value 0 -PropertyType "DWord"
+    If (Test-Path -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC2 128/128" -ErrorAction SilentlyContinue) {
 
-# Make and Set Cryptography
+        $checkRC2128128Value = Get-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC2 128/128" -Name "Enabled" -ErrorAction SilentlyContinue
+        if($checkRC2128128Value.Enabled -ne 0)
+            {
+                 set-itemproperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC2 128/128" -Name "Enabled" -value 0
+            }
+    
+        Write-Output 'Key exist and updated'
 
-new-itemproperty -path "HKLM:\SOFTWARE\Policies\Microsoft\Cryptography\Configuration\SSL\00010002" -name "Functions" -value "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P521,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P384,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P256,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P521,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P384,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_P521,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_P384,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_P256,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA_P521,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA_P384,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA_P256,TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384_P521,TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384_P384,TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256_P521,TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256_P384,TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256_P256,TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384_P521,TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384_P384,TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256_P521,TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256_P384,TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256_P256,TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA_P521,TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA_P384,TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA_P256,TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA_P521,TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA_P384,TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA_P256" 
+    } Else {
+        new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC2 128/128" -name "Enabled" -value 0 -PropertyType "Dword"
+
+        Write-Output 'Key DID NOT exist BUT WAS updated'
+    }
+}
+
+function RC440128Key {
+
+    #CHECKS IF REGISTRY KEY EXIST, IF NOT IT CREATES THE RC4 40/128 KEY
+    $checkRC440128 = Test-Path -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 40/128"
+
+    If ($checkRC440128 -ne 1 ) {
+    ([Microsoft.Win32.RegistryKey]::OpenRemoteBaseKey([Microsoft.Win32.RegistryHive]::LocalMachine, $env:COMPUTERNAME)).CreateSubKey('SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 40/128')
+
+    Write-host "Creating RC4 40/128 key"
+    } else { Write-host "RC4 40/128 Key exist, moving forward with checking values"}
+}
+
+function RC440128Value {
+    
+
+    If (Test-Path -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 40/128" -ErrorAction SilentlyContinue) {
+
+        $checkRC440128Value = Get-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 40/128" -Name "Enabled" -ErrorAction SilentlyContinue
+        if($checkRC440128Value.Enabled -ne 0)
+            {
+                 set-itemproperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 40/128" -Name "Enabled" -value 0
+            }
+    
+        Write-Output 'Key exist and updated'
+
+    } Else {
+        new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 40/128" -name "Enabled" -value 0 -PropertyType "Dword"
+
+        Write-Output 'Key DID NOT exist BUT WAS updated'
+    }
+}
+
+function RC456128Key {
+
+    #CHECKS IF REGISTRY KEY EXIST, IF NOT IT CREATES THE RC4 56/128 KEY
+    $checkRC456128 = Test-Path -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 56/128"
+
+    If ($checkRC456128 -ne 1 ) {
+    ([Microsoft.Win32.RegistryKey]::OpenRemoteBaseKey([Microsoft.Win32.RegistryHive]::LocalMachine, $env:COMPUTERNAME)).CreateSubKey('SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 56/128')
+
+    Write-host "Creating RC4 56/128 key"
+    } else { Write-host "RC4 56/128 Key exist, moving forward with checking values"}
+}
+
+function RC456128Value {
+    
+
+    If (Test-Path -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 56/128" -ErrorAction SilentlyContinue) {
+
+        $checkRC456128Value = Get-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 56/128" -Name "Enabled" -ErrorAction SilentlyContinue
+        if($checkRC456128Value.Enabled -ne 0)
+            {
+                 set-itemproperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 56/128" -Name "Enabled" -value 0
+            }
+    
+        Write-Output 'Key exist and updated'
+
+    } Else {
+        new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 56/128" -name "Enabled" -value 0 -PropertyType "Dword"
+
+        Write-Output 'Key DID NOT exist BUT WAS updated'
+    }
+}
+
+function RC464128Key {
+
+    #CHECKS IF REGISTRY KEY EXIST, IF NOT IT CREATES THE RC4 64/128 KEY
+    $checkRC464128 = Test-Path -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 64/128"
+
+    If ($checkRC464128 -ne 1 ) {
+    ([Microsoft.Win32.RegistryKey]::OpenRemoteBaseKey([Microsoft.Win32.RegistryHive]::LocalMachine, $env:COMPUTERNAME)).CreateSubKey('SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 64/128')
+
+    Write-host "Creating RC4 64/128 key"
+    } else { Write-host "RC4 64/128 Key exist, moving forward with checking values"}
+}
+
+function RC464128Value {
+    
+
+    If (Test-Path -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 64/128" -ErrorAction SilentlyContinue) {
+
+        $checkRC464128Value = Get-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 64/128" -Name "Enabled" -ErrorAction SilentlyContinue
+        if($checkRC464128Value.Enabled -ne 0)
+            {
+                 set-itemproperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 64/128" -Name "Enabled" -value 0
+            }
+    
+        Write-Output 'Key exist and updated'
+
+    } Else {
+        new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 64/128" -name "Enabled" -value 0 -PropertyType "Dword"
+
+        Write-Output 'Key DID NOT exist BUT WAS updated'
+    }
+}
+
+function RC4128128Key {
+
+    #CHECKS IF REGISTRY KEY EXIST, IF NOT IT CREATES THE RC4 128/128 KEY
+    $checkRC4128128 = Test-Path -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 128/128"
+
+    If ($checkRC4128128 -ne 1 ) {
+    ([Microsoft.Win32.RegistryKey]::OpenRemoteBaseKey([Microsoft.Win32.RegistryHive]::LocalMachine, $env:COMPUTERNAME)).CreateSubKey('SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 128/128')
+
+    Write-host "Creating RC4 128/128 key"
+    } else { Write-host "RC4 128/128 Key exist, moving forward with checking values"}
+}
+
+function RC4128128Value {
+    
+
+    If (Test-Path -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 128/128" -ErrorAction SilentlyContinue) {
+
+        $checkRC4128128Value = Get-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 128/128" -Name "Enabled" -ErrorAction SilentlyContinue
+        if($checkRC4128128Value.Enabled -ne 0)
+            {
+                 set-itemproperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 128/128" -Name "Enabled" -value 0
+            }
+    
+        Write-Output 'Key exist and updated'
+
+    } Else {
+        new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 128/128" -name "Enabled" -value 0 -PropertyType "Dword"
+
+        Write-Output 'Key DID NOT exist BUT WAS updated'
+    }
+}
+
+function TD168Key {
+
+    #CHECKS IF REGISTRY KEY EXIST, IF NOT IT CREATES THE Triple DES 168 KEY
+    $checkTD168 = Test-Path -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\Triple DES 168"
+
+    If ($checkTD168 -ne 1 ) {
+    ([Microsoft.Win32.RegistryKey]::OpenRemoteBaseKey([Microsoft.Win32.RegistryHive]::LocalMachine, $env:COMPUTERNAME)).CreateSubKey('SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\Triple DES 168')
+
+    Write-host "Creating Triple DES 168 key"
+    } else { Write-host "Triple DES 168 Key exist, moving forward with checking values"}
+}
+
+function TD168Value {
+    
+
+    If (Test-Path -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\Triple DES 168" -ErrorAction SilentlyContinue) {
+
+        $checkTD168Value = Get-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\Triple DES 168" -Name "Enabled" -ErrorAction SilentlyContinue
+        if($checkTD168Value.Enabled -ne 0)
+            {
+                 set-itemproperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\Triple DES 168" -Name "Enabled" -value 0
+            }
+    
+        Write-Output 'Key exist and updated'
+
+    } Else {
+        new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\Triple DES 168" -name "Enabled" -value 0 -PropertyType "Dword"
+
+        Write-Output 'Key DID NOT exist BUT WAS updated'
+    }
+}
+
+function AES128128Key {
+
+    #CHECKS IF REGISTRY KEY EXIST, IF NOT IT CREATES THE AES 128/128 KEY
+    $checkAES128128 = Test-Path -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\AES 128/128"
+
+    If ($checkAES128128 -ne 1 ) {
+    ([Microsoft.Win32.RegistryKey]::OpenRemoteBaseKey([Microsoft.Win32.RegistryHive]::LocalMachine, $env:COMPUTERNAME)).CreateSubKey('SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\AES 128/128')
+
+    Write-host "Creating AES 128/128 key"
+    } else { Write-host "AES 128/128 Key exist, moving forward with checking values"}
+}
+
+function AES128128Value {
+    
+
+    If (Test-Path -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\AES 128/128" -ErrorAction SilentlyContinue) {
+
+        $checkAES128128Value = Get-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\AES 128/128" -Name "Enabled" -ErrorAction SilentlyContinue
+        if($checkAES128128Value.Enabled -ne 4294967295)
+            {
+                 set-itemproperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\AES 128/128" -Name "Enabled" -value 4294967295
+            }
+    
+        Write-Output 'Key exist and updated'
+
+    } Else {
+        new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\AES 128/128" -name "Enabled" -value 4294967295 -PropertyType "Dword"
+
+        Write-Output 'Key DID NOT exist BUT WAS updated'
+    }
+}
+
+function AES256256Key {
+
+    #CHECKS IF REGISTRY KEY EXIST, IF NOT IT CREATES THE AES 256/256 KEY
+    $checkAES256256 = Test-Path -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\AES 256/256"
+
+    If ($checkAES256256 -ne 1 ) {
+    ([Microsoft.Win32.RegistryKey]::OpenRemoteBaseKey([Microsoft.Win32.RegistryHive]::LocalMachine, $env:COMPUTERNAME)).CreateSubKey('SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\AES 256/256')
+
+    Write-host "Creating AES 256/256 key"
+    } else { Write-host "AES 256/256 Key exist, moving forward with checking values"}
+}
+
+function AES256256Value {
+    
+
+    If (Test-Path -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\AES 256/256" -ErrorAction SilentlyContinue) {
+
+        $checkAES256256Value = Get-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\AES 256/256" -Name "Enabled" -ErrorAction SilentlyContinue
+        if($checkAES256256Value.Enabled -ne 4294967295)
+            {
+                 set-itemproperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\AES 256/256" -Name "Enabled" -value 4294967295
+            }
+    
+        Write-Output 'Key exist and updated'
+
+    } Else {
+        new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\AES 256/256" -name "Enabled" -value 4294967295 -PropertyType "Dword"
+
+        Write-Output 'Key DID NOT exist BUT WAS updated'
+    }
+}
+
+function MD5Key {
+
+    #CHECKS IF REGISTRY KEY EXIST, IF NOT IT CREATES THE MD5 KEY
+    $checkMD5 = Test-Path -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Hashes\MD5"
+
+    If ($checkMD5 -ne 1 ) {
+     md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Hashes\MD5"
+    Write-host "Creating MD5 key"
+    } else { Write-host "MD5 Key exist, moving forward with checking values"}
+}
+
+function MD5Value {
+    
+
+    If (Test-Path -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Hashes\MD5" -ErrorAction SilentlyContinue) {
+
+        $checkMD5Value = Get-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Hashes\MD5" -Name "Enabled" -ErrorAction SilentlyContinue
+        if($checkMD5Value.Enabled -ne 0)
+            {
+                 set-itemproperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Hashes\MD5" -Name "Enabled" -value 0
+            }
+    
+        Write-Output 'Key exist and updated'
+
+    } Else {
+        new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Hashes\MD5" -name "Enabled" -value 0 -PropertyType "Dword"
+
+        Write-Output 'Key DID NOT exist BUT WAS updated'
+    }
+}
+
+function SHAKey {
+
+    #CHECKS IF REGISTRY KEY EXIST, IF NOT IT CREATES THE SHA KEY
+    $checkSHA = Test-Path -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Hashes\SHA"
+
+    If ($checkSHA -ne 1 ) {
+     md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Hashes\SHA"
+    Write-host "Creating SHA key"
+    } else { Write-host "SHA Key exist, moving forward with checking values"}
+}
+
+function SHAValue {
+    
+
+    If (Test-Path -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Hashes\SHA" -ErrorAction SilentlyContinue) {
+
+        $checkSHAValue = Get-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Hashes\SHA" -Name "Enabled" -ErrorAction SilentlyContinue
+        if($checkSHAValue.Enabled -ne 4294967295)
+            {
+                 set-itemproperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Hashes\SHA" -Name "Enabled" -value 4294967295
+            }
+    
+        Write-Output 'Key exist and updated'
+
+    } Else {
+        new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Hashes\SHA" -name "Enabled" -value 4294967295 -PropertyType "Dword"
+
+        Write-Output 'Key DID NOT exist BUT WAS updated'
+    }
+}
+
+function SHA256Key {
+
+    #CHECKS IF REGISTRY KEY EXIST, IF NOT IT CREATES THE SHA256 KEY
+    $checkSHA256 = Test-Path -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Hashes\SHA256"
+
+    If ($checkSHA256 -ne 1 ) {
+     md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Hashes\SHA256"
+    Write-host "Creating SHA256 key"
+    } else { Write-host "SHA256 Key exist, moving forward with checking values"}
+}
+
+function SHA256Value {
+    
+
+    If (Test-Path -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Hashes\SHA256" -ErrorAction SilentlyContinue) {
+
+        $checkSHA256Value = Get-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Hashes\SHA256" -Name "Enabled" -ErrorAction SilentlyContinue
+        if($checkSHA256Value.Enabled -ne 4294967295)
+            {
+                 set-itemproperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Hashes\SHA256" -Name "Enabled" -value 4294967295
+            }
+    
+        Write-Output 'Key exist and updated'
+
+    } Else {
+        new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Hashes\SHA256" -name "Enabled" -value 4294967295 -PropertyType "Dword"
+
+        Write-Output 'Key DID NOT exist BUT WAS updated'
+    }
+}
+
+function SHA384Key {
+
+    #CHECKS IF REGISTRY KEY EXIST, IF NOT IT CREATES THE SHA384 KEY
+    $checkSHA384 = Test-Path -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Hashes\SHA384"
+
+    If ($checkSHA384 -ne 1 ) {
+     md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Hashes\SHA384"
+    Write-host "Creating SHA384 key"
+    } else { Write-host "SHA384 Key exist, moving forward with checking values"}
+}
+
+function SHA384Value {
+    
+
+    If (Test-Path -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Hashes\SHA384" -ErrorAction SilentlyContinue) {
+
+        $checkSHA384Value = Get-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Hashes\SHA384" -Name "Enabled" -ErrorAction SilentlyContinue
+        if($checkSHA384Value.Enabled -ne 4294967295)
+            {
+                 set-itemproperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Hashes\SHA384" -Name "Enabled" -value 4294967295
+            }
+    
+        Write-Output 'Key exist and updated'
+
+    } Else {
+        new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Hashes\SHA384" -name "Enabled" -value 4294967295 -PropertyType "Dword"
+
+        Write-Output 'Key DID NOT exist BUT WAS updated'
+    }
+}
+
+function SHA512Key {
+
+    #CHECKS IF REGISTRY KEY EXIST, IF NOT IT CREATES THE SHA512 KEY
+    $checkSHA512 = Test-Path -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Hashes\SHA512"
+
+    If ($checkSHA512 -ne 1 ) {
+     md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Hashes\SHA512"
+    Write-host "Creating SHA512 key"
+    } else { Write-host "SHA512 Key exist, moving forward with checking values"}
+}
+
+function SHA512Value {
+    
+
+    If (Test-Path -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Hashes\SHA512" -ErrorAction SilentlyContinue) {
+
+        $checkSHA512Value = Get-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Hashes\SHA512" -Name "Enabled" -ErrorAction SilentlyContinue
+        if($checkSHA512Value.Enabled -ne 4294967295)
+            {
+                 set-itemproperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Hashes\SHA512" -Name "Enabled" -value 4294967295
+            }
+    
+        Write-Output 'Key exist and updated'
+
+    } Else {
+        new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Hashes\SHA512" -name "Enabled" -value 4294967295 -PropertyType "Dword"
+
+        Write-Output 'Key DID NOT exist BUT WAS updated'
+    }
+}
+
+function DiffieKey {
+
+    #CHECKS IF REGISTRY KEY EXIST, IF NOT IT CREATES THE Diffie KEY
+    $checkDiffie = Test-Path -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\KeyExchangeAlgorithms\Diffie-Hellman"
+
+    If ($checkDiffie -ne 1 ) {
+     md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\KeyExchangeAlgorithms\Diffie-Hellman"
+    Write-host "Creating Diffie key"
+    } else { Write-host "Diffie Key exist, moving forward with checking values"}
+}
+
+function DiffieValue {
+    
+
+    If (Test-Path -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\KeyExchangeAlgorithms\Diffie-Hellman" -ErrorAction SilentlyContinue) {
+
+        $checkDiffieValue = Get-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\KeyExchangeAlgorithms\Diffie-Hellman" -Name "Enabled" -ErrorAction SilentlyContinue
+        if($checkDiffieValue.Enabled -ne 4294967295)
+            {
+                 set-itemproperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\KeyExchangeAlgorithms\Diffie-Hellman" -Name "Enabled" -value 4294967295
+            }
+    
+        Write-Output 'Key exist and updated'
+
+    } Else {
+        new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\KeyExchangeAlgorithms\Diffie-Hellman" -name "Enabled" -value 4294967295 -PropertyType "Dword"
+
+        Write-Output 'Key DID NOT exist BUT WAS updated'
+    }
+}
+
+function ECDHKey {
+
+    #CHECKS IF REGISTRY KEY EXIST, IF NOT IT CREATES THE ECDH KEY
+    $checkECDH = Test-Path -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\KeyExchangeAlgorithms\ECDH"
+
+    If ($checkECDH -ne 1 ) {
+     md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\KeyExchangeAlgorithms\ECDH"
+    Write-host "Creating ECDH key"
+    } else { Write-host "ECDH Key exist, moving forward with checking values"}
+}
+
+function ECDHValue {
+    
+
+    If (Test-Path -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\KeyExchangeAlgorithms\ECDH" -ErrorAction SilentlyContinue) {
+
+        $checkECDHValue = Get-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\KeyExchangeAlgorithms\ECDH" -Name "Enabled" -ErrorAction SilentlyContinue
+        if($checkECDHValue.Enabled -ne 4294967295)
+            {
+                 set-itemproperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\KeyExchangeAlgorithms\ECDH" -Name "Enabled" -value 4294967295
+            }
+    
+        Write-Output 'Key exist and updated'
+
+    } Else {
+        new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\KeyExchangeAlgorithms\ECDH" -name "Enabled" -value 4294967295 -PropertyType "Dword"
+
+        Write-Output 'Key DID NOT exist BUT WAS updated'
+    }
+}
+
+function PKCSKey {
+
+    #CHECKS IF REGISTRY KEY EXIST, IF NOT IT CREATES THE PKCS KEY
+    $checkPKCS = Test-Path -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\KeyExchangeAlgorithms\PKCS"
+
+    If ($checkPKCS -ne 1 ) {
+     md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\KeyExchangeAlgorithms\PKCS"
+    Write-host "Creating PKCS key"
+    } else { Write-host "PKCS Key exist, moving forward with checking values"}
+}
+
+function PKCSValue {
+    
+
+    If (Test-Path -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\KeyExchangeAlgorithms\PKCS" -ErrorAction SilentlyContinue) {
+
+        $checkPKCSValue = Get-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\KeyExchangeAlgorithms\PKCS" -Name "Enabled" -ErrorAction SilentlyContinue
+        if($checkPKCSValue.Enabled -ne 4294967295)
+            {
+                 set-itemproperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\KeyExchangeAlgorithms\PKCS" -Name "Enabled" -value 4294967295
+            }
+    
+        Write-Output 'Key exist and updated'
+
+    } Else {
+        new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\KeyExchangeAlgorithms\PKCS" -name "Enabled" -value 4294967295 -PropertyType "Dword"
+
+        Write-Output 'Key DID NOT exist BUT WAS updated'
+    }
+}
+
+function PCT10 {
+
+    #CHECKS IF REGISTRY KEY EXIST, IF NOT IT CREATES THE PCT 1.0 KEY
+    $checkPCT10 = Test-Path -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\PCT 1.0"
+
+    If ($checkPCT10 -ne 1 ) {
+    md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\PCT 1.0"
+    Write-host "Creating PCT 1.0 key"
+    } else { Write-host "PCT 1.0 Key exist, moving forward with checking values"}
+}
+
+function PCT10Server {
+    
+
+    If (Test-Path -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\PCT 1.0\Server" -ErrorAction SilentlyContinue) {
+
+        $checkPCT10Server1 = Get-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\PCT 1.0\Server" -Name "Enabled" -ErrorAction SilentlyContinue
+        if($checkPCT10Server1.Enabled -ne 0)
+            {
+                 set-itemproperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\PCT 1.0\Server" -Name "Enabled" -value 0
+            }
+    
+        $checkPCT10Server2 = Get-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\PCT 1.0\Server" -Name "DisabledByDefault" -ErrorAction SilentlyContinue
+        if($checkPCT10Server2.DisabledByDefault -ne 1)
+            {
+                set-itemproperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\PCT 1.0\Server" -Name "DisabledByDefault" -value 1
+            }
+    
+
+        Write-Output 'Key exist and updated'
+
+    } Else {
+        New-Item "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\PCT 1.0\Server"
+        new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\PCT 1.0\Server" -name "Enabled" -value 0 -PropertyType "DWord"
+        new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\PCT 1.0\Server" -name "DisabledByDefault" -value 1 -PropertyType "DWord"
+
+        Write-Output 'Key DID NOT exist BUT WAS updated'
+    }
+}
+
+function PCT10Client {
+
+    If (Test-Path -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\PCT 1.0\Client" -ErrorAction SilentlyContinue) {
+
+        $checkPCT10Client1 = Get-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\PCT 1.0\Client" -Name "Enabled" -ErrorAction SilentlyContinue
+        if($checkPCT10Client1.Enabled -ne 0)
+            {
+                 set-itemproperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\PCT 1.0\Client" -Name "Enabled" -value 0
+            }
+    
+        $checkPCT10Client2 = Get-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\PCT 1.0\Client" -Name "DisabledByDefault" -ErrorAction SilentlyContinue
+        if($checkPCT10Client2.DisabledByDefault -ne 1)
+            {
+                set-itemproperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\PCT 1.0\Client" -Name "DisabledByDefault" -value 1
+            }
+    
+
+        Write-Output 'Key exist and updated'
+
+    } Else {
+        New-Item "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\PCT 1.0\Client"
+        new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\PCT 1.0\Client" -name "Enabled" -value 0 -PropertyType "DWord"
+        new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\PCT 1.0\Client" -name "DisabledByDefault" -value 1 -PropertyType "DWord"
+
+        Write-Output 'Key DID NOT exist BUT WAS updated'
+    }
+}
+
+function MPUH {
+
+    #CHECKS IF REGISTRY KEY EXIST, IF NOT IT CREATES THE Multi-Protocol Unified Hello KEY
+    $checkMPUH = Test-Path -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\Multi-Protocol Unified Hello"
+
+    If ($checkMPUH -ne 1 ) {
+    md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\Multi-Protocol Unified Hello"
+    Write-host "Creating Multi-Protocol Unified Hello KEY"
+    } else { Write-host "Multi-Protocol Unified Hello KEY exist, moving forward with checking values"}
+}
+
+function MPUHServer {
+    
+
+    If (Test-Path -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\Multi-Protocol Unified Hello\Server" -ErrorAction SilentlyContinue) {
+
+        $checkMPUHServer1 = Get-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\Multi-Protocol Unified Hello\Server" -Name "Enabled" -ErrorAction SilentlyContinue
+        if($checkMPUHServer1.Enabled -ne 0)
+            {
+                 set-itemproperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\Multi-Protocol Unified Hello\Server" -Name "Enabled" -value 0
+            }
+    
+        $checkMPUHServer2 = Get-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\Multi-Protocol Unified Hello\Server" -Name "DisabledByDefault" -ErrorAction SilentlyContinue
+        if($checkMPUHServer2.DisabledByDefault -ne 1)
+            {
+                set-itemproperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\Multi-Protocol Unified Hello\Server" -Name "DisabledByDefault" -value 1
+            }
+    
+
+        Write-Output 'Key exist and updated'
+
+    } Else {
+        New-Item "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\Multi-Protocol Unified Hello\Server"
+        new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\Multi-Protocol Unified Hello\Server" -name "Enabled" -value 0 -PropertyType "DWord"
+        new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\Multi-Protocol Unified Hello\Server" -name "DisabledByDefault" -value 1 -PropertyType "DWord"
+
+        Write-Output 'Key DID NOT exist BUT WAS updated'
+    }
+}
+
+function MPUHClient {
+
+    If (Test-Path -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\Multi-Protocol Unified Hello\Client" -ErrorAction SilentlyContinue) {
+
+        $checkMPUHClient1 = Get-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\Multi-Protocol Unified Hello\Client" -Name "Enabled" -ErrorAction SilentlyContinue
+        if($checkMPUHClient1.Enabled -ne 0)
+            {
+                 set-itemproperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\Multi-Protocol Unified Hello\Client" -Name "Enabled" -value 0
+            }
+    
+        $checkMPUHClient2 = Get-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\Multi-Protocol Unified Hello\Client" -Name "DisabledByDefault" -ErrorAction SilentlyContinue
+        if($checkMPUHClient2.DisabledByDefault -ne 1)
+            {
+                set-itemproperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\Multi-Protocol Unified Hello\Client" -Name "DisabledByDefault" -value 1
+            }
+    
+
+        Write-Output 'Key exist and updated'
+
+    } Else {
+        New-Item "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\Multi-Protocol Unified Hello\Client"
+        new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\Multi-Protocol Unified Hello\Client" -name "Enabled" -value 0 -PropertyType "DWord"
+        new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\Multi-Protocol Unified Hello\Client" -name "DisabledByDefault" -value 1 -PropertyType "DWord"
+
+        Write-Output 'Key DID NOT exist BUT WAS updated'
+    }
+}
+
+function SSL20 {
+
+    #CHECKS IF REGISTRY KEY EXIST, IF NOT IT CREATES THE SSL 2.0 KEY
+    $checkSSL20 = Test-Path -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 2.0"
+
+    If ($checkSSL20 -ne 1 ) {
+    md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 2.0"
+    Write-host "Creating SSL 2.0 key"
+    } else { Write-host "SSL 2.0 Key exist, moving forward with checking values"}
+}
+
+function SSL20Server {
+    
+
+    If (Test-Path -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 2.0\Server" -ErrorAction SilentlyContinue) {
+
+        $checkSSL20Server1 = Get-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 2.0\Server" -Name "Enabled" -ErrorAction SilentlyContinue
+        if($checkSSL20Server1.Enabled -ne 0)
+            {
+                 set-itemproperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 2.0\Server" -Name "Enabled" -value 0
+            }
+    
+        $checkSSL20Server2 = Get-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 2.0\Server" -Name "DisabledByDefault" -ErrorAction SilentlyContinue
+        if($checkSSL20Server2.DisabledByDefault -ne 1)
+            {
+                set-itemproperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 2.0\Server" -Name "DisabledByDefault" -value 1
+            }
+    
+
+        Write-Output 'Key exist and updated'
+
+    } Else {
+        New-Item "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 2.0\Server"
+        new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 2.0\Server" -name "Enabled" -value 0 -PropertyType "DWord"
+        new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 2.0\Server" -name "DisabledByDefault" -value 1 -PropertyType "DWord"
+
+        Write-Output 'Key DID NOT exist BUT WAS updated'
+    }
+}
+
+function SSL20Client {
+
+    If (Test-Path -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 2.0\Client" -ErrorAction SilentlyContinue) {
+
+        $checkSSL20Client1 = Get-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 2.0\Client" -Name "Enabled" -ErrorAction SilentlyContinue
+        if($checkSSL20Client1.Enabled -ne 0)
+            {
+                 set-itemproperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 2.0\Client" -Name "Enabled" -value 0
+            }
+    
+        $checkSSL20Client2 = Get-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 2.0\Client" -Name "DisabledByDefault" -ErrorAction SilentlyContinue
+        if($checkSSL20Client2.DisabledByDefault -ne 1)
+            {
+                set-itemproperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 2.0\Client" -Name "DisabledByDefault" -value 1
+            }
+    
+
+        Write-Output 'Key exist and updated'
+
+    } Else {
+        New-Item "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 2.0\Client"
+        new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 2.0\Client" -name "Enabled" -value 0 -PropertyType "DWord"
+        new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 2.0\Client" -name "DisabledByDefault" -value 1 -PropertyType "DWord"
+
+        Write-Output 'Key DID NOT exist BUT WAS updated'
+    }
+}
+
+function SSL30 {
+
+    #CHECKS IF REGISTRY KEY EXIST, IF NOT IT CREATES THE SSL 2.0 KEY
+    $checkSSL30 = Test-Path -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 3.0"
+
+    If ($checkSSL30 -ne 1 ) {
+    md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 3.0"
+    Write-host "Creating SSL 3.0 key"
+    } else { Write-host "SSL 3.0 Key exist, moving forward with checking values"}
+}
+
+function SSL30Server {
+    
+
+    If (Test-Path -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 3.0\Server" -ErrorAction SilentlyContinue) {
+
+        $checkSSL30Server1 = Get-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 3.0\Server" -Name "Enabled" -ErrorAction SilentlyContinue
+        if($checkSSL30Server1.Enabled -ne 0)
+            {
+                 set-itemproperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 3.0\Server" -Name "Enabled" -value 0
+            }
+    
+        $checkSSL30Server2 = Get-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 3.0\Server" -Name "DisabledByDefault" -ErrorAction SilentlyContinue
+        if($checkSSL30Server2.DisabledByDefault -ne 1)
+            {
+                set-itemproperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 3.0\Server" -Name "DisabledByDefault" -value 1
+            }
+    
+
+        Write-Output 'Key exist and updated'
+
+    } Else {
+        New-Item "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 3.0\Server"
+        new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 3.0\Server" -name "Enabled" -value 0 -PropertyType "DWord"
+        new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 3.0\Server" -name "DisabledByDefault" -value 1 -PropertyType "DWord"
+
+        Write-Output 'Key DID NOT exist BUT WAS updated'
+    }
+}
+
+function SSL30Client {
+
+    If (Test-Path -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 3.0\Client" -ErrorAction SilentlyContinue) {
+
+        $checkSSL30Client1 = Get-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 3.0\Client" -Name "Enabled" -ErrorAction SilentlyContinue
+        if($checkSSL30Client1.Enabled -ne 0)
+            {
+                 set-itemproperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 3.0\Client" -Name "Enabled" -value 0
+            }
+    
+        $checkSSL30Client2 = Get-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 3.0\Client" -Name "DisabledByDefault" -ErrorAction SilentlyContinue
+        if($checkSSL30Client2.DisabledByDefault -ne 1)
+            {
+                set-itemproperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 3.0\Client" -Name "DisabledByDefault" -value 1
+            }
+    
+
+        Write-Output 'Key exist and updated'
+
+    } Else {
+        New-Item "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 3.0\Client"
+        new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 3.0\Client" -name "Enabled" -value 0 -PropertyType "DWord"
+        new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 3.0\Client" -name "DisabledByDefault" -value 1 -PropertyType "DWord"
+
+        Write-Output 'Key DID NOT exist BUT WAS updated'
+    }
+}
+
+function TLS10 {
+
+    #CHECKS IF REGISTRY KEY EXIST, IF NOT IT CREATES THE TLS 1.0 KEY
+    $checkTLS10 = Test-Path -Path "hklm:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0"
+
+    If ($checkTLS10 -ne 1 ) {
+    md "hklm:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0"
+    Write-host "Creating TLS 1.0 key"
+    } else { Write-host "TLS 1.0 Key exist, moving forward with checking values"}
+}
+
+function TLS10Server {
+    
+
+    If (Test-Path -Path "hklm:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Server" -ErrorAction SilentlyContinue) {
+
+        $checkTLS10Server1 = Get-ItemProperty -Path "hklm:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Server" -Name "Enabled" -ErrorAction SilentlyContinue
+        if($checkTLS10Server1.Enabled -ne 0)
+            {
+                 set-itemproperty -Path "hklm:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Server" -Name "Enabled" -value 0
+            }
+    
+        $checkTLS10Server2 = Get-ItemProperty -Path "hklm:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Server" -Name "DisabledByDefault" -ErrorAction SilentlyContinue
+        if($checkTLS10Server2.DisabledByDefault -ne 1)
+            {
+                set-itemproperty -Path "hklm:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Server" -Name "DisabledByDefault" -value 1
+            }
+    
+
+        Write-Output 'Key exist and updated'
+
+    } Else {
+        New-Item "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Server"
+        new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Server" -name "Enabled" -value 0 -PropertyType "DWord"
+        new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Server" -name "DisabledByDefault" -value 1 -PropertyType "DWord"
+
+        Write-Output 'Key DID NOT exist BUT WAS updated'
+    }
+}
+
+function TLS10Client {
+
+    If (Test-Path -Path "hklm:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Client" -ErrorAction SilentlyContinue) {
+
+        $checkTLS10Client1 = Get-ItemProperty -Path "hklm:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Client" -Name "Enabled" -ErrorAction SilentlyContinue
+        if($checkTLS10Client1.Enabled -ne 4294967295)
+            {
+                 set-itemproperty -Path "hklm:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Client" -Name "Enabled" -value 4294967295
+            }
+    
+        $checkTLS10Client2 = Get-ItemProperty -Path "hklm:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Client" -Name "DisabledByDefault" -ErrorAction SilentlyContinue
+        if($checkTLS10Client2.DisabledByDefault -ne 0)
+            {
+                set-itemproperty -Path "hklm:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Client" -Name "DisabledByDefault" -value 0
+            }
+    
+
+        Write-Output 'Key exist and updated'
+
+    } Else {
+        New-Item "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Client"
+        new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Client" -name "Enabled" -value 4294967295 -PropertyType "DWord"
+        new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Client" -name "DisabledByDefault" -value 0 -PropertyType "DWord"
+
+        Write-Output 'Key DID NOT exist BUT WAS updated'
+    }
+}
+
+function TLS11 {
+
+   #CHECKS IF REGISTRY KEY EXIST, IF NOT IT CREATES THE TLS 1.1 KEY
+    $checkTLS11 = Test-Path -Path "hklm:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1"
+
+    If ($checkTLS11 -ne 1 ) {
+    md "hklm:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1"
+    Write-host "Creating TLS 1.1 key"
+    } else { Write-host "TLS 1.1 Key exist, moving forward with checking values"}
+}
+
+function TLS11Server {
+
+        
+    If (Test-Path -Path "hklm:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Server" -ErrorAction SilentlyContinue) {
+
+        $checkTLS11Server1 = Get-ItemProperty -Path "hklm:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Server" -Name "Enabled" -ErrorAction SilentlyContinue
+        if($checkTLS11Server1.Enabled -ne 0)
+            {
+                    set-itemproperty -Path "hklm:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Server" -Name "Enabled" -value 0
+            }
+    
+        $checkTLS11Server2 = Get-ItemProperty -Path "hklm:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Server" -Name "DisabledByDefault" -ErrorAction SilentlyContinue
+        if($checkTLS11Server2.DisabledByDefault -ne 1)
+            {
+                set-itemproperty -Path "hklm:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Server" -Name "DisabledByDefault" -value 1
+            }
+    
+
+        Write-Output 'Key exist and updated'
+
+    } Else {
+        New-Item "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Server"
+        new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Server" -name "Enabled" -value 0 -PropertyType "DWord"
+        new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Server" -name "DisabledByDefault" -value 1 -PropertyType "DWord"
+
+        Write-Output 'Key DID NOT exist BUT WAS updated'
+    }
+}
+
+function TLS11Client {
+
+    If (Test-Path -Path "hklm:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Client" -ErrorAction SilentlyContinue) {
+
+        $checkTLS11Client1 = Get-ItemProperty -Path "hklm:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Client" -Name "Enabled" -ErrorAction SilentlyContinue
+        if($checkTLS11Client1.Enabled -ne 4294967295)
+            {
+                 set-itemproperty -Path "hklm:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Client" -Name "Enabled" -value 4294967295
+            }
+    
+        $checkTLS11Client2 = Get-ItemProperty -Path "hklm:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Client" -Name "DisabledByDefault" -ErrorAction SilentlyContinue
+        if($checkTLS11Client2.DisabledByDefault -ne 0)
+            {
+                set-itemproperty -Path "hklm:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Client" -Name "DisabledByDefault" -value 0
+            }
+    
+
+        Write-Output 'Key exist and updated'
+
+    } Else {
+        New-Item "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Client"
+        new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Client" -name "Enabled" -value 4294967295 -PropertyType "DWord"
+        new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Client" -name "DisabledByDefault" -value 0 -PropertyType "DWord"
+
+        Write-Output 'Key DID NOT exist BUT WAS updated'
+    }
+}
+
+function TLS12 {
+
+   #CHECKS IF REGISTRY KEY EXIST, IF NOT IT CREATES THE TLS 1.2 KEY
+    $checkTLS12 = Test-Path -Path "hklm:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2"
+
+    If ($checkTLS12 -ne 1 ) {
+    md "hklm:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2"
+    Write-host "Creating TLS 1.2 key"
+    } else { Write-host "TLS 1.2 Key exist, moving forward with checking values"}
+}
+
+function TLS12Server {
+
+    If (Test-Path -Path "hklm:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Server" -ErrorAction SilentlyContinue) {
+
+        $checkTLS12Server1 = Get-ItemProperty -Path "hklm:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Server" -Name "Enabled" -ErrorAction SilentlyContinue
+        if($checkTLS12Server1.Enabled -ne 4294967295)
+            {
+                 set-itemproperty -Path "hklm:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Server" -Name "Enabled" -value 4294967295
+            }
+    
+        $checkTLS12Server2 = Get-ItemProperty -Path "hklm:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Server" -Name "DisabledByDefault" -ErrorAction SilentlyContinue
+        if($checkTLS12Server2.DisabledByDefault -ne 0)
+            {
+                set-itemproperty -Path "hklm:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Server" -Name "DisabledByDefault" -value 0
+            }
+    
+
+        Write-Output 'Key exist and updated'
+
+    } Else {
+        New-Item "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Server"
+        new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Server" -name "Enabled" -value 4294967295 -PropertyType "DWord"
+        new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Server" -name "DisabledByDefault" -value 0 -PropertyType "DWord"
+
+        Write-Output 'Key DID NOT exist BUT WAS updated'
+    }
+}
+
+function TLS12Client {
+
+    If (Test-Path -Path "hklm:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Client" -ErrorAction SilentlyContinue) {
+
+        $checkTLS12Client1 = Get-ItemProperty -Path "hklm:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Client" -Name "Enabled" -ErrorAction SilentlyContinue
+        if($checkTLS12Client1.Enabled -ne 4294967295)
+            {
+                 set-itemproperty -Path "hklm:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Client" -Name "Enabled" -value 4294967295
+            }
+    
+        $checkTLS12Client2 = Get-ItemProperty -Path "hklm:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Client" -Name "DisabledByDefault" -ErrorAction SilentlyContinue
+        if($checkTLS12Client2.DisabledByDefault -ne 0)
+            {
+                set-itemproperty -Path "hklm:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Client" -Name "DisabledByDefault" -value 0
+            }
+    
+
+        Write-Output 'Key exist and updated'
+
+    } Else {
+        New-Item "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Client"
+        new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Client" -name "Enabled" -value 4294967295 -PropertyType "DWord"
+        new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Client" -name "DisabledByDefault" -value 0 -PropertyType "DWord"
+
+        Write-Output 'Key DID NOT exist BUT WAS updated'
+    }
+}
+
+function 00010002Key {
+
+    #CHECKS IF REGISTRY KEY EXIST, IF NOT IT CREATES THE ECDH KEY
+    $checkFunctions = Test-Path -Path "HKLM:\SOFTWARE\Policies\Microsoft\Cryptography\Configuration\SSL\00010002"
+
+    If ($checkFunctions -ne 1 ) {
+     md "HKLM:\SOTWARE\Policies\Microsoft\Cryptography\Configuration\SSL\00010002"
+    Write-host "Creating ECDH key"
+    } else { Write-host "ECDH Key exist, moving forward with checking values"}
+}
+
+function 00010002Value {
+    $FunctionsValue = "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P521,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P384,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P256,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P521,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P384,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_P521,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_P384,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_P256,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA_P521,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA_P384,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA_P256,TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384_P521,TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384_P384,TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256_P521,TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256_P384,TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256_P256,TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384_P521,TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384_P384,TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256_P521,TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256_P384,TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256_P256,TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA_P521,TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA_P384,TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA_P256,TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA_P521,TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA_P384,TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA_P256" 
+
+    If (Test-Path -Path "HKLM:\SOFTWARE\Policies\Microsoft\Cryptography\Configuration\SSL\00010002" -ErrorAction SilentlyContinue) {
+
+        $checkFunctionsValue = Get-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Cryptography\Configuration\SSL\00010002" -Name "Enabled" -ErrorAction SilentlyContinue
+        if($checkFunctionsValue.Enabled -ne $FunctionsValue)
+            {
+                 set-itemproperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Cryptography\Configuration\SSL\00010002" -Name "Enabled" -value $FunctionsValue
+            }
+    
+        Write-Output 'Key exist and updated'
+
+    } Else {
+        new-itemproperty -path "HKLM:\SOFTWARE\Policies\Microsoft\Cryptography\Configuration\SSL\00010002" -name "Enabled" -value $FunctionsValue -PropertyType "Dword"
+
+        Write-Output 'Key DID NOT exist BUT WAS updated'
+    }
+}
+
+NULLKey
+NULLValue
+DES5656Key
+DES5656Value
+RC240128Key
+RC240128Value
+RC256128Key
+RC256128Value
+RC2128128Key
+RC2128128Value
+RC440128Key
+RC440128Value
+RC456128Key
+RC456128Value
+RC464128Key
+RC464128Value
+RC4128128Key
+RC4128128Value
+TD168Key
+TD168Value
+AES128128Key
+AES128128Value
+AES256256Key
+AES256256Value
+MD5Key
+MD5Value
+SHAKey
+SHAValue
+SHA256Key
+SHA256Value
+SHA384Key
+SHA384Value
+SHA512Key
+SHA512Value
+DiffieKey
+DiffieValue
+ECDHKey
+ECDHValue
+PKCSKey
+PKCSValue
+PCT10
+PCT10Server
+PCT10Client
+MPUH
+MPUHServer
+MPUHClient
+SSL20
+SSL20Server
+SSL20Client
+SSL30
+SSL30Server
+SSL30Client
+TLS10
+TLS10Server
+TLS10Client
+TLS11
+TLS11Server
+TLS11Client
+TLS12
+TLS12Server
+TLS12Client
+00010002Key
+00010002Value
+
