@@ -8,23 +8,53 @@ and HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Cryptography\Configuration\SS
 The registry backup will not overwrite sub keys in these if the value exists as a key after making changes. You will have to manually erase subkeys if needing to revert to original state. .Reg acts as a image of before you applied changes to these locations. #>
 
 # Backup HKLM to C:\
+##############################################################################################################################################
+function registryBackup {
 
-md C:\RegistryBackupTLS
-reg export 'HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL' C:\RegistryBackupTLS\SChannel.txt
-reg export 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Cryptography\Configuration\SSL\00010002' C:\RegistryBackupTLS\Crypto.txt
+    #CHECKS IF REGISTRY BACKUP DIRECTORY ALREADY EXISTS ON THE C:\, IF IT DOES IT WILL MOVE FORWARD WITH CREATING A NEW REGISTRY BACKUP WITH THE DATE/TIME STAMP IN THE FILE NAME. 
 
+    $checkDIR = Test-Path -Path "C:\RegistryBackupTLS"
 
-function NULLKey {
+    If ($checkDIR -ne 1 ) {
+    md "C:\RegistryBackupTLS"
+    Write-host "Creating Registry Backup Directory"
 
-    #CHECKS IF REGISTRY KEY EXIST, IF NOT IT CREATES THE NULL KEY
-    $checkNULL = Test-Path -Path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\Null"
+    } else { Write-host "Registry Backup Directory exist, moving forward CREATING REGISTRY BACKUP"
+    }
 
-    If ($checkNULL -ne 1 ) {
-    md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\Null"
-    Write-host "Creating NULL key"
-    } else { Write-host "NULL Key exist, moving forward with checking values"}
+    $datestring = (Get-Date).ToString("s").Replace(":"," ")
+    $SChannelfile = "c:\RegistryBackupTLS\SChannel_$datestring.txt" 
+    $Cryptofile = "c:\RegistryBackupTLS\Crypto_$datestring.txt"
+
+    reg export 'HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL' $SChannelfile
+    reg export 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Cryptography\Configuration\SSL\00010002' $Cryptofile
 }
 
+
+#Checks if GPO "Turn off encryption support" has tattooed the registry for TLS SSL support and removes the SecureProtocol value if it has. 
+##############################################################################################################################################
+function RemoveTattooSecureProtocol {
+    
+
+    If (Test-path -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\Internet Settings" -ErrorAction SilentlyContinue) {
+
+        $checkNULLValue = Get-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\Internet Settings" -Name "SecureProtocols" -ErrorAction SilentlyContinue
+        if($checkNULLValue.Enabled -ne 0)
+            {
+                 remove-itemproperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\Internet Settings" -Name "SecureProtocols" 
+            }
+    
+        Write-Output 'Key exist and removed!'
+
+    } Else {
+        
+
+        Write-Output 'Key DID NOT exist! Moving forward!'
+    }
+}
+
+#Disables Weak Ciphers
+##############################################################################################################################################
 function NULLValue {
     
 
@@ -333,6 +363,8 @@ function TD168Value {
     }
 }
 
+#Enabled Strong Ciphers
+##############################################################################################################################################
 function AES128128Key {
 
     #CHECKS IF REGISTRY KEY EXIST, IF NOT IT CREATES THE AES 128/128 KEY
@@ -397,6 +429,9 @@ function AES256256Value {
     }
 }
 
+
+#Disables weak hashes
+##############################################################################################################################################
 function MD5Key {
 
     #CHECKS IF REGISTRY KEY EXIST, IF NOT IT CREATES THE MD5 KEY
@@ -428,6 +463,8 @@ function MD5Value {
     }
 }
 
+#Enables strong hashes
+##############################################################################################################################################
 function SHAKey {
 
     #CHECKS IF REGISTRY KEY EXIST, IF NOT IT CREATES THE SHA KEY
@@ -563,6 +600,8 @@ function DiffieKey {
     } else { Write-host "Diffie Key exist, moving forward with checking values"}
 }
 
+#Enables strong exhanges
+##############################################################################################################################################
 function DiffieValue {
     
 
@@ -614,6 +653,8 @@ function ECDHValue {
     }
 }
 
+#Disables weaks protocols
+##############################################################################################################################################
 function PKCSKey {
 
     #CHECKS IF REGISTRY KEY EXIST, IF NOT IT CREATES THE PKCS KEY
@@ -1053,6 +1094,8 @@ function TLS11Client {
     }
 }
 
+#Enables strong protocols
+##############################################################################################################################################
 function TLS12 {
 
    #CHECKS IF REGISTRY KEY EXIST, IF NOT IT CREATES THE TLS 1.2 KEY
@@ -1151,6 +1194,18 @@ function 00010002Value {
     }
 }
 
+
+
+<# ***************************************************************
+    
+    The below are the function calls. The order the functions are call the order they will be executed by the console. 
+   
+   ***************************************************************
+
+#>
+
+
+registryBackup
 NULLKey
 NULLValue
 DES5656Key
@@ -1214,4 +1269,4 @@ TLS12Server
 TLS12Client
 00010002Key
 00010002Value
-
+RemoveTattooSecureProtocol
