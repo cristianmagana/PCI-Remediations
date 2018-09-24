@@ -1,3 +1,14 @@
+From: Cristian Magana 
+Sent: Thursday, September 20, 2018 11:47 AM
+To: 'ITAllAppDev@coop.org' <ITAllAppDev@coop.org>; 'DBAdminSecurity@coop.org' <DBAdminSecurity@coop.org>; 'NetworkOperations@coop.org' <NetworkOperations@coop.org>
+Cc: 'Platform Engineering' <PlatformEngineering@coop.org>; Robert Niesi <Robert.Niesi@coop.org>; Mark Gordon <Mark.Gordon@coop.org>; Corey Weeklund <corey.weeklund@coop.org>; Shanee Berry <Shanee.Berry@coop.org>; Diane Lackore <diane.lackore@coop.org>
+Subject: RE: DSM PCI - Protocols/Ciphers #450282
+Importance: High
+
+Hi All, Happy Thursday!
+
+Platform Engineering is ready to move forward with the TLS and weak cipher remediations for the BETA servers tonight at 11:00pm CT. If you can please test your respective systems when you arrive in the am tomorrow morning. 
+
 10.10.32.15	tmgbetawebext1.tmg.net	Application Development	Windows Server 2008 R2 Enterprise 64 bit Edition Service Pack 1
 10.10.32.37	tmgbetascraper1.tmg.net	Application Development	Windows Server 2008 R2 Standard 64 bit Edition Service Pack 1
 10.10.32.46	sabwebsb1.tmg.net	Application Development	Windows Server 2012 R2 Standard 64 bit Edition
@@ -12,3 +23,17 @@
 10.10.33.5	s1bddr1.tmg.net	DBAs	Windows Server 2012 R2 Standard 64 bit Edition
 10.10.33.7	s1bdetl1.tmg.net	DBAs	Windows 2012 R2/8.1
 10.10.32.72	s1bwpss1.tmg.net	Network Operations	Windows 2012 R2/8.1
+
+*** PROD rollout of TLS and weak cipher remediation will begin 9-27-18 for the first batch of servers, more of that to follow on Monday morning for scheduling and resource allocations. *****
+
+Cristian Magaña                                                                                                                                                                  
+System Engineer III
+CO-OP Financial Services                       
+9692 Haven Avenue                              
+Rancho Cucamonga, CA 91730                
+Be there. Be more.                                     
+ 
+T 909-922-6179 
+C 909-285-8703
+E Cristian.Magana@coop.org
+
