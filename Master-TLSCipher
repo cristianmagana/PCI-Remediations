@@ -1,4 +1,4 @@
-<# Date 9-25-18
+<# Date 9-125-18
 About Script: Windows Server 2012-2012R2, 2016, and Windows 7 and newer registry modifications to disable SSL2.0,SSL3.0,TLS1.0,TLS1.1 and 
 enable TLS1.2. This also disables weak cryptpography ciphers with additional ciphers via OWASP
      
@@ -1151,8 +1151,8 @@ function 00010002Key {
 
     If ($checkFunctions -ne 1 ) {
      md "HKLM:\SOTWARE\Policies\Microsoft\Cryptography\Configuration\SSL\00010002"
-    Write-host "Creating ECDH key"
-    } else { Write-host "ECDH Key exist, moving forward with checking values"}
+    Write-host "Creating Functions Key"
+    } else { Write-host "Functions Key exist, moving forward with checking values"}
 }
 
 function 00010002Value {
@@ -1160,16 +1160,16 @@ function 00010002Value {
 
     If (Test-Path -Path "HKLM:\SOFTWARE\Policies\Microsoft\Cryptography\Configuration\SSL\00010002" -ErrorAction SilentlyContinue) {
 
-        $checkFunctionsValue = Get-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Cryptography\Configuration\SSL\00010002" -Name "Enabled" -ErrorAction SilentlyContinue
-        if($checkFunctionsValue.Enabled -ne $FunctionsValue)
+        $checkFunctionsValue = Get-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Cryptography\Configuration\SSL\00010002" -Name "Functions" -ErrorAction SilentlyContinue
+        if($checkFunctionsValue.Functions -ne $FunctionsValue)
             {
-                 set-itemproperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Cryptography\Configuration\SSL\00010002" -Name "Enabled" -value $FunctionsValue
+                 set-itemproperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Cryptography\Configuration\SSL\00010002" -Name "Functions" -value $FunctionsValue
             }
     
         Write-Output 'Key exist and updated'
 
     } Else {
-        new-itemproperty -path "HKLM:\SOFTWARE\Policies\Microsoft\Cryptography\Configuration\SSL\00010002" -name "Enabled" -value $FunctionsValue -PropertyType "Dword"
+        new-itemproperty -path "HKLM:\SOFTWARE\Policies\Microsoft\Cryptography\Configuration\SSL\00010002" -name "Functions" -value $FunctionsValue -PropertyType "REG_SZ"
 
         Write-Output 'Key DID NOT exist BUT WAS updated'
     }
@@ -1183,7 +1183,8 @@ function 00010002Value {
    
    ***************************************************************
 
-#>
+   #>
+
 
 
 registryBackup
