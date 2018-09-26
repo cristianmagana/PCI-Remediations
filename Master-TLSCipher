@@ -1,4 +1,4 @@
-<# Date 9-125-18
+<# Date 9-25-18
 About Script: Windows Server 2012-2012R2, 2016, and Windows 7 and newer registry modifications to disable SSL2.0,SSL3.0,TLS1.0,TLS1.1 and 
 enable TLS1.2. This also disables weak cryptpography ciphers with additional ciphers via OWASP
      
@@ -1188,7 +1188,6 @@ function 00010002Value {
 
 
 registryBackup
-NULLKey
 NULLValue
 DES5656Key
 DES5656Value
