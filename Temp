@@ -1,148 +1,47 @@
-Windows Registry Editor Version 5.00
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL]
-"EventLogging"=dword:00000001
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers]
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\AES 128/128]
-"Enabled"=dword:ffffffff
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\AES 256/256]
-"Enabled"=dword:ffffffff
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\DES 56/56]
-"Enabled"=dword:00000000
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\NULL]
-"Enabled"=dword:00000000
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC2 128/128]
-"Enabled"=dword:00000000
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC2 40/128]
-"Enabled"=dword:00000000
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC2 56/128]
-"Enabled"=dword:00000000
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 128/128]
-"Enabled"=dword:00000000
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 40/128]
-"Enabled"=dword:00000000
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 56/128]
-"Enabled"=dword:00000000
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 64/128]
-"Enabled"=dword:00000000
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\Triple DES 168]
-"Enabled"=dword:00000000
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\CipherSuites]
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Hashes]
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Hashes\MD5]
-"Enabled"=dword:00000000
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Hashes\SHA]
-"Enabled"=dword:ffffffff
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Hashes\SHA256]
-"Enabled"=dword:ffffffff
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Hashes\SHA384]
-"Enabled"=dword:ffffffff
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Hashes\SHA512]
-"Enabled"=dword:ffffffff
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\KeyExchangeAlgorithms]
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\KeyExchangeAlgorithms\Diffie-Hellman]
-"Enabled"=dword:ffffffff
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\KeyExchangeAlgorithms\ECDH]
-"Enabled"=dword:ffffffff
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\KeyExchangeAlgorithms\PKCS]
-"Enabled"=dword:ffffffff
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols]
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\Multi-Protocol Unified Hello]
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\Multi-Protocol Unified Hello\Client]
-"Enabled"=dword:00000000
-"DisabledByDefault"=dword:00000001
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\Multi-Protocol Unified Hello\Server]
-"Enabled"=dword:00000000
-"DisabledByDefault"=dword:00000001
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\PCT 1.0]
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\PCT 1.0\Client]
-"Enabled"=dword:00000000
-"DisabledByDefault"=dword:00000001
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\PCT 1.0\Server]
-"Enabled"=dword:00000000
-"DisabledByDefault"=dword:00000001
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 2.0]
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 2.0\Client]
-"DisabledByDefault"=dword:00000001
-"Enabled"=dword:00000000
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 2.0\Server]
-"Enabled"=dword:00000000
-"DisabledByDefault"=dword:00000001
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 3.0]
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 3.0\Client]
-"Enabled"=dword:00000000
-"DisabledByDefault"=dword:00000001
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 3.0\Server]
-"Enabled"=dword:00000000
-"DisabledByDefault"=dword:00000001
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0]
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Client]
-"Enabled"=dword:ffffffff
-"DisabledByDefault"=dword:00000000
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Server]
-"Enabled"=dword:00000000
-"DisabledByDefault"=dword:00000001
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1]
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Client]
-"Enabled"=dword:ffffffff
-"DisabledByDefault"=dword:00000000
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Server]
-"Enabled"=dword:00000000
-"DisabledByDefault"=dword:00000001
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2]
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Client]
-"Enabled"=dword:ffffffff
-"DisabledByDefault"=dword:00000000
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Server]
-"Enabled"=dword:ffffffff
-"DisabledByDefault"=dword:00000000
-
-[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Cryptography\Configuration\SSL\00010002]
-"Functions"="TLS_DHE_RSA_WITH_AES_256_GCM_SHA384,TLS_DHE_RSA_WITH_AES_128_GCM_SHA256,TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384,TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA,TLS_RSA_WITH_AES_256_GCM_SHA384,TLS_RSA_WITH_AES_128_GCM_SHA256,TLS_RSA_WITH_AES_256_CBC_SHA256,TLS_RSA_WITH_AES_128_CBC_SHA256,TLS_RSA_WITH_AES_256_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P521,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P384,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P256,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P521,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P384,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_P521,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_P384,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_P256,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA_P521,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA_P384,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA_P256,TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384_P521,TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384_P384,TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256_P521,TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256_P384,TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256_P256,TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384_P521,TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384_P384,TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256_P521,TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256_P384,TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256_P256,TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA_P521,TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA_P384,TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA_P256,TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA_P521,TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA_P384,TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA_P256"
-
+10.10.73.100	scpapptfs1.tmg.net	3	Application Development	TFS	Windows Server 2012 Standard 64 bit Edition
+10.10.8.13	s1paelc1.tmg.net	3	Application Development	Idera/Embarcadero's ER Studio licensing server	Windows 2012 R2/8.1
+10.0.3.37	spwebunifi01.tmg.net	2	Application Development	Production FTP web server	Windows Server 2012 R2 Standard 64 bit Edition
+10.0.3.78	scpwebext1.tmg.net	2	Application Development	External facing web server	Windows Server 2012 R2 Standard 64 bit Edition
+10.10.73.8	scpapptr1.tmg.net	2	Application Development	Test Rack server	Windows Server 2012 R2 Standard 64 bit Edition
+10.10.0.20	s1pdetl1.tmg.net	3	DBAs	Prod SQL ETL server	Windows Server 2012 R2 Standard 64 bit Edition
+10.10.10.3	s1paalt1.tmg.net	3	DBAs	Alteryx Server data analytics	Windows Server 2012 R2 Standard 64 bit Edition
+10.10.33.151	s1qdfztd1.tmg.net	3	DBAs	Feedzai SQL 	Windows Server 2012 R2 Core
+10.10.0.22	s1pdicm1.tmg.net	2	DBAs	SQL Server 2016 for Idera SQL Compliance Manager tool	Windows 2012 R2/8.1
+10.10.0.43	s1pddr1.tmg.net	2	DBAs	SQL Reporting services 2016 for Dynamic Reports	Windows Server 2012 R2 Standard 64 bit Edition
+10.10.0.45	scpsqlmonitor.tmg.net	2	DBAs	New SQL Monitor / SQL Spy	Windows Server 2012 R2 Standard 64 bit Edition
+10.10.9.1	scpsqlfs1.tmg.net	2	DBAs	TMGFS SQL Server	Windows Server 2012 R2 Standard 64 bit Edition
+10.10.73.112	scpwebdpa1.tmg.net	4	Platform Engineering	EMC Data Protection Assitant SQL server	Windows Server 2012 R2 Standard 64 bit Edition
+10.0.3.35	scpwebmexp1.tmg.net	3	Platform Engineering	Test machine for Danny	Windows Server 2012 R2 Standard 64 bit Edition
+10.0.3.77	scpmgtcme1.tmg.net	3	Platform Engineering	SCCM Server	Windows Server 2012 R2 Standard 64 bit Edition
+10.0.3.8	scpwebbz1.tmg.net	3	Platform Engineering	Blue Zone App Server	Windows Server 2012 R2 Standard 64 bit Edition
+10.10.0.151	s1pdfztd2.tmg.net	3	Platform Engineering		Windows Server 2012 R2 Standard 64 bit Edition
+10.10.1.10	scpappmdm1.tmg.net	3	Platform Engineering	Mobile Device Management	Windows Server 2012 Standard 64 bit Edition
+10.10.1.4	s1pamex1.tmg.net	3	Platform Engineering	Mail Exchange MailExpress	Windows Server 2012 R2 Standard 64 bit Edition
+10.10.1.85	scpca1.tmg.net	3	Platform Engineering	AD Certificate Authority - Issuing CA	Windows Server 2012 R2 Standard 64 bit Edition
+10.10.10.153	scpappgp1.tmg.net	3	Platform Engineering	Great Plains Report server	Windows Server 2012 R2 Standard 64 bit Edition
+10.10.2.4	scpmgtcmi1.tmg.net	3	Platform Engineering	SCCM Server	Windows 2012 R2/8.1
+10.10.73.192	scpmgtscom1.tmg.net	3	Platform Engineering	System Center Operations Manager 2012 R2	Windows Server 2012 R2 Standard 64 bit Edition
+10.10.73.99	scpappnetflow1.tmg.net	3	Platform Engineering	Net Flow	Windows Server 2012 R2 Standard 64 bit Edition
+10.20.73.53	sapsqlint1.tmg.net	3	Platform Engineering	NetOps SQL server	Windows Server 2012 R2 Standard 64 bit Edition
+10.0.3.134	scpwebadfs1.tmg.net	2	Platform Engineering	Clive ADFS Proxy	Windows Server 2012 R2 Standard 64 bit Edition
+10.0.3.135	scpwebadfs2.tmg.net	2	Platform Engineering	Clive ADFS Proxy	Windows Server 2012 R2 Standard 64 bit Edition
+10.10.1.106	scpmgtaadc1.tmg.net	2	Platform Engineering	Clive Azure Active Directory Connect server	Windows Server 2012 R2 Standard 64 bit Edition
+10.10.1.13	s1pvdics01.tmg.net	2	Platform Engineering	Horizon View Connection Server	Windows Server 2012 R2 Standard 64 bit Edition
+10.10.1.131	s1pex01.tmg.net	2	Platform Engineering	Exchange 2013 Server	Windows Server 2012 R2 Standard 64 bit Edition
+10.10.1.136	s1pex02.tmg.net	2	Platform Engineering	Exchange 2013 Server	Windows Server 2012 R2 Standard 64 bit Edition
+10.10.1.14	s1pvdics02.tmg.net	2	Platform Engineering	Horizon View Connection Server	Windows Server 2012 R2 Standard 64 bit Edition
+10.10.1.3	scpfs1.tmg.net	2	Platform Engineering	TMG File Server	Windows Server 2012 R2 Standard 64 bit Edition
+10.10.2.171	scpmgthpdm1.tmg.net	2	Platform Engineering	HP Thin Client Device Manager	Windows Server 2012 R2 Standard 64 bit Edition
+10.10.2.98	scpnetmonitor2.tmg.net	2	Platform Engineering	NetMonitor2	Windows 2008 R2/7
+10.10.73.102	scpsqlint1.tmg.net	2	Platform Engineering	NetOps SQL server	Windows Server 2012 R2 Standard 64 bit Edition
+10.10.73.123	scpmgtpm1.tmg.net	2	Platform Engineering	EMC ESRS Policy Manager	Windows Server 2012 R2 Standard 64 bit Edition
+10.10.73.194	scpmgtscor1.tmg.net	2	Platform Engineering	ADFS	Windows Server 2012 R2 Standard 64 bit Edition
+10.10.73.20	s1pmkms1.tmg.net	2	Platform Engineering	Key Management Server	Windows Server 2012 R2 Standard 64 bit Edition
+10.10.73.215	s1pvivc01.tmg.net	2	Platform Engineering	Vblock vCenter /SSO Services	Windows Server 2012 R2 Standard 64 bit Edition
+10.10.73.22	s1pvdivum01.tmg.net	2	Platform Engineering	Vsphere Update Manager Server	Windows 2012 R2/8.1
+10.10.73.45	s1pvdicmpsr01.tmg.net	2	Platform Engineering	View Composer	Windows Server 2012 R2 Standard 64 bit Edition
+10.10.73.7	scpmgtdlp1.tmg.net	2	Platform Engineering	DLP Server	Windows Server 2012 R2 Standard 64 bit Edition
+10.20.1.106	sapmgtaadc1.tmg.net	2	Platform Engineering	Altoona Azure Active Directory Connect server	Windows Server 2012 R2 Standard 64 bit Edition
+10.20.3.134	sapwebadfs1.tmg.net	2	Platform Engineering	Altoona ADFS Proxy	Windows Server 2012 R2 Standard 64 bit Edition
+10.20.3.135	sapwebadfs2.tmg.net	2	Platform Engineering	Altoona ADFS Proxy	Windows Server 2012 R2 Standard 64 bit Edition
+10.20.3.9	sapwebext1.tmg.net	2	Platform Engineering	External web server	Windows Server 2012 R2 Standard 64 bit Edition
