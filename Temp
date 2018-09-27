@@ -1,172 +1,39 @@
-From: Cristian Magana 
-Sent: Wednesday, September 26, 2018 3:32 PM
-To: 'ITAllAppDev@coop.org' <ITAllAppDev@coop.org>; 'DBAdminSecurity@coop.org' <DBAdminSecurity@coop.org>; 'Platform Engineering' <PlatformEngineering@coop.org>
-Cc: 'NetworkOperations@coop.org' <NetworkOperations@coop.org>; Robert Niesi <Robert.Niesi@coop.org>; Mark Gordon <Mark.Gordon@coop.org>; Corey Weeklund <corey.weeklund@coop.org>; Shanee Berry <Shanee.Berry@coop.org>; Diane Lackore <diane.lackore@coop.org>; Jen Weichers <Jen.Weichers@coop.org>
-Subject: RE: DSM PCI - Protocols/Ciphers #450282 | 1-844-740-1264 #734 943 783 
-Importance: High
-
-Team,
-
-With SSL/TLS and cipher changes going in tomorrow, I wanted to help quail some concerns. We will just need the application owners to test their respective functions and confirm the application is operational. Invites will be sent individuals slated as resources as well. 
-
-SSL/TLS PROD Changes 9-27-18 at 11:00 pm CT
-
-Here is the game plan going into the PROD changes 9-27-18 at 11:00 pm CT:
-1.	Confirm resources from each department are present on the bridge.
-2.	Spend the first half hour to confirm that applications are functional as we would expect before making changes. 
-3.	Deploy script to servers via SCCM. This script will take a backup of the registry and save it to a directory on the local C:\ and then makes the registry changes needed.
-a.	If any issues we can revert back.
-4.	Will restart servers a few at a time and confirm operational. 
-5.	As for testing, I just ask that you test the normal everyday functions that you experience with the application or SQL. (Access application, log into the application, go through different functions as an everyday user, et cetera).
-
--- Do not delete or change any of the following text. --   
-  
-  
-Join meeting in my Webex Personal Room   
-https://co-opfs.webex.com/join/cristianm   |  734 943 783     
-  
-Join by phone  
-1-844-740-1264 USA Toll Free  
-Access code: 734 943 783  
-Global call-in numbers  |  Toll-free calling restrictions    
-  
-Can't join the meeting?   
-
-IP	DNS	Tier	Department	RSA Authentication Manager 8.1	OS
-10.10.73.100	scpapptfs1.tmg.net	3	Application Development	TFS	Windows Server 2012 Standard 64 bit Edition
-10.10.8.13	s1paelc1.tmg.net	3	Application Development	Idera/Embarcadero's ER Studio licensing server	Windows 2012 R2/8.1
-10.0.3.37	spwebunifi01.tmg.net	2	Application Development	Production FTP web server	Windows Server 2012 R2 Standard 64 bit Edition
-10.0.3.78	scpwebext1.tmg.net	2	Application Development	External facing web server	Windows Server 2012 R2 Standard 64 bit Edition
-10.10.73.8	scpapptr1.tmg.net	2	Application Development	Test Rack server	Windows Server 2012 R2 Standard 64 bit Edition
-10.10.0.20	s1pdetl1.tmg.net	3	DBAs	Prod SQL ETL server	Windows Server 2012 R2 Standard 64 bit Edition
-10.10.10.3	s1paalt1.tmg.net	3	DBAs	Alteryx Server data analytics	Windows Server 2012 R2 Standard 64 bit Edition
-10.10.33.151	s1qdfztd1.tmg.net	3	DBAs	Feedzai SQL 	Windows Server 2012 R2 Core
-10.10.0.22	s1pdicm1.tmg.net	2	DBAs	SQL Server 2016 for Idera SQL Compliance Manager tool	Windows 2012 R2/8.1
-10.10.0.43	s1pddr1.tmg.net	2	DBAs	SQL Reporting services 2016 for Dynamic Reports	Windows Server 2012 R2 Standard 64 bit Edition
-10.10.0.45	scpsqlmonitor.tmg.net	2	DBAs	New SQL Monitor / SQL Spy	Windows Server 2012 R2 Standard 64 bit Edition
-10.10.9.1	scpsqlfs1.tmg.net	2	DBAs	TMGFS SQL Server	Windows Server 2012 R2 Standard 64 bit Edition
-10.10.73.112	scpwebdpa1.tmg.net	4	Platform Engineering	EMC Data Protection Assitant SQL server	Windows Server 2012 R2 Standard 64 bit Edition
-10.0.3.35	scpwebmexp1.tmg.net	3	Platform Engineering	Test machine for Danny	Windows Server 2012 R2 Standard 64 bit Edition
-10.0.3.77	scpmgtcme1.tmg.net	3	Platform Engineering	SCCM Server	Windows Server 2012 R2 Standard 64 bit Edition
-10.0.3.8	scpwebbz1.tmg.net	3	Platform Engineering	Blue Zone App Server	Windows Server 2012 R2 Standard 64 bit Edition
-10.10.0.151	s1pdfztd2.tmg.net	3	Platform Engineering		Windows Server 2012 R2 Standard 64 bit Edition
-10.10.1.10	scpappmdm1.tmg.net	3	Platform Engineering	Mobile Device Management	Windows Server 2012 Standard 64 bit Edition
-10.10.1.4	s1pamex1.tmg.net	3	Platform Engineering	Mail Exchange MailExpress	Windows Server 2012 R2 Standard 64 bit Edition
-10.10.1.85	scpca1.tmg.net	3	Platform Engineering	AD Certificate Authority - Issuing CA	Windows Server 2012 R2 Standard 64 bit Edition
-10.10.10.153	scpappgp1.tmg.net	3	Platform Engineering	Great Plains Report server	Windows Server 2012 R2 Standard 64 bit Edition
-10.10.2.4	scpmgtcmi1.tmg.net	3	Platform Engineering	SCCM Server	Windows 2012 R2/8.1
-10.10.73.192	scpmgtscom1.tmg.net	3	Platform Engineering	System Center Operations Manager 2012 R2	Windows Server 2012 R2 Standard 64 bit Edition
-10.10.73.99	scpappnetflow1.tmg.net	3	Platform Engineering	Net Flow	Windows Server 2012 R2 Standard 64 bit Edition
-10.20.73.53	sapsqlint1.tmg.net	3	Platform Engineering	NetOps SQL server	Windows Server 2012 R2 Standard 64 bit Edition
-10.0.3.134	scpwebadfs1.tmg.net	2	Platform Engineering	Clive ADFS Proxy	Windows Server 2012 R2 Standard 64 bit Edition
-10.0.3.135	scpwebadfs2.tmg.net	2	Platform Engineering	Clive ADFS Proxy	Windows Server 2012 R2 Standard 64 bit Edition
-10.10.1.106	scpmgtaadc1.tmg.net	2	Platform Engineering	Clive Azure Active Directory Connect server	Windows Server 2012 R2 Standard 64 bit Edition
-10.10.1.13	s1pvdics01.tmg.net	2	Platform Engineering	Horizon View Connection Server	Windows Server 2012 R2 Standard 64 bit Edition
-10.10.1.131	s1pex01.tmg.net	2	Platform Engineering	Exchange 2013 Server	Windows Server 2012 R2 Standard 64 bit Edition
-10.10.1.136	s1pex02.tmg.net	2	Platform Engineering	Exchange 2013 Server	Windows Server 2012 R2 Standard 64 bit Edition
-10.10.1.14	s1pvdics02.tmg.net	2	Platform Engineering	Horizon View Connection Server	Windows Server 2012 R2 Standard 64 bit Edition
-10.10.1.3	scpfs1.tmg.net	2	Platform Engineering	TMG File Server	Windows Server 2012 R2 Standard 64 bit Edition
-10.10.2.171	scpmgthpdm1.tmg.net	2	Platform Engineering	HP Thin Client Device Manager	Windows Server 2012 R2 Standard 64 bit Edition
-10.10.73.102	scpsqlint1.tmg.net	2	Platform Engineering	NetOps SQL server	Windows Server 2012 R2 Standard 64 bit Edition
-10.10.73.123	scpmgtpm1.tmg.net	2	Platform Engineering	EMC ESRS Policy Manager	Windows Server 2012 R2 Standard 64 bit Edition
-10.10.73.194	scpmgtscor1.tmg.net	2	Platform Engineering	ADFS	Windows Server 2012 R2 Standard 64 bit Edition
-10.10.73.20	s1pmkms1.tmg.net	2	Platform Engineering	Key Management Server	Windows Server 2012 R2 Standard 64 bit Edition
-10.10.73.215	s1pvivc01.tmg.net	2	Platform Engineering	Vblock vCenter /SSO Services	Windows Server 2012 R2 Standard 64 bit Edition
-10.10.73.22	s1pvdivum01.tmg.net	2	Platform Engineering	Vsphere Update Manager Server	Windows 2012 R2/8.1
-10.10.73.45	s1pvdicmpsr01.tmg.net	2	Platform Engineering	View Composer	Windows Server 2012 R2 Standard 64 bit Edition
-10.10.73.7	scpmgtdlp1.tmg.net	2	Platform Engineering	DLP Server	Windows Server 2012 R2 Standard 64 bit Edition
-10.20.1.106	sapmgtaadc1.tmg.net	2	Platform Engineering	Altoona Azure Active Directory Connect server	Windows Server 2012 R2 Standard 64 bit Edition
-10.20.3.134	sapwebadfs1.tmg.net	2	Platform Engineering	Altoona ADFS Proxy	Windows Server 2012 R2 Standard 64 bit Edition
-10.20.3.135	sapwebadfs2.tmg.net	2	Platform Engineering	Altoona ADFS Proxy	Windows Server 2012 R2 Standard 64 bit Edition
-10.20.3.9	sapwebext1.tmg.net	2	Platform Engineering	External web server	Windows Server 2012 R2 Standard 64 bit Edition
-
-
-
-
-Cristian Magaña
-System Engineer III
-CO-OP Financial Services                       
-9692 Haven Avenue                              
-Rancho Cucamonga, CA 91730                
-Be there. Be more.                                     
- 
-T 909-922-6179 
-C 909-285-8703
-E Cristian.Magana@coop.org
-
-From: Cristian Magana 
-Sent: Monday, September 24, 2018 12:44 PM
-To: 'ITAllAppDev@coop.org' <ITAllAppDev@coop.org>; 'DBAdminSecurity@coop.org' <DBAdminSecurity@coop.org>; 'NetworkOperations@coop.org' <NetworkOperations@coop.org>
-Cc: 'Platform Engineering' <PlatformEngineering@coop.org>; Robert Niesi <Robert.Niesi@coop.org>; Mark Gordon <Mark.Gordon@coop.org>; Corey Weeklund <corey.weeklund@coop.org>; Shanee Berry <Shanee.Berry@coop.org>; Diane Lackore <diane.lackore@coop.org>
-Subject: RE: DSM PCI - Protocols/Ciphers #450282
-Importance: High
-
-Application Development/Network Operations/Database Administrators,
-
-We are ready for PRODUCTION roll out on 9-27-18 at 11:00 pm CT. We will hold a bridge during this after hour change window, and request each department to allocate a resource to verify the systems stated below are operational after the deployment. The bridge information with be shared with the resources once shared. 
-
-Note: This is focusing on higher tier systems, the lower tier system critical servers will occur next week 10-4-18 at 11:00 pm CT. 
-
-Thank you all!
-
-IP	DNS	Tier	Department	OS
-10.10.10.4	s1paoct1.tmg.net	3	Application Development	Windows 2012 R2/8.1
-10.10.73.100	scpapptfs1.tmg.net	3	Application Development	Windows Server 2012 Standard 64 bit Edition
-10.10.8.13	s1paelc1.tmg.net	3	Application Development	Windows 2012 R2/8.1
-10.0.3.37	spwebunifi01.tmg.net	2	Application Development	Windows Server 2012 R2 Standard 64 bit Edition
-10.0.3.78	scpwebext1.tmg.net	2	Application Development	Windows Server 2012 R2 Standard 64 bit Edition
-10.10.73.8	scpapptr1.tmg.net	2	Application Development	Windows Server 2012 R2 Standard 64 bit Edition
-10.10.0.20	s1pdetl1.tmg.net	3	DBAs	Windows Server 2012 R2 Standard 64 bit Edition
-10.10.10.3	s1paalt1.tmg.net	3	DBAs	Windows Server 2012 R2 Standard 64 bit Edition
-10.10.33.151	s1qdfztd1.tmg.net	3	DBAs	Windows Server 2012 R2 Core
-10.10.0.22	s1pdicm1.tmg.net	2	DBAs	Windows 2012 R2/8.1
-10.10.0.43	s1pddr1.tmg.net	2	DBAs	Windows Server 2012 R2 Standard 64 bit Edition
-10.10.0.45	scpsqlmonitor.tmg.net	2	DBAs	Windows Server 2012 R2 Standard 64 bit Edition
-10.10.0.6	s1pdaa1.tmg.net	2	DBAs	Windows Server 2012 R2 Standard 64 bit Edition
-10.10.9.1	scpsqlfs1.tmg.net	2	DBAs	Windows Server 2012 R2 Standard 64 bit Edition
-10.10.73.112	scpwebdpa1.tmg.net	4	Network Operations	Windows Server 2012 R2 Standard 64 bit Edition
-10.0.3.35	scpwebmexp1.tmg.net	3	Network Operations	Windows Server 2012 R2 Standard 64 bit Edition
-10.0.3.77	scpmgtcme1.tmg.net	3	Network Operations	Windows Server 2012 R2 Standard 64 bit Edition
-10.0.3.8	scpwebbz1.tmg.net	3	Network Operations	Windows Server 2012 R2 Standard 64 bit Edition
-10.10.0.151	s1pdfztd2.tmg.net	3	Network Operations	Windows Server 2012 R2 Standard 64 bit Edition
-10.10.1.10	scpappmdm1.tmg.net	3	Network Operations	Windows Server 2012 Standard 64 bit Edition
-10.10.1.4	s1pamex1.tmg.net	3	Network Operations	Windows Server 2012 R2 Standard 64 bit Edition
-10.10.1.85	scpca1.tmg.net	3	Network Operations	Windows Server 2012 R2 Standard 64 bit Edition
-10.10.10.153	scpappgp1.tmg.net	3	Network Operations	Windows Server 2012 R2 Standard 64 bit Edition
-10.10.2.4	scpmgtcmi1.tmg.net	3	Network Operations	Windows 2012 R2/8.1
-10.10.73.192	scpmgtscom1.tmg.net	3	Network Operations	Windows Server 2012 R2 Standard 64 bit Edition
-10.10.73.99	scpappnetflow1.tmg.net	3	Network Operations	Windows Server 2012 R2 Standard 64 bit Edition
-10.20.73.53	sapsqlint1.tmg.net	3	Network Operations	Windows Server 2012 R2 Standard 64 bit Edition
-10.0.3.134	scpwebadfs1.tmg.net	2	Network Operations	Windows Server 2012 R2 Standard 64 bit Edition
-10.0.3.135	scpwebadfs2.tmg.net	2	Network Operations	Windows Server 2012 R2 Standard 64 bit Edition
-10.10.1.106	scpmgtaadc1.tmg.net	2	Network Operations	Windows Server 2012 R2 Standard 64 bit Edition
-10.10.1.13	s1pvdics01.tmg.net	2	Network Operations	Windows Server 2012 R2 Standard 64 bit Edition
-10.10.1.131	s1pex01.tmg.net	2	Network Operations	Windows Server 2012 R2 Standard 64 bit Edition
-10.10.1.136	s1pex02.tmg.net	2	Network Operations	Windows Server 2012 R2 Standard 64 bit Edition
-10.10.1.14	s1pvdics02.tmg.net	2	Network Operations	Windows Server 2012 R2 Standard 64 bit Edition
-10.10.1.3	scpfs1.tmg.net	2	Network Operations	Windows Server 2012 R2 Standard 64 bit Edition
-10.10.2.171	scpmgthpdm1.tmg.net	2	Network Operations	Windows Server 2012 R2 Standard 64 bit Edition
-10.10.73.102	scpsqlint1.tmg.net	2	Network Operations	Windows Server 2012 R2 Standard 64 bit Edition
-10.10.73.123	scpmgtpm1.tmg.net	2	Network Operations	Windows Server 2012 R2 Standard 64 bit Edition
-10.10.73.194	scpmgtscor1.tmg.net	2	Network Operations	Windows Server 2012 R2 Standard 64 bit Edition
-10.10.73.20	s1pmkms1.tmg.net	2	Network Operations	Windows Server 2012 R2 Standard 64 bit Edition
-10.10.73.215	s1pvivc01.tmg.net	2	Network Operations	Windows Server 2012 R2 Standard 64 bit Edition
-10.10.73.22	s1pvdivum01.tmg.net	2	Network Operations	Windows 2012 R2/8.1
-10.10.73.45	s1pvdicmpsr01.tmg.net	2	Network Operations	Windows Server 2012 R2 Standard 64 bit Edition
-10.10.73.7	scpmgtdlp1.tmg.net	2	Network Operations	Windows Server 2012 R2 Standard 64 bit Edition
-10.20.1.106	sapmgtaadc1.tmg.net	2	Network Operations	Windows Server 2012 R2 Standard 64 bit Edition
-10.20.3.134	sapwebadfs1.tmg.net	2	Network Operations	Windows Server 2012 R2 Standard 64 bit Edition
-10.20.3.135	sapwebadfs2.tmg.net	2	Network Operations	Windows Server 2012 R2 Standard 64 bit Edition
-10.20.3.9	sapwebext1.tmg.net	2	Network Operations	Windows Server 2012 R2 Standard 64 bit Edition
-
-
-Cristian Magaña
-System Engineer III
-CO-OP Financial Services                       
-9692 Haven Avenue                              
-Rancho Cucamonga, CA 91730                
-Be there. Be more.                                     
- 
-T 909-922-6179 
-C 909-285-8703
-E Cristian.Magana@coop.org
+IP	DNS	Tier	Department	RSA Authentication Manager 8.1	OS	Testing Notes
+10.10.73.100	scpapptfs1.tmg.net	3	Application Development	TFS	Windows Server 2012 Standard 64 bit Edition	Dev  I don’t believe this was ever used so doesn’t need to be tested
+10.10.8.13	s1paelc1.tmg.net	3	Application Development	Idera/Embarcadero's ER Studio licensing server	Windows 2012 R2/8.1	
+10.0.3.37	spwebunifi01.tmg.net	2	Application Development	Production FTP web server	Windows Server 2012 R2 Standard 64 bit Edition	No one uses our mobile app so thinking this could be tested during the day tomorrow
+10.0.3.78	scpwebext1.tmg.net	2	Application Development	External facing web server	Windows Server 2012 R2 Standard 64 bit Edition	After talking to a few developers, it looks like this server was used for AMHomebaseSSO which is no longer in use.  
+10.10.73.8	scpapptr1.tmg.net	2	Application Development	Test Rack server	Windows Server 2012 R2 Standard 64 bit Edition	To Vicki’s point, since this tool is only used by QA, it could be tested during the day tomorrow
+10.10.0.20	s1pdetl1.tmg.net	3	DBAs	Prod SQL ETL server	Windows Server 2012 R2 Standard 64 bit Edition	David Othus will be handling the testing 
+10.10.33.151	s1qdfztd1.tmg.net	3	DBAs	Feedzai SQL 	Windows Server 2012 R2 Standard	QA - Box. Will not patch tonight QA Primary SQL node. 
+10.10.33.152	s1qdfztd2.tmg.net	3	DBAs	Feedzai SQL 	Windows Server 2012 R2 Standard	Patching secondary SQL node. Will have Lavanya failover to secondary node in the AMto test SQL on patched server. 
+10.10.33.148	s1qdfztd3.tmg.net	3	DBAs	Feedzai SQL 	Windows Server 2012 R2 Standard	Patching third SQL node. Will have Lavanya failover to this node in the AM to test SQL on patched server. 
+10.10.0.22	s1pdicm1.tmg.net	2	DBAs	SQL Server 2016 for Idera SQL Compliance Manager tool	Windows 2012 R2/8.1	David Othus will be handling the testing 
+10.10.0.43	s1pddr1.tmg.net	2	DBAs	SQL Reporting services 2016 for Dynamic Reports	Windows Server 2012 R2 Standard 64 bit Edition	David Othus will be handling the testing 
+10.10.0.45	scpsqlmonitor.tmg.net	2	DBAs	New SQL Monitor / SQL Spy	Windows Server 2012 R2 Standard 64 bit Edition	David Othus will be handling the testing 
+10.10.9.1	scpsqlfs1.tmg.net	2	DBAs	TMGFS SQL Server	Windows Server 2012 R2 Standard 64 bit Edition	David Othus will be handling the testing 
+10.10.73.112	scpwebdpa1.tmg.net	4	Platform Engineering	EMC Data Protection Assitant SQL server	Windows Server 2012 R2 Standard 64 bit Edition	Verify connectivity and Server Manager services operational
+10.0.3.35	scpwebmexp1.tmg.net	3	Platform Engineering	Test machine for Danny	Windows Server 2012 R2 Standard 64 bit Edition	Verify connectivity and Server Manager services operational
+10.0.3.8	scpwebbz1.tmg.net	3	Platform Engineering	Blue Zone App Server	Windows Server 2012 R2 Standard 64 bit Edition	Verify connectivity and Server Manager services operational
+10.10.1.10	scpappmdm1.tmg.net	3	Platform Engineering	Mobile Device Management	Windows Server 2012 Standard 64 bit Edition	Verify connectivity and Server Manager services operational
+10.10.1.4	s1pamex1.tmg.net	3	Platform Engineering	Mail Exchange MailExpress	Windows Server 2012 R2 Standard 64 bit Edition	Verify connectivity and Server Manager services operational
+10.10.1.85	scpca1.tmg.net	3	Platform Engineering	AD Certificate Authority - Issuing CA	Windows Server 2012 R2 Standard 64 bit Edition	Verify connectivity and Server Manager services operational
+10.10.10.153	scpappgp1.tmg.net	3	Platform Engineering	Great Plains Report server	Windows Server 2012 R2 Standard 64 bit Edition	Verify connectivity and Server Manager services operational
+10.10.73.99	scpappnetflow1.tmg.net	3	Platform Engineering	Net Flow	Windows Server 2012 R2 Standard 64 bit Edition	Verify connectivity and Server Manager services operational
+10.20.73.53	sapsqlint1.tmg.net	3	Platform Engineering	NetOps SQL server	Windows Server 2012 R2 Standard 64 bit Edition	Verify connectivity and Server Manager services operational
+10.0.3.134	scpwebadfs1.tmg.net	2	Platform Engineering	Clive ADFS Proxy	Windows Server 2012 R2 Standard 64 bit Edition	Verify connectivity and Server Manager services operational
+10.0.3.135	scpwebadfs2.tmg.net	2	Platform Engineering	Clive ADFS Proxy	Windows Server 2012 R2 Standard 64 bit Edition	Verify connectivity and Server Manager services operational
+10.10.1.106	scpmgtaadc1.tmg.net	2	Platform Engineering	Clive Azure Active Directory Connect server	Windows Server 2012 R2 Standard 64 bit Edition	Verify connectivity and Server Manager services operational
+10.10.1.3	scpfs1.tmg.net	2	Platform Engineering	TMG File Server	Windows Server 2012 R2 Standard 64 bit Edition	Verify connectivity and Server Manager services operational
+10.10.2.171	scpmgthpdm1.tmg.net	2	Platform Engineering	HP Thin Client Device Manager	Windows Server 2012 R2 Standard 64 bit Edition	Verify connectivity and Server Manager services operational
+10.10.2.98	scpnetmonitor2.tmg.net	2	Platform Engineering	NetMonitor2	Windows 2008 R2/7	Verify connectivity and Server Manager services operational
+10.10.73.102	scpsqlint1.tmg.net	2	Platform Engineering	NetOps SQL server	Windows Server 2012 R2 Standard 64 bit Edition	Verify connectivity and Server Manager services operational
+10.10.73.123	scpmgtpm1.tmg.net	2	Platform Engineering	EMC ESRS Policy Manager	Windows Server 2012 R2 Standard 64 bit Edition	Verify connectivity and Server Manager services operational
+10.10.73.194	scpmgtscor1.tmg.net	2	Platform Engineering	ADFS	Windows Server 2012 R2 Standard 64 bit Edition	Verify connectivity and Server Manager services operational
+10.10.73.20	s1pmkms1.tmg.net	2	Platform Engineering	Key Management Server	Windows Server 2012 R2 Standard 64 bit Edition	Verify connectivity and Server Manager services operational
+10.10.73.45	s1pvdicmpsr01.tmg.net	2	Platform Engineering	View Composer	Windows Server 2012 R2 Standard 64 bit Edition	Verify connectivity and Server Manager services operational
+10.10.73.7	scpmgtdlp1.tmg.net	2	Platform Engineering	DLP Server	Windows Server 2012 R2 Standard 64 bit Edition	Verify connectivity and Server Manager services operational
+10.20.1.106	sapmgtaadc1.tmg.net	2	Platform Engineering	Altoona Azure Active Directory Connect server	Windows Server 2012 R2 Standard 64 bit Edition	Verify connectivity and Server Manager services operational
+10.20.3.134	sapwebadfs1.tmg.net	2	Platform Engineering	Altoona ADFS Proxy	Windows Server 2012 R2 Standard 64 bit Edition	Verify connectivity and Server Manager services operational
+10.20.3.135	sapwebadfs2.tmg.net	2	Platform Engineering	Altoona ADFS Proxy	Windows Server 2012 R2 Standard 64 bit Edition	Verify connectivity and Server Manager services operational
+10.20.3.9	sapwebext1.tmg.net	2	Platform Engineering	External web server	Windows Server 2012 R2 Standard 64 bit Edition	Verify connectivity and Server Manager services operational
