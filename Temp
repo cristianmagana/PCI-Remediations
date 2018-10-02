@@ -1,109 +1,53 @@
-SUD_DevBeta_Servers Patching Window is 11pm-6am
-
-
-	CUETSBETAVAULT1	Computer	Yes	TMG	Active	
-	CUETSDEVVAULT1	Computer	Yes	TMG	Active	
-	S1BAALT1	Computer	Yes	TMG	Active	
-	S1BASM01	Computer	Yes	TMG	Active	
-	S1BBROREP1	Computer	Yes	TMG	Active	
-	S1BDAA1		Computer	Yes	TMG	Active	
-	S1BDDR1		Computer	Yes	TMG	Active	
-	S1BDETL1	Computer	Yes	TMG	Active	
-	S1BDOL1		Computer	Yes	TMG	Active	
-	S1BWBZ1		Computer	Yes	TMG	Active	
-	S1BWPSS1	Computer	Yes	TMG	Active	
-	S1DAMC01	Computer	Yes	TMG	Active	
-	S1DAMQ1		Computer	Yes	TMG	Active	
-	S1DAMQ2		Computer	Yes	TMG	Active	
-	S1DASM01	Computer	Yes	TMG	Active	
-	S1DATAB1	Computer	Yes	TMG	Active	
-	S1DATBW1	Computer	Yes	TMG	Active	
-	S1DBROREP1	Computer	Yes	TMG	Active	
-	S1DDAA1		Computer	Yes	TMG	Active	
-	S1DDDR1		Computer	Yes	TMG	Active	
-	S1DDETL1	Computer	Yes	TMG	Active	
-	S1DDOL1		Computer	Yes	TMG	Active	
-	S1DDOL2		Computer	Yes	TMG	Inactive	
-	S1DDOL3		Computer	Yes	TMG	Inactive	
-	S1DDSUM01	Computer	Yes	TMG	Active	
-	S1DPHQM1	Computer	Yes	TMG	Active	
-	S1DWBZ1		Computer	Yes	TMG	Active	
-	S1DWPSS1	Computer	Yes	TMG	Active	
-	S1QATBP1	Computer	Yes	TMG	Active	
-	S1QATBW1	Computer	Yes	TMG	Active	
-	S1QATBW2	Computer	Yes	TMG	Active	
-	S1QDSUM01	Computer	Yes	TMG	Active	
-	S1QDSUM02	Computer	Yes	TMG	Active	
-	S1UDFZTD1	Computer	Yes	TMG	Active	
-	S2DDFZTD1	Computer	Yes	TMG	Active	
-	SABAPPFTP1	Computer	Yes	TMG	Active	
-	SABAPPFTP2	Computer	Yes	TMG	Active	
-	SABAPPSB1	Computer	Yes	TMG	Active	
-	SABFSFTP1	Computer	Yes	TMG	Active	
-	SABFSFTP2	Computer	Yes	TMG	Active	
-	SABFSWEBDATA1	Computer	Yes	TMG	Active	
-	SABFSWEBDATA2	Computer	Yes	TMG	Active	
-	SABSQLBIRPTS1	Computer	Yes	TMG	Active	
-	SABSQLETL1	Computer	Yes	TMG	Active	
-	SABSQLSSAS1	Computer	Yes	TMG	Active	
-	SABSQLWH1	Computer	Yes	TMG	Active	
-	SABWEBBZ1	Computer	Yes	TMG	Active	
-	SABWEBCT1	Computer	Yes	TMG	Active	
-	SABWEBCUETSVT1	Computer	Yes	TMG	Active	
-	SABWEBEXT1	Computer	Yes	TMG	Active	
-	SABWEBFTP1	Computer	Yes	TMG	Active	
-	SABWEBFTP2	Computer	Yes	TMG	Active	
-	SABWEBINT1	Computer	Yes	TMG	Active	
-	SABWEBMCI1	Computer	Yes	TMG	Active	
-	SABWEBMCI2	Computer	Yes	TMG	Active	
-	SABWEBOS1	Computer	Yes	TMG	Active	
-	SABWEBOS2	Computer	Yes	TMG	Active	
-	SABWEBRSVEXT1	Computer	Yes	TMG	Active	
-	SABWEBSB1	Computer	Yes	TMG	Active	
-	SABWEBSB2	Computer	Yes	TMG	Active	
-	SABWEBUNFCUMCI1	Computer	Yes	TMG	Active	
-	SABWEBVAULT1	Computer	Yes	TMG	Active	
-	SADARCHIVER1	Computer	Yes	TMG	Active	
-	SADFSWEBDATA1	Computer	Yes	TMG	Active	
-	SADFSWEBDATA2	Computer	Yes	TMG	Active	
-	SADSQLBIRPTS1	Computer	Yes	TMG	Active	
-	SADSQLETL2	Computer	Yes	TMG	Active	
-	SADSQLSSAS2	Computer	Yes	TMG	Active	
-	SADSQLWH2	Computer	Yes	TMG	Active	
-	SADWEBBZ1	Computer	Yes	TMG	Active	
-	SADWEBCUETSVT1	Computer	Yes	TMG	Active	
-	SADWEBEXT1	Computer	Yes	TMG	Active	
-	SADWEBINT1	Computer	Yes	TMG	Active	
-	SADWEBMCI1	Computer	Yes	TMG	Active	
-	SADWEBOS1	Computer	Yes	TMG	Active	
-	SADWEBRSVEXT1	Computer	Yes	TMG	Active	
-	SADWEBSB1	Computer	Yes	TMG	Active	
-	SADWEBUNFCUMCI1	Computer	Yes	TMG	Active	
-	SADWEBVAULT1	Computer	Yes	TMG	Active	
-	SBSQLENT01	Computer	Yes	TMG	Active	
-	SBWEBUNIFI01	Computer	Yes	TMG	Active	
-	SCBARCHIVER1	Computer	Yes	TMG	Active	
-	SCBWEBMCI1	Computer	Yes	TMG	Active	
-	SDSQLENT01	Computer	Yes	TMG	Active	
-	SDWEBUNIFI01	Computer	Yes	TMG	Active	
-	TMGBETACUETSWH	Computer	Yes	TMG	Active	
-	TMGBETARPTSSQL	Computer	Yes	TMG	Active	
-	TMGBETARPTSWEB	Computer	Yes	TMG	Active	
-	TMGBETARSVEXT1	Computer	Yes	TMG	Active	
-	TMGBETARSVINT1	Computer	Yes	TMG	Active	
-	TMGBETASCRAPER1	Computer	Yes	TMG	Active	
-	TMGBETAVAULT1	Computer	Yes	TMG	Active	
-	TMGBETAWAREHOUS	Computer	Yes	TMG	Active	
-	TMGBETAWEBEXT1	Computer	Yes	TMG	Active	
-	TMGBETAWEBINT1	Computer	Yes	TMG	Active	
-	TMGDEVCUETSWH	Computer	Yes	TMG	Active	
-	TMGDEVIVRSQL1	Computer	Yes	TMG	Active	
-	TMGDEVRPTSSQL	Computer	Yes	TMG	Active	
-	TMGDEVRPTSWEB	Computer	Yes	TMG	Active	
-	TMGDEVRSVEXT1	Computer	Yes	TMG	Active	
-	TMGDEVRSVINT1	Computer	Yes	TMG	Active	
-	TMGDEVSCRAPER1	Computer	Yes	TMG	Active	
-	TMGDEVVAULT1	Computer	Yes	TMG	Active	
-	TMGDEVWAREHOUSE	Computer	Yes	TMG	Active	
-	TMGDEVWEBEXT1	Computer	Yes	TMG	Active	
-	TMGDEVWEBINT1	Computer	Yes	TMG	Active	
+CUETSDEVVAULT1
+S1BAALT1
+S1BDAA1
+S1DAMC01
+S1DAMQ1
+S1DAMQ2
+S1DASM01
+S1DATAB1
+S1DATBW1
+S1DBROREP1
+S1DDAA1
+S1DDDR1
+S1DDETL1
+S1DDOL1
+S1DDOL2
+S1DDOL3
+S1DDSUM01
+S1DPHQM1
+S1DWBZ1
+S1DWPSS1
+S1QDSUM01
+S1QDSUM02
+S2DDFZTD1
+SADARCHIVER1
+SADFSWEBDATA1
+SADFSWEBDATA2
+SADSQLBIRPTS1
+SADSQLETL2
+SADSQLSSAS2
+SADSQLWH2
+SADWEBBZ1
+SADWEBCUETSVT1
+SADWEBEXT1
+SADWEBINT1
+SADWEBMCI1
+SADWEBOS1
+SADWEBRSVEXT1
+SADWEBSB1
+SADWEBUNFCUMCI1
+SADWEBVAULT1
+SBSQLENT01
+SDSQLENT01
+SDWEBUNIFI01
+TMGDEVIVRSQL1
+TMGDEVRPTSSQL
+TMGDEVRPTSWEB
+TMGDEVRSVEXT1
+TMGDEVRSVINT1
+TMGDEVSCRAPER1
+TMGDEVVAULT1
+TMGDEVWAREHOUSE
+TMGDEVWEBEXT1
+TMGDEVWEBINT1
