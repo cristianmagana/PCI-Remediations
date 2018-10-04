@@ -1,68 +1,70 @@
-Category 	DSN Name	IP Address	Department	Client Facing	OS	Description 	Vulnerability Title
-Beta	cuetsbetavault1.tmg.net	10.10.32.13	Application Development		Windows 2008 Enterprise Server 64 bit Edition Service Pack 2		Weak Configuration - Group Policy - SMB Packet Signing
-Beta	S1BASM01.TMG.NET	10.10.32.58	Application Development	Y	Windows Server 2012 R2 Standard	Application security Model	
-Beta	S1BWBZ1.TMG.NET	10.10.32.67	Application Development	Y	Windows Server 2012 R2 Standard	New Beta Bluezone server(05/2018)	
-Beta	SABAPPSB1.TMG.NET	10.10.32.53	Application Development	y	Windows Server 2012 R2 Standard	Beta Springboard	
-Beta	SABWEBCUETSVT1.TMG.NET	10.20.32.54	Application Development	y	Windows Server 2012 R2 Standard	Beta CUETS Vault	
-Beta	SABWEBEXT1.TMG.NET	10.20.32.53	Application Development	y	Windows Server 2012 R2 Standard	Beta external web	
-Beta	sabwebint1.tmg.net	10.10.32.48	Application Development	n	Windows Server 2012 R2 Standard 64 bit Edition		Weak Configuration - Group Policy - SMB Packet Signing
-Beta	SABWEBMCI1.TMG.NET	10.20.32.44	Application Development	y	Windows Server 2012 R2 Standard	Beta MCI	
-Beta	SABWEBMCI2.TMG.NET	10.20.32.45	Application Development	y	Windows Server 2012 R2 Standard	Beta MCI	
-Beta	SABWEBOS1.TMG.NET	10.20.32.38	Application Development	y	Windows Server 2012 R2 Standard	Beta OS	
-Beta	SABWEBOS2.TMG.NET	10.20.32.39	Application Development	y	Windows Server 2012 R2 Standard	Beta OS	
-Beta	SABWEBRSVEXT1.TMG.NET	10.20.32.51	Application Development	y	Windows Server 2012 R2 Standard	Beta RSV External	
-Beta	sabwebsb1.tmg.net	10.10.32.46	Application Development		Windows Server 2012 R2 Standard 64 bit Edition		Weak Configuration - Group Policy - SMB Packet Signing
-Beta	sabwebsb2.tmg.net	10.10.32.47	Application Development		Windows Server 2012 R2 Standard 64 bit Edition		Weak Configuration - Group Policy - SMB Packet Signing
-Beta	SABWEBSB2.TMG.NET	10.10.32.47	Application Development	y	Windows Server 2012 R2 Standard	Beta Springboard	
-Beta	SABWEBUNFCUMCI1.TMG.NET	10.20.32.50	Application Development	y	Windows Server 2012 R2 Standard	Beta UNFCU MCI	
-Beta	SABWEBVAULT1.TMG.NET	10.20.32.52	Application Development	y	Windows Server 2012 R2 Standard	beta vault	
-Beta	SBWEBUNIFI01.TMG.NET	10.20.32.24	Application Development	y	Windows Server 2012 R2 Standard	Mobile App Website	
-Beta	scbwebmci1.tmg.net	10.10.32.43	Application Development		Windows 2008 Enterprise Server 64 bit Edition Service Pack 2		Weak Configuration - Group Policy - SMB Packet Signing
-Beta	tmgbetarsvext1.tmg.net	10.10.32.21	Application Development	y	Windows Server® 2008 Enterprise	Test report server handles external web interface in to reporting services	Weak Configuration - Group Policy - SMB Packet Signing
-Beta	tmgbetarsvint1.tmg.net	10.10.32.20	Application Development	y	Windows Server® 2008 Enterprise	Test report server handles internal web interface in to reporting services	Weak Configuration - Group Policy - SMB Packet Signing
-Beta	tmgbetascraper1.tmg.net	10.10.32.37	Application Development	y	Windows Server 2008 R2 Standard	Test Scraper Server - for 3270 Screen Scrapes	Weak Configuration - Group Policy - SMB Packet Signing
-Beta	tmgbetavault1.tmg.net	10.10.32.11	Application Development	y	Windows Server® 2008 Enterprise	Test web server for vault	Weak Configuration - Group Policy - SMB Packet Signing
-Beta	tmgbetawebext1.tmg.net	10.10.32.15	Application Development	y	Windows Server® 2008 Enterprise	Beta External non-pci web server	Weak Configuration - Group Policy - SMB Packet Signing
-Beta	tmgbetawebint1.tmg.net	10.10.32.12	Application Development	y	Windows Server® 2008 Enterprise	BETA Internal non-pci web server	Weak Configuration - Group Policy - SMB Packet Signing
-Beta	S1QATBP1.TMG.NET	10.10.32.62	Business Intelligence	Y	Windows Server 2012 R2 Standard	Beta Tableau Primary server	
-Beta	S1QATBW1.TMG.NET	10.10.32.63	Business Intelligence	Y	Windows Server 2012 R2 Standard	Beta Tableau Worker Node	
-Beta	S1QATBW2.TMG.NET	10.10.32.64	Business Intelligence	Y	Windows Server 2012 R2 Standard	Beta Tableau Worker Node	
-Beta	S1BDAA1.TMG.NET	10.10.33.2	DBAs	n	Windows Server 2012 R2 Standard	SQL Server Advanced Analytics (Altyrex)	
-Beta	S1BDDR1.TMG.NET	10.10.33.5	DBAs	y	Windows Server 2012 R2 Standard	SQL Reporting services 2016 for Dynamic Reports	
-Beta	S1BDETL1.TMG.NET	10.10.33.7	DBAs	y	Windows Server 2012 R2 Standard		
-Beta	S1BDOL1.TMG.NET	10.10.33.43	DBAs	y	Windows Server 2012 R2 Standard	Beta Database server for websites	
-Beta	S1QDFZTD3.TMG.NET	10.10.33.148	DBAs	n	Windows Server 2012 R2 Standard	Feedzai SQL	
-Beta	S1QDSUM01.TMG.NET	10.10.33.17	DBAs	n	Windows Server 2012 R2 Standard	Beta Summary Database	
-Beta	S1QDSUM02.TMG.NET	10.10.33.18	DBAs	n	Windows Server 2012 R2 Standard	Beta Summary Database	
-Beta	S1UDFZTD1.TMG.NET	10.10.33.150	DBAs		Windows Server 2012 R2 Standard		
-Beta	SABSQLBiRpts1.TMG.NET	10.20.33.25	DBAs	y	Windows Server 2012 R2 Standard	Beta SQL Business Intelligence Reporting	
-Beta	SABSQLETL1.TMG.NET	10.20.33.27	DBAs	y	Windows Server 2012 R2 Standard	Beta SQL Cube Maker	
-Beta	SABSQLSSAS1.TMG.NET	10.20.33.26	DBAs	y	Windows Server 2012 R2 Standard	Beta Analytics Warehouse	
-Beta	SABSQLWH1.TMG.NET	10.20.33.28	DBAs	y	Windows Server 2012 R2 Standard	Beta SQL Warehouse	
-Beta	SABWebCT1.TMG.NET	10.20.32.32	DBAs	y	Windows Server 2012 R2 Standard	Beta Clear Trends	
-Beta	SBSQLENT01.TMG.NET	10.20.33.9	DBAs	n	Windows Server 2012 R2 Standard	Billing SQL	
-Beta	SCBARCHIVER1.TMG.NET	10.10.33.16	DBAs	y	Windows Server 2008 R2	Beta Archiver	
-Beta	TMGBETACUETSWH.TMG.NET	10.10.33.9	DBAs	y	Windows Server® 2008 R2 Enterprise	Beta CUETS Warehouse server	
-Beta	TMGBETARPTSSQL.TMG.NET	10.20.33.10	DBAs	y	Windows Server 2008 R2	Beta Rptssql SQL Server	
-Beta	TMGBETARPTSWEB.TMG.NET	10.10.32.9	DBAs	y	Windows Server® 2008 R2 Enterprise	Testing server for Dynamic reports.  Handles front end web interface; Piece of reporting services.	
-Beta	tmgbetawarehous.tmg.net	10.10.33.3	DBAs	y	Windows Server® 2008 Standard	Test database server for TMG Dynamic Reports	Weak Configuration - Group Policy - SMB Packet Signing
-Beta	S1BAALT1.TMG.NET	10.10.32.16	DBA's	n	Windows Server 2012R2 Standard	Beta Alteryx Server data analytics	
-Beta	C1QDSUM01.TMG.NET	10.10.33.149	Network Operations	y	Windows Server 2012R2 Standard	Feedzai SQL Cluster	
-Beta	SABAPPFTP1.TMG.NET	10.20.33.2	Network Operations	y	Windows Server 2012 R2 Standard	Beta FTP App server	
-Beta	SABAPPFTP2.TMG.NET	10.20.33.3	Network Operations	y	Windows Server 2012 R2 Standard	Beta FTP App server	
-Beta	SABFSFTP1.TMG.NET	10.20.33.4	Network Operations	y	Windows Server 2012 R2 Standard	Beta FTP Filesever	
-Beta	SABFSFTP2.TMG.NET	10.20.33.5	Network Operations	y	Windows Server 2012 R2 Standard	Beta FTP Filesever	
-Beta	SABFSWebData1.TMG.NET	10.20.33.32	Network Operations	y	Windows Server 2012 R2 Standard	Beta Web Data File Server	
-Beta	SABFSWebData2.TMG.NET	10.20.33.32	Network Operations	y	Windows Server 2012 R2 Standard	Beta Web Data File Server	
-Beta	SABWEBBZ1.TMG.NET	10.0.3.8	Network Operations	y	Windows Server 2012 R2 Standard	Blue Zone App Server	
-Beta	SABWEBFTP1.TMG.NET	10.250.8.9	Network Operations	y	Windows Server 2012 R2 Standard	Beta FTP web server	
-Beta	SABWEBFTP2.TMG.NET	10.250.8.10	Network Operations	y	Windows Server 2012 R2 Standard	Beta FTP web server	
-Beta	S1BDIVR01.TMG.NET						
-Dev	cuetsdevvault1.tmg.net	10.10.16.13	Application Development		Windows 2008 Enterprise Server 64 bit Edition Service Pack 2		Weak Configuration - Group Policy - SMB Packet Signing
-Dev	tmgdevrsvext1.tmg.net	10.10.16.21	Application Development	n	Windows Server® 2008 Enterprise	Dev report server handles external web interface in to reporting services	Weak Configuration - Group Policy - SMB Packet Signing
-Dev	tmgdevrsvint1.tmg.net	10.10.16.20	Application Development	n	Windows Server® 2008 Enterprise	Dev report server handles internal web interface in to reporting services	Weak Configuration - Group Policy - SMB Packet Signing
-Dev	tmgdevscraper1.tmg.net	10.10.16.37	Application Development	n	Windows Server 2008 R2 Standard	Dev Screen Scraper for ZD09 process - Settlement	Weak Configuration - Group Policy - SMB Packet Signing
-Dev	tmgdevvault1.tmg.net	10.10.16.11	Application Development	n	Windows Server® 2008 Enterprise	Dev web server for Vault	Weak Configuration - Group Policy - SMB Packet Signing
-Dev	tmgdevwebext1.tmg.net	10.10.16.15	Application Development	n	Windows Server® 2008 Enterprise	DEV External non-pci web server	Weak Configuration - Group Policy - SMB Packet Signing
-Dev	tmgdevwebint1.tmg.net	10.10.16.12	Application Development	n	Windows Server® 2008 Enterprise	DEV Internal non-pci web server	Weak Configuration - Group Policy - SMB Packet Signing
-Dev	tmgdevivrsql1.tmg.net	10.10.17.18	DBAs	n	Windows Server 2008 R2 Standard	Dev IVR SQL box	Weak Configuration - Group Policy - SMB Packet Signing
+From: Cristian Magana 
+Sent: Thursday, October 4, 2018 10:16 AM
+To: 'ITAllAppDev@coop.org' <ITAllAppDev@coop.org>; 'DBAdminSecurity' <DBAdminSecurity@coop.org>
+Cc: 'Platform Engineering' <PlatformEngineering@coop.org>; Shanee Berry <Shanee.Berry@coop.org>; Diane Lackore <diane.lackore@coop.org>; Jen Weichers <Jen.Weichers@coop.org>
+Subject: RE: DSM PCI - SMB Signing Ticket #451963
+
+Application Development and Database Admins,
+
+We would like to make use of the change window being that the IVR phone system is a no go for this weekend. Can we please get a resource from the following departments to test the following servers on Sat. 10-6-18 at 11:00 pm CT.
+
+Category 	DSN Name	IP Address	Department	Client Facing	OS	Description 
+Beta	S1BASM01.TMG.NET	10.10.32.58	Application Development	Y	Windows Server 2012 R2 Standard	Application security Model
+Beta	S1BWBZ1.TMG.NET	10.10.32.67	Application Development	Y	Windows Server 2012 R2 Standard	New Beta Bluezone server(05/2018)
+Beta	SABAPPSB1.TMG.NET	10.10.32.53	Application Development	y	Windows Server 2012 R2 Standard	Beta Springboard
+Beta	SABWEBCUETSVT1.TMG.NET	10.20.32.54	Application Development	y	Windows Server 2012 R2 Standard	Beta CUETS Vault
+Beta	SABWEBEXT1.TMG.NET	10.20.32.53	Application Development	y	Windows Server 2012 R2 Standard	Beta external web
+Beta	sabwebint1.tmg.net	10.10.32.48	Application Development	n	Windows Server 2012 R2 Standard 64 bit Edition	
+Beta	SABWEBMCI1.TMG.NET	10.20.32.44	Application Development	y	Windows Server 2012 R2 Standard	Beta MCI
+Beta	SABWEBMCI2.TMG.NET	10.20.32.45	Application Development	y	Windows Server 2012 R2 Standard	Beta MCI
+Beta	SABWEBOS1.TMG.NET	10.20.32.38	Application Development	y	Windows Server 2012 R2 Standard	Beta OS
+Beta	SABWEBOS2.TMG.NET	10.20.32.39	Application Development	y	Windows Server 2012 R2 Standard	Beta OS
+Beta	SABWEBRSVEXT1.TMG.NET	10.20.32.51	Application Development	y	Windows Server 2012 R2 Standard	Beta RSV External
+Beta	sabwebsb1.tmg.net	10.10.32.46	Application Development		Windows Server 2012 R2 Standard 64 bit Edition	
+Beta	sabwebsb2.tmg.net	10.10.32.47	Application Development		Windows Server 2012 R2 Standard 64 bit Edition	
+Beta	SABWEBSB2.TMG.NET	10.10.32.47	Application Development	y	Windows Server 2012 R2 Standard	Beta Springboard
+Beta	SABWEBUNFCUMCI1.TMG.NET	10.20.32.50	Application Development	y	Windows Server 2012 R2 Standard	Beta UNFCU MCI
+Beta	SABWEBVAULT1.TMG.NET	10.20.32.52	Application Development	y	Windows Server 2012 R2 Standard	beta vault
+Beta	SBWEBUNIFI01.TMG.NET	10.20.32.24	Application Development	y	Windows Server 2012 R2 Standard	Mobile App Website
+Beta	scbwebmci1.tmg.net	10.10.32.43	Application Development		Windows 2008 Enterprise Server 64 bit SP2	
+Beta	tmgbetarsvext1.tmg.net	10.10.32.21	Application Development	y	Windows Server® 2008 Enterprise	Test report server handles external web interface in to reporting services
+Beta	tmgbetarsvint1.tmg.net	10.10.32.20	Application Development	y	Windows Server® 2008 Enterprise	Test report server handles internal web interface in to reporting services
+Beta	tmgbetascraper1.tmg.net	10.10.32.37	Application Development	y	Windows Server 2008 R2 Standard	Test Scraper Server - for 3270 Screen Scrapes
+Beta	tmgbetavault1.tmg.net	10.10.32.11	Application Development	y	Windows Server® 2008 Enterprise	Test web server for vault
+Beta	tmgbetawebext1.tmg.net	10.10.32.15	Application Development	y	Windows Server® 2008 Enterprise	Beta External non-pci web server
+Beta	tmgbetawebint1.tmg.net	10.10.32.12	Application Development	y	Windows Server® 2008 Enterprise	BETA Internal non-pci web server
+Beta	S1QATBP1.TMG.NET	10.10.32.62	Business Intelligence	Y	Windows Server 2012 R2 Standard	Beta Tableau Primary server
+Beta	S1QATBW1.TMG.NET	10.10.32.63	Business Intelligence	Y	Windows Server 2012 R2 Standard	Beta Tableau Worker Node
+Beta	S1QATBW2.TMG.NET	10.10.32.64	Business Intelligence	Y	Windows Server 2012 R2 Standard	Beta Tableau Worker Node
+Beta	S1BDAA1.TMG.NET	10.10.33.2	DBAs	n	Windows Server 2012 R2 Standard	SQL Server Advanced Analytics (Altyrex)
+Beta	S1BDDR1.TMG.NET	10.10.33.5	DBAs	y	Windows Server 2012 R2 Standard	SQL Reporting services 2016 for Dynamic Reports
+Beta	S1BDETL1.TMG.NET	10.10.33.7	DBAs	y	Windows Server 2012 R2 Standard	
+Beta	S1BDOL1.TMG.NET	10.10.33.43	DBAs	y	Windows Server 2012 R2 Standard	Beta Database server for websites
+Beta	S1QDFZTD3.TMG.NET	10.10.33.148	DBAs	n	Windows Server 2012 R2 Standard	Feedzai SQL
+Beta	S1QDSUM01.TMG.NET	10.10.33.17	DBAs	n	Windows Server 2012 R2 Standard	Beta Summary Database
+Beta	S1QDSUM02.TMG.NET	10.10.33.18	DBAs	n	Windows Server 2012 R2 Standard	Beta Summary Database
+Beta	S1UDFZTD1.TMG.NET	10.10.33.150	DBAs		Windows Server 2012 R2 Standard	
+Beta	SABSQLBiRpts1.TMG.NET	10.20.33.25	DBAs	y	Windows Server 2012 R2 Standard	Beta SQL Business Intelligence Reporting
+Beta	SABSQLETL1.TMG.NET	10.20.33.27	DBAs	y	Windows Server 2012 R2 Standard	Beta SQL Cube Maker
+Beta	SABSQLSSAS1.TMG.NET	10.20.33.26	DBAs	y	Windows Server 2012 R2 Standard	Beta Analytics Warehouse
+Beta	SABSQLWH1.TMG.NET	10.20.33.28	DBAs	y	Windows Server 2012 R2 Standard	Beta SQL Warehouse
+Beta	SABWebCT1.TMG.NET	10.20.32.32	DBAs	y	Windows Server 2012 R2 Standard	Beta Clear Trends
+Beta	SBSQLENT01.TMG.NET	10.20.33.9	DBAs	n	Windows Server 2012 R2 Standard	Billing SQL
+Beta	SCBARCHIVER1.TMG.NET	10.10.33.16	DBAs	y	Windows Server 2008 R2	Beta Archiver
+Beta	TMGBETACUETSWH.TMG.NET	10.10.33.9	DBAs	y	Windows Server® 2008 R2 Enterprise	Beta CUETS Warehouse server
+Beta	TMGBETARPTSSQL.TMG.NET	10.20.33.10	DBAs	y	Windows Server 2008 R2	Beta Rptssql SQL Server
+Beta	TMGBETARPTSWEB.TMG.NET	10.10.32.9	DBAs	y	Windows Server® 2008 R2 Enterprise	Testing server for Dynamic reports.  Handles front end web interface; Piece of reporting services.
+Beta	tmgbetawarehous.tmg.net	10.10.33.3	DBAs	y	Windows Server® 2008 Standard	Test database server for TMG Dynamic Reports
+						
+
+
+Cristian Magaña
+System Engineer III
+CO-OP Financial Services                       
+9692 Haven Avenue                              
+Rancho Cucamonga, CA 91730                
+Be there. Be more.                                     
+ 
+T 909-922-6179 
+C 909-285-8703
+E Cristian.Magana@coop.org
