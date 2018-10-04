@@ -1,70 +1,107 @@
-From: Cristian Magana 
-Sent: Thursday, October 4, 2018 10:16 AM
-To: 'ITAllAppDev@coop.org' <ITAllAppDev@coop.org>; 'DBAdminSecurity' <DBAdminSecurity@coop.org>
-Cc: 'Platform Engineering' <PlatformEngineering@coop.org>; Shanee Berry <Shanee.Berry@coop.org>; Diane Lackore <diane.lackore@coop.org>; Jen Weichers <Jen.Weichers@coop.org>
-Subject: RE: DSM PCI - SMB Signing Ticket #451963
-
-Application Development and Database Admins,
-
-We would like to make use of the change window being that the IVR phone system is a no go for this weekend. Can we please get a resource from the following departments to test the following servers on Sat. 10-6-18 at 11:00 pm CT.
-
-Category 	DSN Name	IP Address	Department	Client Facing	OS	Description 
-Beta	S1BASM01.TMG.NET	10.10.32.58	Application Development	Y	Windows Server 2012 R2 Standard	Application security Model
-Beta	S1BWBZ1.TMG.NET	10.10.32.67	Application Development	Y	Windows Server 2012 R2 Standard	New Beta Bluezone server(05/2018)
-Beta	SABAPPSB1.TMG.NET	10.10.32.53	Application Development	y	Windows Server 2012 R2 Standard	Beta Springboard
-Beta	SABWEBCUETSVT1.TMG.NET	10.20.32.54	Application Development	y	Windows Server 2012 R2 Standard	Beta CUETS Vault
-Beta	SABWEBEXT1.TMG.NET	10.20.32.53	Application Development	y	Windows Server 2012 R2 Standard	Beta external web
-Beta	sabwebint1.tmg.net	10.10.32.48	Application Development	n	Windows Server 2012 R2 Standard 64 bit Edition	
-Beta	SABWEBMCI1.TMG.NET	10.20.32.44	Application Development	y	Windows Server 2012 R2 Standard	Beta MCI
-Beta	SABWEBMCI2.TMG.NET	10.20.32.45	Application Development	y	Windows Server 2012 R2 Standard	Beta MCI
-Beta	SABWEBOS1.TMG.NET	10.20.32.38	Application Development	y	Windows Server 2012 R2 Standard	Beta OS
-Beta	SABWEBOS2.TMG.NET	10.20.32.39	Application Development	y	Windows Server 2012 R2 Standard	Beta OS
-Beta	SABWEBRSVEXT1.TMG.NET	10.20.32.51	Application Development	y	Windows Server 2012 R2 Standard	Beta RSV External
-Beta	sabwebsb1.tmg.net	10.10.32.46	Application Development		Windows Server 2012 R2 Standard 64 bit Edition	
-Beta	sabwebsb2.tmg.net	10.10.32.47	Application Development		Windows Server 2012 R2 Standard 64 bit Edition	
-Beta	SABWEBSB2.TMG.NET	10.10.32.47	Application Development	y	Windows Server 2012 R2 Standard	Beta Springboard
-Beta	SABWEBUNFCUMCI1.TMG.NET	10.20.32.50	Application Development	y	Windows Server 2012 R2 Standard	Beta UNFCU MCI
-Beta	SABWEBVAULT1.TMG.NET	10.20.32.52	Application Development	y	Windows Server 2012 R2 Standard	beta vault
-Beta	SBWEBUNIFI01.TMG.NET	10.20.32.24	Application Development	y	Windows Server 2012 R2 Standard	Mobile App Website
-Beta	scbwebmci1.tmg.net	10.10.32.43	Application Development		Windows 2008 Enterprise Server 64 bit SP2	
-Beta	tmgbetarsvext1.tmg.net	10.10.32.21	Application Development	y	Windows Server® 2008 Enterprise	Test report server handles external web interface in to reporting services
-Beta	tmgbetarsvint1.tmg.net	10.10.32.20	Application Development	y	Windows Server® 2008 Enterprise	Test report server handles internal web interface in to reporting services
-Beta	tmgbetascraper1.tmg.net	10.10.32.37	Application Development	y	Windows Server 2008 R2 Standard	Test Scraper Server - for 3270 Screen Scrapes
-Beta	tmgbetavault1.tmg.net	10.10.32.11	Application Development	y	Windows Server® 2008 Enterprise	Test web server for vault
-Beta	tmgbetawebext1.tmg.net	10.10.32.15	Application Development	y	Windows Server® 2008 Enterprise	Beta External non-pci web server
-Beta	tmgbetawebint1.tmg.net	10.10.32.12	Application Development	y	Windows Server® 2008 Enterprise	BETA Internal non-pci web server
-Beta	S1QATBP1.TMG.NET	10.10.32.62	Business Intelligence	Y	Windows Server 2012 R2 Standard	Beta Tableau Primary server
-Beta	S1QATBW1.TMG.NET	10.10.32.63	Business Intelligence	Y	Windows Server 2012 R2 Standard	Beta Tableau Worker Node
-Beta	S1QATBW2.TMG.NET	10.10.32.64	Business Intelligence	Y	Windows Server 2012 R2 Standard	Beta Tableau Worker Node
-Beta	S1BDAA1.TMG.NET	10.10.33.2	DBAs	n	Windows Server 2012 R2 Standard	SQL Server Advanced Analytics (Altyrex)
-Beta	S1BDDR1.TMG.NET	10.10.33.5	DBAs	y	Windows Server 2012 R2 Standard	SQL Reporting services 2016 for Dynamic Reports
-Beta	S1BDETL1.TMG.NET	10.10.33.7	DBAs	y	Windows Server 2012 R2 Standard	
-Beta	S1BDOL1.TMG.NET	10.10.33.43	DBAs	y	Windows Server 2012 R2 Standard	Beta Database server for websites
-Beta	S1QDFZTD3.TMG.NET	10.10.33.148	DBAs	n	Windows Server 2012 R2 Standard	Feedzai SQL
-Beta	S1QDSUM01.TMG.NET	10.10.33.17	DBAs	n	Windows Server 2012 R2 Standard	Beta Summary Database
-Beta	S1QDSUM02.TMG.NET	10.10.33.18	DBAs	n	Windows Server 2012 R2 Standard	Beta Summary Database
-Beta	S1UDFZTD1.TMG.NET	10.10.33.150	DBAs		Windows Server 2012 R2 Standard	
-Beta	SABSQLBiRpts1.TMG.NET	10.20.33.25	DBAs	y	Windows Server 2012 R2 Standard	Beta SQL Business Intelligence Reporting
-Beta	SABSQLETL1.TMG.NET	10.20.33.27	DBAs	y	Windows Server 2012 R2 Standard	Beta SQL Cube Maker
-Beta	SABSQLSSAS1.TMG.NET	10.20.33.26	DBAs	y	Windows Server 2012 R2 Standard	Beta Analytics Warehouse
-Beta	SABSQLWH1.TMG.NET	10.20.33.28	DBAs	y	Windows Server 2012 R2 Standard	Beta SQL Warehouse
-Beta	SABWebCT1.TMG.NET	10.20.32.32	DBAs	y	Windows Server 2012 R2 Standard	Beta Clear Trends
-Beta	SBSQLENT01.TMG.NET	10.20.33.9	DBAs	n	Windows Server 2012 R2 Standard	Billing SQL
-Beta	SCBARCHIVER1.TMG.NET	10.10.33.16	DBAs	y	Windows Server 2008 R2	Beta Archiver
-Beta	TMGBETACUETSWH.TMG.NET	10.10.33.9	DBAs	y	Windows Server® 2008 R2 Enterprise	Beta CUETS Warehouse server
-Beta	TMGBETARPTSSQL.TMG.NET	10.20.33.10	DBAs	y	Windows Server 2008 R2	Beta Rptssql SQL Server
-Beta	TMGBETARPTSWEB.TMG.NET	10.10.32.9	DBAs	y	Windows Server® 2008 R2 Enterprise	Testing server for Dynamic reports.  Handles front end web interface; Piece of reporting services.
-Beta	tmgbetawarehous.tmg.net	10.10.33.3	DBAs	y	Windows Server® 2008 Standard	Test database server for TMG Dynamic Reports
-						
-
-
-Cristian Magaña
-System Engineer III
-CO-OP Financial Services                       
-9692 Haven Avenue                              
-Rancho Cucamonga, CA 91730                
-Be there. Be more.                                     
- 
-T 909-922-6179 
-C 909-285-8703
-E Cristian.Magana@coop.org
+Server	Client Facing	Operating System	Description	IP Address	Mainenance Window	Windows Patch Schedule
+CUETSDEVVAULT1	n	Windows Server® 2008 Enterprise	CUETS Dev Vault server	10.10.16.13	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+S1BAALT1	n	Windows Server 2012R2 Standard	Beta Alteryx Server data analytics	10.10.32.16	10pm - 4 am Tues, Thurs & Sat.	Friday @ 00:00 am
+S1BDAA1	n	Windows Server 2012 R2 Standard	SQL Server Advanced Analytics (Altyrex)	10.10.33.2	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+S1DAMC01	n	Windows Server 2012 R2 Standard	MyCoop2	10.10.18.5	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+S1DAMQ1	n	Windows Server 2012 R2 Standard		10.20.16.3	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+S1DAMQ2	n	Windows Server 2012 R2 Standard		10.20.17.2	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+S1DASM01	n	Windows Server 2012 R2 Standard	Application security Model	10.10.16.65	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+S1DATAB1	n	Windows Server 2012 R2 Standard	Windows Server 2012 R2 Standard	10.10.18.2	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+S1DATBW1	n	Windows Server 2012 R2 Standard	Beta Tableau Worker	10.10.18.1	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+S1DBROREP1	n	Windows Server 2012 R2 Standard		10.10.16.85	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+S1DDAA1	n	Windows Server 2012 R2 Standard	SQL Server Advanced Analytics (Altyrex)	10.10.17.1	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+S1DDDR1	n	Windows Server 2012 R2 Standard	SQL Reporting services 2016 for Dynamic Reports	10.10.17.8	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+S1DDETL1	n	Windows Server 2012 R2 Standard		10.10.17.4	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+S1DDOL1	n	Windows Server 2012 R2 Standard	Dev Database server for websites	10.10.17.43	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+S1DDOL2	n	Windows Server 2012 R2 Standard	Dev Database server for websites	10.10.17.44	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+S1DDOL3	n	Windows Server 2012 R2 Standard	Dev Database server for websites	10.10.17.45	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+S1DDSUM01	n	Windows Server 2012 R2 Standard	DEV Summary Database Server	10.10.17.34	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+S1DPHQM1	n	Windows Server 2012 R2 Standard	Dev IVR Migration machine	10.10.70.45	Mon-Fri after 5:00pm	Friday @ 00:00 am
+S1DWBZ1	n	Windows Server 2012 R2 Standard	New Dev Bluezone Server(05/2018)	10.10.16.35	10pm - 4 am Tues, Thurs & Sat.	Friday @ 00:00 am
+S1DWPSS1	n	Windows Server 2012 R2 Standard	DEV PingFederate Runtime Engine	10.10.16.72	Mon-Fri after 5:00pm	Friday @ 00:00 am
+S1QDSUM01	n	Windows Server 2012 R2 Standard	Beta Summary Database	10.10.33.17	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+S1QDSUM02	n	Windows Server 2012 R2 Standard	Beta Summary Database	10.10.33.18	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+S2DDFZTD1	n	Windows Server 2012 R2 Standard	Feedzai Dev SQL 	10.10.0.151	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+SADARCHIVER1	n	Windows Server® 2008 R2 Enterprise	Archiver Application	10.20.17.12	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+SADFSWEBDATA1	n	Windows Server 2012 R2 Standard	Greenbar replacement - FD rpts Zip 	10.20.17.32	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+SADFSWEBDATA2	n	Windows Server 2012 R2 Standard	Greenbar replacement - FD rpts Zip 	10.20.17.33	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+SADSQLBIRPTS1	n	Windows Server 2012 Standard	SQL 2012 - Business Intelligence Reporting	10.20.17.25	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+SADSQLETL2	n	Windows Server 2012 Standard	SQL 2012 - Cube maker	10.20.17.27	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+SADSQLSSAS2	n	Windows Server 2012 Standard	SQL 2012 - Jobs	10.20.17.26	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+SADSQLWH2	n	Windows Server 2012 Standard	SQL 2012 - Warehouse	10.20.17.28	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+SADWEBBZ1	n	Windows Server 2012 R2 Standard	Dev Bluezone App Server	10.20.17.8	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+SADWEBCUETSVT1	n	Windows Server 2012 R2 Standard		10.20.16.34	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+SADWEBEXT1	n	Windows Server 2012 R2 Standard	Dev web external	10.20.16.46	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+SADWEBINT1	n	Windows Server 2012 R2 Standard	dev web internal	10.20.16.53	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+SADWEBMCI1	n	Windows Server 2012 R2 Standard	Dev MyCardinfo	10.20.16.42	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+SADWEBOS1	n	Windows Server 2012 R2 Standard	Dev Open Services	10.20.16.51	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+SADWEBRSVEXT1	n	Windows Server 2012 R2 Standard	Dev RSV Ext	10.20.16.44	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+SADWEBSB1	n	Windows Server 2012 R2 Standard	Dev Springboard	10.20.16.52	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+SADWEBUNFCUMCI1	n	Windows Server 2012 R2 Standard	Dev UNFCU MyCardinfo	10.20.16.45	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+SADWEBVAULT1	n	Windows Server 2012 R2 Standard	Dev Vault	10.20.16.43	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+SBSQLENT01	n	Windows Server 2012 R2 Standard	Billing SQL	10.20.33.9	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+SDSQLENT01	n	Windows Server 2012 R2 Standard	Billing SQL	10.20.17.17	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+SDWEBUNIFI01	n	Windows Server 2012 R2 Standard	Mobile App Website	10.20.16.7	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+TMGDEVIVRSQL1	n	Windows Server 2008 R2 Standard	Dev IVR SQL box	10.10.17.18	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+TMGDEVRPTSSQL	n	Windows Server 2008 R2	Devr Ptssql SQL Server	10.20.17.10	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+TMGDEVRPTSWEB	n	Windows Server® 2008 R2 Enterprise	Dev report server handles web interface in to reporting services	10.10.16.5	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+TMGDEVRSVEXT1	n	Windows Server® 2008 Enterprise	Dev report server handles external web interface in to reporting services	10.10.16.21	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+TMGDEVRSVINT1	n	Windows Server® 2008 Enterprise	Dev report server handles internal web interface in to reporting services	10.10.16.20	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+TMGDEVSCRAPER1	n	Windows Server 2008 R2 Standard	Dev Screen Scraper for ZD09 process - Settlement	10.10.16.37	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+TMGDEVVAULT1	n	Windows Server® 2008 Enterprise	Dev web server for Vault	10.10.16.11	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+TMGDEVWAREHOUSE	n	Windows Server® 2008 Standard	Development database server for TMG Dynamic reports & ETL processes	10.10.17.5	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+TMGDEVWEBEXT1	n	Windows Server® 2008 Enterprise	DEV External non-pci web server	10.10.16.15	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+TMGDEVWEBINT1	n	Windows Server® 2008 Enterprise	DEV Internal non-pci web server	10.10.16.12	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+CUETSBETAVAULT1	y	Windows Server® 2008 Enterprise	CUETS Beta Vault server	10.10.32.13	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+S1BASM01	y	Windows Server 2012 R2 Standard	Application security Model	10.10.32.58	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+S1BDDR1	y	Windows Server 2012 R2 Standard	SQL Reporting services 2016 for Dynamic Reports	10.10.33.5	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+S1BDETL1	y	Windows Server 2012 R2 Standard		10.10.33.7	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+S1BDOL1	y	Windows Server 2012 R2 Standard	Beta Database server for websites	10.10.33.43	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+S1BWBZ1	Y	Windows Server 2012 R2 Standard	New Beta Bluezone server(05/2018)	10.10.32.67	10pm - 4 am Tues, Thurs & Sat.	Friday @ 00:00 am
+S1BWPSS1	y	Windows Server 2012 R2 Standard	BETA PingFederate Runtime Engine	10.10.32.72	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+S1QATBP1	Y	Windows Server 2012 R2 Standard	Beta Tableau Primary server	10.10.32.62	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+S1QATBW1	Y	Windows Server 2012 R2 Standard	Beta Tableau Worker Node	10.10.32.63	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+S1QATBW2	Y	Windows Server 2012 R2 Standard	Beta Tableau Worker Node	10.10.32.64	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+SABAPPFTP1	y	Windows Server 2012 R2 Standard	Beta FTP App server	10.20.33.2	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+SABAPPFTP2	y	Windows Server 2012 R2 Standard	Beta FTP App server	10.20.33.3	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+SABAPPSB1	y	Windows Server 2012 R2 Standard	Beta Springboard	10.10.32.53	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+SABFSFTP1	y	Windows Server 2012 R2 Standard	Beta FTP Filesever	10.20.33.4	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+SABFSFTP2	y	Windows Server 2012 R2 Standard	Beta FTP Filesever	10.20.33.5	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+SABFSWEBDATA1	y	Windows Server 2012 R2 Standard	Beta Web Data File Server	10.20.33.32	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+SABFSWEBDATA2	y	Windows Server 2012 R2 Standard	Beta Web Data File Server	10.20.33.32	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+SABSQLBIRPTS1	y	Windows Server 2012 R2 Standard	Beta SQL Business Intelligence Reporting	10.20.33.25	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+SABSQLETL1	y	Windows Server 2012 R2 Standard	Beta SQL Cube Maker	10.20.33.27	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+SABSQLSSAS1	y	Windows Server 2012 R2 Standard	Beta Analytics Warehouse	10.20.33.26	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+SABSQLWH1	y	Windows Server 2012 R2 Standard	Beta SQL Warehouse	10.20.33.28	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+SABWEBBZ1	y	Windows Server 2012 R2 Standard	Blue Zone App Server	10.0.3.8	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+SABWEBCT1	y	Windows Server 2012 R2 Standard	Beta Clear Trends	10.20.32.32	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+SABWEBCUETSVT1	y	Windows Server 2012 R2 Standard	Beta CUETS Vault	10.20.32.54	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+SABWEBEXT1	y	Windows Server 2012 R2 Standard	Beta RSV External	10.20.32.51	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+SABWEBFTP1	y	Windows Server 2012 R2 Standard	Beta FTP App server	10.20.33.2	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+SABWEBFTP2	y	Windows Server 2012 R2 Standard	Beta FTP Filesever	10.20.33.5	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+SABWEBINT1	y	Windows Server 2012 R2 Standard	Beta web int	10.10.32.48	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+SABWEBMCI1	y	Windows Server 2012 R2 Standard	Beta MCI	10.20.32.44	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+SABWEBMCI2	y	Windows Server 2012 R2 Standard	Beta MCI	10.20.32.45	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+SABWEBOS1	y	Windows Server 2012 R2 Standard	Beta OS	10.20.32.38	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+SABWEBOS2	y	Windows Server 2012 R2 Standard	Beta OS	10.20.32.39	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+SABWEBRSVEXT1	y	Windows Server 2012 R2 Standard	Beta RSV External	10.20.32.51	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+SABWEBSB1	y	Windows Server 2012 R2 Standard	Beta Springboard	10.10.32.46	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+SABWEBSB2	y	Windows Server 2012 R2 Standard	Beta Springboard	10.10.32.47	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+SABWEBUNFCUMCI1	y	Windows Server 2012 R2 Standard	Beta UNFCU MCI	10.20.32.50	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+SABWEBVAULT1	y	Windows Server 2012 R2 Standard	beta vault	10.20.32.52	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+SBWEBUNIFI01	y	Windows Server 2012 R2 Standard	Mobile App Website	10.20.32.24	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+SCBARCHIVER1	y	Windows Server 2008 R2	Beta Archiver	10.10.33.16	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+SCBWEBMCI1	y	Windows Server® 2008 Enterprise	Beta MyCardInfo	10.10.32.43	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+TMGBETACUETSWH	y	Windows Server® 2008 R2 Enterprise	Beta CUETS Warehouse server	10.10.33.9	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+TMGBETARPTSSQL	y	Windows Server 2008 R2	Beta Rptssql SQL Server	10.20.33.10	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+TMGBETARPTSWEB	y	Windows Server® 2008 R2 Enterprise	Testing server for Dynamic reports.  Handles front end web interface; Piece of reporting services.	10.10.32.9	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+TMGBETARSVEXT1	y	Windows Server® 2008 Enterprise	Test report server handles external web interface in to reporting services	10.10.32.21	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+TMGBETARSVINT1	y	Windows Server® 2008 Enterprise	Test report server handles internal web interface in to reporting services	10.10.32.20	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+TMGBETASCRAPER1	y	Windows Server 2008 R2 Standard	Test Scraper Server - for 3270 Screen Scrapes	10.10.32.37	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+TMGBETAVAULT1	y	Windows Server® 2008 Enterprise	Test web server for vault	10.10.32.11	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+TMGBETAWAREHOUS	y	Windows Server® 2008 Standard	Test database server for TMG Dynamic Reports	10.10.33.3	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+TMGBETAWEBEXT1	y	Windows Server® 2008 Enterprise	Beta External non-pci web server	10.10.32.15	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+TMGBETAWEBINT1	y	Windows Server® 2008 Enterprise	BETA Internal non-pci web server	10.10.32.12	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+TMGDEVCUETSWH	y	Windows Server® 2008 R2 Enterprise	Beta CUETS Warehouse server	10.10.33.9	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+S1BBROREP1		Windows Server 2012 R2 Standard		10.10.32.85	Mon-Fri after 5:00 pm	Friday @ 00:00 am
+S1UDFZTD1		Windows Server 2012 R2 Standard		10.10.33.150	Mon-Fri after 5:00 pm	Friday @ 00:00 am
