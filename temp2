@@ -1,1 +1,95 @@
-https://www.itprotoday.com/management-mobility/domain-credential-caching
+From: William Keleture [mailto:William.Keleture@coop.org] 
+Sent: Tuesday, October 9, 2018 10:31 AM
+To: Cristian Magana <Cristian.Magana@coop.org>; Vicki Hannan <Vicki.Hannan@coop.org>
+Subject: RE: DSM PCI - SMB Signing Ticket #451963
+
+HI
+My assumption is that you are talking about both Beat and Production applications?
+If so, I have tested and did not encounter any issues with Springboard and MCI in beta and production. I have also tested OS in Beta and did not encounter any issue.
+Please let me know if you need more information. 
+
+Thank you
+
+William
+
+From: Cristian Magana [mailto:Cristian.Magana@coop.org] 
+Sent: Tuesday, October 09, 2018 12:02 PM
+To: William Keleture <William.Keleture@coop.org>; Vicki Hannan <Vicki.Hannan@coop.org>
+Subject: RE: DSM PCI - SMB Signing Ticket #451963
+
+Can we get confirmation that the Application Dev boxes are operational? This should all be fine with the remediation made, they were simple fixes. 
+
+From: William Keleture [mailto:William.Keleture@coop.org] 
+Sent: Thursday, October 4, 2018 11:02 AM
+To: Vicki Hannan <Vicki.Hannan@coop.org>; Cristian Magana <Cristian.Magana@coop.org>
+Subject: RE: DSM PCI - SMB Signing Ticket #451963
+
+I will be testing MCI and Springboard applications
+
+Thanks 
+ 
+WIlliam
+
+From: Vicki Hannan 
+Sent: Thursday, October 04, 2018 12:30 PM
+To: Cristian Magana <Cristian.Magana@coop.org>
+Cc: William Keleture <William.Keleture@coop.org>
+Subject: RE: DSM PCI - SMB Signing Ticket #451963
+
+Hi Cristian,
+
+Can you please specify what hours William would need to be available to test. 
+
+@William – please confirm which items you are comfortable covering.  If need be we can try to pull in additional testers.
+
+Thank you,
+
+Vicki
+
+
+From: Nicole Loyd [mailto:Nicole.Loyd@coop.org] 
+Sent: Tuesday, October 9, 2018 10:30 AM
+To: Cristian Magana <Cristian.Magana@coop.org>
+Subject: RE: DSM PCI - SMB Signing Ticket #451963
+
+I am not aware of any issues at the moment. I’ve connected to several of these and have not had any issues. Just a reminder that SABWEBCT1 is not a DBA server, so I cannot speak to that one.
+
+From: Cristian Magana [mailto:Cristian.Magana@coop.org] 
+Sent: Tuesday, October 09, 2018 12:02 PM
+To: Nicole Loyd <Nicole.Loyd@coop.org>
+Subject: RE: DSM PCI - SMB Signing Ticket #451963
+
+Can we get confirmation that the DBA boxes are operational? This should all be fine with the remediation made, they were simple fixes. 
+
+From: Nicole Loyd [mailto:Nicole.Loyd@coop.org] 
+Sent: Thursday, October 4, 2018 11:21 AM
+To: Cristian Magana <Cristian.Magana@coop.org>
+Subject: RE: DSM PCI - SMB Signing Ticket #451963
+
+Cristian – I am the on call resource and would be responsible for this, however these are beta serves so they don’t have to be done during that change window. Also, since these are beta servers you can do them at night and I check them the next morning. That’s the typical cadence we follow for dev and beta.
+
+SABWEBCT1 is not a DBA server, this is an application server for ClearTrend so realistically belongs to the BI team.
+
+Thank you,
+
+Nicole Loyd
+Database Administrator
+CO-OP Financial Services                       
+1500 NW 118th St
+Des Moines, IA 50325
+Be there. Be more.     
+T (800) 268-1884 x5404
+E Nicole.Loyd@COOP.org
+
+
+
+From: Cristian Magana [mailto:Cristian.Magana@coop.org] 
+Sent: Thursday, October 04, 2018 12:16 PM
+To: IT All App Dev <itallappdev@coop.org>; DBAdminSecurity <DBAdminSecurity@coop.org>
+Cc: Platform Engineering <PlatformEngineering@coop.org>; Shanee Berry <Shanee.Berry@coop.org>; Diane Lackore <diane.lackore@coop.org>; Jen Weichers <Jen.Weichers@coop.org>
+Subject: RE: DSM PCI - SMB Signing Ticket #451963
+
+Application Development and Database Admins,
+
+We would like to make use of the change window being that the IVR phone system is a no go for this weekend. Can we please get a resource from the following departments to test the following servers on Sat. 10-6-18 at 11:00 pm CT.
+
