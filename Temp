@@ -1,27 +1,32 @@
-10.10.33.9	sbsqlent01.tmg.net	SBSQLENT01
-10.10.33.5	s1bddr1.tmg.net	S1BDDR1
-10.10.33.43	s1bdol1.tmg.net	S1BDOL1
-10.10.33.3	tmgbetawarehous.tmg.net	TMGBETAWAREHOUS
-10.10.32.53	sabappsb1.tmg.net	SABAPPSB1
-10.10.32.48	sabwebint1.tmg.net	SABWEBINT1
-10.10.32.47	sabwebsb2.tmg.net	SABWEBSB2
-10.10.32.46	sabwebsb1.tmg.net	SABWEBSB1
-10.10.32.43	scbwebmci1.tmg.net	SCBWEBMCI1
-10.10.32.37	tmgbetascraper1.tmg.net	TMGBETASCRAPER1
-10.10.32.21	tmgbetarsvext1.tmg.net	TMGBETARSVEXT1
-10.10.32.20	tmgbetarsvint1.tmg.net	TMGBETARSVINT1
-10.10.32.15	tmgbetawebext1.tmg.net	TMGBETAWEBEXT1
-10.10.32.13	cuetsbetavault1.tmg.net	CUETSBETAVAULT1
-10.10.32.12	tmgbetawebint1.tmg.net	TMGBETAWEBINT1
-10.10.32.11	tmgbetavault1.tmg.net	TMGBETAVAULT1
-10.10.17.8	s1dddr1.tmg.net	S1DDDR1
-10.10.17.43	s1ddol1.tmg.net	S1DDOL1
-10.10.17.18	tmgdevivrsql1.tmg.net	TMGDEVIVRSQL1
-10.10.16.37	tmgdevscraper1.tmg.net	TMGDEVSCRAPER1
-10.10.16.21	tmgdevrsvext1.tmg.net	TMGDEVRSVEXT1
-10.10.16.20	tmgdevrsvint1.tmg.net	TMGDEVRSVINT1
-10.10.16.15	tmgdevwebext1.tmg.net	TMGDEVWEBEXT1
-10.10.16.13	cuetsdevvault1.tmg.net	CUETSDEVVAULT1
-10.10.16.12	tmgdevwebint1.tmg.net	TMGDEVWEBINT1
-10.10.16.11	tmgdevvault1.tmg.net	TMGDEVVAULT1
-10.10.0.151	s1pdfztd2.tmg.net	S1PDFZTD2
+CUETSDEVVAULT1	VULN	n	10.10.16.13	Windows Server® 2008 Enterprise	CUETS Dev Vault server	Mon-Fri after 5:00 pm
+S1DAMQ1	VULN	n	10.20.16.3	Windows Server 2012 R2 Standard		Mon-Fri after 5:00 pm
+S1DAMQ2	VULN	n	10.20.17.2	Windows Server 2012 R2 Standard		Mon-Fri after 5:00 pm
+S1DASM01	VULN	n	10.10.16.65	Windows Server 2012 R2 Standard	Application security Model	Mon-Fri after 5:00 pm
+S1DATAB1	VULN	n	10.10.18.2	Windows Server 2012 R2 Standard	Windows Server 2012 R2 Standard	Mon-Fri after 5:00 pm
+S1DBROREP1	VULN		10.10.32.85	Windows Server 2012 R2 Standard		Mon-Fri after 5:00 pm
+S1DDAA1	VULN	n	10.10.17.1	Windows Server 2012 R2 Standard	SQL Server Advanced Analytics (Altyrex)	Mon-Fri after 5:00 pm
+S1DDSUM01	VULN	n	10.10.17.34	Windows Server 2012 R2 Standard	DEV Summary Database Server	Mon-Fri after 5:00 pm
+S1DPHQM1	VULN	n	10.10.70.45	Windows Server 2012 R2 Standard		Dev IVR Migration machine
+S1DWBZ1	VULN	n	10.10.16.35	Windows Server 2012 R2 Standard	New Dev Bluezone Server(05/2018)	10pm - 4 am Tues, Thurs & Sat.
+SADARCHIVER1	VULN	n	10.20.17.12	Windows Server® 2008 R2 Enterprise	Archiver Application	Mon-Fri after 5:00 pm
+SADFSWEBDATA1	VULN	n	10.20.17.32	Windows Server 2012 R2 Standard	Greenbar replacement - FD rpts Zip 	Mon-Fri after 5:00 pm
+SADFSWEBDATA2	VULN	n	10.20.17.33	Windows Server 2012 R2 Standard	Greenbar replacement - FD rpts Zip 	Mon-Fri after 5:00 pm
+SADSQLBIRPTS1	VULN	n	10.20.17.25	Windows Server 2012 Standard	SQL 2012 - Business Intelligence Reporting	Mon-Fri after 5:00 pm
+SADSQLSSAS2	VULN	n	10.20.17.26	Windows Server 2012 Standard	SQL 2012 - Jobs	Mon-Fri after 5:00 pm
+SADSQLWH2	VULN	n	10.20.17.28	Windows Server 2012 Standard	SQL 2012 - Warehouse	Mon-Fri after 5:00 pm
+SADWEBBZ1	VULN	n	10.20.17.8	Windows Server 2012 R2 Standard	Dev Bluezone App Server	Mon-Fri after 5:00 pm
+SADWEBCUETSVT1	VULN	n	10.20.16.34	Windows Server 2012 R2 Standard		Mon-Fri after 5:00 pm
+SADWEBSB1	VULN	n	10.20.16.52	Windows Server 2012 R2 Standard	Dev Springboard	Mon-Fri after 5:00 pm
+SADWEBUNFCUMCI1	VULN	n	10.20.16.45	Windows Server 2012 R2 Standard	Dev UNFCU MyCardinfo	Mon-Fri after 5:00 pm
+SADWEBVAULT1	VULN	n	10.20.16.43	Windows Server 2012 R2 Standard	Dev Vault	Mon-Fri after 5:00 pm
+SDSQLENT01	VULN	n	10.20.17.17	Windows Server 2012 R2 Standard	Billing SQL	Mon-Fri after 5:00 pm
+SDWEBUNIFI01	VULN	n	10.20.16.7	Windows Server 2012 R2 Standard	Mobile App Website	Mon-Fri after 5:00 pm
+TMGDEVIVRSQL1	VULN	n	10.10.17.18	Windows Server 2008 R2 Standard	Dev IVR SQL box	Mon-Fri after 5:00 pm
+TMGDEVRPTSSQL	VULN	n	10.20.17.10	Windows Server 2008 R2	Devr Ptssql SQL Server	Mon-Fri after 5:00 pm
+TMGDEVRSVEXT1	VULN	n	10.10.16.21	Windows Server® 2008 Enterprise	Dev report server handles external web interface in to reporting services	Mon-Fri after 5:00 pm
+TMGDEVRSVINT1	VULN	n	10.10.16.20	Windows Server® 2008 Enterprise	Dev report server handles internal web interface in to reporting services	Mon-Fri after 5:00 pm
+TMGDEVSCRAPER1	VULN	n	10.10.16.37	Windows Server 2008 R2 Standard	Dev Screen Scraper for ZD09 process - Settlement	Mon-Fri after 5:00 pm
+TMGDEVVAULT1	VULN	n	10.10.16.11	Windows Server® 2008 Enterprise	Dev web server for Vault	Mon-Fri after 5:00 pm
+TMGDEVWAREHOUSE	VULN	n	10.10.17.5	Windows Server® 2008 Standard	Development database server for TMG Dynamic reports & ETL processes	Mon-Fri after 5:00 pm
+TMGDEVWEBEXT1	VULN	n	10.10.16.15	Windows Server® 2008 Enterprise	DEV External non-pci web server	Mon-Fri after 5:00 pm
+TMGDEVWEBINT1	VULN	n	10.10.16.12	Windows Server® 2008 Enterprise	DEV Internal non-pci web server	Mon-Fri after 5:00 pm
