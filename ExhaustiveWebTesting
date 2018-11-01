@@ -9,7 +9,7 @@ iv.	Check The Full Control.
 2.	IIS application pool/sites
 a.	Pools
 i.	Stop the pool
-ii.	Change identity to <cusc-operations\serviceacct>
+ii.	Change identity to <#######\serviceacct>
 iii.	Startup the pool.
 
 You should be able to scan these sites now.
