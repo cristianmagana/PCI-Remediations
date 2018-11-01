@@ -1,0 +1,15 @@
+Solution:
+1.	Go To 
+a.	'C: \Windows\Microsoft.NET\Framework64\V4.0.30319'
+b.	Right Mouse Click On   ’Temporary ASP.Net Files’ 
+i.	- Properties- Security Tab 
+ii.	- From ‘Group Or User Names’ Box Select ‘IIS_IUSRS’
+iii.	Click Edit Button. You See the below ‘Permission’ Box Is Now Highlighted. 
+iv.	Check The Full Control.
+2.	IIS application pool/sites
+a.	Pools
+i.	Stop the pool
+ii.	Change identity to <cusc-operations\serviceacct>
+iii.	Startup the pool.
+
+You should be able to scan these sites now.
