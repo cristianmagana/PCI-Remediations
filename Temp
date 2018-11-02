@@ -1,14 +1,1 @@
-: Customer is just looking to have Shaogeng Yi (dev) add a line of code to the signon.jsp. We did this previously on their Beta system, and they're wanting to apply the fix on their live system on 11/3/18 at midnight cst, which is out of support hours.  I've verified with Christopher Shaw (their AE) that this should be billable.  Below is Shoegeng Yi's comments on what needs to be done.
-  
-The signon screen with the FORM tag is generated from the file at /WEB-INF/jsp/signon.jsp.
-To set autocomplete=off on the entire form, open signon.jsp and edit the line:
-<form action="login.html" target="_parent" method="post">
-to 
-<form action="login.html" target="_parent" method="post" autocomplete="off">
- 
-After making the changes above, customer can go to chrome to check if it works, remembered to refresh the logon page and clear the "saved form data" before testing.
-
-Sincerely,
-
-Chris Zimmerman
-
+Joined WebEx with Yi and Cristian. The dev made the change to their Beta server, but it's apparently not configured to work yet. So Cristian is going to let their QA know, and they'll test on their end. And if it looks good, they'll set up a WebEx next week for us to make the change on the production server. 
