@@ -1,18 +1,14 @@
-Des Moines	10.20.2.13	sapdc1.tmg.net	Windows Server 2012 Standard 64 bit Edition AD	yes	7.5 (AV:N/AC:L/Au:N/C:P/I:P/A:P)	Administrator Account's Password Does Not Expire
-Des Moines	10.20.2.13	sapdc1.tmg.net	Windows Server 2012 Standard 64 bit Edition AD	no	2.1 (AV:L/AC:L/Au:N/C:P/I:N/A:N)	Default Windows Administrator Account Name Present
-Des Moines	10.10.2.17	scpdc3.tmg.net	Windows Server 2012 Standard 64 bit Edition AD	yes	7.5 (AV:N/AC:L/Au:N/C:P/I:P/A:P)	Administrator Account's Password Does Not Expire
-Des Moines	10.10.2.17	scpdc3.tmg.net	Windows Server 2012 Standard 64 bit Edition AD	no	2.1 (AV:L/AC:L/Au:N/C:P/I:N/A:N)	Default Windows Administrator Account Name Present
-Des Moines	10.10.2.16	scpdc2.tmg.net	Windows Server 2012 Standard 64 bit Edition AD	yes	7.5 (AV:N/AC:L/Au:N/C:P/I:P/A:P)	Administrator Account's Password Does Not Expire
-Des Moines	10.10.2.16	scpdc2.tmg.net	Windows Server 2012 Standard 64 bit Edition AD	no	2.1 (AV:L/AC:L/Au:N/C:P/I:N/A:N)	Default Windows Administrator Account Name Present
-Des Moines	10.10.2.13	scpdc1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition AD	yes	7.5 (AV:N/AC:L/Au:N/C:P/I:P/A:P)	Administrator Account's Password Does Not Expire
-Des Moines	10.10.2.13	scpdc1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition AD	no	2.1 (AV:L/AC:L/Au:N/C:P/I:N/A:N)	Default Windows Administrator Account Name Present
-Des Moines	10.10.1.84	s1pdc02.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition AD	yes	7.5 (AV:N/AC:L/Au:N/C:P/I:P/A:P)	Administrator Account's Password Does Not Expire
-Des Moines	10.10.1.84	s1pdc02.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition AD	no	2.1 (AV:L/AC:L/Au:N/C:P/I:N/A:N)	Default Windows Administrator Account Name Present
-Des Moines	10.10.1.83	s1pdc01.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition AD	yes	7.5 (AV:N/AC:L/Au:N/C:P/I:P/A:P)	Administrator Account's Password Does Not Expire
-Des Moines	10.10.1.83	s1pdc01.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition AD	no	2.1 (AV:L/AC:L/Au:N/C:P/I:N/A:N)	Default Windows Administrator Account Name Present
-Des Moines	10.10.1.82	scpdc5.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition AD	yes	7.5 (AV:N/AC:L/Au:N/C:P/I:P/A:P)	Administrator Account's Password Does Not Expire
-Des Moines	10.10.1.82	scpdc5.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition AD	no	2.1 (AV:L/AC:L/Au:N/C:P/I:N/A:N)	Default Windows Administrator Account Name Present
-Des Moines	10.10.1.81	scpdc4.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition AD	yes	7.5 (AV:N/AC:L/Au:N/C:P/I:P/A:P)	Administrator Account's Password Does Not Expire
-Des Moines	10.10.1.81	scpdc4.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition AD	no	2.1 (AV:L/AC:L/Au:N/C:P/I:N/A:N)	Default Windows Administrator Account Name Present
-Des Moines	10.10.33.43	s1bdol1.tmg.net	Windows Server 2012 R2 Standard 64 bit Edition	no	2.6 (AV:N/AC:H/Au:N/C:P/I:N/A:N)	Built-in Guest Account Not Renamed at Windows Target System
-Des Moines	10.10.32.5	scpappscan1.tmg.net	Windows Server 2008 R2 Standard 64 bit Edition Service Pack 1	no	2.6 (AV:N/AC:H/Au:N/C:P/I:N/A:N)	Built-in Guest Account Not Renamed at Windows Target System
+: Customer is just looking to have Shaogeng Yi (dev) add a line of code to the signon.jsp. We did this previously on their Beta system, and they're wanting to apply the fix on their live system on 11/3/18 at midnight cst, which is out of support hours.  I've verified with Christopher Shaw (their AE) that this should be billable.  Below is Shoegeng Yi's comments on what needs to be done.
+  
+The signon screen with the FORM tag is generated from the file at /WEB-INF/jsp/signon.jsp.
+To set autocomplete=off on the entire form, open signon.jsp and edit the line:
+<form action="login.html" target="_parent" method="post">
+to 
+<form action="login.html" target="_parent" method="post" autocomplete="off">
+ 
+After making the changes above, customer can go to chrome to check if it works, remembered to refresh the logon page and clear the "saved form data" before testing.
+
+Sincerely,
+
+Chris Zimmerman
+
