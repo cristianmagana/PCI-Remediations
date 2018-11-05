@@ -1,17 +1,13 @@
-From: Cristian Magana 
-Sent: Friday, November 2, 2018 12:53 AM
-To: William Keleture <William.Keleture@coop.org>; IT All App Dev <itallappdev@coop.org>; DBAdminSecurity <DBAdminSecurity@coop.org>
-Cc: Platform Engineering <PlatformEngineering@coop.org>; Jay Zwagerman <Jay.Zwagerman@coop.org>; Vicki Hannan <Vicki.Hannan@coop.org>; Diane Lackore <diane.lackore@coop.org>; Dan King <dan.king@coop.org>; Shanee Berry <Shanee.Berry@coop.org>
-Subject: RE: IT 450282 - DSM TLS/Ciphers
-
-Changes have been implemented successfully. If any issues in the am, you can reach me directly at the number below. Thank you,  
-
-Cristian Magaña
-System Engineer III
-CO-OP Financial Services                       
-9692 Haven Avenue                              
-Rancho Cucamonga, CA 91730                
-Be there. Be more.                                     
+Comment: Customer is just looking to have Shaogeng Yi (dev) add a line of code to the signon.jsp. We did this previously on their Beta system, and they're wanting to apply the fix on their live system on 11/3/18 at midnight cst, which is out of support hours.  I've verified with Christopher Shaw (their AE) that this should be billable.  Below is Shoegeng Yi's comments on what needs to be done.
+  
+The signon screen with the FORM tag is generated from the file at /WEB-INF/jsp/signon.jsp.
+To set autocomplete=off on the entire form, open signon.jsp and edit the line:
+<form action="login.html" target="_parent" method="post">
+to 
+<form action="login.html" target="_parent" method="post" autocomplete="off">
  
-C 909-285-8703
-E Cristian.Magana@coop.org
+After making the changes above, customer can go to chrome to check if it works, remembered to refresh the logon page and clear the "saved form data" before testing.
+
+Sincerely,
+
+Chris Zimmerman
