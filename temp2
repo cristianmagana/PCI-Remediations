@@ -1,82 +1,51 @@
-PROD	SCPAPPTR1	10.10.73.8	Application Development	n	Saturday 11pm - 6am	Windows Server 2012 R2 Standard	Test Rack server
-PROD	SCPWEBINT1	10.0.3.106	Application Development	n	Saturday 11pm - 6am	Windows Server 2012 R2 Standard	Production internal web
-PROD	TMGPRODRSVINT1	10.0.3.120	Application Development	n	Saturday 11pm - 6am	Windows Server® 2008 Enterprise	Prod report server handles internal web interface in to reporting services; IssueTrak
-PROD	TMGPRODWEBINT1	10.0.3.112	Application Development	n	Saturday 11pm - 6am	Windows Server® 2008 Enterprise	PROD Internal Web Server
-PROD	S1PDSUM01	10.10.0.31	DBAs	n	Saturday 11pm - 6am	Windows Server 2012 R2 Standard	Prod Summary Server
-PROD	S1PDSUM02	10.10.0.32	DBAs	n	Saturday 11pm - 6am	Windows Server 2012 R2 Standard	Prod Summary Server
-PROD	SCPSQLSHR1	10.10.0.37	DBAs	n	Saturday 11pm - 6am	Windows Server 2008 R2 Standard	SharePoint SQL Server
-PROD	S1PMGTEPO1	10.10.2.6	Network Operations	n	Saturday 11pm - 6am	Windows Server 2008 R2 Standard	McAfee Encryption server
-PROD	S1PMDM1	10.10.200.16	Platforms Engineering	n	Saturday 11pm - 6am	Windows Server 2012 R2 Standard	COOP.ORG Root Domain Controller
-PROD	S2PMDM1	10.20.200.16	Platforms Engineering	n	Saturday 11pm - 6am	Windows Server 2012 R2 Standard	COOP.ORG Root Domain Controller
-PROD	TMGPRODSCRAPER1	10.10.1.37	Application Development	n	Saturday 11pm – 6am	Windows Server 2008 R2 Standard	Prod 3270 Screen Scrape for Finance ZD screens
-PROD	SPSQLENT01	10.10.0.24	DBAs	y	10pm - 4 am Tues, Thurs & Sat.	Windows Server 2012 R2 Standard	Billing SQL
-PROD	TMGPRODARCHIVER	10.10.0.6	DBAs	y	10pm - 4 am Tues, Thurs & Sat.	Windows Server 2008 R2	SQL Server for misc internal apps, CUETSBilling
-PROD	S1PDAA1	10.10.0.6	DBAs	y	10pm - 4 am Tues, Thurs & Sat.	Windows Server 2012 R2 Standard	SQL Server Advanced Analytics (Altyrex)
-PROD	S1PDDR1	10.10.0.43	DBAs	y	10pm - 4 am Tues, Thurs & Sat.	Windows Server 2012 R2 Standard	SQL Reporting services 2016 for Dynamic Reports
-PROD	S1PWPSS1	10.0.3.72	Network Operations	y	10pm - 4 am Tues, Thurs & Sat.	Windows Server 2012 R2 Standard	PingFederated Runtime Engine
-PROD	S1PWPSS2	10.0.3.76	Network Operations	y	10pm - 4 am Tues, Thurs & Sat.	Windows Server 2012 R2 Standard	PingFederated Runtime Engine
-PROD	S1PWPSS3	10.0.3.192	Network Operations	y	10pm - 4 am Tues, Thurs & Sat.	Windows Server 2012 R2 Standard	PingFederated Runtime Engine
-PROD	S1PWPSS4	10.0.3.161	Network Operations	y	10pm - 4 am Tues, Thurs & Sat.	Windows Server 2012 R2 Standard	PingFederated Runtime Engine
-PROD	S2PWPSS1	10.20.3.72	Network Operations	y	10pm - 4 am Tues, Thurs & Sat.	Windows Server 2012 R2 Standard	Ping Single Sign On server
-PROD	S2PWPSS2	10.20.3.76	Network Operations	y	10pm - 4 am Tues, Thurs & Sat.	Windows Server 2012 R2 Standard	Ping Single Sign On server
-PROD	S2PWPSS3	10.20.3.160	Network Operations	y	10pm - 4 am Tues, Thurs & Sat.	Windows Server 2012 R2 Standard	PingFederate Runtime Engine
-PROD	S2PWPSS4	10.20.3.161	Network Operations	y	10pm - 4 am Tues, Thurs & Sat.	Windows Server 2012 R2 Standard	PingFederate Runtime Engine
-PROD	TMGFSV1	10.10.1.12	Network Operations	y	10pm - 4 am Tues, Thurs & Sat.	Windows Server 2012 R2 Standard	Main produciton file server houses G, H, P, S drives
-PROD	CUETSPRODVAULT1	10.0.3.113	Application Development	y	Saturday 11pm - 6am	Windows Server® 2008 Enterprise	CUETS production Vault server.
-PROD	S1PASM01	10.0.3.131	Application Development	y	Saturday 11pm - 6am	Windows Server 2012 R2 Standard	Application security Model
-PROD	SCPWEBCUETSVT1	10.0.3.94	Application Development	y	Saturday 11pm - 6am	Windows Server 2012 R2 Standard	CUETS prod vault
-PROD	SCPWEBEXT1	10.0.3.78	Application Development	y	Saturday 11pm - 6am	Windows Server 2012 R2 Standard	External facing web server
-PROD	SCPWEBOS1	10.0.3.102	Application Development	y	Saturday 11pm - 6am	Windows Server 2012 R2 Standard	Production Open Services
-PROD	SCPWEBOS2	10.0.3.103	Application Development	y	Saturday 11pm - 6am	Windows Server 2012 R2 Standard	Production Open Services
-PROD	SCPWEBRSVEXT1	10.0.3.95	Application Development	y	Saturday 11pm - 6am	Windows Server 2012 R2 Standard	External web server
-PROD	SCPWEBSB1	10.0.3.104	Application Development	y	Saturday 11pm - 6am	Windows Server 2012 R2 Standard	Production Springboard
-PROD	SCPWEBSB2	10.0.3.105	Application Development	y	Saturday 11pm - 6am	Windows Server 2012 R2 Standard	Production Springboard
-PROD	SCPWEBUNFCUMCI1	10.0.3.84	Application Development	y	Saturday 11pm - 6am	Windows Server 2012 R2 Standard	Prod  web server for UNFCU Mycardinfo
-PROD	SCPWEBVAULT1	10.0.3.92	Application Development	y	Saturday 11pm - 6am	Windows Server 2012 R2 Standard	TMG prod vault
-PROD	SPWEBUNIFI01	10.0.3.37	Application Development	y	Saturday 11pm - 6am	Windows Server 2012 R2 Standard	Mobile App Website
-PROD	TMGPRODRPTSWEB	10.0.3.38	Application Development	y	Saturday 11pm - 6am	Windows Server 2008 R2 Standard	Reports web server
-PROD	TMGPRODRSVEXT1	10.0.3.121	Application Development	y	Saturday 11pm - 6am	Windows Server® 2008 Enterprise	Prod report server handles external web interface in to reporting services
-PROD	TMGPRODWEBEXT1	10.0.3.115	Application Development	y	Saturday 11pm - 6am	Windows Server® 2008 Enterprise	PROD External Web Server
-PROD	S1PATBP1	10.10.1.7	Business Intelligence	y	Saturday 11pm - 6am	Windows Server 2012 R2 Standard	Production Tableau Primary Server
-PROD	S1PATBW1	10.10.1.8	Business Intelligence	y	Saturday 11pm - 6am	Windows Server 2012 R2 Standard	Production Tableau Worker Server
-PROD	S1PATBW2	10.10.1.9	Business Intelligence	y	Saturday 11pm - 6am	Windows Server 2012 R2 Standard	Production Tableau Worker Server
-PROD	CUETS-WAREHOUSE	10.10.0.13	DBAs	y	Saturday 11pm - 6am	Windows Server® 2008 R2 Enterprise	CUETS SQL Warehouse server
-PROD	S1PAMQ1	10.10.0.46	DBAs	y	Saturday 11pm - 6am	Windows Server 2012 R2 Standard	
-PROD	S1PDETL1	10.10.0.20	DBAs	y	Saturday 11pm - 6am	Windows Server 2012 R2 Standard	Prod SQL ETL server
-PROD	S1PDOL1	10.10.0.30	DBAs	y	Saturday 11pm - 6am	Windows Server 2012 R2 Standard	Prod Database server for websites
-PROD	SCPSQLBIRPTS1	10.10.0.25	DBAs	y	Saturday 11pm - 6am	Windows Server 2012 R2 Standard	Enterprise Phone System Server
-PROD	SCPSQLETL1	10.10.0.27	DBAs	y	Saturday 11pm - 6am	Windows Server 2012 R2 Standard	
-PROD	SCPSQLSSAS1	10.10.0.26	DBAs	y	Saturday 11pm - 6am	Windows Server 2012 R2 Standard	
-PROD	SCPSQLSSASQ1	10.10.0.29	DBAs	y	Saturday 11pm - 6am	Windows Server 2012 R2 Standard	
-PROD	SCPSQLWH2	10.10.0.21	DBAs	y	Saturday 11pm - 6am	Windows Server 2012 R2 Standard	SQL Warehouse server - replacing scpsqlwh1
-PROD	SCPWEBCT1	10.0.3.32	DBAs	y	Saturday 11pm - 6am	Windows Server 2012 R2 Standard	ClearTrends Web server
-PROD	SPSQL2RING1	10.10.0.19	DBAs	y	Saturday 11pm - 6am	Windows Server 2012 R2 Standard	Phone Server
-PROD	TMGPRODIVRSQL1	10.10.0.18	DBAs	y	Saturday 11pm - 6am	Windows Server 2008 R2 Standard	IVR SQL Server
-PROD	TMGPRODONLINE	10.10.0.6	DBAs	y	Saturday 11pm - 6am	Windows Server 2008 R2 Standard	Production database server for web sites
-PROD	TMGPRODRPTSSQL	10.10.0.7	DBAs	y	Saturday 11pm - 6am	Windows Server 2008 R2 Standard	Report Database server; Reporting services reports are generated
-PROD	TMGPRODWAREHOUS	10.10.0.2	DBAs	y	Saturday 11pm - 6am	Windows Server® 2008 R2 Enterprise	Database server for ETL 
-PROD	S1PWBZ1	10.0.3.40	Network Operations	y	Saturday 11pm - 6am	Windows Server 2012 R2 Standard	New Prod Bluezone Server
-PROD	SAPSQLINT1	10.20.73.53	Network Operations	y	Saturday 11pm - 6am	Windows Server 2012 R2 Standard	NetOps SQL server
-PROD	SCPAPPFTP1	10.10.1.29	Network Operations	y	Saturday 11pm - 6am	Windows Server 2012 R2 Standard	Production FTP App server
-PROD	SCPFSFTP1	10.10.1.31	Network Operations	y	Saturday 11pm - 6am	Windows Server 2012 R2 Standard	Production FTP Filesever
-PROD	SCPWEBBZ1	10.0.3.8	Network Operations	y	Saturday 11pm - 6am	Windows Server 2012 R2 Standard	Prod Bluezone App Server
-PROD	SCPWEBFTP1	10.0.3.37	Network Operations	y	Saturday 11pm - 6am	Windows Server 2012 R2 Standard	Production FTP web server
-PROD	TMGPRODFTP1	10.10.1.16	Network Operations	y	Saturday 11pm - 6am	Windows Server 2008 R2 Standard	FTP server; Traffic passes through TMGFTPGW first then resolved to the FTP server. 
-PROD	TMGPRODFTPGW1	10.0.3.19	Network Operations	y	Saturday 11pm - 6am	Windows Server 2008 R2 Standard	FTP Gateway server 
-PROD	S1PAMEX1	10.10.1.4	Network Operations	y	Saturday 11pm - 6am	Windows Server 2012 R2 Standard	Mail Exchange MailExpress
-PROD	SCPAPPFTP2	10.10.1.30	Network Operations	y	Saturday 11pm - 6am	Windows Server 2012 R2 Standard	Production FTP App server
-PROD	SCPAPPMEXP1	10.10.1.4	Network Operations	y	Saturday 11pm - 6am	Windows Server 2012 R2 Standard	Mail Exchange MailExpress
-PROD	SCPFSFTP2	10.10.1.32	Network Operations	y	Saturday 11pm - 6am	Windows Server 2012 R2 Standard	Production FTP Filesever
-PROD	SCPWEBFTP2	10.50.8.10	Network Operations	y	Saturday 11pm - 6am	Windows Server 2012 R2 Standard	Production FTP web server
-PROD	SCPWEBMEXP1	10.0.3.35	Network Operations	y	Saturday 11pm - 6am	S1PDOL1	Test machine for Danny
-PROD	SCPPHN2RING1	10.10.70.1	Phone System	y	Saturday 11pm - 6am	Windows Server 2012 R2 Standard	Phone Server
-PROD	SCPPHN2RING2	10.10.70.2	Phone System	y	Saturday 11pm - 6am	Windows Server 2012 R2 Standard	Phone Server
-PROD	SCPFSWEBDATA1	10.10.1.17	Application Development	y	Saturday 11pm – 6am	Windows Server 2012 R2 Standard	FD Rpts Zip
-PROD	SCPFSWEBDATA2	10.10.1.18	Application Development	y	Saturday 11pm – 6am	Windows Server 2012 R2 Standard	FD Rpts Zip
-PROD	SCPWEBMCI1	10.0.3.85	Application Development	y	Saturday 11pm – 6am	Windows Server 2012 R2 Standard	Prod web server for Mycardinfo
-PROD	SCPWEBMCI2	10.0.3.86	Application Development	y	Saturday 11pm – 6am	Windows Server 2012 R2 Standard	Prod web server for Mycardinfo
-PROD	SCPWEBMCI3	10.0.3.160	Application Development	y	Saturday 11pm – 6am	Windows Server 2012 R2 Standard	Prod web server for Mycardinfo
-PROD	S1PAALT1	10.10.10.3	DBAs		10pm - 4 am Tues, Thurs & Sat.	Windows Server 2012 R2 Standard	Alteryx Server data analytics
-PROD	S1PBROREP1	10.0.3.56				Windows Server 2012 R2 Standard	
-PROD	S1PQCS1	10.10.1.60					
-PROD	S2PMVXJP1	10.20.73.109					
+S1BBROREP1
+S1BDIVR01
+S1BWBZ1
+S1QATBP1
+S1QATBW1
+S1QATBW2
+s1qdfztd1.tmg.net
+S1QDFZTD3
+S1QDSUM01
+S1QDSUM02
+S1QMFZLT1
+S1UDFZTD1
+SABAPPFTP1
+SABAPPSB1
+SABFSFTP1
+SABFSFTP2
+SABFSWEBDATA1
+SABFSWEBDATA2
+SABSQLBIRPTS1
+SABSQLETL1
+SABSQLSSAS1
+SABSQLWH1
+SABWEBBZ1
+SABWEBCT1
+SABWEBCUETSVT1
+SABWEBEXT1
+SABWEBFTP1
+SABWEBFTP2
+SABWEBINT1
+SABWEBMCI1
+SABWEBMCI2
+SABWEBOS1
+SABWEBOS2
+SABWEBRSVEXT1
+SABWEBSB1
+SABWEBUNFCUMCI1
+SABWEBVAULT1
+SBSQLENT01
+SBWEBUNIFI01
+SCBARCHIVER1
+SCBWEBMCI1
+TMGBETACUETSWH
+TMGBETARPTSSQL
+TMGBETARPTSWEB
+TMGBETARSVEXT1
+TMGBETARSVINT1
+TMGBETASCRAPER1
+TMGBETAVAULT1
+TMGBETAWAREHOUS
+TMGBETAWEBEXT1
+TMGBETAWEBINT1
