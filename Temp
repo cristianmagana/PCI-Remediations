@@ -1,13 +1,157 @@
-Comment: Customer is just looking to have Shaogeng Yi (dev) add a line of code to the signon.jsp. We did this previously on their Beta system, and they're wanting to apply the fix on their live system on 11/3/18 at midnight cst, which is out of support hours.  I've verified with Christopher Shaw (their AE) that this should be billable.  Below is Shoegeng Yi's comments on what needs to be done.
-  
-The signon screen with the FORM tag is generated from the file at /WEB-INF/jsp/signon.jsp.
-To set autocomplete=off on the entire form, open signon.jsp and edit the line:
-<form action="login.html" target="_parent" method="post">
-to 
-<form action="login.html" target="_parent" method="post" autocomplete="off">
+From: William Keleture [mailto:William.Keleture@coop.org] 
+Sent: Thursday, December 6, 2018 2:36 PM
+To: Cristian Magana <Cristian.Magana@coop.org>
+Subject: RE: IT 450282 - DSM TLS/Ciphers
+
+Great, thanks till then have a great afternoon there.
+
+
+
+From: Cristian Magana [mailto:Cristian.Magana@coop.org] 
+Sent: Thursday, December 06, 2018 1:02 PM
+To: William Keleture <William.Keleture@coop.org>
+Subject: RE: IT 450282 - DSM TLS/Ciphers
+
+Yes William we are still on for tonight for the BETA servers. Let me know if  anything changes on your end. Thank you!
+
+
+From: William Keleture [mailto:William.Keleture@coop.org] 
+Sent: Thursday, December 6, 2018 8:17 AM
+To: Cristian Magana <Cristian.Magana@coop.org>
+Subject: RE: IT 450282 - DSM TLS/Ciphers
+
+Hi Cristian,
+Hope your week is going well. I hope we are still up for  me to test Beta MCI, Beta Springboard, Beta OS, and Beta UNFCU tonight starting 11:00pm CST.
+
+Please keep me posted if any changes arise between now and the evening.
+
+Thanks
+
+william
+
+
+From: Cristian Magana [mailto:Cristian.Magana@coop.org] 
+Sent: Friday, November 30, 2018 10:36 AM
+To: William Keleture <William.Keleture@coop.org>
+Cc: Vicki Hannan <Vicki.Hannan@coop.org>
+Subject: RE: IT 450282 - DSM TLS/Ciphers
+
+Hi William,
+
+I have sent over the invitation for testing of the QA system for tomorrow night. 
+
+
+From: Vicki Hannan [mailto:Vicki.Hannan@coop.org] 
+Sent: Tuesday, November 27, 2018 11:34 AM
+To: Cristian Magana <Cristian.Magana@coop.org>; IT All App Dev <itallappdev@coop.org>; DBAdminSecurity <DBAdminSecurity@coop.org>
+Cc: Platform Engineering <PlatformEngineering@coop.org>; Mike Huckle <Mike.Huckle@coop.org>; Jay Zwagerman <Jay.Zwagerman@coop.org>; Shanee Berry <Shanee.Berry@coop.org>; Diane Lackore <diane.lackore@coop.org>; Dan King <dan.king@coop.org>; William Keleture <William.Keleture@coop.org>; Scott Torres <Scott.Torres@coop.org>
+Subject: RE: IT 450282 - DSM TLS/Ciphers
+
+From an APPDEV perspective my QA can cover 
+•	William Keleture:  Beta MCI, Beta Springboard, Beta OS, and Beta UNFCU
+
+
+Assuming Scott Torres can cover QUETS – Scott please confirm. 
+
+Will need assistance from other areas of APPDEV to perhaps cover some of the other items. 
+
+Thank you,
+
+Vicki 
+
+From: Cristian Magana [mailto:Cristian.Magana@coop.org] 
+Sent: Tuesday, November 27, 2018 12:56 PM
+To: IT All App Dev <itallappdev@coop.org>; DBAdminSecurity <DBAdminSecurity@coop.org>
+Cc: Platform Engineering <PlatformEngineering@coop.org>; Mike Huckle <Mike.Huckle@coop.org>; Jay Zwagerman <Jay.Zwagerman@coop.org>; Vicki Hannan <Vicki.Hannan@coop.org>; Shanee Berry <Shanee.Berry@coop.org>; Diane Lackore <diane.lackore@coop.org>; Dan King <dan.king@coop.org>
+Subject: RE: IT 450282 - DSM TLS/Ciphers
+
+Following up. Can below departments allocate a tester to test the following servers come Saturday at 11:00 pm CT. Thanks, 
+
+
+From: Cristian Magana 
+Sent: Monday, November 26, 2018 1:15 PM
+To: IT All App Dev <itallappdev@coop.org>; DBAdminSecurity <DBAdminSecurity@coop.org>
+Cc: Platform Engineering <PlatformEngineering@coop.org>; Mike Huckle <Mike.Huckle@coop.org>; Jay Zwagerman <Jay.Zwagerman@coop.org>; Vicki Hannan <Vicki.Hannan@coop.org>; Shanee Berry <Shanee.Berry@coop.org>; Diane Lackore <diane.lackore@coop.org>; Dan King <dan.king@coop.org>
+Subject: IT 450282 - DSM TLS/Ciphers
+Importance: High
+
+Hi All,
+
+Hope your holiday break was well enjoyed. The Platform Engineering team is getting back to vulnerability remediation and have it scheduled to remediate TLS/Ciphers on BETA servers this Saturday 12/01/2018 at 11 pm CT.
+
+Here is a list of the servers which we will need testers lined up for: (Please note we will be leaving TLS 1.0 enabled as to move through the environments with least issues possible).  
+
+Server	IP Address	OS	Department	Description
+CUETSBETAVAULT1	10.10.32.13	Windows Server® 2008 Enterprise	Application Development	CUETS Beta Vault server
+S1BASM01	10.10.32.58	Windows Server 2012 R2 Standard	Application Development	Application security Model
+S1BWBZ1	10.10.32.67	Windows Server 2012 R2 Standard	Application Development	New Beta Bluezone server(05/2018)
+SABAPPSB1	10.10.32.53	Windows Server 2012 R2 Standard	Application Development	Beta Springboard
+SABWEBCUETSVT1	10.20.32.54	Windows Server 2012 R2 Standard	Application Development	Beta CUETS Vault
+SABWEBEXT1	10.20.32.53	Windows Server 2012 R2 Standard	Application Development	Beta external web
+SABWEBINT1	10.10.32.48	Windows Server 2012 R2 Standard	Application Development	Beta web int
+SABWEBMCI1	10.20.32.44	Windows Server 2012 R2 Standard	Application Development	Beta MCI
+SABWEBMCI2	10.20.32.45	Windows Server 2012 R2 Standard	Application Development	Beta MCI
+SABWEBOS1	10.20.32.38	Windows Server 2012 R2 Standard	Application Development	Beta OS
+SABWEBOS2	10.20.32.39	Windows Server 2012 R2 Standard	Application Development	Beta OS
+SABWEBRSVEXT1	10.20.32.51	Windows Server 2012 R2 Standard	Application Development	Beta RSV External
+SABWEBSB1	10.10.32.46	Windows Server 2012 R2 Standard	Application Development	Beta Springboard
+SABWEBSB2	10.10.32.47	Windows Server 2012 R2 Standard	Application Development	Beta Springboard
+SABWEBUNFCUMCI1	10.20.32.50	Windows Server 2012 R2 Standard	Application Development	Beta UNFCU MCI
+SABWEBVAULT1	10.20.32.52	Windows Server 2012 R2 Standard	Application Development	beta vault
+SBWEBUNIFI01	10.20.32.24	Windows Server 2012 R2 Standard	Application Development	Mobile App Website
+SCBWEBMCI1	10.10.32.43	Windows Server® 2008 Enterprise	Application Development	Beta MyCardInfo
+TMGBETARSVEXT1	10.10.32.21	Windows Server® 2008 Enterprise	Application Development	Test report server handles external web interface in to reporting services
+TMGBETARSVINT1	10.10.32.20	Windows Server® 2008 Enterprise	Application Development	Test report server handles internal web interface in to reporting services
+TMGBETASCRAPER1	10.10.32.37	Windows Server 2008 R2 Standard	Application Development	Test Scraper Server - for 3270 Screen Scrapes
+TMGBETAVAULT1	10.10.32.11	Windows Server® 2008 Enterprise	Application Development	Test web server for vault
+TMGBETAWEBEXT1	10.10.32.15	Windows Server® 2008 Enterprise	Application Development	Beta External non-pci web server
+TMGBETAWEBINT1	10.10.32.12	Windows Server® 2008 Enterprise	Application Development	BETA Internal non-pci web server
+S1QATBP1	10.10.32.62	Windows Server 2012 R2 Standard	Business Intelligence	Beta Tableau Primary server
+S1QATBW1	10.10.32.63	Windows Server 2012 R2 Standard	Business Intelligence	Beta Tableau Worker Node
+S1QATBW2	10.10.32.64	Windows Server 2012 R2 Standard	Business Intelligence	Beta Tableau Worker Node
+S1BDAA1	10.10.33.2	Windows Server 2012 R2 Standard	DBAs	SQL Server Advanced Analytics (Altyrex)
+S1BDDR1	10.10.33.5	Windows Server 2012 R2 Standard	DBAs	SQL Reporting services 2016 for Dynamic Reports
+S1BDETL1	10.10.33.7	Windows Server 2012 R2 Standard	DBAs	
+S1BDOL1	10.10.33.43	Windows Server 2012 R2 Standard	DBAs	Beta Database server for websites
+S1QDFZTD3	10.10.33.148	Windows Server 2012 R2 Standard	DBAs	Feedzai SQL
+S1QDSUM01	10.10.33.17	Windows Server 2012 R2 Standard	DBAs	Beta Summary Database
+S1QDSUM02	10.10.33.18	Windows Server 2012 R2 Standard	DBAs	Beta Summary Database
+S1UDFZTD1	10.10.33.150	Windows Server 2012 R2 Standard	DBAs	
+SABSQLBIRPTS1	10.20.33.25	Windows Server 2012 R2 Standard	DBAs	Beta SQL Business Intelligence Reporting
+SABSQLETL1	10.20.33.27	Windows Server 2012 R2 Standard	DBAs	Beta SQL Cube Maker
+SABSQLSSAS1	10.20.33.26	Windows Server 2012 R2 Standard	DBAs	Beta Analytics Warehouse
+SABSQLWH1	10.20.33.28	Windows Server 2012 R2 Standard	DBAs	Beta SQL Warehouse
+SABWEBCT1	10.20.32.32	Windows Server 2012 R2 Standard	DBAs	Beta Clear Trends
+SBSQLENT01	10.20.33.9	Windows Server 2012 R2 Standard	DBAs	Billing SQL
+SCBARCHIVER1	10.10.33.16	Windows Server 2008 R2	DBAs	Beta Archiver
+TMGBETACUETSWH	10.10.33.9	Windows Server® 2008 R2 Enterprise	DBAs	Beta CUETS Warehouse server
+TMGBETARPTSSQL	10.20.33.10	Windows Server 2008 R2	DBAs	Beta Rptssql SQL Server
+TMGBETARPTSWEB	10.10.32.9	Windows Server® 2008 R2 Enterprise	DBAs	Testing server for Dynamic reports.  Handles front end web interface; Piece of reporting services.
+TMGBETAWAREHOUS	10.10.33.3	Windows Server® 2008 Standard	DBAs	Test database server for TMG Dynamic Reports
+S1BAALT1	10.10.32.16	Windows Server 2012R2 Standard	DBA's	Beta Alteryx Server data analytics
+SABAPPFTP1	10.20.33.2	Windows Server 2012 R2 Standard	Network Operations	Beta FTP App server
+SABAPPFTP2	10.20.33.3	Windows Server 2012 R2 Standard	Network Operations	Beta FTP App server
+SABFSFTP1	10.20.33.4	Windows Server 2012 R2 Standard	Network Operations	Beta FTP Filesever
+SABFSFTP2	10.20.33.5	Windows Server 2012 R2 Standard	Network Operations	Beta FTP Filesever
+SABFSWEBDATA1	10.20.33.32	Windows Server 2012 R2 Standard	Network Operations	Beta Web Data File Server
+SABFSWEBDATA2	10.20.33.32	Windows Server 2012 R2 Standard	Network Operations	Beta Web Data File Server
+SABWEBBZ1	10.0.3.8	Windows Server 2012 R2 Standard	Network Operations	Blue Zone App Server
+SABWEBFTP1	10.250.8.9	Windows Server 2012 R2 Standard	Network Operations	Beta FTP web server
+SABWEBFTP2	10.250.8.10	Windows Server 2012 R2 Standard	Network Operations	Beta FTP web server
+C1QDSUM01				
+E1QDSUM01				
+S1BBROREP1	10.10.32.85	Windows Server 2012 R2 Standard		
+S1BDIVR01				
+S1QMFZLT1				
+
+
+Cristian Magaña
+System Engineer III
+CO-OP Financial Services                       
+9692 Haven Avenue                              
+Rancho Cucamonga, CA 91730                
+Be there. Be more.                                     
  
-After making the changes above, customer can go to chrome to check if it works, remembered to refresh the logon page and clear the "saved form data" before testing.
-
-Sincerely,
-
-Chris Zimmerman
+T 909-922-6179 
+C 909-285-8703
+E Cristian.Magana@coop.org
