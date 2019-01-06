@@ -1,20 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
-<unattend xmlns="urn:schemas-microsoft-com:unattend">
-    <cpi:offlineImage cpi:source="wim:c:/users/administrator/desktop/sources/install.wim#Windows Server 2016 SERVERSTANDARD" xmlns:cpi="urn:schemas-microsoft-com:cpi" />
-	<settings pass="oobeSystem">
-        	<component name="Microsoft-Windows-Shell-Setup" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-            	<UserAccounts>
-                	<LocalAccounts>
-                    	<LocalAccount wcm:action="add">
-                        	<Name>CFSAdmin</Name>
-	                        <Password>
-        	                    <Value></Value>
-                	            <PlainText>false</PlainText>
-                	        </Password>
-	                        <Group>Administrators</Group>
-	                </LocalAccount>
-	                </LocalAccounts>
-	        </UserAccounts>
-	        </component>
-	    </settings>
-</unattend>
+<?xml version="1.0" encoding="UTF-8"?>
+
+-<ManagerToken version="1.0">
+
+<Customer id="1411139634230"/>
+
+<Agent id="1546746221307" credential="G90iTcyxlLmecLGi"/>
+
+<ManagerSSLCertificate>MIICxjCCAa4CA0zx5jANBgkqhkiG9w0BAQsFADAoMRowGAYDVQQKExFkaXNjb3Zl cnktbWFuYWdlcjEKMAgGA1UEAwwBKjAeFw0xODA3MjQxMzIyNDBaFw0yMDA3MjUx MzIyNDBaMCgxGjAYBgNVBAoTEWRpc2NvdmVyeS1tYW5hZ2VyMQowCAYDVQQDDAEq MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyfXOC+8Tae0TeNPuWqSa PmH5N4Gay6wrlppFfDvClaVUTkhK9d/0dU9BJADCx8bdTcUAfwByuIfHYZwMKT6H 4R8H3JkA9dCtwWUIhzB+acC+TpQpGoQD6QJfingTKkLqfXWHjyVmVc7NWElklOO0 xMu9wYHfHPXVDxPWfLuWY/I837S9lwQZOXWMVRIK+D+Tgb5Ge8jHNABdEYsTgC+U nEEVXJ5lx6XKIlrwxyk9tnja2qrCoWhxPKvwXGJyzyckcHGtfBa3m0M/FBskhe5n cCYNuejY+MybOpp9AWTP4ETa7FrJNj7XBFFYPS1Lryg1oHa9ZvnuRULx8wZHsHPP lQIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQBVgCvlSzsd2+ge/u3H46REMmqemazo qSdskeSrJAXCAy9j7uIB3I5MhXubaLcVli7kH9Lb1ShKPDy5OI3DcGReyy6FBDVN IULjhtsyGcDxBauTWH9hNYoF/UeTYlLi4Ij45fMv+xGU5w4o4prdBqW7Z8PPVENa wVQevltvK5iOkPWMm8YKXy17ccAT4FOt4d5UHMVctRZyfXC9Y9+fWKDsMztU6cBV R05Fpx4u6V2AReBI8cAKfaFmOd6JOYo/dxMnmotKrjYFH3U1mtOevRo0RlBn66zg yeSbF8KufJ7vL+nDEC+4/PR9nGyJWFYeX1XuepDGUAINsDmUlCQGepmV</ManagerSSLCertificate>
+
+</ManagerToken>
