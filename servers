@@ -1,303 +1,67 @@
-Development
+Reason For Change : N/A
+In order for the change to be authorized by the Change Advisory Board, the following details must be provided:
 
-Sandbox-Server2008R2
-Sandbox-Server2012R2
-Sandbox-Server2016
+1. Complete details of the requested change:
 
-Oct 16th 2018 9:00 pm - 1:00 am PST - Development/Test/UAT Enviornment
+Updating the version of Java on COOPGA-DEV-SP01 and Escalade2. 
 
-CFSCAMDBARB1
-CFSCAMONGODBARB
-CFSCASSISDEV
-CFSCASSISTEST
-CFSCASSRS1 (Dev Node) Note: CFSCASSRSPROD is production
-CFSCASSRS2 ( Test Node) Note: CFSCASSRSPROD is production 
-CFSPRODSQL3
-TestarossaTest
-TPS-APP1-DEV
-TPS-SQL1-DEV
-WebServicesDB-test
-MPMongoDBTest
+2. Why is the change needed?
 
-UAT
+COOPGA-DEV-SP01 is a development server and Escalade2 is a production server, both of which have outdated versions of JAVA installed which is flagging for multiple critical vulnerabilities. 
 
-MPMongoDBUAT
-QIDC7
-QIMPQM12
-QIMPZDC3
-QIMPZDC4
-QIMPZIIS8
-QMPDB12
-TestarossaStag
-CFSCAJAGSTAGING
+3. What systems or applications will be impacted by this change?
 
-Infra
+COOPGA-DEV-SP01 and Escalade2.
 
-ALFA
-ALFA-PSM-1
-AVENTADOR
-AVENTADOR-NTA
-BOXSTER
-BULLITT
-CAYENNE
-CFSCAADCON
-CFSCACCERT
-CFSCACMS
-CFSCACONTACTCC
-CFSCADATAPUMP
-CFSCADESK
-CFSCADFS1
-CFSCADMZDNS
-CFSCADSS
-CFSCAFS1
-CFSCAFS2016
-CFSCAFSDSM
-CFSCALYNC
-cfscamdaemon
-CFSCAOAISYS
-CFSCAOAISYSSR
-CFSCAPCIPRINT
-CFSCAPRINT
-CFSCAQCS
-CFSCARADIUS1
-CFSCARDS01
-CFSCARDS02
-CFSCARDS03
-CFSCARDS04
-CFSCASQLLYNC
-CFSCASQLUMBRACO
-CFSCASRM
-cfscawsus
-CFSDRSRM
-CFSDRSRM-GA
-CFSLIAISON
-CFSNUPOINTGTWY
-COOPPVS
-CRX
-CYCLONE
-DEV-WEBSERV-201
-FAIRLANE
-GREMLIN
-GTO
-HART
-HYPERION
-KOENIGSEGG
-MACK
-MINICOOPER
-MURPHY
-Pagani
-Pandora
-PISCOPO
-PRYOR
-SAHARA
-SPARK
-TAHOE
-TIGUAN
-TPS-APP1
-TPS-AP-RPTSTBY
-TUCSON
-URUS
-VARONIS
-VARONIS2
-vmmcinetwebs01
-WRX
-XTERRA
-YARIS2
+4. Who will be impacted by this change?
 
-Domain controllers/VEEAM servers
- 
-CFSCADC4
-CFSCADC5
-CFSCAINTDC3
-CFSCAINTDC5
-COBALT
-COLOINTDC2
-CUSCINTDC2
-SFLD-ADMIN2
-SFLD-ADMIN3
-COLOVEEAMENT
-CUSC-VEEAM-2012
-CUSC-VEEAM-DR
-VANDYKE
-VCMCVEEAM
-VEEAM
+NA, Afterhours work. 
 
+5. Document the testing steps.
 
-Secondary SQLs (DBA resource needed) / Southfield and Revelations
+Run script to remove older versions of Java. Snapshot and backup to be taken before remediation occurs. 
 
-CFSPRODSQL2
-CFSCAGPSQL2
-CFSCACDSQL2
-CFSCAINTSQL2
-CFSCAMDBSEC1
-CFSCAMONGODBSEC
-CFSCASERVDB2
-CFSSQL2
-Logos
+6. Document the communication needed for this change.
 
+Change request, and communication to system owners. 
 
-ACKROYD
-Avatar
-Avc-ProdVista
-CARLIN
-CFSMIRADIUS2
-COBRA
-COLOACCESS
-COLOAUDIT
-COLOEXCHDAG
-COSBY
-ganesha
-Gnosis1
-Gnosis2
-MURRAY
-nanshe
-Nebuchadnezzar1
-NOVALIS1
-OBRIEN
-OBRIEN2
-Pequod
-Prometheus
-REVELATION-DB
-REVELATION-WEB
-SEINFELD
-SFLD-ARCHIVE1
-SFLD-ARCHIVE1-N
-SFLD-DESK
-SFLDINTDC1
-SFLD-MAIL2
-SFLD-MAIL3
-SFLD-SHARED3
-SFLD-SHARED4
-SFLD-SQL3
-SFLD-TERM1
-SFLD-VEEAM
-TOSH
+7. Document the implementation steps.  If more than one person will be involved in the implementation of the change, please add them as Implementers.
 
-eCom (DBA resource needed) / Finance / Covera / Intranet
+Run script and verify that older version of Java has been removed from directory locations. Verify that system is stable with new (secure) version of Java. 
 
-Intranet maintenance window 10:00 pm - 4:00 am PST
- Finance and Covera 
+8. Document the post-implementation validation steps.
 
-Osiris
-CFSCACASREP
-CFSCACOVEOINT
-CFSCACOVSEARCH
-CFSCACOVSEARCH2
-CFSCAINTRANET
-CFSCAINTRANET2
-CFSCAINTRANETBU
-CFSCAINTRANETS1
-CFSCAINTRANETS2
-CFSCAINTRANETST
-CFSCITRIXMASTER
-PCISqlSrvr2012
-COLOGPSQL3
-COUGAR
-COVCRI
-COVFS1
-CovWeb
-CovWebStaging
+Test Great Plains is functioning and that system owners test application thoroughly. 
 
-newlancer
+9. Document the backout/restore plan.
 
-Finance 
-CFSCAVIEWCOM
-CFSCAVIEWCON
-CFSCAGPREPORT
-CFSCAGPSQL1
-CFSCAGPTMG
-THUNDERBIRD
-ESCALADE
-ESCALADE2
-ESCALADE3
-ESCALADE5
-ESCALADE6
-ESCALADETEST
-FERRARI
+Restore snapshot, restore from veeam if needed. 
 
-eCom  
-MPDBC2N1
-MPDBC2N2
-MPDBC2N3
-MPDBCONV
-MPDC3
-MPDEVBOX
-MPMongoDB
-MPMongoDBProd
-MPQM8
-MPQM9
-MPZDC6
-MPZEPOWSUS
-MPZIIS8
-MPZMCAFEE
-MPZSFTP
-MPZSFTP2
-PANAMERA
-QIAV1
+10. Does this change affect the DR environment? 
 
-Prodcution SQLs, Client facing webservers (DBA Resources needed) 
-ICO/Darwin
-CFSCATestarossa
-CFSPRODSQL1
+No.
 
-Sitecore 
-CFSCASiteCoreCD
-CFSCASiteCoreCM
-CFSCASitecoreInt
+11. Is this a bug fix?  If so, please provide an explanation that includes the end user impact of this change.  (i.e. From the user's perspective, what will be different about their experience with the application when this change is implemented?)
 
-Wicopedia 
-CFSCAWICOPEDIA
-CFSCAWICOSQL
+12. If applicable, specify which client(s) is requesting this change.
 
-CFSCACDSQL1
-CFSCAINTSQL1
-CFSCAJAMSAPP
-CFSCAJAMSSQL
-CFSCAMDBPRI1
-CFSCAMDMDATA
-CFSCAMDMWEB
-CFSCAMONGODBPRI
-CFSCARGSQLMON
-CFSCASQLCOMPMAN
-CFSCASSIS1
-CFSCASSRSPROD
-CFSCAWICOFS
-CFSSQL1
-GRANDPRIX
-GrandPrix2
-Jetta
-JUKE
-Miata2
-Passat2
-PORSCHE
-REGAL
-SANDLER
-SONATA
-TRANSAM
-VOLT
-YUKON
+13. If a significant change, attach the PCI 3.2 completed checklist.
 
-WebservicesApp - Change Management to shadow and document process.
-WebServiceApp1-test
-WEBSERVICESAPP1
-WEBSERVICESAPP2
-WebServicesApp2-test
-CFSCASERVDB1
+14. Business Unit Signoff - copy and paste the business approval here.  
 
-Vigilant
-REVELATION-DB
+15. Please review the following questions and if the answer to any of them is Yes, please select Yes from the "Notify InfoSec of Change" drop down above. 
+Does this change impact user authentication?
+Does this change impact security auditing/logging?
+Is this a change to encryption?
+Does this change involve a new, third-party data flow?
+
+Add tasks on the Implementation tab for the following items:
+1. Peer Review - assign peer/code reviewer as Reviewer
+2. Test Environment Updated (include another task for database changes to test environment, if applicable)
+3. Testing - assign tester as Change Approver and document testing results
+4. Production Environment Updated (include another task for database changes to production environment, if applicable)
+5. Post-implementation validation
 
 
 
-DC Primary
 
-ROADSTER
-COLOINTDC1
-CFSCADC1
-CUSCINTDC1
-CFSCAINTDC1
-MPDC4
-MPZDC4
-QIDC6
-Apostles
-SFLD-ADMIN1
