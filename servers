@@ -1,67 +1,14 @@
-Reason For Change : N/A
-In order for the change to be authorized by the Change Advisory Board, the following details must be provided:
-
-1. Complete details of the requested change:
-
-Updating the version of Java on COOPGA-DEV-SP01 and Escalade2. 
-
-2. Why is the change needed?
-
-COOPGA-DEV-SP01 is a development server and Escalade2 is a production server, both of which have outdated versions of JAVA installed which is flagging for multiple critical vulnerabilities. 
-
-3. What systems or applications will be impacted by this change?
-
-COOPGA-DEV-SP01 and Escalade2.
-
-4. Who will be impacted by this change?
-
-NA, Afterhours work. 
-
-5. Document the testing steps.
-
-Run script to remove older versions of Java. Snapshot and backup to be taken before remediation occurs. 
-
-6. Document the communication needed for this change.
-
-Change request, and communication to system owners. 
-
-7. Document the implementation steps.  If more than one person will be involved in the implementation of the change, please add them as Implementers.
-
-Run script and verify that older version of Java has been removed from directory locations. Verify that system is stable with new (secure) version of Java. 
-
-8. Document the post-implementation validation steps.
-
-Test Great Plains is functioning and that system owners test application thoroughly. 
-
-9. Document the backout/restore plan.
-
-Restore snapshot, restore from veeam if needed. 
-
-10. Does this change affect the DR environment? 
-
-No.
-
-11. Is this a bug fix?  If so, please provide an explanation that includes the end user impact of this change.  (i.e. From the user's perspective, what will be different about their experience with the application when this change is implemented?)
-
-12. If applicable, specify which client(s) is requesting this change.
-
-13. If a significant change, attach the PCI 3.2 completed checklist.
-
-14. Business Unit Signoff - copy and paste the business approval here.  
-
-15. Please review the following questions and if the answer to any of them is Yes, please select Yes from the "Notify InfoSec of Change" drop down above. 
-Does this change impact user authentication?
-Does this change impact security auditing/logging?
-Is this a change to encryption?
-Does this change involve a new, third-party data flow?
-
-Add tasks on the Implementation tab for the following items:
-1. Peer Review - assign peer/code reviewer as Reviewer
-2. Test Environment Updated (include another task for database changes to test environment, if applicable)
-3. Testing - assign tester as Change Approver and document testing results
-4. Production Environment Updated (include another task for database changes to production environment, if applicable)
-5. Post-implementation validation
-
-
-
-
+1. Open Templates
+2. Duplicate Web Server template
+3. Choose Windows Server 2008 under 'Certificate Authority"
+4. Click "General" Tab
+5. Change "Template display name" .... vSphere 6.0
+6. click "Extensions" Tab
+7. Highlight "Application Policies" and click "edit"
+8. Slect "Server Authentication" and remove
+9. Click "ok"
+10. Select "Key Usage" and click "edit"
+11. Click "Signature is proof of origin" leave everything else as default and click "ok"
+12. Click "Subject Name" Tab
+13. Confirm "Supply in the request" is selected
+14. Click "ok" to save the template
