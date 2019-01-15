@@ -1,601 +1,91 @@
-Patch Tuesday 01/08/2019
+From: Greg McElheney [mailto:GMcElheney@gandctech.com] 
+Sent: Tuesday, January 15, 2019 10:56 AM
+To: Cristian Magana <Cristian.Magana@coop.org>; Clyde Oduca <Clyde.Oduca@coop.org>; Nadia Theng <Nadia.Theng@coop.org>
+Cc: Diane Lackore <diane.lackore@coop.org>
+Subject: RE: Escalades | Adobe (Flash/Reader)
 
-Sandbox-Server2008R2
+Hi Cristian – I will be available to test Saturday. 
 
-Sandbox-Server2012R2
+Thanks,
 
-Sandbox-Server2016
 
 
 
+___________________________________
+Greg McElheney
+G&C Technical Services, LLC
 
-Development/Test 01/11/2019
+From: Cristian Magana <Cristian.Magana@coop.org> 
+Sent: Monday, January 14, 2019 4:52 PM
+To: Greg McElheney <GMcElheney@gandctech.com>; Clyde Oduca <Clyde.Oduca@coop.org>; Nadia Theng <Nadia.Theng@coop.org>
+Cc: Diane Lackore <diane.lackore@coop.org>
+Subject: RE: Escalades | Adobe (Flash/Reader)
 
-CFSCAMDBARB1
+Thanks gentlemen, that is one of my checks with Finance so I will be sure to confirm that the drive/shares are available to the escalade servers!
 
-CFSCAMONGODBARB
+Gerg, I will be performing the changes Saturday afternoon/evening, will you be available around 5-7 pm to test for functionality?   
 
-CFSCASSISDEV
+From: Greg McElheney [mailto:GMcElheney@gandctech.com] 
+Sent: Monday, January 14, 2019 4:31 PM
+To: Clyde Oduca <Clyde.Oduca@coop.org>; Cristian Magana <Cristian.Magana@coop.org>; Nadia Theng <Nadia.Theng@coop.org>
+Cc: Diane Lackore <diane.lackore@coop.org>
+Subject: RE: Escalades | Adobe (Flash/Reader)
 
-CFSCASSISTEST
+The drives on Gremlin going offline is the only problem we’ve had recently that I can think of.
 
-CFSCASSRS1 (Dev Node) Note: CFSCASSRSPROD is production
+If you need someone to test over the weekend, I can help with that.
 
-CFSCASSRS2 ( Test Node) Note: CFSCASSRSPROD is production 
+Thanks,
 
-CFSPRODSQL3
 
-TestarossaTest
 
-TPS-APP1-DEV
 
-TPS-SQL1-DEV
+___________________________________
+Greg McElheney
+G&C Technical Services, LLC
 
-WebServicesDB-test
+From: Clyde Oduca <Clyde.Oduca@coop.org> 
+Sent: Monday, January 14, 2019 4:27 PM
+To: Cristian Magana <Cristian.Magana@coop.org>; Nadia Theng <Nadia.Theng@coop.org>
+Cc: Diane Lackore <diane.lackore@coop.org>; Greg McElheney <GMcElheney@gandctech.com>
+Subject: RE: Escalades | Adobe (Flash/Reader)
 
-MPMongoDBTest
+Hey Cristian,
 
+One item I would include when the team completes the escalade remediations, is verifying that the path \\gremlin\gpshare is available to the servers. I believe one of the items that sometimes seems to occur is the LUN being down, and checking on the drives particularly \\gremlin\gpshare would help from an infrastructure perspective.
 
+Hey Greg is there something else you can think of that could help from an infrastructure standpoint after work has been done on the servers?
 
 
-Redundant Domain controllers/VEEAM servers 01/15/2019  
 
-CFSCADC4
 
-CFSCADC5
 
-CFSCAINTDC3
 
-CFSCAINTDC5
 
-COBALT
+From: Cristian Magana 
+Sent: Monday, January 14, 2019 4:20 PM
+To: Clyde Oduca <Clyde.Oduca@coop.org>; Nadia Theng <Nadia.Theng@coop.org>
+Cc: Diane Lackore <diane.lackore@coop.org>; Greg McElheney <gmcelheney@gandctech.com>
+Subject: RE: Escalades | Adobe (Flash/Reader)
 
-COLOINTDC2
+Hi Clyde and Nadia,
 
-CUSCINTDC2
+We will be doing PCI remediation on the Escalade servers this weekend and will be in need a validator SME to confirm that great plains is up when done. 
 
-SFLD-ADMIN2
+Usually, I do the preliminary test when patching to confirm GP can be accessed, but I believe we will need more of an intensive test. 
 
-SFLD-ADMIN1
+1.	Is this Saturday 01/19/19 Ok with working on the Escalade servers (front-end servers only, no SQLs)?
+2.	Can we have someone from finance log in and test GP Saturday evening/Sunday morning? 
+ 
+Thanks in advance 
 
-COLOVEEAMENT
+Cristian Magaña
+System Engineer III
+CO-OP Financial Services                       
+9692 Haven Avenue                              
+Rancho Cucamonga, CA 91730                
+Be there. Be more.                                     
+ 
+T 909-285-8703
+E Cristian.Magana@coop.org
 
-CUSC-VEEAM-2012
-
-CUSC-VEEAM-DR
-
-VANDYKE
-
-VCMCVEEAM
-
-VEEAM
-
-
-
-
-UAT Environment 01/15/2019 
-
-MPMongoDBUAT
-
-QIDC7
-
-QIMPQM12
-
-QIMPZDC3
-
-QIMPZDC4
-
-QIMPZIIS8
-
-QMPDB12
-
-TestarossaStag
-
-CFSCAJAGSTAGING
-
-
-
-
-Secondary SQLs (DBA resource needed) 01/15/2019 
-
-CFSPRODSQL2
-
-CFSCAGPSQL2
-
-CFSCACDSQL2
-
-CFSCAINTSQL2
-
-CFSCAMDBSEC1
-
-CFSCAMONGODBSEC
-
-CFSCASERVDB2
-
-CFSSQL2
-
-Logos
-
-
-
-
-Infrastructure 01/18/2019
-
-ALFA
-
-ALFA-PSM-1
-
-AVENTADOR
-
-AVENTADOR-NTA
-
-BOXSTER
-
-BULLITT
-
-CAYENNE
-
-CFSCAADCON
-
-CFSCACCERT
-
-CFSCACMS
-
-CFSCACONTACTCC
-
-CFSCADATAPUMP
-
-CFSCADESK
-
-CFSCADFS1
-
-CFSCADMZDNS
-
-CFSCADSS
-
-CFSCAFS1
-
-CFSCAFS2016
-
-CFSCAFSDSM
-
-CFSCALYNC
-
-cfscamdaemon
-
-CFSCAOAISYS
-
-CFSCAOAISYSSR
-
-CFSCAPCIPRINT
-
-CFSCAPRINT
-
-CFSCAQCS
-
-CFSCARADIUS1
-
-CFSCARDS01
-
-CFSCARDS02
-
-CFSCARDS03
-
-CFSCARDS04
-
-CFSCASQLLYNC
-
-CFSCASQLUMBRACO
-
-CFSCASRM
-
-cfscawsus
-
-CFSDRSRM
-
-CFSDRSRM-GA
-
-CFSLIAISON
-
-CFSNUPOINTGTWY
-
-COOPPVS
-
-CRX
-
-CYCLONE
-
-DEV-WEBSERV-201
-
-FAIRLANE
-
-GREMLIN
-
-GTO
-
-HART
-
-HYPERION
-
-KOENIGSEGG
-
-MACK
-
-MINICOOPER
-
-MURPHY
-
-Pagani
-
-Pandora
-
-PISCOPO
-
-PRYOR
-
-SAHARA
-
-SPARK
-
-TAHOE
-
-TIGUAN
-
-TPS-APP1
-
-TPS-AP-RPTSTBY
-
-TUCSON
-
-URUS
-
-VARONIS
-
-VARONIS2
-
-vmmcinetwebs01
-
-WRX
-
-XTERRA
-
-YARIS2
-
-
-
-
-Southfield/Revelations 01/18/2019
-
-ACKROYD
-
-Avatar
-
-Avc-ProdVista
-
-CARLIN
-
-CFSMIRADIUS2
-
-COBRA
-
-COLOACCESS
-
-COLOAUDIT
-
-COLOEXCHDAG
-
-COSBY
-
-ganesha
-
-Gnosis1
-
-Gnosis2
-
-MURRAY
-
-nanshe
-
-Nebuchadnezzar1
-
-NOVALIS1
-
-OBRIEN
-
-OBRIEN2
-
-Pequod
-
-Prometheus
-
-REVELATION-DB
-
-REVELATION-WEB
-
-SEINFELD
-
-SFLD-ARCHIVE1
-
-SFLD-ARCHIVE1-N
-
-SFLD-DESK
-
-SFLDINTDC1
-
-SFLD-MAIL2
-
-SFLD-MAIL3
-
-SFLD-SHARED3
-
-SFLD-SHARED4
-
-SFLD-SQL3
-
-SFLD-TERM1
-
-SFLD-VEEAM
-
-TOSH
-
-
-
-
-eCom (DBA resource needed) / Finance / Covera / Intranet 01/27/2019
-
-Intranet maintenance window 12:00 am - 6:00 am CST
-
-Finance and Covera  12:00 am - 6:00 am CST
-
-eCom maintenance window 12:00 am - 6:00 am CST
-
-Osiris
-
-CFSCACASREP
-
-CFSCACOVEOINT
-
-CFSCACOVSEARCH
-
-CFSCACOVSEARCH2
-
-CFSCAINTRANET
-
-CFSCAINTRANET2
-
-CFSCAINTRANETBU
-
-CFSCAINTRANETS1
-
-CFSCAINTRANETS2
-
-CFSCAINTRANETST
-
-CFSCITRIXMASTER
-
-PCISqlSrvr2012
-
-COLOGPSQL3
-
-COUGAR
-
-COVCRI
-
-COVFS1
-
-CovWeb
-
-CovWebStaging
-
-cougar
-
-newlancer
-
-
-
-
-Finance 
-
-CFSCAVIEWCOM
-
-CFSCAVIEWCON
-
-CFSCAGPREPORT
-
-CFSCAGPSQL1
-
-CFSCAGPTMG
-
-THUNDERBIRD
-
-ESCALADE
-
-ESCALADE2
-
-ESCALADE3
-
-ESCALADE5
-
-ESCALADE6
-
-ESCALADETEST
-
-FERRARI
-
-
-
-
-eCom  
-
-MPDBC2N1
-
-MPDBC2N2
-
-MPDBC2N3
-
-MPDBCONV
-
-MPDC3
-
-MPDEVBOX
-
-MPMongoDB
-
-MPMongoDBProd
-
-MPQM8
-
-MPQM9
-
-MPZDC6
-
-MPZEPOWSUS
-
-MPZIIS8
-
-MPZMCAFEE
-
-MPZSFTP
-
-MPZSFTP2
-
-PANAMERA
-
-QIAV1
-
-
-
-
-Prodcution SQLs, Client facing webservers (DBA Resources needed) 01/26/2019 11:00 pm - 5:00 am CST 
-
-ICO/Darwin
-
-CFSCATestarossa
-
-CFSPRODSQL1
-
-
-
-
-Sitecore 
-
-CFSCASiteCoreCD
-
-CFSCASiteCoreCM
-
-CFSCASitecoreInt
-
-
-
-
-Wicopedia 
-
-CFSCAWICOPEDIA
-
-CFSCAWICOSQL
-
-
-
-
-CFSCACDSQL1
-
-CFSCAINTSQL1
-
-CFSCAJAMSAPP
-
-CFSCAJAMSSQL
-
-CFSCAMDBPRI1
-
-CFSCAMDMDATA
-
-CFSCAMDMWEB
-
-CFSCAMONGODBPRI
-
-CFSCARGSQLMON
-
-CFSCASQLCOMPMAN
-
-CFSCASSIS1
-
-CFSCASSRSPROD
-
-CFSCAWICOFS
-
-CFSSQL1
-
-GRANDPRIX
-
-GrandPrix2
-
-Jetta
-
-JUKE
-
-Miata2
-
-Passat2
-
-PORSCHE
-
-REGAL
-
-SANDLER
-
-SONATA
-
-TRANSAM
-
-VOLT
-
-YUKON
-
-
-
-
-WebservicesApp
-
-WebServiceApp1-test
-
-WEBSERVICESAPP1
-
-WEBSERVICESAPP2
-
-WebServicesApp2-test
-
-CFSCASERVDB1
-
-
-
-
-Vigilant
-
-REVELATION-DB
-
-REVELATION-WEB
-
-
-
-
-DC Primary 01/27/2019 6:00 am - 8:00 am CST
-
-ROADSTER
-
-COLOINTDC1
-
-CFSCADC1
-
-CUSCINTDC1
-
-CFSCAINTDC1
-
-MPDC4
-
-MPZDC4
-
-QIDC6
-
-Apostles
-
-SFLD-ADMIN3
