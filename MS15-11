@@ -1,0 +1,20 @@
+Microsoft Group Policy Remote Code Execution Vulnerability (MS15-011)
+Question asked by adamc on Apr 3, 2017
+Latest reply on Apr 24, 2017 by Robert Dell'Immagine 
+Like • Show 0 Likes0 Comment • 3
+QID "91129" or "91017" identifies as a patch available vulnerability, however the patch that is installed per Microsoft does not fix the vulnerability to the state that Qualys determines no longer a vulnerability.
+
+ 
+
+Per Microsoft, and the only way I have found to remove this vulnerability, the following lines must be manually configured:
+
+\\*\NETLOGON RequireMutualAuthentication=1, RequireIntegrity=1
+\\*\SYSVOL RequireMutualAuthentication=1, RequireIntegrity=1
+
+ 
+
+https://support.microsoft.com/en-us/help/3000483/ms15-011-vulnerability-in-group-policy-could-allow-remote-code-executio… 
+
+ 
+
+This should be looked at further and validated, and re-categorized as no patch available with links to how to manually fix it.
