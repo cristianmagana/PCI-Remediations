@@ -1,0 +1,53 @@
+Microsoft Internet Explorer Cumulative Security Update (MS15-124)
+Severity
+Urgent  5
+Qualys ID
+100269
+Vendor Reference
+MS15-124
+CVE Reference
+CVE-2015-6083, CVE-2015-6134, CVE-2015-6135, CVE-2015-6136, CVE-2015-6138, CVE-2015-6139, CVE-2015-6140, CVE-2015-6141, CVE-2015-6142, CVE-2015-6143, CVE-2015-6144, CVE-2015-6145, CVE-2015-6146, CVE-2015-6147, CVE-2015-6148, CVE-2015-6149, CVE-2015-6150, CVE-2015-6151, CVE-2015-6152, CVE-2015-6153, CVE-2015-6154, CVE-2015-6155, CVE-2015-6156, CVE-2015-6157, CVE-2015-6158, CVE-2015-6159, CVE-2015-6160, CVE-2015-6161, CVE-2015-6162, CVE-2015-6164
+CVSS Scores
+Base 9.3 / Temporal 7.3
+Description
+Microsoft Internet Explorer is a graphical web browser developed by Microsoft and included as part of the Microsoft Windows operating systems.
+This security update resolves multiple vulnerabilities in Internet Explorer. The most severe of the vulnerabilities could allow remote code execution if a user views a specially crafted webpage using Internet Explorer.
+
+Update (8/15/2017): The QID has been updated to additionally check for MS15-135 (For OS prior to Windows 10) and check for "FEATURE_ALLOW_USER32_EXCEPTION_HANDLER_HARDENING" as described in the fix for CVE-2015-6161 in MS15-124
+
+QID Detection Logic:
+Operating Systems: Windows Vista, Windows Server 2008 SP2, Windows 7 SP1, Windows Server 2008 R2 SP1, Windows 8, Windows 8.1, Windows RT, Windows RT 8.1, Windows Server 2012, Windows Server 2012 R2, Windows 10 (build 1507 and 1511).
+The QID checks if the host is running a vulnerable version of Internet Explorer with the help of the file %windir%\System32\mshtml.dll
+The following KBs are checked:
+The patch version of 7.0.6002.19537(KB3104002)
+The patch version of 7.0.6002.23847(KB3104002)
+The patch version of 8.0.6001.19705(KB3104002)
+The patch version of 8.0.6001.23765(KB3104002)
+The patch version of 8.0.6001.23952(KB3104002)
+The patch version of 8.0.7601.19058(KB3104002)
+The patch version of 8.0.7601.23262(KB3104002)
+The patch version of 9.0.8112.16723(KB3104002)
+The patch version of 9.0.8112.20838(KB3104002)
+The patch version of 10.0.9200.17566(KB3104002)
+The patch version of 10.0.9200.21684(KB3104002)
+The patch version of 11.0.9600.18125(KB3104002)
+The patch version of 11.0.10240.16603(KB3116869)
+The patch version of 11.0.10586.20(KB3116900)
+
+The QID additionally checks if the patch for CVE-2015-6161 is enabled or not by check for:
+
+1) MS15-135 on Operating Systems before Windows 10:
+Operating Systems: Windows Vista, Windows Server 2008 SP2, Windows 7 SP1, Windows Server 2008 R2 SP1, Windows 8, Windows 8.1, Windows RT, Windows RT 8.1, Windows Server 2012, Windows Server 2012 R2
+the file version of %windir%\System32\win32k.sys
+The patch version of 6.0.6002.19535(KB3109094)
+The patch version of 6.0.6002.23845(KB3109094)
+The patch version of 6.1.7601.19061(KB3109094)
+The patch version of 6.1.7601.23265(KB3109094)
+The patch version of 6.2.9200.17568(KB3109094)
+The patch version of 6.2.9200.21687(KB3109094)
+The patch version of 6.3.9600.18123(KB3109094)
+
+2) The following Registry keys are configured on all affected OS:
+a)HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_ALLOW_USER32_EXCEPTION_HANDLER_HARDENING with value 1
+b)HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_ALLOW_USER32_EXCEPTION_HANDLER_HARDENING with value 1 (64 bit only)
+Note: The QID has been updated to check for the additional steps requ
