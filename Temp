@@ -1,221 +1,65 @@
-sfld-archive1.servicecenters.org
-audi.cucsi.org
-audi.cucsi.org
-audi.cucsi.org
-audi.cucsi.org
-audi.cucsi.org
-audi.cucsi.org
-audi.cucsi.org
-audi.cucsi.org
-audi.cucsi.org
-audi.cucsi.org
-boxster.cucsi.org
-boxster.cucsi.org
-boxster.cucsi.org
-cfscacontactcc.cucsi.org
-cfscacontactcc.cucsi.org
-cfscacontactcc.cucsi.org
-cfscacontactcc.cucsi.org
-cfscacontactcc.cucsi.org
-cfscadatapump.cucsi.org
-cfscadatapump.cucsi.org
-cfscadatapump.cucsi.org
-cfscagpsql1.cucsi.org
-cfscagpsql1.cucsi.org
-cfscagpsql1.cucsi.org
-cfscaintranets1.cucsi.org
-cfscaintranets1.cucsi.org
-cfscaintranets1.cucsi.org
-cfscaintranets2.cucsi.org
-cfscaintranets2.cucsi.org
-cfscaintranets2.cucsi.org
-cfscasqlbilling.cucsi.org
-cfscasqlbilling.cucsi.org
-cfscasqlbilling.cucsi.org
-cfscassisdev.cucsi.org
-cfscassisdev.cucsi.org
-cfsliaison.cucsi.org
-cfsliaison.cucsi.org
-cfsliaison.cucsi.org
-cfsliaison.cucsi.org
-cfssql1.cucsi.org
-cfssql1.cucsi.org
-cfssql1.cucsi.org
-cfssql1.cucsi.org
-cfssql1.cucsi.org
-cfssql1.cucsi.org
-cfssql1.cucsi.org
-cfssql1.cucsi.org
-cfssql1.cucsi.org
-cfssql1.cucsi.org
-cfssql1.cucsi.org
-cfssql1.cucsi.org
-cfssql1.cucsi.org
-cfssql1.cucsi.org
-cfssql1.cucsi.org
-covcri.cucsi.org
-covcri.cucsi.org
-covcri.cucsi.org
-covcri.cucsi.org
-covcri.cucsi.org
-covcri.cucsi.org
-covcri.cucsi.org
-covcri.cucsi.org
-covcri.cucsi.org
-covcri.cucsi.org
-covcri.cucsi.org
-covcri.cucsi.org
-covcri.cucsi.org
-covcri.cucsi.org
-covcri.cucsi.org
-covcri.cucsi.org
-covcri.cucsi.org
-covcri.cucsi.org
-covcri.cucsi.org
-escalade.cucsi.org
-escalade.cucsi.org
-escalade.cucsi.org
-escalade.cucsi.org
-escalade.cucsi.org
-escalade2.cucsi.org
-escalade2.cucsi.org
-escalade3.cucsi.org
-escalade3.cucsi.org
-escalade3.cucsi.org
-escalade3.cucsi.org
-escalade3.cucsi.org
-escalade5.cucsi.org
-escalade5.cucsi.org
-escalade6.cucsi.org
-escalade6.cucsi.org
-escalade6.cucsi.org
-escalade6.cucsi.org
-escalade6.cucsi.org
-escalade6.cucsi.org
-escalade6.cucsi.org
-escalade6.cucsi.org
-escalade6.cucsi.org
-escalade6.cucsi.org
-escalade6.cucsi.org
-escaladetest.cucsi.org
-gremlin.cucsi.org
-gremlin.cucsi.org
-gremlin.cucsi.org
-gremlin.cucsi.org
-gremlin.cucsi.org
-gremlin.cucsi.org
-gremlin.cucsi.org
-gremlin.cucsi.org
-mpi-adm.cusc-operations.net
-mpi-adm.cusc-operations.net
-mpi-adm.cusc-operations.net
-porsche.cucsi.org
-porsche.cucsi.org
-scpappgp1.tmg.net
-scpappgp1.tmg.net
-scpmgtdlp1.tmg.net
-scpmgtdlp1.tmg.net
-scpsqletl1.tmg.net
-sfld-sql3.servicecenters.org
-sfld-sql3.servicecenters.org
-sfld-sql3.servicecenters.org
-sunfire.cucsi.org
-sunfire.cucsi.org
-sunfire.cucsi.org
-sunfire.cucsi.org
-sunfire.cucsi.org
-sunfire.cucsi.org
-sunfire.cucsi.org
-sunfire.cucsi.org
-sunfire.cucsi.org
-sunfire.cucsi.org
-tahoe.cucsi.org
-tahoe.cucsi.org
-tmgdrxmedius1.tmg.net
-tmgdrxmedius1.tmg.net
-tmgdrxmedius1.tmg.net
-tmgdrxmedius1.tmg.net
-tmgdrxmedius1.tmg.net
-tmgdrxmedius1.tmg.net
-tmgdrxmedius1.tmg.net
-tmgdrxmedius1.tmg.net
-tmgdrxmedius1.tmg.net
-tmgprodrsvint1.tmg.net
-tmgprodrsvint1.tmg.net
-tmgprodrsvint1.tmg.net
-tmgprodrsvint1.tmg.net
-tmgprodrsvint1.tmg.net
-tmgprodrsvint1.tmg.net
-tmgprodrsvint1.tmg.net
-tmgprodrsvint1.tmg.net
-tmgprodrsvint1.tmg.net
-tmgprodrsvint1.tmg.net
-tmgprodrsvint1.tmg.net
-tmgprodxmedius1.tmg.net
-tmgprodxmedius1.tmg.net
-tmgprodxmedius1.tmg.net
-tmgprodxmedius1.tmg.net
-tmgprodxmedius1.tmg.net
-tmgprodxmedius1.tmg.net
-tmgprodxmedius1.tmg.net
-tmgprodxmedius1.tmg.net
-tmgprodxmedius1.tmg.net
-tmgprodxmedius1.tmg.net
-tosh.servicecenters.org
-tosh.servicecenters.org
-tosh.servicecenters.org
-tosh.servicecenters.org
-obrien.servicecenters.org
-orion-db.cucsi.org
-pequod.cucsi.org
-piscopo.cucsi.org
-porsche.cucsi.org
-pryor.cucsi.org
-regal.cucsi.org
-revelation-db.servicecenters.org
-roadster.cucsi.org
-r-staubach.cusc-operations.net
-s4uffx01.cusc-operations.net
-s4uwfx01
-sahara.cucsi.org
-sandler.servicecenters.org
-seinfeld.servicecenters.org
-sfld-archive1.servicecenters.org
-sfld-archive1-n.servicecenters.org
-sfld-mail3.servicecenters.org
-sfld-shared3.servicecenters.org
-sfld-shared4.servicecenters.org
-sfld-sql3.servicecenters.org
-sfld-veeam.servicecenters.org
-spark.cucsi.org
-tahoe.cucsi.org
-t-bradshaw-dr.cusc-operations.net
-t-dorsett.cusc-operations.net
-t-dorsett-dr.cusc-operations.net
-thunderbird.cucsi.org
-tiguan.cucsi.org
-toad-pci-2012.cusc-operations.net
-tosh.servicecenters.org
-tps-app1.cucsi.org
-tps-app1-dev.cucsi.org
-tps-ap-rptstby.cucsi.org
-tps-sql1-dev.cucsi.org
-tucson.cucsi.org
-urus.cucsi.org
-vandyke.servicecenters.org
-varonis.cucsi.org
-varonis2.cucsi.org
-vcmcdeskdp.cucsi.org
-vcmcsolarwdbsvr.cucsi.org
-vcmcsolarwsvr01.cucsi.org
-vcmcsrm01.co-opmc.org
-vcmcveeam.co-opmc.org
-vcmcwebsense.co-opmc.org
-veeam.cucsi.org
-volt.cucsi.org
-volt.cucsi.org
-vw.cucsi.org
-wrx.cucsi.org
-xterra.cucsi.org
-yaris2.cucsi.org
-yukon.cucsi.org
+From: Nadia Theng 
+Sent: Wednesday, January 23, 2019 4:36 PM
+To: Cristian Magana <Cristian.Magana@coop.org>
+Subject: RE: Escalades | Adobe (Flash/Reader)
+
+Yes you are good to go
+
+Thank you,
+
+Nadia H. Theng
+Director of Accounting Operations
+CO-OP Financial Services
+
+From: Cristian Magana 
+Sent: Wednesday, January 23, 2019 4:18 PM
+To: Nadia Theng <Nadia.Theng@coop.org>
+Subject: RE: Escalades | Adobe (Flash/Reader)
+
+Is this approved from finance? I need to line up a tester (greg) asap. 
+
+Cristian Magaña
+System Engineer III
+CO-OP Financial Services                       
+9692 Haven Avenue                              
+Rancho Cucamonga, CA 91730                
+Be there. Be more.                                     
+ 
+T 909-285-8703
+E Cristian.Magana@coop.org
+
+From: Cristian Magana 
+Sent: Tuesday, January 22, 2019 12:52 PM
+To: Nadia Theng <Nadia.Theng@coop.org>
+Subject: RE: Escalades | Adobe (Flash/Reader)
+
+Windows patching – Escalades, Great Plains, Citrix, viewcom/con, SQLBILLING.. Basically all finance servers except Sunfire. 
+
+PCI remediation - Escalades
+
+
+From: Nadia Theng 
+Sent: Tuesday, January 22, 2019 12:29 PM
+To: Cristian Magana <Cristian.Magana@coop.org>
+Subject: Re: Escalades | Adobe (Flash/Reader)
+
+Sorry, which servers again? 
+Nadia Theng
+Sent from my iPhone
+
+On Jan 22, 2019, at 11:20 AM, Cristian Magana <Cristian.Magana@coop.org> wrote:
+Hi Nadia,
+ 
+Would like to check the availability to remediate the escalade servers this weekend? I also have Windows patching for Saturday night for Finance servers. I would like to take care of both in one fell swoop.  Thanks, 
+ 
+ 
+From: Cristian Magana 
+Sent: Thursday, January 17, 2019 3:00 PM
+To: Nadia Theng <Nadia.Theng@coop.org>; Greg McElheney <gmcelheney@gandctech.com>; Clyde Oduca <Clyde.Oduca@coop.org>
+Cc: Diane Lackore <diane.lackore@coop.org>; Tonya Banark <Tonya.Banark@coop.org>
+Subject: RE: Escalades | Adobe (Flash/Reader)
+ 
+Yes; I’ll tentatively reschedule it for 01/26/19 barring testers availability. 
+ 
+Thanks for the heads up. 
+ 
