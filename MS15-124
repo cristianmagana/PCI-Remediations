@@ -1,4 +1,5 @@
 https://www.qualys.com/research/security-alerts/2015-12-08/microsoft/
+https://docs.microsoft.com/en-us/security-updates/SecurityBulletins/2015/ms15-124
 
 Microsoft Internet Explorer Cumulative Security Update (MS15-124)
 Severity
@@ -53,3 +54,36 @@ The patch version of 6.3.9600.18123(KB3109094)
 a)HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_ALLOW_USER32_EXCEPTION_HANDLER_HARDENING with value 1
 b)HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_ALLOW_USER32_EXCEPTION_HANDLER_HARDENING with value 1 (64 bit only)
 Note: The QID has been updated to check for the additional steps requ
+
+
+________________________________________________________________________________________________________________________________________________________________________________
+For 32-bit operating systems:
+
+Click Start, click Run, type Regedit in the Open box, and then click OK.
+Navigate to the following registry location:
+
+
+Copy
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Main\FeatureControl\
+Create a new key with the name FEATURE_ALLOW_USER32_EXCEPTION_HANDLER_HARDENING
+Under the new key, add a new DWORD entry “iexplore.exe”.
+Set the DWORD value to 1.
+For x64-based operating systems:
+
+Click Start, click Run, type Regedit in the Open box, and then click OK.
+Navigate to the following registry location:
+
+
+Copy
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Main\FeatureControl\
+Create a new key with the name FEATURE_ALLOW_USER32_EXCEPTION_HANDLER_HARDENING
+Under the new key, add a new DWORD entry “iexplore.exe”.
+Set the DWORD value to 1.
+Navigate to the following registry location:
+
+
+Copy
+HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Internet Explorer\Main\FeatureControl\
+Create a new key with the name FEATURE_ALLOW_USER32_EXCEPTION_HANDLER_HARDENING
+Under the new key, add a new DWORD entry “iexplore.exe”.
+Set the DWORD value to 1.
