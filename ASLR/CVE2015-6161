@@ -1,0 +1,27 @@
+Microsoft Internet Explorer Security Update for September 2017
+
+
+1.  Complete details of the requested change: 
+
+o	Per the Qualys detailed report, the actual vulnerability is:  Microsoft Browser ASLR Bypass – CVE-2015-6161
+o	A security feature bypass for Microsoft Edge exists as a result of how exceptions are handled when dispatching certain window messages, allowing an attacker to probe the layout of the address space and thereby bypassing Address Space Layout Randomization (ASLR).
+o	The registry keys and values do not exist
+o	[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\MAIN\FeatureControl\FEATURE_ENABLE_PRINT_INFO_DISCLOSURE_FIX] 
+	"iexplore.exe"=dword:00000001
+o	[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Internet Explorer\MAIN\FeatureControl\FEATURE_ALLOW_USER32_EXCEPTION_HANDLER_HARDENINGFEATURE_ENABLE_PRINT_INFO_DISCLOSURE_FIX]
+	"iexplore.exe"=dword:00000001
+o	Reverting this patching process requires removal of both keys and their values
+
+6.  Document the testing steps.
+-	Manual Installation
+-	Backup each registry key (Scripted)
+-	Apply registry key updates (Scripted)
+-	Re-boot the server
+
+8.  Document the implementation steps
+•	Manual Installation
+•	Backup each registry key (Scripted)
+•	Apply registry key updates (Scripted)
+•	Re-boot the server
+
+
