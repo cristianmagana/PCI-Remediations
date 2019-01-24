@@ -25,3 +25,37 @@ o	Reverting this patching process requires removal of both keys and their values
 •	Re-boot the server
 
 
+_________________________________________________________________________________________________________________________________
+For 32-bit and 64-bit systems:     
+
+Click Start, click Run, type regedt32 or type regedit, and then click OK.
+In Registry Editor, locate the following registry folder: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Main\FeatureControl\
+Right-click FeatureControl, point to New, and then click Key.
+Type FEATURE_ENABLE_PRINT_INFO_DISCLOSURE_FIX, and then press Enter to name the new subkey.
+Right-click FEATURE_ENABLE_PRINT_INFO_DISCLOSURE_FIX, point to New, and then click DWORD Value.
+Type "iexplore.exe" for the new DWORD value.
+Double-click the new DWORD value named iexplore.exe and change the Value data field to 1.
+Click OK to close. 
+For 64-bit systems only:
+
+Click Start, click Run, type regedt32 or type regedit, and then click OK.
+In Registry Editor, locate the following registry folder: HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Internet Explorer\Main\FeatureControl\
+Right-click FeatureControl, point to New, and then click Key.
+Type FEATURE_ENABLE_PRINT_INFO_DISCLOSURE_FIX, and then press Enter to name the new subkey.
+Right-click FEATURE_ENABLE_PRINT_INFO_DISCLOSURE_FIX, point to New, and then click DWORD Value.
+Type "iexplore.exe" for the new DWORD value.
+Double-click the new DWORD value named iexplore.exe and change the Value data field to 1.
+Click OK to close.   If you need to disable the solution for CVE-2017-8529, do the following:
+For 32-bit and 64-bit systems:
+
+Click Start, click Run, type regedt32 or type regedit, and then click OK.
+In Registry Editor, locate the following registry folder: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_ENABLE_PRINT_INFO_DISCLOSURE_FIX
+Double-click the value named iexplore.exe and change the Value data field to 0.
+Click OK to close.
+For 64-bit systems only:
+
+Click Start, click Run, type regedt32 or type regedit, and then click OK.
+In Registry Editor, locate the following registry folder: HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_ENABLE_PRINT_INFO_DISCLOSURE_FIX
+Double-click the value named iexplore.exe and change the Value data field to 0.
+Click OK to close.
+
