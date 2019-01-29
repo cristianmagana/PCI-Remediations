@@ -1,22 +1,16 @@
-From: Nadia Theng 
-Sent: Wednesday, January 23, 2019 4:36 PM
-To: Cristian Magana <Cristian.Magana@coop.org>
-Subject: RE: Escalades | Adobe (Flash/Reader)
-
-Yes you are good to go
-
-Thank you,
-
-Nadia H. Theng
-Director of Accounting Operations
-CO-OP Financial Services
-
 From: Cristian Magana 
-Sent: Wednesday, January 23, 2019 4:18 PM
-To: Nadia Theng <Nadia.Theng@coop.org>
-Subject: RE: Escalades | Adobe (Flash/Reader)
+Sent: Tuesday, January 8, 2019 3:04 PM
+To: Joe Federer <Joe.Federer@coop.org>; Robert Niesi <Robert.Niesi@coop.org>; Marquis Robbins <Marquis.Robbins@coop.org>; Richard Erb <Richard.Erb@coop.org>
+Cc: Aaron Mason <Aaron.Mason@coop.org>; Vinny Keane <vinny.keane@coop.org>; Mike Huckle <Mike.Huckle@coop.org>; Jamie Vanzego <Jamie.Vanzengo@coop.org>
+Subject: Microsoft Patch Review - January 2019
 
-Is this approved from finance? I need to line up a tester (greg) asap. 
+Team,
+
+Please see the attached for the Microsoft patches released today for January 2019. 
+
+Bulletins have been reviewed and CVE’s ranked against our environment. Update to follow in 48 hours from known issues before we deploy to lower environments. Sandbox Servers being patched now. 
+
+Thank you,  
 
 Cristian Magaña
 System Engineer III
@@ -28,38 +22,3 @@ Be there. Be more.
 T 909-285-8703
 E Cristian.Magana@coop.org
 
-From: Cristian Magana 
-Sent: Tuesday, January 22, 2019 12:52 PM
-To: Nadia Theng <Nadia.Theng@coop.org>
-Subject: RE: Escalades | Adobe (Flash/Reader)
-
-Windows patching – Escalades, Great Plains, Citrix, viewcom/con, SQLBILLING.. Basically all finance servers except Sunfire. 
-
-PCI remediation - Escalades
-
-
-From: Nadia Theng 
-Sent: Tuesday, January 22, 2019 12:29 PM
-To: Cristian Magana <Cristian.Magana@coop.org>
-Subject: Re: Escalades | Adobe (Flash/Reader)
-
-Sorry, which servers again? 
-Nadia Theng
-Sent from my iPhone
-
-On Jan 22, 2019, at 11:20 AM, Cristian Magana <Cristian.Magana@coop.org> wrote:
-Hi Nadia,
- 
-Would like to check the availability to remediate the escalade servers this weekend? I also have Windows patching for Saturday night for Finance servers. I would like to take care of both in one fell swoop.  Thanks, 
- 
- 
-From: Cristian Magana 
-Sent: Thursday, January 17, 2019 3:00 PM
-To: Nadia Theng <Nadia.Theng@coop.org>; Greg McElheney <gmcelheney@gandctech.com>; Clyde Oduca <Clyde.Oduca@coop.org>
-Cc: Diane Lackore <diane.lackore@coop.org>; Tonya Banark <Tonya.Banark@coop.org>
-Subject: RE: Escalades | Adobe (Flash/Reader)
- 
-Yes; I’ll tentatively reschedule it for 01/26/19 barring testers availability. 
- 
-Thanks for the heads up. 
- 
