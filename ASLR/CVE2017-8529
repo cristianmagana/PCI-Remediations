@@ -8,7 +8,7 @@ o	A security feature bypass for Microsoft Edge exists as a result of how excepti
 o	The registry keys and values do not exist
 o	[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\MAIN\FeatureControl\FEATURE_ENABLE_PRINT_INFO_DISCLOSURE_FIX] 
 	"iexplore.exe"=dword:00000001
-o	[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Internet Explorer\MAIN\FeatureControl\FEATURE_ALLOW_USER32_EXCEPTION_HANDLER_HARDENINGFEATURE_ENABLE_PRINT_INFO_DISCLOSURE_FIX]
+o	[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Internet Explorer\MAIN\FeatureControl\FEATURE_ENABLE_PRINT_INFO_DISCLOSURE_FIX]
 	"iexplore.exe"=dword:00000001
 o	Reverting this patching process requires removal of both keys and their values
 
