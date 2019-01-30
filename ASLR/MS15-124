@@ -114,5 +114,23 @@ revertchange64bit.reg
 
 [-HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_ALLOW_USER32_EXCEPTION_HANDLER_HARDENING]
 
+____________________________________________________________________________________________________________________________
+# Created: Jan 16, 2019 Robert Niesi
+# MS15-124 Microsoft Internet Explorer Cumulative Security Update Regfix
+$registryPath1 = "HKLM:\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_ALLOW_USER32_EXCEPTION_HANDLER_HARDENING"
+$Name1 = "iexplore.exe"
+$value1 = "1"
+ IF(!(Test-Path $registryPath1))
+{
+New-Item -Path $registryPath1 -Force | Out-Null
+New-ItemProperty -Path $registryPath1 -Name $name1 -Value $value1 -Type DWORD -Force | Out-Null}
+
+$registryPath2 = "HKLM:\Software\Wow6432Node\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_ALLOW_USER32_EXCEPTION_HANDLER_HARDENING"
+$Name2 = "iexplore.exe"
+$value2 = "1"
+ IF(!(Test-Path $registryPath2))
+{
+New-Item -Path $registryPath2 -Force | Out-Null
+New-ItemProperty -Path $registryPath2 -Name $name2 -Value $value2 -Type DWORD -Force | Out-Null}
 
   
