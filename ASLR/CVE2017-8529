@@ -58,4 +58,23 @@ Click Start, click Run, type regedt32 or type regedit, and then click OK.
 In Registry Editor, locate the following registry folder: HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_ENABLE_PRINT_INFO_DISCLOSURE_FIX
 Double-click the value named iexplore.exe and change the Value data field to 0.
 Click OK to close.
+______________________________________________________________________________________________________________
+Created: Jan 24, 2019 Robert Niesi
+# Microsoft Broswer ASLR Bypass - CVE-2015-6161
+# Microsoft Internet Explorer Security Update for September 2017 Regfix
+$registryPath1 = "HKLM:\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_ENABLE_PRINT_INFO_DISCLOSURE_FIX"
+$Name1 = "iexplore.exe"
+$value1 = "1"
+ IF(!(Test-Path $registryPath1))
+{
+New-Item -Path $registryPath1 -Force | Out-Null
+New-ItemProperty -Path $registryPath1 -Name $name1 -Value $value1 -Type DWORD -Force | Out-Null}
+
+$registryPath2 = "HKLM:\Software\Wow6432Node\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_ALLOW_USER32_EXCEPTION_HANDLER_HARDENINGFEATURE_ENABLE_PRINT_INFO_DISCLOSURE_FIX"
+$Name2 = "iexplore.exe"
+$value2 = "1"
+ IF(!(Test-Path $registryPath2))
+{
+New-Item -Path $registryPath2 -Force | Out-Null
+New-ItemProperty -Path $registryPath2 -Name $name2 -Value $value2 -Type DWORD -Force | Out-Null}
 
