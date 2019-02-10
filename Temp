@@ -1,259 +1,136 @@
-cesb-adm-cert.cusc-operations.net
-cesb-app-cert.cusc-operations.net
-cesb-sql-cert.cusc-operations.net
-cfscaentrust.cucsi.org
-colointdc2.cucsi.org
-cfscaintdc3.cucsi.org
-cfscards03.cucsi.org
-cfscards04.cucsi.org
-cfscassisdev.cucsi.org
-cuscintdc2.cucsi.org
-escaladetest.cucsi.org
-cusc-ssrsdev.cusc-operations.net
-varonis.cucsi.org
-
-
 alfa.cucsi.org
-alfa-psm-1.cucsi.org
-a-monk.cusc-operations.net
-audi.cucsi.org
-aventador.cucsi.org
-aventador-nta.cucsi.org
-b-hayes.cusc-operations.net
-b-hayes-dr.cusc-operations.net
-bmw.cucsi.org
-boxster.cucsi.org
-b-sanders.cusc-operations.net
-bullitt.cucsi.org
-cayenne.cucsi.org
-cfscaadcon.cucsi.org
-cfscaadcon2.cucsi.org
-cfscacasrep.cucsi.org
-cfscaccert.cucsi.org
-cfscacdsql1.cucsi.org
-cfscacdsql2.cucsi.org
-cfscacontactcc.cucsi.org
-cfscacovsearch.cucsi.org
-cfscacovsearch2.cucsi.org
-cfscadatapump.cucsi.org
-cfscadesk.cucsi.org
-cfscadfs1.cucsi.org
-cfscadmzdns.cucsi.org
-cfscafs2016.cucsi.org
-cfscafsdsm.cucsi.org
-cfscagp2010.cucsi.org
-cfscagp2010.cucsi.org
-cfscagpreport.cucsi.org
-cfscagpsql1.cucsi.org
-cfscagptmg.cucsi.org
-cfscaintdc1.cucsi.org
-cfscaintdc5.cucsi.org
-cfscaintranet.cucsi.org
-cfscaintranet.cucsi.org
-cfscaintranet2.cucsi.org
-cfscaintranetbu.cucsi.org
-cfscaintranets1.cucsi.org
-cfscaintranets2.cucsi.org
-cfscaintranetst.cucsi.org
-cfscaintranetst.cucsi.org
-cfscaintsql1.cucsi.org
-cfscaintsql2.cucsi.org
-cfscajamsapp.cucsi.org
-cfscajamssql.cucsi.org
-cfscalync.cucsi.org
-cfscamdbarb1.cucsi.org
-cfscamdbpri1.cucsi.org
-cfscamdbsec1.cucsi.org
-cfscamongodbarb.cucsi.org
-cfscamongodbpri.cucsi.org
-cfscamongodbsec.cucsi.org
-cfscaoaisys.cucsi.org
-cfscaoaisyssr.cucsi.org
-cfscaprint.cucsi.org
-cfscaqcs.cucsi.org
-cfscaradius1.cucsi.org
-cfscargsqlmon.cucsi.org
-cfscaservdb1.cucsi.org
-cfscaservdb2.cucsi.org
-cfscasqlbilling.cucsi.org
-cfscasqlcompman.cucsi.org
-cfscasqllync.cucsi.org
-cfscasqlumbraco.cucsi.org
-cfscasrm.cucsi.org
-cfscaviewcom.cucsi.org
-cfscaviewcon.cucsi.org
-cfscitrixmaster.cucsi.org
-cfsgasrm.cucsi.org
-cfsliaison.cucsi.org
-cfsmiradius2.cucsi.org
-cfsmisrm.cucsi.org
-cfsnupointgtwy.cucsi.org
-cfsnupointgtwy2.cucsi.org
-cfssql1.cucsi.org
-cfssql1.cucsi.org
-cfssql1.cucsi.org
-cfssql1.cucsi.org
-cfssql2.cucsi.org
-cfssql2.cucsi.org
-cfstxintdc1.cucsi.org
-cfstxintdc2.cucsi.org
-cfswiintdc1.cucsi.org
-cfswiintdc2.cucsi.org
-cfswisrm.cucsi.org
-charger.cucsi.org
-cobalt.cucsi.org
-cobra.cucsi.org
-coloaudit.cucsi.org
-coloexchdag.cucsi.org
-cologpsql3.cucsi.org
-colointdc1.cucsi.org
-concert-reports.cusc-operations.net
-coopga-cyberark.cusc-operations.net
-coopga-davinci.cucsi.org
-coopga-epo.cusc-operations.net
-coopga-feedzai.cucsi.org
-coopga-jump.cucsi.org
-coopga-nta-db.cucsi.org
-coopga-orion.cucsi.org
-coopgards01.cusc-operations.net
-coopgards02.cusc-operations.net
-coopga-tfs-2015.cucsi.org
-coopga-web1.cucsi.org
-coopga-webserv.cucsi.org
-coopga-wl-web-builder.cusc-operations.net
-cooppvs.cucsi.org
-cougar.cucsi.org
-covcri.cucsi.org
-covfs1.cucsi.org
-crx.cucsi.org
-cuetsbetavault1.tmg.net
-cuscdeskdp.cucsi.org
-cusc-dns-2018.creditunion.net
-cusc-dns-dr.creditunion.net
-cusc-dns-vm.creditunion.net
-cuscintdc1.cucsi.org
-cusc-op-dc01.cusc-operations.net
-cusc-op-dc-02.cusc-operations.net
-cusc-op-dns-08.cusc-operations.net
-cusc-op-dns-vm.cusc-operations.net
-cusc-op-sftp.cusc-operations.net
-cusc-ssisdev.cusc-operations.net
-cusc-ssisprod.cusc-operations.net
-cusc-ssistest.cusc-operations.net
-cusc-ssrsprod.cusc-operations.net
-cusc-ssrstest.cusc-operations.net
-cusc-veeam-dr.creditunion.net
-cyclone.cucsi.org
-cyclone.cucsi.org
-cyclone.cucsi.org
-demo-app.cusc-operations.net
-demo-iis.cusc-operations.net
-demo-sql.cusc-operations.net
-dev-webserv-2012.cucsi.org
-d-marino2.cusc-operations.net
-dn-app.cusc-operations.net
-dn-app-test.cusc-operations.net
-dn-web.cusc-operations.net
-e-campbell.cusc-operations.net
-escalade.cucsi.org
-escalade2.cucsi.org
-escalade3.cucsi.org
-escalade5.cucsi.org
-escalade6.cucsi.org
-fairlane.cucsi.org
-f-harris.cusc-operations.net
-gremlin.cucsi.org
-gremlin.cucsi.org
-gto.cucsi.org
-hart.cucsi.org
-j-bettis.cusc-operations.net
-j-bettis-dr.cusc-operations.net
-j-brown.cusc-operations.net
-j-brown2.cusc-operations.net
-j-rice.cusc-operations.net
-j-stallworth.cusc-operations.net
-j-stallworth-dr.cusc-operations.net
-j-taylor.cusc-operations.net
-juke.cucsi.org
-koenigsegg.cucsi.org
-l-swann.cusc-operations.net
-mack.cucsi.org
-m-allen.cusc-operations.net
-m-harrison.cusc-operations.net
-minicooper.cucsi.org
-mpi-adm.cusc-operations.net
-mpi-adm1-dr.cusc-operations.net
-mpi-adm-cert.cusc-operations.net
-mpi-app1.cusc-operations.net
-mpi-sql.cusc-operations.net
-mpi-sql-cert.cusc-operations.net
-msgbroker.cusc-operations.net
-murray.servicecenters.org
-novalis1.cucsi.org
-obrien.servicecenters.org
-orion-db.cucsi.org
-pequod.cucsi.org
-piscopo.cucsi.org
-pryor.cucsi.org
-regal.cucsi.org
-revelation-db.servicecenters.org
-roadster.cucsi.org
-r-staubach.cusc-operations.net
-s1bddr1.tmg.net
-s1dddr1.tmg.net
-s1paalt1.tmg.net
-s1pamex1.tmg.net
-s1pdc01.tmg.net
-s1pdc02.tmg.net
-s1pddr1.tmg.net
-s1pdfztd2.tmg.net
-s1pex01.tmg.net
-s1pex02.tmg.net
-s1pmcd01.tmg.net
-s1pmkms1.tmg.net
-s1pvdicmpsr01.tmg.net
-s4uffx01.cusc-operations.net
-s4uwfx01
-sahara.cucsi.org
-sandler.servicecenters.org
-scpdc3.tmg.net
-scpmgtcme1.tmg.net
-seinfeld.servicecenters.org
-sfld-archive1.servicecenters.org
-sfld-archive1-n.servicecenters.org
-sfldintdc1.cucsi.org
-sfld-mail3.servicecenters.org
-sfld-shared3.servicecenters.org
-sfld-shared4.servicecenters.org
-sfld-sql3.servicecenters.org
-sfld-veeam.servicecenters.org
-spark.cucsi.org
-tahoe.cucsi.org
-t-bradshaw-dr.cusc-operations.net
-t-dorsett.cusc-operations.net
-t-dorsett-dr.cusc-operations.net
-thunderbird.cucsi.org
-tiguan.cucsi.org
-toad-pci-2012.cusc-operations.net
-tosh.servicecenters.org
-tps-app1.cucsi.org
-tps-app1-dev.cucsi.org
-tps-ap-rptstby.cucsi.org
-tps-sql1-dev.cucsi.org
-tucson.cucsi.org
-urus.cucsi.org
-vandyke.servicecenters.org
-varonis2.cucsi.org
-vcmcdeskdp.cucsi.org
-vcmcsolarwdbsvr.cucsi.org
-vcmcsolarwsvr01.cucsi.org
-vcmcveeam.co-opmc.org
-vcmcwebsense.co-opmc.org
-veeam.cucsi.org
-volt.cucsi.org
-volt.cucsi.org
-vw.cucsi.org
-wrx.cucsi.org
-xterra.cucsi.org
-yaris2.cucsi.org
-yukon.cucsi.org
+ alfa-psm-1.cucsi.org
+ audi.cucsi.org
+ aventador.cucsi.org
+ aventador-nta.cucsi.org
+ boxster.cucsi.org
+ bullitt.cucsi.org
+ cayenne.cucsi.org
+ cfscaadcon.cucsi.org
+ cfscaadcon2.cucsi.org
+ cfscacasrep.cucsi.org
+ cfscaccert.cucsi.org
+ cfscacdsql2.cucsi.org
+ cfscacontactcc.cucsi.org
+ cfscadatapump.cucsi.org
+ cfscadesk.cucsi.org
+ cfscadfs1.cucsi.org
+ cfscadmzdns.cucsi.org
+ cfscafs2016.cucsi.org
+ cfscafsdsm.cucsi.org
+ cfscagpreport.cucsi.org
+ cfscagptmg.cucsi.org
+ cfscaintdc1.cucsi.org
+ cfscaintdc5.cucsi.org
+ cfscaintsql2.cucsi.org
+ cfscajamsapp.cucsi.org
+ cfscajamssql.cucsi.org
+ cfscalync.cucsi.org
+ cfscamdbarb1.cucsi.org
+ cfscamdbpri1.cucsi.org
+ cfscamdbsec1.cucsi.org
+ cfscamongodbarb.cucsi.org
+ cfscamongodbpri.cucsi.org
+ cfscamongodbsec.cucsi.org
+ cfscaoaisys.cucsi.org
+ cfscaoaisyssr.cucsi.org
+ cfscaprint.cucsi.org
+ cfscaqcs.cucsi.org
+ cfscaradius1.cucsi.org
+ cfscargsqlmon.cucsi.org
+ cfscasrm.cucsi.org
+ cfscaviewcom.cucsi.org
+ cfscaviewcon.cucsi.org
+ cfscitrixmaster.cucsi.org
+ cfsgasrm.cucsi.org
+ cfsliaison.cucsi.org
+ cfsmiradius2.cucsi.org
+ cfsmisrm.cucsi.org
+ cfsnupointgtwy.cucsi.org
+ cfsnupointgtwy2.cucsi.org
+ cfssql2.cucsi.org
+ cfssql2.cucsi.org
+ cfstxintdc1.cucsi.org
+ cfstxintdc2.cucsi.org
+ cfswiintdc1.cucsi.org
+ cfswiintdc2.cucsi.org
+ cfswisrm.cucsi.org
+ charger.cucsi.org
+ cobalt.cucsi.org
+ cobra.cucsi.org
+ coloaudit.cucsi.org
+ coloexchdag.cucsi.org
+ cologpsql3.cucsi.org
+ colointdc1.cucsi.org
+ cooppvs.cucsi.org
+ covcri.cucsi.org
+ covfs1.cucsi.org
+ crx.cucsi.org
+ cuscdeskdp.cucsi.org
+ cusc-dns-2018.creditunion.net
+ cusc-dns-dr.creditunion.net
+ cusc-dns-vm.creditunion.net
+ cuscintdc1.cucsi.org
+ cyclone.cucsi.org
+ cyclone.cucsi.org
+ cyclone.cucsi.org
+ demo-app.cusc-operations.net
+ demo-iis.cusc-operations.net
+ demo-sql.cusc-operations.net
+ dev-webserv-2012.cucsi.org
+ fairlane.cucsi.org
+ gto.cucsi.org
+ hart.cucsi.org
+ juke.cucsi.org
+ koenigsegg.cucsi.org
+ mack.cucsi.org
+ minicooper.cucsi.org
+ murray.servicecenters.org
+ novalis1.cucsi.org
+ obrien.servicecenters.org
+ orion-db.cucsi.org
+ pequod.cucsi.org
+ piscopo.cucsi.org
+ pryor.cucsi.org
+ regal.cucsi.org
+ s4uffx01.cusc-operations.net
+ s4uwfx01
+ sahara.cucsi.org
+ sandler.servicecenters.org
+ scpmgtcme1.tmg.net
+ seinfeld.servicecenters.org
+ sfld-archive1.servicecenters.org
+ sfld-archive1-n.servicecenters.org
+ sfldintdc1.cucsi.org
+ sfld-mail3.servicecenters.org
+ sfld-shared3.servicecenters.org
+ sfld-shared4.servicecenters.org
+ sfld-sql3.servicecenters.org
+ sfld-veeam.servicecenters.org
+ spark.cucsi.org
+ tahoe.cucsi.org
+ thunderbird.cucsi.org
+ tiguan.cucsi.org
+ toad-pci-2012.cusc-operations.net
+ tosh.servicecenters.org
+ tps-sql1-dev.cucsi.org
+ tps-app1-dev.cucsi.org
+ tps-sql1-dev.cucsi.org
+ tps-app1-dev.cucsi.org
+ tucson.cucsi.org
+ urus.cucsi.org
+ vandyke.servicecenters.org
+ varonis2.cucsi.org
+ vcmcdeskdp.cucsi.org
+ vcmcsolarwdbsvr.cucsi.org
+ vcmcsolarwsvr01.cucsi.org
+ vcmcveeam.co-opmc.org
+ vcmcwebsense.co-opmc.org
+ veeam.cucsi.org
+ volt.cucsi.org
+ volt.cucsi.org
+ vw.cucsi.org
+ wrx.cucsi.org
+ xterra.cucsi.org
+ yaris2.cucsi.org
+ yukon.cucsi.org
