@@ -1,0 +1,8 @@
+The Temporal score is one that can change over time.  The reason for this is the threat can change as time passes.  An example might be the existance of exploit code might increase the temporal score.  Three things that might change the temporal score:
+
+
+1. Exploitability
+
+2. How easily is the vulnerability remediated (Remediation Level) 
+
+3. Report Confidence - Is the vulnerability unconfirmed, uncorroborated, or confirmed?
