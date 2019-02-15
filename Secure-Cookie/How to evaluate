@@ -1,0 +1,8 @@
+Bring up external site via browser
+Open developer tools
+Open Application tab
+Check remediation PDF for cookie that is being flagged.
+Check which cookies are being signed as secure and http only
+There can be an application cookie or a session cookie injected via the WAF.
+-Application (ASP.NET) cookie has Secure and HTTPonly attributes added on IIS/Webserver, 
+-WAF cookie has secure cookie policy applied against application pool. 
