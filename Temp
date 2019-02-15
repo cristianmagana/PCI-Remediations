@@ -1,136 +1,30 @@
-alfa.cucsi.org
- alfa-psm-1.cucsi.org
- audi.cucsi.org
- aventador.cucsi.org
- aventador-nta.cucsi.org
- boxster.cucsi.org
- bullitt.cucsi.org
- cayenne.cucsi.org
- cfscaadcon.cucsi.org
- cfscaadcon2.cucsi.org
- cfscacasrep.cucsi.org
- cfscaccert.cucsi.org
- cfscacdsql2.cucsi.org
- cfscacontactcc.cucsi.org
- cfscadatapump.cucsi.org
- cfscadesk.cucsi.org
- cfscadfs1.cucsi.org
- cfscadmzdns.cucsi.org
- cfscafs2016.cucsi.org
- cfscafsdsm.cucsi.org
- cfscagpreport.cucsi.org
- cfscagptmg.cucsi.org
- cfscaintdc1.cucsi.org
- cfscaintdc5.cucsi.org
- cfscaintsql2.cucsi.org
- cfscajamsapp.cucsi.org
- cfscajamssql.cucsi.org
- cfscalync.cucsi.org
- cfscamdbarb1.cucsi.org
- cfscamdbpri1.cucsi.org
- cfscamdbsec1.cucsi.org
- cfscamongodbarb.cucsi.org
- cfscamongodbpri.cucsi.org
- cfscamongodbsec.cucsi.org
- cfscaoaisys.cucsi.org
- cfscaoaisyssr.cucsi.org
- cfscaprint.cucsi.org
- cfscaqcs.cucsi.org
- cfscaradius1.cucsi.org
- cfscargsqlmon.cucsi.org
- cfscasrm.cucsi.org
- cfscaviewcom.cucsi.org
- cfscaviewcon.cucsi.org
- cfscitrixmaster.cucsi.org
- cfsgasrm.cucsi.org
- cfsliaison.cucsi.org
- cfsmiradius2.cucsi.org
- cfsmisrm.cucsi.org
- cfsnupointgtwy.cucsi.org
- cfsnupointgtwy2.cucsi.org
- cfssql2.cucsi.org
- cfssql2.cucsi.org
- cfstxintdc1.cucsi.org
- cfstxintdc2.cucsi.org
- cfswiintdc1.cucsi.org
- cfswiintdc2.cucsi.org
- cfswisrm.cucsi.org
- charger.cucsi.org
- cobalt.cucsi.org
- cobra.cucsi.org
- coloaudit.cucsi.org
- coloexchdag.cucsi.org
- cologpsql3.cucsi.org
- colointdc1.cucsi.org
- cooppvs.cucsi.org
- covcri.cucsi.org
- covfs1.cucsi.org
- crx.cucsi.org
- cuscdeskdp.cucsi.org
- cusc-dns-2018.creditunion.net
- cusc-dns-dr.creditunion.net
- cusc-dns-vm.creditunion.net
- cuscintdc1.cucsi.org
- cyclone.cucsi.org
- cyclone.cucsi.org
- cyclone.cucsi.org
- demo-app.cusc-operations.net
- demo-iis.cusc-operations.net
- demo-sql.cusc-operations.net
- dev-webserv-2012.cucsi.org
- fairlane.cucsi.org
- gto.cucsi.org
- hart.cucsi.org
- juke.cucsi.org
- koenigsegg.cucsi.org
- mack.cucsi.org
- minicooper.cucsi.org
- murray.servicecenters.org
- novalis1.cucsi.org
- obrien.servicecenters.org
- orion-db.cucsi.org
- pequod.cucsi.org
- piscopo.cucsi.org
- pryor.cucsi.org
- regal.cucsi.org
- s4uffx01.cusc-operations.net
- s4uwfx01
- sahara.cucsi.org
- sandler.servicecenters.org
- scpmgtcme1.tmg.net
- seinfeld.servicecenters.org
- sfld-archive1.servicecenters.org
- sfld-archive1-n.servicecenters.org
- sfldintdc1.cucsi.org
- sfld-mail3.servicecenters.org
- sfld-shared3.servicecenters.org
- sfld-shared4.servicecenters.org
- sfld-sql3.servicecenters.org
- sfld-veeam.servicecenters.org
- spark.cucsi.org
- tahoe.cucsi.org
- thunderbird.cucsi.org
- tiguan.cucsi.org
- toad-pci-2012.cusc-operations.net
- tosh.servicecenters.org
- tps-sql1-dev.cucsi.org
- tps-app1-dev.cucsi.org
- tps-sql1-dev.cucsi.org
- tps-app1-dev.cucsi.org
- tucson.cucsi.org
- urus.cucsi.org
- vandyke.servicecenters.org
- varonis2.cucsi.org
- vcmcdeskdp.cucsi.org
- vcmcsolarwdbsvr.cucsi.org
- vcmcsolarwsvr01.cucsi.org
- vcmcveeam.co-opmc.org
- vcmcwebsense.co-opmc.org
- veeam.cucsi.org
- volt.cucsi.org
- volt.cucsi.org
- vw.cucsi.org
- wrx.cucsi.org
- xterra.cucsi.org
- yaris2.cucsi.org
- yukon.cucsi.org
+From: John Henderson 
+Sent: Friday, February 15, 2019 2:31 PM
+To: Cristian Magana <Cristian.Magana@coop.org>
+Cc: Geoff Gariepy <Geoff.Gariepy@coop.org>; Kamal Mnayer <Kamal.Mnayer@coop.org>; Kevin Shackelford <kevin.shackelford@coop.org>
+Subject: Re: S3PWMP01 - Expedited Ticket - Disk Consolidation
+
+I guess that will be me.
+
+my mobile is 913.568.6826
+
+John 
+Sent from my iPhone
+
+On Feb 15, 2019, at 4:10 PM, Cristian Magana <Cristian.Magana@coop.org> wrote:
+John,
+ 
+eCom’s MemberPay web server has an underlying issue that needs to be remediated asap. We have submitted a expedited ticket to consolidate the vmdk this Saturday evening during the maintenance window. 
+ 
+Could you provide a SME to validate once the disks have been consolidated? We will need to bring the server down for a period of time, possibly for 2 hours. 
+ 
+Cristian Magaña
+System Engineer III
+CO-OP Financial Services                       
+9692 Haven Avenue                              
+Rancho Cucamonga, CA 91730                
+Be there. Be more.                                     
+ 
+T 909-285-8703
+E Cristian.Magana@coop.org
+ 
