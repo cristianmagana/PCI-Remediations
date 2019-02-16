@@ -1,23 +1,35 @@
-From: John Henderson 
-Sent: Friday, February 15, 2019 2:31 PM
-To: Cristian Magana <Cristian.Magana@coop.org>
-Cc: Geoff Gariepy <Geoff.Gariepy@coop.org>; Kamal Mnayer <Kamal.Mnayer@coop.org>; Kevin Shackelford <kevin.shackelford@coop.org>
-Subject: Re: S3PWMP01 - Expedited Ticket - Disk Consolidation
+From: Cristian Magana 
+Sent: Thursday, February 14, 2019 7:32 AM
+To: Incident Management <IM@coop.org>
+Cc: Dan Casebolt <dan.casebolt@coop.org>; Joe Federer <Joe.Federer@coop.org>; Troy Kind <troy.kind@coop.org>; Shawn Taylor <Shawn.Taylor@coop.org>
+Subject: 486007 - Exchange passed window RCA. 
 
-I guess that will be me.
 
-my mobile is 913.568.6826
+09:45 pm – Contact ECC and confirm deployments complete and no bridges open.
+10:15 pm – Gracefully shutdown AUDI.
+10:22 pm – Gracefully shutdown BMW.
+10:25 pm – Create snapshot on AUDI, then delete all snapshots. 
+10:30 pm – Consolidating AUDI disk failed “unable to access file since its locked”.
+11:00 pm – vMotion AUDI to another datastore to unlock vmdks. This also consolidated the delta-35 vmdks. 
+11:53 pm – AUDI vMotion successful. Disks consolidated. 
+12:00 am – AUDI powered on and OS operational. 
 
-John 
-Sent from my iPhone
+11:55 pm – BMW Disks consolidation failed. “unable to access file since its locked”.
+12:00 am – Create snapshot on BMW , then delete all snapshots. Vmdk’s still locked. 
+12:14 am – vMotion BMW to another datastore to unlock vmdks. 
+01:07 am – S3PMVPXY01-02 veeam snapshot taken which causes VM network disruption. “An error occurred while communicating with the remote host”. (This caused a set back of an hour). 
+01:08 am – Relaunch BMW vMotion. 
+03:54 am – Notify Dan C. that process was still going and needed more time to finish up. 
+04:51 am – BMW vMotion complete. Disks are not consolidated. 36 deltas on two vHDDs.
+04:56 am – Consolidate BMW vmdks.
+06:32 am – Consolidation complete. Powered up BMW and confirm exchange is up. 
 
-On Feb 15, 2019, at 4:10 PM, Cristian Magana <Cristian.Magana@coop.org> wrote:
-John,
- 
-eCom’s MemberPay web server has an underlying issue that needs to be remediated asap. We have submitted a expedited ticket to consolidate the vmdk this Saturday evening during the maintenance window. 
- 
-Could you provide a SME to validate once the disks have been consolidated? We will need to bring the server down for a period of time, possibly for 2 hours. 
- 
+
+Root issue: Exchange server vmdks needed consolidation, IO was throttled and vCPU taxed, system was intermittent. Delaying would exacerbate the issue further. In my own words, we needed to fix the situation before mail was down for all locations mid-day. 
+
+Issues during change: CR time window under estimated. When passed change window, bridge was not opened up in proper time.
+
+
 Cristian Magaña
 System Engineer III
 CO-OP Financial Services                       
@@ -27,4 +39,4 @@ Be there. Be more.
  
 T 909-285-8703
 E Cristian.Magana@coop.org
- 
+
