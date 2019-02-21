@@ -1,1 +1,130 @@
 https://support.f5.com/csp/article/K13787
+
+
+You should consider using this procedure under the following condition:
+
+You want to introduce additional security attributes to the HTTP ASM cookies as set by the BIG-IP ASM system.
+Description
+You can configure the BIG-IP ASM system to use the secure and HttpOnly cookie attributes to enhance the security of BIG-IP ASM cookies.
+
+The system adds the secure attribute only when the traffic protocol is HTTPS. The secure cookie attribute directs a web browser to only use cookies on secure or encrypted sessions. The HttpOnly attribute directs browsers to use cookies by way of the HTTP and HTTPS protocols only, ensuring that the cookie is not available by other means, such as JavaScript function calls.
+
+Note: These procedures are for enabling the ASM cookie secure attribute. For more information about configuring BIG-IP ASM for application cookie security, refer to the Adding Cookies chapter of the BIG-IP Application Security Manager: Implementations manual. For information about how to locate F5 product manuals, refer to K12453464: Finding product documentation on AskF5.
+
+Prerequisites
+
+You must meet the following prerequisite to use these procedures:
+
+You have administrative access to the BIG-IP system.
+Procedures
+
+Configuring the secure and HttpOnly attributes, perform the following procedures:
+
+Setting the secure cookie attribute from the command line
+Setting the secure cookie attribute from the Configuration utility (13.1.0 and later)
+Setting the HttpOnly cookie attribute from the command line
+Setting the HttpOnly cookie attribute from the Configuration utility (13.1.0 and later)
+Setting the secure cookie attribute from the command line
+
+The secure attribute is enabled by setting the cookie_secure_attr internal BIG-IP ASM parameter.
+
+Impact of procedure: You must restart the BIG-IP ASM service, causing a brief traffic disruption.
+
+Log in to the Advanced Shell (bash).
+To enable the cookie_secure_attr parameter, type the following command:
+/usr/share/ts/bin/add_del_internal add cookie_secure_attr 1
+
+To restart the BIG-IP ASM services, type the following command:
+tmsh restart /sys service asm
+
+To verify the services are in the run state, type the following command:
+tmsh show /sys service asm
+
+The command output appears similar to the following example:
+
+asm          run (pid 25144) 10 seconds, 1 start
+
+You can disable the secure attribute by repeating the three steps previously listed; however, in step 2, you should substitute the value of 0 for 1.
+
+For example:
+
+/usr/share/ts/bin/add_del_internal add cookie_secure_attr 0
+
+Setting the secure cookie attribute from the Configuration utility (13.1.0 and later)
+
+The secure attribute is enabled by setting the cookie_secure_attr internal BIG-IP ASM parameter.
+
+Impact of procedure: You must restart the BIG-IP ASM service, causing a brief traffic disruption.
+
+Log in to the Configuration utility.
+Navigate to Security > Options > Application Security > Advanced Configuration > System Variables.
+Click Create.
+For the Parameter Name, type cookie_secure_attr.
+For the Parameter Value, type 1.
+Click Create.
+Log in to the command line.
+To restart the BIG-IP ASM services, type the following command:
+tmsh restart /sys service asm
+
+To verify the services are in the run state, type the following command:
+tmsh show /sys service asm
+
+The command output appears similar to the following example:
+
+asm          run (pid 25144) 10 seconds, 1 start
+
+You can disable the secure attribute from Configuration utility by assigning value 0 to cookie_secure_attr from the System Variables list.
+
+Setting the HttpOnly cookie attribute from the command line
+
+The HttpOnly attribute is enabled by setting the cookie_httponly_attr internal BIG-IP ASM parameter.
+
+Impact of procedure: You must restart the BIG-IP ASM service, causing a brief traffic disruption.
+
+Log in to bash.
+To enable the cookie_httponly_attr parameter, type the following command:
+/usr/share/ts/bin/add_del_internal add cookie_httponly_attr 1
+
+To restart the BIG-IP ASM services, type the following command:
+tmsh restart /sys service asm
+
+To verify the services are in the run state, type the following command:
+tmsh show /sys service asm
+
+The command output appears similar to the following example:
+
+asm          run (pid 25144) 10 seconds, 2 starts
+
+You can disable the HttpOnly attribute by repeating the three steps previously listed; however, in step 2, you should substitute the value of 0 for 1.
+
+For example:
+
+/usr/share/ts/bin/add_del_internal add cookie_httponly_attr 0
+
+Setting the HttpOnly cookie attribute from the Configuration utility (13.1.0 and later)
+
+The HttpOnly attribute is enabled by setting the cookie_httponly_attr internal BIG-IP ASM parameter.
+
+Impact of procedure: You must restart the BIG-IP ASM service, causing a brief traffic disruption.
+
+Log in to the Configuration utility.
+Navigate to Security > Options > Application Security > Advanced Configuration > System Variables.
+Click the cookie_httponly_attr parameter name.
+Note: For BIG-IP 13.1.x, you must create the parameter first by clicking Create and input the Parameter Name cookie_httponly_attr manually.
+
+For the Parameter Value, type 1.
+Click Update.
+Log in to the command line.
+To restart the BIG-IP ASM services, type the following command:
+tmsh restart /sys service asm
+
+To verify the services are in the run state, type the following command:
+tmsh show /sys service asm
+
+The command output appears similar to the following example:
+
+asm          run (pid 25144) 10 seconds, 1 start
+
+You can disable the HttpOnly attribute from Configuration utility by assigning value 0 to cookie_httponly_attr from the System Variables list.
+
+Important: You must perform the configuration steps on all BIG-IP ASM devices of the device group.
