@@ -1,0 +1,22 @@
+https://blog.rohitl.com/2014/08/internet-information-servicesiis.html
+
+Issue reported
+Internet Information Services (IIS) may reveal its real or internal IP address in the Location header via a request to the /images directory. The value returned whilst pen testing is https://10.0.0.10/images.
+
+
+The risk
+Information regarding internal IP address ranges is usually hidden from internet facing systems and can provide an attacker with useful information about internal network structure which can be later used in a targeted attack. 
+
+Host Name
+In our case, the name of the host was “development-server-iis.local”
+
+Steps to resolve
+1. Log into the server that hosts the Web Tier of Support Point application as an Administrator and open an administrator command prompt.
+2. Navigate to AppCmd.exe (is located in the %systemroot%\system32\inetsrv\)
+3. Using AppCmd enable server runtime for your Application using the following command 
+ ->   appcmd.exe set config "WebTier" -section:system.webServer/serverRuntime /enabled:"True" /commit:apphost (Note: Here you will need to replace WebTier with the name of your website.)
+4. Using AppCmd enable server runtime for your Application using the following command 
+ ->   appcmd.exe set config "WebTier" -section:system.webServer/serverRuntime /alternateHostName:"development-server-iis.local" /commit:apphost (Note: Here you will need to replace WebTier with the name of your website. You will also need to replace development-server-iis.local with your host name.)
+Restart the website via “Internet Information Services Manager” (inetmgr)
+
+
