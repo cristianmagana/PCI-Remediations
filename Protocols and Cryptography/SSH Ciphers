@@ -1,6 +1,4 @@
-Hey Guys,
 
-Figured I would pass some guidance along:
 https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/TLS_Cipher_String_Cheat_Sheet.md
 From this list, Column 3 (Broad Compatibility (B)) is the current target state for our cipher suites.
 
