@@ -6,3 +6,24 @@ How to resolve this in Win 2003/2008?
 Although I have got workaround:- disable NTLM authentication for your Web server. This can be done by unchecking "Integrated Windows Authentication" within "Authentication Method" under "Directory Security" in "Default Web Site Properties".
 Is this fine for my webservers[win 2k3/2k8], will it require any Reboot/IIS Restart?
 Is there any other better way to resolve this?
+
+______________________________________________________________________________________________________________________________________
+https://supporttips.com/account-brute-force-possible-through-iis-ntlm-authentication-scheme/
+
+Account Brute Force Possible Through IIS NTLM Authentication Scheme
+
+What is IIS NTLM Authentication Scheme
+Authentication is the process of identifying whether a client is eligible to access a resource. The HTTP protocol supports authentication as a means of negotiating access to a secure resource.
+
+NT LAN Manager (NTLM) authentication is a challenge-response scheme that is a securer variation of Digest authentication. NTLM uses Windows credentials to transform the challenge data instead of the unencoded user name and password. NTLM authentication requires multiple exchanges between the client and server. The server and any intervening proxies must support persistent connections to successfully complete the authentication.
+
+Brut Force Issue
+Brute force issue can occur when an attacker uses several passwords or phrases to try to gain entry into a network or application. With type of authentication there are no vendor supplied patches available.
+
+Solution/ Workaround
+The current workaround includes disabling the  NTLM authentication for your Web server. This can be done by unchecking the Integrated Windows Authentication
+
+An alternate solution is to ensure an account lockout policy is in place.
+
+
+For other types of authentication you can click here (https://docs.microsoft.com/en-us/dotnet/framework/wcf/feature-details/understanding-http-authentication)
