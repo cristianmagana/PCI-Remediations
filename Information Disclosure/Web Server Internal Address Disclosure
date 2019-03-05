@@ -20,3 +20,17 @@ Steps to resolve
 Restart the website via “Internet Information Services Manager” (inetmgr)
 
 
+I ran the following cmd to backup my IIS config
+C:\Windows\System32\inetsrv>appcmd.exe add backup "My Backup Name"
+You can confirm this with
+C:\Windows\System32\inetsrv>appcmd.exe list backups
+And restore if need be
+C:\Windows\System32\inetsrv>appcmd.exe restore backup "My Backup Name"
+
+Then I ran the cmd
+C:\Windows\System32\inetsrv>appcmd.exe set config "Default Web Site" -section:sy
+stem.webServer/serverRuntime /enabled:"True"  /commit:apphost
+
+Followed by the cmd in the posted article
+C:\Windows\System32\inetsrv>appcmd.exe set config -section:system.webServer/serv
+erRuntime /alternateHostName:"ServerName"  /commit:apphost
