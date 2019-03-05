@@ -1,0 +1,8 @@
+https://www.experts-exchange.com/questions/27035828/Solution-for-Account-Brute-Force-Possible-Through-IIS-NTLM-Authentication-Scheme-CVE-2002-0419.html
+
+Solution for: Account Brute Force Possible Through IIS NTLM Authentication Scheme CVE-2002-0419
+Please help to resolve the vulnerability:-Account Brute Force Possible Through IIS NTLM Authentication Scheme CVE-2002-0419
+How to resolve this in Win 2003/2008?
+Although I have got workaround:- disable NTLM authentication for your Web server. This can be done by unchecking "Integrated Windows Authentication" within "Authentication Method" under "Directory Security" in "Default Web Site Properties".
+Is this fine for my webservers[win 2k3/2k8], will it require any Reboot/IIS Restart?
+Is there any other better way to resolve this?
