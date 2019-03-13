@@ -1,73 +1,663 @@
-CFSCACONTACTCC
-CFSCAFSDSM
-CFSCAINTDC1
-CFSCAINTDC3
-CFSCAINTDC5
-CFSCALYNC
-CFSCAOAISYS
-CFSCAOAISYSSR
-COLOINTDC2
-COOPGA-DAVINCI
-COOPGA-JUMP
-COOPGA-NTA-DB
-COOPGA-ORION
-COOPGA-TFS-2015
-COOPGA-WEB1
-COOPGA-WEBSERV
-S3QDETL01
-S3QDSSRS01
-S3QDSSRS02
+In order for the change to be authorized by the Change Advisory Board, the following details must be provided:
+
+1.  Complete details of the requested change:  
+
+Monthly Microsoft Security Patching of LCOOP Servers.
+
+2.  Why is the change needed?
+
+Security patching, PCI Compliance. 
+
+3.  Original ticket # NA
+
+4.  What systems or applications will be impacted by this change?
+
+Patch Tuesday 02/12/2019
+
+Sandbox-Server2008R2
+
+Sandbox-Server2012R2
+
+Sandbox-Server2016
+
+ 
+
+
+Development/Test 02/14/2019
+
+CFSCAMDBARB1
+
+CFSCAMONGODBARB
+
+CFSCASSISDEV
+
+CFSCASSISTEST
+
+CFSCASSRS1 (Dev Node) Note: CFSCASSRSPROD is production
+
+CFSCASSRS2 ( Test Node) Note: CFSCASSRSPROD is production 
+
+CFSPRODSQL3
+
+TestarossaTest
+
 TPS-APP1-DEV
-TPS-AP-RPTSTBY
+
 TPS-SQL1-DEV
-TPS-SQL2-DEV
-URUS
-VARONIS
-VARONIS2
+
+WebServicesDB-test
+
+MPMongoDBTest
+
+ 
+
+
+Redundant Domain controllers/VEEAM servers 02/19/19
+CFSCADC4
+
+CFSCADC5
+
+CFSCAINTDC3
+
+CFSCAINTDC5
+
+COBALT
+
+COLOINTDC2
+
+CUSCINTDC2
+
+SFLD-ADMIN2
+
+SFLD-ADMIN1
+
+COLOVEEAMENT
+
+CUSC-VEEAM-2012
+
+CUSC-VEEAM-DR
+
+VANDYKE
+
+VCMCVEEAM
+
 VEEAM
-PCI - CFSCADC4
-PCI - CFSCADC5
-PCI - CFSCAFS1
-PCI-CFSCAJAGSTAGING
-PCI - CFSCAMDAEMON
-CFSCAMDMDATA
-CFSCAMDMWEB
-PCI - CFSCAPCIPRINT
+
+ 
+
+
+UAT Environment 02/19/19
+
+MPMongoDBUAT
+
+QIDC7
+
+QIMPQM12
+
+QIMPZDC3
+
+QIMPZDC4
+
+QIMPZIIS8
+
+QMPDB12
+
+TestarossaStag
+
+CFSCAJAGSTAGING
+
+ 
+
+
+Secondary SQLs (DBA resource needed) 02/19/19
+
+CFSPRODSQL2
+
+CFSCAGPSQL2
+
+CFSCACDSQL2
+
+CFSCAINTSQL2
+
+CFSCAMDBSEC1
+
+CFSCAMONGODBSEC
+
+CFSCASERVDB2
+
+CFSSQL2
+
+Logos
+
+ 
+
+
+Infrastructure 02/22/19
+
+ALFA
+
+ALFA-PSM-1
+
+AVENTADOR
+
+AVENTADOR-NTA
+
+BOXSTER
+
+BULLITT
+
+CAYENNE
+
+CFSCAADCON
+
+CFSCACCERT
+
+CFSCACMS
+
+CFSCACONTACTCC
+
+CFSCADATAPUMP
+
+CFSCADESK
+
+CFSCADFS1
+
+CFSCADMZDNS
+
+CFSCADSS
+
+CFSCAFS1
+
+CFSCAFS2016
+
+CFSCAFSDSM
+
+CFSCALYNC
+
+cfscamdaemon
+
+CFSCAOAISYS
+
+CFSCAOAISYSSR
+
+CFSCAPCIPRINT
+
+CFSCAPRINT
+
+CFSCAQCS
+
+CFSCARADIUS1
+
 CFSCARDS01
+
 CFSCARDS02
-PCI - CFSCAWICOFS
-PCI - CFSCAWICOSQL
-PCI - HYPERION
-APOSTLES
-AVATAR2
-COOPGA-DEV-SP02
-COOPGA-IDASH
-COOPGA-OPSCENTER
-CUSC-CALLSTAT
-CUSC-DNS-2018
-CUSC-DNS-DR-VM
-CUSC-DNS-VM
-CUSC-SECURITY
-COOPGARDS01
-COOPGARDS02
+
+CFSCARDS03
+
+CFSCARDS04
+
+CFSCASQLLYNC
+
+CFSCASQLUMBRACO
+
+CFSCASRM
+
+cfscawsus
+
+CFSDRSRM
+
+CFSDRSRM-GA
+
+CFSLIAISON
+
+CFSNUPOINTGTWY
+
+COOPPVS
+
+CRX
+
+CYCLONE
+
+DEV-WEBSERV-201
+
+FAIRLANE
+
+GREMLIN
+
+GTO
+
+HART
+
+HYPERION
+
+KOENIGSEGG
+
+MACK
+
+MINICOOPER
+
+MURPHY
+
+Pagani
+
+Pandora
+
+PISCOPO
+
+PRYOR
+
+SAHARA
+
+SPARK
+
+TAHOE
+
+TIGUAN
+
+TPS-APP1
+
+TPS-AP-RPTSTBY
+
+TUCSON
+
+URUS
+
+VARONIS
+
+VARONIS2
+
+vmmcinetwebs01
+
+WRX
+
+XTERRA
+
+YARIS2
+
+ 
+
+
+Southfield/Revelations 02/19/19
+
+ACKROYD
+
+Avatar
+
+Avc-ProdVista
+
+CARLIN
+
+CFSMIRADIUS2
+
+COBRA
+
+COLOACCESS
+
+COLOAUDIT
+
+COLOEXCHDAG
+
 COSBY
+
+ganesha
+
+Gnosis1
+
+Gnosis2
+
+MURRAY
+
+nanshe
+
+Nebuchadnezzar1
+
+NOVALIS1
+
+OBRIEN
+
 OBRIEN2
 
+Pequod
+
+Prometheus
+
+REVELATION-DB
+
+REVELATION-WEB
+
+SEINFELD
+
+SFLD-ARCHIVE1
+
+SFLD-ARCHIVE1-N
+
+SFLD-DESK
+
+SFLDINTDC1
+
+SFLD-MAIL2
+
+SFLD-MAIL3
+
+SFLD-SHARED3
+
+SFLD-SHARED4
+
+SFLD-SQL3
+
+SFLD-TERM1
+
+SFLD-VEEAM
+
+TOSH
+
+ 
 
 
+eCom (DBA resource needed) / Finance / Covera / Intranet 03/03/19
+
+Intranet maintenance window 12:00 am - 6:00 am CST
+
+Finance and Covera  12:00 am - 6:00 am CST
+
+eCom maintenance window 12:00 am - 6:00 am CST
+
+Osiris
+
+CFSCACASREP
+
+CFSCACOVEOINT
+
+CFSCACOVSEARCH
+
+CFSCACOVSEARCH2
+
+CFSCAINTRANET
+
+CFSCAINTRANET2
+
+CFSCAINTRANETBU
+
+CFSCAINTRANETS1
+
+CFSCAINTRANETS2
+
+CFSCAINTRANETST
+
+CFSCITRIXMASTER
+
+PCISqlSrvr2012
+
+COLOGPSQL3
+
+COUGAR
+
+COVCRI
+
+COVFS1
+
+CovWeb
+
+CovWebStaging
+
+cougar
+
+newlancer
+
+ 
 
 
+Finance 
+
+CFSCAVIEWCOM
+
+CFSCAVIEWCON
+
+CFSCAGPREPORT
+
+CFSCAGPSQL1
+
+CFSCAGPTMG
+
+THUNDERBIRD
+
+ESCALADE
+
+ESCALADE2
+
+ESCALADE3
+
+ESCALADE5
+
+ESCALADE6
+
+ESCALADETEST
+
+FERRARI
+
+ 
 
 
+eCom  
+
+MPDBC2N1
+
+MPDBC2N2
+
+MPDBC2N3
+
+MPDBCONV
+
+MPDC3
+
+MPDEVBOX
+
+MPMongoDB
+
+MPMongoDBProd
+
+MPQM8
+
+MPQM9
+
+MPZDC6
+
+MPZEPOWSUS
+
+MPZIIS8
+
+MPZMCAFEE
+
+MPZSFTP
+
+MPZSFTP2
+
+PANAMERA
+
+QIAV1
+
+ 
 
 
+Prodcution SQLs, Client facing webservers (DBA Resources needed) 03/03/19 11:00 pm - 5:00 am CST 
+
+ICO/Darwin
+
+CFSCATestarossa
+
+CFSPRODSQL1
+
+ 
 
 
+Sitecore 
+
+CFSCASiteCoreCD
+
+CFSCASiteCoreCM
+
+CFSCASitecoreInt
+
+ 
 
 
+Wicopedia 
+
+CFSCAWICOPEDIA
+
+CFSCAWICOSQL
+
+ 
 
 
+CFSCACDSQL1
+
+CFSCAINTSQL1
+
+CFSCAJAMSAPP
+
+CFSCAJAMSSQL
+
+CFSCAMDBPRI1
+
+CFSCAMDMDATA
+
+CFSCAMDMWEB
+
+CFSCAMONGODBPRI
+
+CFSCARGSQLMON
+
+CFSCASQLCOMPMAN
+
+CFSCASSIS1
+
+CFSCASSRSPROD
+
+CFSCAWICOFS
+
+CFSSQL1
+
+GRANDPRIX
+
+GrandPrix2
+
+Jetta
+
+JUKE
+
+Miata2
+
+Passat2
+
+PORSCHE
+
+REGAL
+
+SANDLER
+
+SONATA
+
+TRANSAM
+
+VOLT
+
+YUKON
+
+ 
 
 
+WebservicesApp
+
+WebServiceApp1-test
+
+WEBSERVICESAPP1
+
+WEBSERVICESAPP2
+
+WebServicesApp2-test
+
+CFSCASERVDB1
+
+ 
 
 
+Vigilant
+
+REVELATION-DB
+
+REVELATION-WEB
+
+ 
+
+
+DC Primary 03/03/19 6:00 am - 8:00 am CST
+
+ROADSTER
+
+COLOINTDC1
+
+CFSCADC1
+
+CUSCINTDC1
+
+CFSCAINTDC1
+
+MPDC4
+
+MPZDC4
+
+QIDC6
+
+Apostles
+
+SFLD-ADMIN3
+
+ 
+
+
+5.  Who will be impacted by this change?
+
+Changes will be afterhours during set maintenance windows.
+
+6.  Document the testing steps
+
+Patches are reviewed from Micorosft bulletins, reviewed on Enterprise message boards for known issues, and tested in lower environments.
+
+7.  Document the communication needed for this change
+
+Patching schedule has been communicated to the enterprise. Change request has been submitted for review on CAB review meeting. 
+
+8.  Document the implementation steps
+
+Snapshot servers in preparations to patching window. Deploy patches for staging with no reboot deployment configuration. Reboot servers at the onset of maintenance window. 
+
+9.  Document the post-implementation validation steps
+
+Confirm no additional patches or reboots pending. 
+
+Confirm services are running in server manager and applications are operational via checklist links and in SolarWinds. 
+
+10. Document the backout/restore plan
+
+Uninstall patch or revert from snapshot if needed. 
+
+11. Does this change affect the DR environment?
+
+Yes. DR servers are patched before production servers. 
+
+12. Is this a bug fix?  If so, please provide an explanation that includes the end user impact of this change.  (i.e. From the user's perspective, what will be different about their experience with the application when this change is implemented?)
+
+13. If applicable, specify which client(s) is requesting this change.
+
+14. MKS # (iSeries code deployments only)
+
+15. Please review the following questions and if the answer to any of them is Yes, please select Yes from the "Notify InfoSec of Change" drop down below. 
+
+Does this change impact user authentication?
+
+Does this change impact security auditing/logging?
+
+Is this a change to encryption?
+
+Does this change involve a new, third-party data flow
