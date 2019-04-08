@@ -1,78 +1,27 @@
-AVC-QCVISTA
-COLOAUDIT
-COLOEXCHDAG
-COLOINTDC1
-COLOINTDC2
-COOPGA-DAVINCI
-COOPGA-FEEDZAI
-COOPGA-JUMP
-COOPGA-NTA-DB
-COOPGA-ORION
-COOPGA-TFS-2015
-COOPGA-WEB1
-COOPGA-WEBSERV
-CUSCDESKDP
-CUSCINTDC1
-CUSCINTDC2
-ORION-DB
-TPS-APP1
-TPS-APP1-DEV
-TPS-AP-RPTSTBY
-TPS-SQL1-DEV
-TPS-SQL2-DEV
-COOPGA-APP
-COOPGA-DEVAPP01
-COOPGA-DEV-SP02
-COOPGA-IDASH
-COOPGA-OPSCENTE
-COOPGA-SP2013
-COOPGA-SQL2012
-CUSC-BACKUPS
-CUSC-CALLSTAT
-CUSC-DNS-2018
-CUSC-DNS-DR
-CUSC-DNS-DR-VM
-CUSC-DNS-VM
-CUSC-EXCH10
-CUSC-REPORTS
-CUSC-REPORTS2
-CUSC-SECURITY
-CUSC-SQL
-CUSC-VEEAM-2012
-CUSC-VEEAM-DR
-CUSC-WSFTP
-SHAREPOINT-DEV
-B-Hayes-DR
-B-Sanders
-Concert-Reports
-COOPGA-CyberArk
-COOPGA-ePO
-COOPGARDS01
-COOPGARDS02
-COOPGA-WL-Web-Builder
-CUSC-OP-DC01
-CUSC-OP-DC-02
-cusc-op-dns-08
-cusc-op-dns-vm
-CUSC-OP-SFTP
-CUSC-SSISDEV
-CUSC-SSRSDEV
-D-MARINO2
-DN-App-dr
-J-Bettis-DR
-j-brown
-J-Brown2
-J-Stallworth-DR
-M-Harrison
-MPI-ADM1-DR
-MsgBroker
-R-Staubach-DR
-s4pffx01
-s4pffx02
-s4uffx01
-S4UWFX01
-T-Aikman
-T-Bradshaw-DR
-T-Dorsett
-T-Dorsett-DR
-TOAD-PCI-2012
+
+Does Yana have the instructions for rebuilding the execution plans and the table statistics?  I’ll copy them below:
+
+
+use PMT_TRANS;
+ 
+UPDATE STATISTICS MEMBER_DATA_CONFIRMATION
+ 
+UPDATE STATISTICS PAYMENT_CONFIRMATION
+ 
+UPDATE STATISTICS FILE_STRUCTURE_ERROR
+ 
+/* right click on [dbo].[Get_Cleared_Check_Confirmation_Records], select Modify, then execute SP with no modifications */
+/* right click on [dbo].[Get_Payment_Confirmation_Records], select Modify, then execute SP with no modifications */
+/* right click on [dbo].[Get_Payment_Confirmation_Count_By_Legacy_Code], select Modify, then execute SP with no modifications */
+/* right click on [dbo].[Get_Max_Confirmation_Values], select Modify, then execute SP with no modifications */
+/* right click on [dbo].[Update_Confirmation_Values], select Modify, then execute SP with no modifications */
+
+
+UPDATE STATISTICS ACH_SETTLEMENT_SUMMARY
+update STATISTICS ACH_RECORD
+UPDATE STATISTICS PAYMENT_STATUS 
+UPDATE STATISTICS PAYMENT
+ 
+ 
+/* right click on [dbo].DoACHSettlement, select Modify, then execute SP with no modifications */
+/* right click on [dbo].InsertACHSettlementSummary, select Modify, then execute SP with no modifications */
