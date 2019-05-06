@@ -7,7 +7,7 @@
     Prerequistites for Server 2008 and 2008 R2 are KB4019276 and KB3140245 respectively.
 .NOTES  
     File Name  : Master-TLSWeakCipher.ps1
-    Author     : Platform Engineering Team
+    Author     : Cristian Magaña & Robert Niesi
     Requires   : PowerShell V2  
     Date       : 09-25-2018
     Version    : 1.0.3 Build 20180925
