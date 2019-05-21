@@ -1,27 +1,17 @@
+CUETSPRODVAULT - Has "default-src * 'unsafe-inline' 'unsafe-eval' data: filesystem: about: blob: mediastream: ws: wss:; frame-ancestors 'self'; report-uri https://browser-reports.coop.org/csp"
+CUETSBETAVAULT - Does not have "default-src * 'unsafe-inline' 'unsafe-eval' data: filesystem: about: blob: mediastream: ws: wss:; frame-ancestors 'self'; report-uri https://browser-reports.coop.org/csp"
 
-Does Yana have the instructions for rebuilding the execution plans and the table statistics?  I’ll copy them below:
+SCPWSB1 -default-src * 'unsafe-inline' 'unsafe-eval' data: filesystem: about: blob: mediastream: ws: wss:; frame-ancestors 'self'; report-uri https://browser-reports.coop.org/csp
+SABWSB1 -default-src * 'unsafe-inline' 'unsafe-eval' data: filesystem: about: blob: mediastream: ws: wss: 'unsafe-dynamic'; report-uri https://browser-reports.beta.coop.org/csp
 
+Open Services - Being implemented via WAF. Need to copy Headers from Prod over to BETA
 
-use PMT_TRANS;
- 
-UPDATE STATISTICS MEMBER_DATA_CONFIRMATION
- 
-UPDATE STATISTICS PAYMENT_CONFIRMATION
- 
-UPDATE STATISTICS FILE_STRUCTURE_ERROR
- 
-/* right click on [dbo].[Get_Cleared_Check_Confirmation_Records], select Modify, then execute SP with no modifications */
-/* right click on [dbo].[Get_Payment_Confirmation_Records], select Modify, then execute SP with no modifications */
-/* right click on [dbo].[Get_Payment_Confirmation_Count_By_Legacy_Code], select Modify, then execute SP with no modifications */
-/* right click on [dbo].[Get_Max_Confirmation_Values], select Modify, then execute SP with no modifications */
-/* right click on [dbo].[Update_Confirmation_Values], select Modify, then execute SP with no modifications */
+default-src * 'unsafe-inline' 'unsafe-eval' data: filesystem: about: blob: mediastream: ws: wss:; frame-ancestors 'self'; report-uri https://browser-reports.coop.org/csp
+
+default-src * 'unsafe-inline' 'unsafe-eval' data: filesystem: about: blob: mediastream: ws: wss:; frame-ancestors 'self'; report-uri https://browser-reports.coop.org/csp
 
 
-UPDATE STATISTICS ACH_SETTLEMENT_SUMMARY
-update STATISTICS ACH_RECORD
-UPDATE STATISTICS PAYMENT_STATUS 
-UPDATE STATISTICS PAYMENT
- 
- 
-/* right click on [dbo].DoACHSettlement, select Modify, then execute SP with no modifications */
-/* right click on [dbo].InsertACHSettlementSummary, select Modify, then execute SP with no modifications */
+
+
+
+
