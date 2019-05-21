@@ -1,17 +1,1 @@
-CUETSPRODVAULT - Has "default-src * 'unsafe-inline' 'unsafe-eval' data: filesystem: about: blob: mediastream: ws: wss:; frame-ancestors 'self'; report-uri https://browser-reports.coop.org/csp"
-CUETSBETAVAULT - Does not have "default-src * 'unsafe-inline' 'unsafe-eval' data: filesystem: about: blob: mediastream: ws: wss:; frame-ancestors 'self'; report-uri https://browser-reports.coop.org/csp"
-
-SCPWSB1 -default-src * 'unsafe-inline' 'unsafe-eval' data: filesystem: about: blob: mediastream: ws: wss:; frame-ancestors 'self'; report-uri https://browser-reports.coop.org/csp
-SABWSB1 -default-src * 'unsafe-inline' 'unsafe-eval' data: filesystem: about: blob: mediastream: ws: wss: 'unsafe-dynamic'; report-uri https://browser-reports.beta.coop.org/csp
-
-Open Services - Being implemented via WAF. Need to copy Headers from Prod over to BETA
-
-default-src * 'unsafe-inline' 'unsafe-eval' data: filesystem: about: blob: mediastream: ws: wss:; frame-ancestors 'self'; report-uri https://browser-reports.coop.org/csp
-
-default-src * 'unsafe-inline' 'unsafe-eval' data: filesystem: about: blob: mediastream: ws: wss:; frame-ancestors 'self'; report-uri https://browser-reports.coop.org/csp
-
-
-
-
-
 
